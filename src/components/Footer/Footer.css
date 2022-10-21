@@ -1,0 +1,16 @@
+.footerPage {
+  text-align: center;
+  background-color: #060b26;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+}
+
+.footerPage a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
