@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div className="footerPage">
       &copy; {new Date().getFullYear()} Copyright:{" "}
@@ -10,5 +10,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

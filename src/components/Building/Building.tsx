@@ -2,7 +2,7 @@ import "./Building.css";
 import React, { Fragment } from "react";
 import * as Md from "react-icons/md";
 
-const BuildingPage = ({ title }: { title: string }) => {
+export const BuildingPage = ({ title }: { title: string }) => {
   return (
     <Fragment>
       <div id="building">
@@ -18,5 +18,3 @@ const BuildingPage = ({ title }: { title: string }) => {
     </Fragment>
   );
 };
-
-export default BuildingPage;

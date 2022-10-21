@@ -1,9 +1,8 @@
 import "./resourceCard.css";
-import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { categoryData } from "../../data/categoryData";
 
-const ResourceCard = ({ name, description, url, category }: any) => (
+export const ResourceCard = ({ name, description, url, category }: any) => (
   <Card style={{ width: "18rem" }} id="resourceCard">
     <Card.Body>
       <Card.Title>{name}</Card.Title>
@@ -19,5 +18,3 @@ const ResourceCard = ({ name, description, url, category }: any) => (
     </Card.Body>
   </Card>
 );
-
-export default ResourceCard;

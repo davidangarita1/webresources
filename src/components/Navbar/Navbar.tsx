@@ -5,7 +5,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { IconContext } from "react-icons";
 
-const Navbar = ({ data }: any) => {
+export const Navbar = ({ data }: any) => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => {
     setSidebar(!sidebar);
@@ -42,5 +42,3 @@ const Navbar = ({ data }: any) => {
     </Fragment>
   );
 };
-
-export default Navbar;

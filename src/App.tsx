@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PublicLayout from "./layouts/public/PublicLayout";
+import PrivateLayout from "./layouts/private/PrivateLayout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -10,6 +11,9 @@ function App() {
         <Routes>
           <Route path="/" element={<PublicLayout />}>
             <Route path="" element={<Dashboard />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+          <Route path="/admin" element={<PrivateLayout />}>
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

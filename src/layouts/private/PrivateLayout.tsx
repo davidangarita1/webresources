@@ -1,10 +1,8 @@
-import "./PublicLayout.css";
+import "./PrivateLayout.css";
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import Toggle from "../components/Toggle/Toggle";
+import { Navbar, Footer, Toggle } from "../../components";
 import { useSelector } from "react-redux";
-import { sidebarData } from "../data/sidebarData";
+import { sidebarData } from "../../data/sidebarData";
 
 const PrivateLayout = () => {
   const { isActive } = useSelector((state: any) => state.darkMode);

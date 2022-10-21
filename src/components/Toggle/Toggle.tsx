@@ -4,7 +4,7 @@ import Sun from "../../assets/sun.png";
 import Moon from "../../assets/moon.png";
 import { handleToggle } from "../../redux/middlewares/darkModeMiddleware";
 
-const Toggle = () => {
+export const Toggle = () => {
   const dispatch = useDispatch();
   const { isActive } = useSelector((state: any) => state.darkMode);
 
@@ -26,5 +26,3 @@ const Toggle = () => {
     </>
   );
 };
-
-export default Toggle;
