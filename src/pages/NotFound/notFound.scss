@@ -1,0 +1,24 @@
+#notFound {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: #e41818;
+
+  .container {
+    border: 5px dashed #e41818;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    h1 {
+      font-size: 15rem;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

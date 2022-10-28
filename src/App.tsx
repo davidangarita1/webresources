@@ -4,7 +4,7 @@ import PrivateLayout from "./layouts/private/PrivateLayout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import NotFound from "./pages/NotFound/NotFound";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div>
       <BrowserRouter>

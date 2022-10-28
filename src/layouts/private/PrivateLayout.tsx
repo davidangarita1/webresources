@@ -1,6 +1,6 @@
-import "./PrivateLayout.css";
+import "./PrivateLayout.scss";
 import { Outlet } from "react-router-dom";
-import { Navbar, Footer, Toggle } from "../../components";
+import { Navbar, Footer, Toggle } from "@Components";
 import { useSelector } from "react-redux";
 import { sidebarData } from "../../data/sidebarData";
 
@@ -12,7 +12,7 @@ const PrivateLayout = () => {
       <div className={isActive ? "dark-mode" : ""}>
         <Navbar data={sidebarData} />
         <Toggle />
-        <div className={isActive ? "scroll dark-mode" : "scroll"}>
+        <div className={`scroll ${isActive && "dark-mode"}`}>
           <Outlet />
         </div>
         <Footer />

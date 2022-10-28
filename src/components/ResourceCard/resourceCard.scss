@@ -1,0 +1,38 @@
+#resourceCard {
+  :hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+  display: grid;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 25px;
+
+  p {
+    font-weight: 400;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding-top: 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 1em;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  .card-body {
+    .categories {
+      text-align: center;
+    }
+  }
+}
+
+#resourceCard.card {
+  width: 20rem; 
+  height: 100%;
+}

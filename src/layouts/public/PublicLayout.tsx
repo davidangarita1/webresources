@@ -1,8 +1,9 @@
-import "./PublicLayout.css";
+import "./PublicLayout.scss";
+
+import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 
-import { Footer, Toggle } from "../../components";
-import { useSelector } from "react-redux";
+import { Footer, Toggle } from "@Components";
 
 const PublicLayout = () => {
   const { isActive } = useSelector((state: any) => state.darkMode);
@@ -12,7 +13,7 @@ const PublicLayout = () => {
       <div className={isActive ? "dark-mode" : ""}>
         <div className="topbar" />
         <Toggle />
-        <div className={isActive ? "scroll dark-mode" : "scroll"}>
+        <div className={`scroll ${isActive && "dark-mode"}`}>
           <Outlet />
         </div>
         <Footer />

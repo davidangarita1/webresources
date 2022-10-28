@@ -1,13 +1,14 @@
-import "./Navbar.css";
-import React, { Fragment, useState } from "react";
+import "./Navbar.scss";
+import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { IconContext } from "react-icons";
 
-export const Navbar = ({ data }: any) => {
+export const Navbar = ({ data }: any): JSX.Element => {
   const [sidebar, setSidebar] = useState(false);
-  const showSidebar = () => {
+
+  const showSidebar = (): void => {
     setSidebar(!sidebar);
   };
 

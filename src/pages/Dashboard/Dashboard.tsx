@@ -1,8 +1,10 @@
-import "./Dashboard.css";
-import React, { useEffect } from "react";
+import "./Dashboard.scss";
+import { Fragment, useEffect } from "react";
 import { ResourceCard } from "../../components";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllResources } from "../../redux/middlewares/resourcesMiddleware";
+
+import { categoryData } from "../../data/categoryData";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -14,31 +16,36 @@ const Dashboard = () => {
     dispatch(getAllResources());
   }, []);
 
+  const getFilteredCategories = (categories: any[]): any[] =>
+    categories.map((category) =>
+      categoryData.find((item) => category === item.name)
+    );
+
   return (
-    <>
+    <Fragment>
       <div id="api">
-        <h1>Dashboard</h1>
-        {isLoading && <p>Loading...</p>}
-        {error && <p>Error...</p>}
-        <div className="cards">
+        <div className="row">
+          <div className="col-12 text-center">
+            <h1>Dashboard</h1>
+          </div>
+        </div>
+        <div className="row">
+          {isLoading && <p>Loading...</p>}
+          {error && <p>Error...</p>}
           {resources.length &&
             resources.map((item: any) => (
-              <div key={item.id}>
+              <div className="col mb-2" key={item.id}>
                 <ResourceCard
                   name={item.name}
                   description={item.description}
                   url={item.url}
-                  category={item.category}
-                  width={200}
-                  height={200}
-                  color={"#000000"}
-                  fontWeight={"bold"}
+                  category={getFilteredCategories(item.category)}
                 />
               </div>
             ))}
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 
