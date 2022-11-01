@@ -10,19 +10,19 @@ export const sidebarData = [
   },
   {
     title: "Resources",
-    path: "/resources",
+    path: "/admin/resources",
     icon: <Fa.FaBuffer />,
     cName: "nav-text",
   },
   {
     title: "Categories",
-    path: "/categories",
+    path: "/admin/categories",
     icon: <Fa.FaUserAstronaut />,
     cName: "nav-text",
   },
   {
     title: "Logout",
-    path: "/logout",
+    path: "/admin/logout",
     icon: <Fa.FaSuitcase />,
     cName: "nav-text",
   },

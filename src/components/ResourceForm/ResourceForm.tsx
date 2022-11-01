@@ -34,7 +34,7 @@ const MESSAGES = {
   error: "Error creating resource",
 };
 
-const ResourceForm = ({ categories, title }: any): JSX.Element => {
+export const ResourceForm = ({ categories }: any): JSX.Element => {
   const [values, setValues] = useState(INITIAL_VALUES);
   const dispatch = useDispatch();
 
@@ -60,7 +60,6 @@ const ResourceForm = ({ categories, title }: any): JSX.Element => {
       <div id="form">
         <Row>
           <form onSubmit={(e) => handleSubmitResource(e)}>
-            <h2>{title}</h2>
             <label htmlFor="name">Name</label>
             <Input
               id="name"
@@ -127,5 +126,3 @@ const ResourceForm = ({ categories, title }: any): JSX.Element => {
     </Fragment>
   );
 };
-
-export default ResourceForm;

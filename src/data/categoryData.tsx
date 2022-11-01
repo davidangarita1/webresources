@@ -88,7 +88,7 @@ export const categoryData: any[] = [
   },
 ];
 
-/* export const categories = [
+export const categories = [
   { icon: "SiHtmlacademy", color: "#119FFF", value: "academy" },
   { icon: "SiPcgamingwiki", color: "#000000", value: "technology" },
   { icon: "SiCodersrank", color: "#000000", value: "code" },
@@ -107,4 +107,4 @@ export const categoryData: any[] = [
   { icon: "SiJava", color: "#F0090D", value: "java" },
   { icon: "SiSpring", color: "#6DB33F", value: "spring" },
   { icon: "SiPython", color: "#0079E8", value: "python" },
-]; */
+];
