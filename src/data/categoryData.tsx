@@ -87,3 +87,24 @@ export const categoryData: any[] = [
     color: "red",
   },
 ];
+
+/* export const categories = [
+  { icon: "SiHtmlacademy", color: "#119FFF", value: "academy" },
+  { icon: "SiPcgamingwiki", color: "#000000", value: "technology" },
+  { icon: "SiCodersrank", color: "#000000", value: "code" },
+  { icon: "SiGit", color: "#E84E31", value: "git" },
+  { icon: "SiAngellist", color: "#FAAD14", value: "challenges" },
+  { icon: "SiOctopusdeploy", color: "#000000", value: "deployment" },
+  { icon: "SiFirebase", color: "#FFCD34", value: "firebase" },
+  { icon: "SiHeroku", color: "#430098", value: "heroku" },
+  { icon: "SiGithub", color: "#000000", value: "github" },
+  { icon: "SiBookstack", color: "#f9132e", value: "languages" },
+  { icon: "SiHtml5", color: "#FE4C1E", value: "html5" },
+  { icon: "SiCss3", color: "#2091EB", value: "css3" },
+  { icon: "SiJavascript", color: "#F9D423", value: "javascript" },
+  { icon: "SiNodedotjs", color: "#84BB00", value: "nodejs" },
+  { icon: "SiReact", color: "#50ABC4",  value: "react" },
+  { icon: "SiJava", color: "#F0090D", value: "java" },
+  { icon: "SiSpring", color: "#6DB33F", value: "spring" },
+  { icon: "SiPython", color: "#0079E8", value: "python" },
+]; */

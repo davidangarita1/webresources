@@ -14,6 +14,7 @@ function App(): JSX.Element {
             <Route path="*" element={<NotFound />} />
           </Route>
           <Route path="/admin" element={<PrivateLayout />}>
+            <Route path="" element={<Dashboard />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
