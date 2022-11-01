@@ -4,6 +4,7 @@ import "./ResourceForm.scss";
 
 import { IconOption } from "@Components";
 import { Input, Row, Button, Select, notification } from "antd";
+import { IconType } from "antd/lib/notification";
 import { createResource } from "../../redux/middlewares/resourcesMiddleware";
 import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
 
@@ -37,7 +38,7 @@ const ResourceForm = ({ categories, title }: any): JSX.Element => {
   const [values, setValues] = useState(INITIAL_VALUES);
   const dispatch = useDispatch();
 
-  const openNotificationWithIcon = (type: any, message: string) => {
+  const openNotificationWithIcon = (type: IconType, message: string) => {
     notification[type]({
       message: message,
       placement: "bottomLeft",
