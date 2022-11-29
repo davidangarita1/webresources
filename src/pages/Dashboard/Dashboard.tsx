@@ -1,6 +1,6 @@
 import "./Dashboard.scss";
 import { Fragment, useEffect } from "react";
-import { ResourceCard } from "../../components";
+import { ResourceCard } from "@Components";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllResources } from "../../redux/middlewares/resourcesMiddleware";
 

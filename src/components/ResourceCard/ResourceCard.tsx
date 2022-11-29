@@ -1,5 +1,7 @@
 import "./resourceCard.scss";
-import { Card, Button, Badge } from "react-bootstrap";
+
+import { IconOption } from "@Components";
+import { Card, Button } from "react-bootstrap";
 
 type ResourceCardProps = {
   name: string;
@@ -19,14 +21,19 @@ export const ResourceCard = ({
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <Card.Text className="categories">
+        <div className="categories">
           {category.map((item: any) => (
-            <Badge key={item.id} bg={item.color}>
+            <div
+              key={item.id}
+              className="badge"
+              style={{ backgroundColor: `${item.color}` }}
+            >
+              <IconOption iconName={`${item.icon}`} />
               {item.name}
-            </Badge>
+            </div>
           ))}
-        </Card.Text>
-        <Button variant="primary">
+        </div>
+        <Button className="btn-open" variant="primary">
           <a href={url} target="_blank">
             Open
           </a>

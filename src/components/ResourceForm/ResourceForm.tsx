@@ -105,13 +105,10 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
             >
               {categories
                 .sort((a: any, b: any) => a.value.localeCompare(b.value))
-                .map((category: any, index: any) => (
-                  <Option key={index} value={category.value}>
-                    <IconOption
-                      iconName={category.icon}
-                      name={category.value}
-                      color={category.color}
-                    />
+                .map((category: any) => (
+                  <Option key={category.id} value={category.name}>
+                    <IconOption iconName={category.icon} />
+                    {category.name}
                   </Option>
                 ))}
             </Select>

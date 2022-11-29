@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import "./Resources.scss";
 
 import { ResourceForm } from "@Components";
-import { categories } from "../../data/categoryData";
+import { categoryData } from "../../data/categoryData";
 
 const Resources = () => {
   return (
@@ -15,7 +15,7 @@ const Resources = () => {
         </div>
         <div className="row">
           <div className="col-12">
-            <ResourceForm categories={categories} />
+            <ResourceForm categories={categoryData} />
           </div>
         </div>
       </div>

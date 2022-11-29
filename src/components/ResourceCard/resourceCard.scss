@@ -28,11 +28,19 @@
   .card-body {
     .categories {
       text-align: center;
+
+      .badge {
+        margin: 2px;
+        line-height: 15px;
+      }
     }
   }
-}
+  .btn-open {
+    background-color: #f5f5f5;
+  }
 
-#resourceCard.card {
-  width: 20rem; 
-  height: 100%;
+  &.card {
+    width: 20rem;
+    height: 100%;
+  }
 }
