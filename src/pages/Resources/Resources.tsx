@@ -1,10 +1,21 @@
-import { Fragment } from "react";
 import "./Resources.scss";
+import { Fragment, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
 
 import { ResourceForm } from "@Components";
-import { categoryData } from "../../data/categoryData";
 
 const Resources = () => {
+  const dispatch = useDispatch();
+  const { isLoading, categories, error } = useSelector(
+    (state: any) => state.categories
+  );
+
+  useEffect(() => {
+    dispatch(getAllCategories());
+  }, []);
+
   return (
     <Fragment>
       <div id="resources">
@@ -13,11 +24,15 @@ const Resources = () => {
             <h1>Resources</h1>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12">
-            <ResourceForm categories={categoryData} />
+        {isLoading && <p>Loading...</p>}
+        {error && <p>Error...</p>}
+        {categories.length && (
+          <div className="row">
+            <div className="col-12">
+              <ResourceForm categories={categories} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </Fragment>
   );
