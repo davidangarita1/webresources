@@ -1,14 +1,16 @@
 #resourceCard {
-  :hover {
+  &.card {
+    width: 15rem;
+    height: 100%;
+  }
+  &:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
   display: grid;
   background-color: #f5f5f5;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 25px;
-
   p {
     font-weight: 400;
     text-align: justify;
@@ -25,10 +27,18 @@
     width: 20px;
     height: 20px;
   }
+  .card-header {
+    line-height: 50px;
+    max-height: 70px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+  }
   .card-body {
+    padding: 20px;
+    height: 180px;
+    
     .categories {
       text-align: center;
-
       .badge {
         margin: 2px;
         line-height: 15px;
@@ -37,10 +47,5 @@
   }
   .btn-open {
     background-color: #f5f5f5;
-  }
-
-  &.card {
-    width: 20rem;
-    height: 100%;
   }
 }

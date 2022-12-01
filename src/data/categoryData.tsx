@@ -1,5 +1,5 @@
 export const categoryData: any[] = [
-  { id: "1", icon: "SiHtmlacademy", color: "#119FFF", name: "academy" },
+  { id: "1", icon: "SiCodersrank", color: "#119FFF", name: "academy" },
   { id: "2", icon: "SiPcgamingwiki", color: "#000000", name: "technology" },
   { id: "3", icon: "SiCodersrank", color: "#000000", name: "programming" },
   { id: "4", icon: "SiGit", color: "#E84E31", name: "git" },
@@ -17,10 +17,9 @@ export const categoryData: any[] = [
   { id: "16", icon: "SiPython", color: "#0079E8", name: "python" },
   { id: "17", icon: "SiSpring", color: "#6DB33F", name: "spring" },
   { id: "18", icon: "SiJava", color: "#F0090D", name: "java" },
-  { id: "19", icon: "SiFirebase", color: "#FFCD34", name: "firebase" },
-  { id: "20", icon: "SiGithub", color: "#000000", name: "github" },
-  { id: "21", icon: "SiCss3", color: "#2091EB", name: "css3" },
-  { id: "22", icon: "SiJavascript", color: "#F9D423", name: "javascript" },
-  { id: "23", icon: "SiNodedotjs", color: "#84BB00", name: "nodejs" },
-  { id: "24", icon: "SiReact", color: "#50ABC4", name: "react" },
+  { id: "19", icon: "SiGithub", color: "#000000", name: "github" },
+  { id: "20", icon: "SiCss3", color: "#2091EB", name: "css3" },
+  { id: "21", icon: "SiJavascript", color: "#F9D423", name: "javascript" },
+  { id: "22", icon: "SiNodedotjs", color: "#84BB00", name: "nodejs" },
+  { id: "23", icon: "SiReact", color: "#50ABC4", name: "react" },
 ];

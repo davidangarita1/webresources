@@ -1,13 +1,13 @@
 import axios from 'axios'
 import { resourcesLoadSuccess, resourcesLoadError, resourcesLoading } from '../actions/resourcesActions'
-import { API_URL, API_LOCAL } from '../../utils/conecction'
+import { API_URL } from '../../utils/conecction'
 
 export const getAllResources = (): any => (dispatch: any) => {
   dispatch(resourcesLoading())
 
   const options = {
     method: 'GET',
-    url: `${API_URL}/resources/`,
+    url: `${API_URL}/resources/all`,
     headers: { 'Content-Type': 'application/json' }
   }
 
@@ -23,7 +23,7 @@ export const createResource = (data: any): any => async (dispatch: any) => {
 
   const options = {
     method: 'POST',
-    url: `${API_LOCAL}/resources/create`,
+    url: `${API_URL}/resources/create`,
     headers: { 'Content-Type': 'application/json' },
     data: data
   }

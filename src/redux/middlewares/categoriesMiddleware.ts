@@ -7,7 +7,7 @@ export const getAllCategories = (): any => (dispatch: any) => {
 
 	const options = {
 		method: 'GET',
-		url: `${API_URL}/categories/`,
+		url: `${API_URL}/categories/all`,
 		headers: { 'Content-Type': 'application/json' }
 	}
 
