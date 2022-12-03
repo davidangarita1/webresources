@@ -41,8 +41,12 @@ export const ResourceCard = ({
         </div>
       </Card.Body>
       <Card.Footer>
-        <Button className="btn-open" variant="primary">
-          <a href={url} target="_blank">
+        <Button
+          style={{ backgroundColor: headerColor }}
+          className="btn-open"
+          variant="primary"
+        >
+          <a href={url} style={{ color: nameColor }} target="_blank">
             Open
           </a>
         </Button>

@@ -2,7 +2,7 @@ import actionTypesResources from '../actions/actionTypes/actionTypesResources'
 
 const initialState = {
   isLoading: false,
-  resources: {},
+  resources: [],
   error: false
 }
 

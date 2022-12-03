@@ -1,6 +1,6 @@
 import "./Dashboard.scss";
-import { Fragment, useEffect } from "react";
-import { ResourceCard } from "@Components";
+import { Fragment, useEffect, useState } from "react";
+import { ResourceCard, FilterBar } from "@Components";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllResources } from "../../redux/middlewares/resourcesMiddleware";
 import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
@@ -12,15 +12,22 @@ const Dashboard = () => {
   );
   const { categories } = useSelector((state: any) => state.categories);
 
+  const [filteredResources, setFilteredResources] = useState([]);
+
   useEffect(() => {
     dispatch(getAllResources());
     dispatch(getAllCategories());
-  }, []);
+    handleFilter(resources);
+  }, [resources.length === 0]);
 
   const getFilteredCategories = (categoryData: any[]): any[] =>
     categoryData.map((category) =>
       categories.find((item: any) => category.toUpperCase() === item.key)
     );
+
+  const handleFilter = (resourceList: []) => {
+    setFilteredResources(resourceList);
+  };
 
   return (
     <Fragment>
@@ -29,14 +36,15 @@ const Dashboard = () => {
           <div className="col-12 text-center">
             <h1>Dashboard</h1>
           </div>
+          <FilterBar resourceList={resources} handleFilter={handleFilter} />
         </div>
         {isLoading && <p>Loading...</p>}
         {error && <p>Error...</p>}
-        {resources.length && (
+        {filteredResources.length > 0 && (
           <div className="row">
-            {categories.length &&
-              resources.map((item: any, index: number) => (
-                <div className="col mb-2" key={index}>
+            {categories.length > 0 &&
+              filteredResources.map((item: any, index: number) => (
+                <div className="col mb-4" key={index}>
                   <ResourceCard
                     name={item.name}
                     description={item.description}

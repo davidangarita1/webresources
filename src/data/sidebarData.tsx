@@ -1,10 +1,11 @@
 import * as Fa from "react-icons/fa";
 import * as Ai from "react-icons/ai";
+import * as Md from "react-icons/md";
 
 export const sidebarData = [
   {
     title: "Dashboard",
-    path: "/",
+    path: "/admin",
     icon: <Ai.AiFillHome />,
     cName: "nav-text",
   },
@@ -23,7 +24,7 @@ export const sidebarData = [
   {
     title: "Logout",
     path: "/admin/logout",
-    icon: <Fa.FaSuitcase />,
+    icon: <Md.MdLogout />,
     cName: "nav-text",
   },
 ];

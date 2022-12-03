@@ -1,12 +1,11 @@
+import "./ResourceForm.scss";
 import { Fragment, useState } from "react";
 import { useDispatch } from "react-redux";
-import "./ResourceForm.scss";
 
 import { IconOption } from "@Components";
 import { Input, Row, Button, Select, notification } from "antd";
 import { IconType } from "antd/lib/notification";
 import { createResource } from "../../redux/middlewares/resourcesMiddleware";
-import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -18,6 +17,8 @@ type ResourceType = {
   url: string;
   image: string;
   category: string[];
+  nameColor: string;
+  headerColor: string;
 };
 
 const INITIAL_VALUES = {
@@ -27,6 +28,8 @@ const INITIAL_VALUES = {
   url: "",
   image: "",
   category: [],
+  nameColor: "#ffffff",
+  headerColor: "#000000"
 };
 
 const MESSAGES = {
@@ -50,6 +53,7 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
     try {
       dispatch(createResource(values));
       openNotificationWithIcon("success", MESSAGES.success);
+      setValues(INITIAL_VALUES)
     } catch (error) {
       openNotificationWithIcon("error", MESSAGES.error);
     }
@@ -92,6 +96,26 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
               required
             />
             <br />
+            <label htmlFor="nameColor">Color Name</label>
+            <Input
+              id="nameColor"
+              name="nameColor"
+              type="color"
+              value={values.nameColor}
+              onChange={(e) => setValues({ ...values, nameColor: e.target.value })}
+              required
+            />
+            <br />
+            <label htmlFor="headerColor">Color Header</label>
+            <Input
+              id="headerColor"
+              name="headerColor"
+              type="color"
+              value={values.headerColor}
+              onChange={(e) => setValues({ ...values, headerColor: e.target.value })}
+              required
+            />
+            <br />
             <label htmlFor="category">Categories</label>
             <Select
               mode="multiple"
@@ -104,7 +128,7 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
               defaultValue={[]}
             >
               {categories
-                .sort((a: any, b: any) => a.name.localeCompare(b.value))
+                .sort((a: any, b: any) => a.name.localeCompare(b.name))
                 .map((category: any, index: number) => (
                   <Option key={index} value={category.name}>
                     <IconOption iconName={category.icon} />

@@ -1,4 +1,5 @@
 export * from './Building/Building';
+export * from './FilterBar/FilterBar'
 export * from './Footer/Footer';
 export * from './Navbar/Navbar';
 export * from './ResourceCard/ResourceCard';
