@@ -44,7 +44,7 @@ const Dashboard = () => {
           <div className="row">
             {categories.length > 0 &&
               filteredResources.map((item: any, index: number) => (
-                <div className="col mb-4" key={index}>
+                <div className="col col-xs-6 col-sm-4 col-md-3 mb-4" key={index}>
                   <ResourceCard
                     name={item.name}
                     description={item.description}

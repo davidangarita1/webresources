@@ -130,7 +130,7 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
               {categories
                 .sort((a: any, b: any) => a.name.localeCompare(b.name))
                 .map((category: any, index: number) => (
-                  <Option key={index} value={category.name}>
+                  <Option key={index} value={category.key}>
                     <IconOption iconName={category.icon} />
                     {category.name}
                   </Option>
