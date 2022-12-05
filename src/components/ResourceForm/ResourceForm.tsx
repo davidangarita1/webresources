@@ -21,7 +21,7 @@ type ResourceType = {
   headerColor: string;
 };
 
-const INITIAL_VALUES = {
+const INITIAL_VALUES: ResourceType = {
   userId: "xxxxx",
   name: "",
   description: "",
@@ -29,7 +29,7 @@ const INITIAL_VALUES = {
   image: "",
   category: [],
   nameColor: "#ffffff",
-  headerColor: "#000000"
+  headerColor: "#000000",
 };
 
 const MESSAGES = {
@@ -53,7 +53,7 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
     try {
       dispatch(createResource(values));
       openNotificationWithIcon("success", MESSAGES.success);
-      setValues(INITIAL_VALUES)
+      setValues(INITIAL_VALUES);
     } catch (error) {
       openNotificationWithIcon("error", MESSAGES.error);
     }
@@ -102,7 +102,9 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
               name="nameColor"
               type="color"
               value={values.nameColor}
-              onChange={(e) => setValues({ ...values, nameColor: e.target.value })}
+              onChange={(e) =>
+                setValues({ ...values, nameColor: e.target.value })
+              }
               required
             />
             <br />
@@ -112,7 +114,9 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
               name="headerColor"
               type="color"
               value={values.headerColor}
-              onChange={(e) => setValues({ ...values, headerColor: e.target.value })}
+              onChange={(e) =>
+                setValues({ ...values, headerColor: e.target.value })
+              }
               required
             />
             <br />
