@@ -1,5 +1,5 @@
-import { createElement } from "react";
 import "./IconOption.scss";
+import { createElement } from "react";
 
 import * as SiIcons from "react-icons/si";
 import * as MdIcons from "react-icons/md";
@@ -11,6 +11,7 @@ import { IconType } from "react-icons";
 
 type IconOptionProps = {
   iconName: string;
+  color?: string;
 };
 
 const iconLibraries: any = {
@@ -21,9 +22,12 @@ const iconLibraries: any = {
   Gi: GiIcons,
 };
 
-export const IconOption = ({ iconName }: IconOptionProps): JSX.Element => (
+export const IconOption = ({
+  iconName,
+  color,
+}: IconOptionProps): JSX.Element => (
   <>
-    <span id="iconOption">
+    <span id="iconOption" style={{ color: color }}>
       {createElement(
         iconLibraries[iconName.slice(0, 2)][iconName as keyof IconType]
       )}

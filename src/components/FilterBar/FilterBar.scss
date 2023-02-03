@@ -1,7 +1,18 @@
 #filterBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
-  #searchBar {
-    border-radius: 10px;
-	min-height: 40px;
+  .filters {
+    .ant-select-selector {
+      border-radius: 10px 0px 0px 10px;
+      min-height: 40px;
+      min-width: 150px;
+    }
+  }
+  .searchBar {
+    border-radius: 0px 10px 10px 0px;
+    min-height: 40px;
+    max-width: 100%;
   }
 }
