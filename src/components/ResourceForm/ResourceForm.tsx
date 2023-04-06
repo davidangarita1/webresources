@@ -2,7 +2,7 @@ import "./ResourceForm.scss";
 import { Fragment, useState } from "react";
 import { useDispatch } from "react-redux";
 
-import { IconOption } from "@Components";
+import { IconOption } from "@components";
 import { Input, Row, Button, Select, notification } from "antd";
 import { IconType } from "antd/lib/notification";
 import { createResource } from "../../redux/middlewares/resourcesMiddleware";
@@ -71,6 +71,8 @@ export const ResourceForm = ({ categories }: any): JSX.Element => {
               type="text"
               value={values.name}
               onChange={(e) => setValues({ ...values, name: e.target.value })}
+              minLength={1}
+              maxLength={30}
               required
             />
             <br />

@@ -1,6 +1,6 @@
 import "./PrivateLayout.scss";
 import { Outlet } from "react-router-dom";
-import { Navbar, Footer, Toggle } from "@Components";
+import { Navbar, Footer, Toggle } from "@components";
 import { useSelector } from "react-redux";
 import { sidebarData } from "../../data/sidebarData";
 import { Fragment } from "react";

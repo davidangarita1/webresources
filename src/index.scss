@@ -17,8 +17,14 @@
 
 body {
   margin: 0;
+  background: linear-gradient(to bottom right, #ffffff, #e9e7e2,#E5D8AF, #72d6c4);
+  backdrop-filter: blur(10px);
   h1 {
     font-size: 3rem;
     font-weight: bold;
+  }
+  .scroll {
+    height: 95vh;
+    overflow-y: auto;
   }
 }

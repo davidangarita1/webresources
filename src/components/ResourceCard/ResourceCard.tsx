@@ -1,16 +1,16 @@
 import "./resourceCard.scss";
 
-import { IconOption } from "@Components";
-import { Card, Button } from "react-bootstrap";
+import { IconOption } from "@components";
+import { Card } from "react-bootstrap";
 
-type ResourceCardProps = {
+interface ResourceCardProps {
   name: string;
   description: string;
   url: string;
   category: string[];
   nameColor: string;
   headerColor: string;
-};
+}
 
 export const ResourceCard = ({
   name,
@@ -20,8 +20,12 @@ export const ResourceCard = ({
   nameColor,
   headerColor,
 }: ResourceCardProps): JSX.Element => {
+  const openUrl = () => {
+    window.open(url);
+  };
+
   return (
-    <Card id="resourceCard">
+    <Card id="resourceCard" onClick={openUrl}>
       <Card.Header style={{ backgroundColor: headerColor, color: nameColor }}>
         {name}
       </Card.Header>
@@ -35,22 +39,10 @@ export const ResourceCard = ({
               style={{ backgroundColor: `${item.color}` }}
             >
               <IconOption iconName={`${item.icon}`} />
-              {item.name}
             </div>
           ))}
         </div>
       </Card.Body>
-      <Card.Footer>
-        <Button
-          style={{ backgroundColor: headerColor }}
-          className="btn-open"
-          variant="primary"
-        >
-          <a href={url} style={{ color: nameColor }} target="_blank">
-            Open
-          </a>
-        </Button>
-      </Card.Footer>
     </Card>
   );
 };

@@ -2,8 +2,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@Components": ["./src/components/index.ts"],
-      "@assets/*": ["./src/assets/*"]
+      "@components": ["./src/components/index.ts"],
+      "@assets/*": ["./src/assets/*"],
+      "@models/*": ["./src/models/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,

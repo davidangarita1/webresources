@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
 
-import { ResourceForm } from "@Components";
+import { ResourceForm } from "@components";
 
 const Resources = () => {
   const dispatch = useDispatch();

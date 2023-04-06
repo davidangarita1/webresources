@@ -6,8 +6,9 @@ import * as path from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      '@Components': path.resolve(__dirname, './src/components'),
+      '@components': path.resolve(__dirname, './src/components'),
       '@assets': path.resolve(__dirname, './src/assets'),
+      '@models': path.resolve(__dirname, './src/models'),
     }
   },
   plugins: [react()]

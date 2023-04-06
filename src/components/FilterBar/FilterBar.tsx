@@ -2,9 +2,9 @@ import "./FilterBar.scss";
 import { useState } from "react";
 
 import { Input, Select } from "antd";
-import { IconOption } from "@Components";
+import { IconOption } from "@components";
 
-import { Resource, Category } from "src/models";
+import { Resource, Category } from "@models";
 
 const { Option } = Select;
 

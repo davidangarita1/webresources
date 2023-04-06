@@ -1,9 +1,9 @@
 import "./Dashboard.scss";
 import { Fragment, useEffect, useState } from "react";
-import { ResourceCard, FilterBar } from "@Components";
+import { ResourceCard, FilterBar } from "@components";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Resource, Category } from "src/models";
+import { Resource, Category } from "@models";
 
 import { getAllResources } from "../../redux/middlewares/resourcesMiddleware";
 import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
@@ -52,7 +52,7 @@ const Dashboard = () => {
             {categories.length > 0 &&
               filteredResources.map((item: any, index: number) => (
                 <div
-                  className="col col-xs-6 col-sm-4 col-md-3 mb-4"
+                  className="col col-xs-6 col-sm-4 col-md-3 mb-2"
                   key={index}
                 >
                   <ResourceCard
