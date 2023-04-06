@@ -15,11 +15,11 @@ function App(): JSX.Element {
             <Route path="" element={<Dashboard />} />
             <Route path="*" element={<NotFound />} />
           </Route>
-          <Route path="/admin" element={<PrivateLayout />}>
+          {/* <Route path="/admin" element={<PrivateLayout />}>
             <Route path="" element={<Dashboard />} />
             <Route path="resources" element={<Resources />} />
             <Route path="*" element={<NotFound />} />
-          </Route>
+          </Route> */}
         </Routes>
       </BrowserRouter>
     </div>
