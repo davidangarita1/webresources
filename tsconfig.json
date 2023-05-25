@@ -4,7 +4,7 @@
     "paths": {
       "@components": ["./src/components/index.ts"],
       "@assets/*": ["./src/assets/*"],
-      "@models/*": ["./src/models/*"]
+      "@models": ["./src/models/index.ts"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
