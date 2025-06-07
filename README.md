@@ -1,3 +1,3 @@
 # WEBRESOURCES
 
-URL -> https://webresources.netlify.app
+Deploy URL -> https://webresources.netlify.app
