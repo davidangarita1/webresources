@@ -1,0 +1,30 @@
+name: Check Changelog
+
+on:
+  push:
+    tags:
+      - "*"
+    branches:
+      - "*"
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.ref_name }}
+      IS_TAG_PUSH: ${{ github.event_name == 'push' && github.ref_type == 'tag' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run changelog checking
+        id: changelog
+        uses: geopozo/changelogtxt-parser@david/composite-action
+        with:
+          tag-check: ${{ env.IS_TAG_PUSH == 'true' && env.TAG || '' }}
+      - name: Delete invalid tag
+        if: ${{ failure() && env.IS_TAG_PUSH == 'true' }}
+        run: |
+          echo "Deleting tag $TAG because checks failed…"
+          git push --delete origin $TAG

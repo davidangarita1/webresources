@@ -1,0 +1,13 @@
+name: Auto update
+
+on:
+  workflow_dispatch:
+
+jobs:
+  new-resource:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Test
+        run: Hello world
