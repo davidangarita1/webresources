@@ -1,19 +1,11 @@
 [
   {
-    "name": "AniJS",
-    "description": "A library for adding declarative animations using HTML attributes.",
-    "url": "https://anijs.github.io/",
-    "category": ["ANIMATIONS"],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Anim XYZ",
     "description": "A composable CSS animation toolkit for building custom effects.",
     "url": "https://animxyz.com/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -23,7 +15,9 @@
     "name": "Animate Style",
     "description": "A popular library of ready-to-use CSS animations.",
     "url": "https://animate.style/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -33,7 +27,9 @@
     "name": "Anime JS",
     "description": "A flexible JavaScript animation engine for complex effects.",
     "url": "https://animejs.com/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -43,7 +39,9 @@
     "name": "Animista",
     "description": "A collection of premade CSS animations with live previews.",
     "url": "https://animista.net/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -53,7 +51,9 @@
     "name": "CSS Triggers",
     "description": "A reference for CSS properties and their performance impact.",
     "url": "https://csstriggers.com/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -63,7 +63,9 @@
     "name": "CSShake",
     "description": "A CSS library for applying fun shake animations.",
     "url": "https://elrumordelaluz.github.io/csshake/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -73,7 +75,9 @@
     "name": "Cubic Bezier",
     "description": "An interactive tool to design CSS cubic-bezier curves.",
     "url": "https://cubic-bezier.com/#.17,.67,.83,.67",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -83,7 +87,9 @@
     "name": "Keyframes",
     "description": "A visual editor for creating CSS keyframe animations.",
     "url": "https://keyframes.app/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -93,7 +99,9 @@
     "name": "Lottie Files",
     "description": "A platform for sharing and using Lottie animations.",
     "url": "https://lottiefiles.com/animations",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -103,7 +111,9 @@
     "name": "Maxwellito",
     "description": "Vivus.js library for animating SVGs with line drawing effects.",
     "url": "https://maxwellito.github.io/vivus/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -113,7 +123,9 @@
     "name": "Michalsnik",
     "description": "AOS (Animate On Scroll) library for scroll animations.",
     "url": "https://michalsnik.github.io/aos/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -123,7 +135,9 @@
     "name": "MoJS",
     "description": "A motion graphics library for creative web animations.",
     "url": "https://mojs.github.io/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -133,7 +147,9 @@
     "name": "Popmotion",
     "description": "A functional JavaScript library for animations and physics.",
     "url": "https://popmotion.io/pure/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -143,7 +159,9 @@
     "name": "Scroll reveal JS",
     "description": "A library for animating elements on scroll.",
     "url": "https://scrollrevealjs.org/pricing/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -153,7 +171,9 @@
     "name": "Spirit App",
     "description": "A tool for creating and managing timeline animations.",
     "url": "https://spiritapp.io/getstarted/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -163,7 +183,9 @@
     "name": "Colorhunt",
     "description": "A free collection of curated color palettes for inspiration.",
     "url": "https://colorhunt.co/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -173,7 +195,9 @@
     "name": "Coolors",
     "description": "A fast color palette generator and tool for designers.",
     "url": "https://coolors.co/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -183,7 +207,9 @@
     "name": "CSS Gradient",
     "description": "An online tool for creating CSS gradient backgrounds.",
     "url": "https://cssgradient.io/gradient-backgrounds/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -193,7 +219,9 @@
     "name": "Mesh gradient",
     "description": "A simple generator for colorful mesh gradients.",
     "url": "https://meshgradient.in/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -203,7 +231,9 @@
     "name": "Paletton",
     "description": "A color scheme designer for building harmonious palettes.",
     "url": "https://paletton.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -213,7 +243,9 @@
     "name": "Patternify",
     "description": "A pixel pattern generator that outputs CSS code.",
     "url": "http://www.patternify.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -223,7 +255,9 @@
     "name": "Picular",
     "description": "A color search engine that finds colors from images.",
     "url": "https://picular.co/Video",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -233,7 +267,9 @@
     "name": "Shadows",
     "description": "A tool for generating layered, smooth CSS box-shadows.",
     "url": "https://shadows.brumm.af/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -243,7 +279,9 @@
     "name": "Stripes Generator",
     "description": "A tool for creating colorful CSS stripe patterns.",
     "url": "https://stripesgenerator.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -253,7 +291,9 @@
     "name": "Tabbied",
     "description": "A generator for unique, colorful background patterns.",
     "url": "https://tabbied.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -263,7 +303,9 @@
     "name": "Andy Brewer",
     "description": "MVP.css, a lightweight stylesheet for quick prototypes.",
     "url": "https://andybrewer.github.io/mvp/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -273,7 +315,9 @@
     "name": "CDNJS",
     "description": "A free and fast CDN hosting popular web libraries.",
     "url": "https://cdnjs.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -283,7 +327,9 @@
     "name": "CSS Flexbox Simulator",
     "description": "An interactive tool to practice and test flexbox layouts.",
     "url": "https://juliansci.github.io/css-flexbox-simulator/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -293,7 +339,9 @@
     "name": "CSS Grid Garden",
     "description": "A fun game to learn CSS grid layout concepts.",
     "url": "https://cssgridgarden.com/#es",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -303,7 +351,9 @@
     "name": "CSS Reference",
     "description": "A visual guide to CSS properties with examples.",
     "url": "https://cssreference.io/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -313,7 +363,9 @@
     "name": "CSS Tricks",
     "description": "A popular blog and resource site for CSS tips and guides.",
     "url": "https://css-tricks.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -323,7 +375,9 @@
     "name": "Dev hints",
     "description": "A collection of quick CSS cheatsheets for developers.",
     "url": "https://devhints.io/css",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -333,7 +387,9 @@
     "name": "Flexbox Defense",
     "description": "A tower-defense style game to learn CSS flexbox.",
     "url": "http://www.flexboxdefense.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -343,7 +399,9 @@
     "name": "Flexbox Froggy",
     "description": "An interactive game to practice CSS flexbox layout.",
     "url": "https://flexboxfroggy.com/#es",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -353,7 +411,9 @@
     "name": "Flukeout",
     "description": "A fun game to learn CSS selectors step by step.",
     "url": "https://flukeout.github.io/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -363,7 +423,9 @@
     "name": "Grid Malven",
     "description": "A simple visual reference for CSS grid layout.",
     "url": "https://grid.malven.co/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -373,7 +435,9 @@
     "name": "Material UI",
     "description": "A React component library implementing Google's Material Design.",
     "url": "https://mui.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -383,7 +447,9 @@
     "name": "Mint",
     "description": "A programming language for building single-page apps with a focus on simplicity and maintainability.",
     "url": "https://mint-lang.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -393,7 +459,9 @@
     "name": "Pure CSS",
     "description": "A minimal, responsive CSS framework built by Yahoo for small projects.",
     "url": "https://purecss.io/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -403,7 +471,9 @@
     "name": "Tailwind CSS",
     "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
     "url": "https://tailwindcss.com/docs/installation",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -413,7 +483,9 @@
     "name": "Flowbite",
     "description": "A component library built on Tailwind CSS with interactive UI elements.",
     "url": "https://flowbite.com/docs/components/chat-bubble/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -423,7 +495,9 @@
     "name": "HyperUI",
     "description": "A collection of free Tailwind CSS components for modern interfaces.",
     "url": "https://www.hyperui.dev/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
