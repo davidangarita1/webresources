@@ -1,11 +1,9 @@
 [
   {
     "name": "Airbnb",
-    "description": "",
+    "description": "Lottie is Airbnb’s open-source tool for adding lightweight, scalable animations to apps and websites.",
     "url": "https://airbnb.io/lottie/#/",
-    "category": [
-      "ANIMATIONS"
-    ],
+    "category": ["ANIMATIONS"],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -15,11 +13,7 @@
     "name": "Codechef",
     "description": "Improve problem-solving skills in your college",
     "url": "https://www.codechef.com/",
-    "category": [
-      "PROGRAMMING",
-      "CHALLENGES",
-      "RESOURCES"
-    ],
+    "category": ["PROGRAMMING", "CHALLENGES", "RESOURCES"],
     "date": "2022-12-03T03:18:16.456Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -29,11 +23,7 @@
     "name": "Codewars",
     "description": "Improve your development skills by training with your peers on code kata that continuously challenge and push your coding practice.",
     "url": "https://www.codewars.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES"
-    ],
+    "category": ["CHALLENGES", "PROGRAMMING", "RESOURCES"],
     "date": "2022-12-03T03:23:06.693Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -43,12 +33,7 @@
     "name": "Hacker earth",
     "description": "Matching great developers with world-class companies.",
     "url": "https://www.hackerearth.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES",
-      "JOBS"
-    ],
+    "category": ["CHALLENGES", "PROGRAMMING", "RESOURCES", "JOBS"],
     "date": "2022-12-03T03:25:52.185Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -58,10 +43,7 @@
     "name": "Code forces",
     "description": "Codeforces is a project joining people interested in and taking part in programming contests. On one hand, Codeforces is a social network dedicated to programming and programming contests.",
     "url": "https://codeforces.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING"
-    ],
+    "category": ["CHALLENGES", "PROGRAMMING"],
     "date": "2022-12-03T03:28:44.719Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -71,11 +53,7 @@
     "name": "Leetcode",
     "description": "LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.",
     "url": "https://leetcode.com/",
-    "category": [
-      "RESOURCES",
-      "PROGRAMMING",
-      "CHALLENGES"
-    ],
+    "category": ["RESOURCES", "PROGRAMMING", "CHALLENGES"],
     "date": "2022-12-03T03:30:54.931Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -85,12 +63,7 @@
     "name": "Topcoder",
     "description": "We treat our Topcoder talent the way you’d want us to, with respect, transparency, and trust. Ya know, like humans should.",
     "url": "https://www.topcoder.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES",
-      "JOBS"
-    ],
+    "category": ["CHALLENGES", "PROGRAMMING", "RESOURCES", "JOBS"],
     "date": "2022-12-03T03:33:20.265Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -100,11 +73,7 @@
     "name": "Codin game",
     "description": "The new way to improve your programming skills while having fun and getting noticed.",
     "url": "https://www.codingame.com/start",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "ACADEMY"
-    ],
+    "category": ["CHALLENGES", "PROGRAMMING", "ACADEMY"],
     "date": "2022-12-03T03:35:32.495Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -114,11 +83,7 @@
     "name": "Hacker rank",
     "description": "We help companies develop the strongest tech teams around. We help candidates sharpen their tech skills and pursue job opportunities.",
     "url": "https://www.hackerrank.com/",
-    "category": [
-      "ACADEMY",
-      "CHALLENGES",
-      "PROGRAMMING"
-    ],
+    "category": ["ACADEMY", "CHALLENGES", "PROGRAMMING"],
     "date": "2022-12-03T03:38:18.252Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -128,12 +93,7 @@
     "name": "Exercism",
     "description": "Develop fluency in 61 programming languages with our unique blend of learning, practice and mentoring. Exercism is fun, effective and 100% free, forever.",
     "url": "https://exercism.org/",
-    "category": [
-      "ACADEMY",
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES"
-    ],
+    "category": ["ACADEMY", "CHALLENGES", "PROGRAMMING", "RESOURCES"],
     "date": "2022-12-03T03:40:10.184Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -143,11 +103,7 @@
     "name": "Code-projects",
     "description": "We are fast becoming best open source code & projects organization - Code Projects is developed to provide interested people with resources to build their knowledge, and exchange ideas.",
     "url": "https://code-projects.org/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES"
-    ],
+    "category": ["CHALLENGES", "PROGRAMMING", "RESOURCES"],
     "date": "2022-12-03T03:43:22.494Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -173,11 +129,7 @@
     "name": "Dev challenges",
     "description": "Web Development Resources and Community that help you to become a Web Developer by working with Real-life projects and practices.",
     "url": "https://devchallenges.io/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "ACADEMY"
-    ],
+    "category": ["CHALLENGES", "PROGRAMMING", "ACADEMY"],
     "date": "2022-12-03T03:49:00.509Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -187,12 +139,7 @@
     "name": "Adventjs",
     "description": "Although it has its roots in the Catholic religion, Advent has become a tradition where children got chocolate for 4 weeks, one per day, from December 1 to 24. Here we adapt it to programming challenges.",
     "url": "https://adventjs.dev/es",
-    "category": [
-      "ACADEMY",
-      "CHALLENGES",
-      "JAVASCRIPT",
-      "PROGRAMMING"
-    ],
+    "category": ["ACADEMY", "CHALLENGES", "JAVASCRIPT", "PROGRAMMING"],
     "date": "2022-12-03T03:51:11.231Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -202,11 +149,7 @@
     "name": "Dzone",
     "description": "The fastest and easiest way to deploy your react apps online with fire-base hosting by google, explained step by step in detail with screenshots and snippets.",
     "url": "https://dzone.com/articles/react-apps-firebase",
-    "category": [
-      "REACT",
-      "FIREBASE",
-      "PROGRAMMING"
-    ],
+    "category": ["REACT", "FIREBASE", "PROGRAMMING"],
     "date": "2022-12-03T03:57:32.692Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -216,10 +159,7 @@
     "name": "Firebase web",
     "description": "Firebase tutorial to create a project.",
     "url": "https://firebase.google.com/docs/web/setup?hl=es",
-    "category": [
-      "FIREBASE",
-      "PROGRAMMING"
-    ],
+    "category": ["FIREBASE", "PROGRAMMING"],
     "date": "2022-12-03T03:59:45.668Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -229,11 +169,7 @@
     "name": "Deploying spring boot",
     "description": "The Spring Boot model of deploying standalone applications is a great fit for Heroku. You can use either Maven or Gradle to deploy a Spring application on Heroku, but for this guide we’ll assume that you’re using Maven and have Maven 3 installed on your machine.",
     "url": "https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku",
-    "category": [
-      "PROGRAMMING",
-      "HEROKU",
-      "DEPLOYMENT"
-    ],
+    "category": ["PROGRAMMING", "HEROKU", "DEPLOYMENT"],
     "date": "2022-12-03T04:01:45.396Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -243,11 +179,7 @@
     "name": "Azure cli documentation",
     "description": "The Azure Command Line Interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available in Azure services and is designed to help you quickly work with Azure, with a focus on automation.",
     "url": "https://learn.microsoft.com/es-es/cli/azure/",
-    "category": [
-      "AZURE",
-      "DEPLOYMENT",
-      "PROGRAMMING"
-    ],
+    "category": ["AZURE", "DEPLOYMENT", "PROGRAMMING"],
     "date": "2022-12-03T04:03:37.481Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -257,12 +189,7 @@
     "name": "Cloud skills challenge",
     "description": "Computing of Azure",
     "url": "https://learn.microsoft.com/es-mx/training/challenges?id=495571f3-ba53-426a-b5cc-2885cf229e8b",
-    "category": [
-      "ACADEMY",
-      "AZURE",
-      "DEPLOYMENT",
-      "PROGRAMMING"
-    ],
+    "category": ["ACADEMY", "AZURE", "DEPLOYMENT", "PROGRAMMING"],
     "date": "2022-12-03T04:05:07.387Z",
     "image": "",
     "nameColor": "#FFFFFF",
