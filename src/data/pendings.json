@@ -1,19 +1,11 @@
 [
   {
-    "name": "Airbnb",
-    "description": "",
-    "url": "https://airbnb.io/lottie/#/",
-    "category": ["ANIMATIONS"],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "AniJS",
     "description": "",
     "url": "https://anijs.github.io/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -23,7 +15,9 @@
     "name": "Anim XYZ",
     "description": "",
     "url": "https://animxyz.com/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -33,7 +27,9 @@
     "name": "Animate Style",
     "description": "",
     "url": "https://animate.style/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -43,7 +39,9 @@
     "name": "Anime JS",
     "description": "",
     "url": "https://animejs.com/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -53,7 +51,9 @@
     "name": "Animista",
     "description": "",
     "url": "https://animista.net/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -63,7 +63,9 @@
     "name": "CSS Triggers",
     "description": "",
     "url": "https://csstriggers.com/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -73,7 +75,9 @@
     "name": "CSShake",
     "description": "",
     "url": "https://elrumordelaluz.github.io/csshake/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -83,7 +87,9 @@
     "name": "Cubic Bezier",
     "description": "",
     "url": "https://cubic-bezier.com/#.17,.67,.83,.67",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -93,7 +99,9 @@
     "name": "Keyframes",
     "description": "",
     "url": "https://keyframes.app/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -103,7 +111,9 @@
     "name": "Lottie Files",
     "description": "",
     "url": "https://lottiefiles.com/animations",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -113,7 +123,9 @@
     "name": "Maxwellito",
     "description": "",
     "url": "https://maxwellito.github.io/vivus/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -123,7 +135,9 @@
     "name": "Michalsnik",
     "description": "",
     "url": "https://michalsnik.github.io/aos/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -133,7 +147,9 @@
     "name": "MoJS",
     "description": "",
     "url": "https://mojs.github.io/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -143,7 +159,9 @@
     "name": "Popmotion",
     "description": "",
     "url": "https://popmotion.io/pure/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -153,7 +171,9 @@
     "name": "Scroll reveal JS",
     "description": "",
     "url": "https://scrollrevealjs.org/pricing/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -163,7 +183,9 @@
     "name": "Spirit App",
     "description": "",
     "url": "https://spiritapp.io/getstarted/",
-    "category": ["ANIMATIONS"],
+    "category": [
+      "ANIMATIONS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -173,7 +195,9 @@
     "name": "Colorhunt",
     "description": "",
     "url": "https://colorhunt.co/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -183,7 +207,9 @@
     "name": "Coolors",
     "description": "",
     "url": "https://coolors.co/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -193,7 +219,9 @@
     "name": "CSS Gradient",
     "description": "",
     "url": "https://cssgradient.io/gradient-backgrounds/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -203,7 +231,9 @@
     "name": "Mesh gradient",
     "description": "",
     "url": "https://meshgradient.in/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -213,7 +243,9 @@
     "name": "Paletton",
     "description": "",
     "url": "https://paletton.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -223,7 +255,9 @@
     "name": "Patternify",
     "description": "",
     "url": "http://www.patternify.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -233,7 +267,9 @@
     "name": "Picular",
     "description": "",
     "url": "https://picular.co/Video",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -243,7 +279,9 @@
     "name": "Shadows",
     "description": "",
     "url": "https://shadows.brumm.af/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -253,7 +291,9 @@
     "name": "Stripes Generator",
     "description": "",
     "url": "https://stripesgenerator.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -263,7 +303,9 @@
     "name": "Tabbied",
     "description": "",
     "url": "https://tabbied.com/",
-    "category": ["COLORS"],
+    "category": [
+      "COLORS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -273,7 +315,9 @@
     "name": "Andy Brewer",
     "description": "",
     "url": "https://andybrewer.github.io/mvp/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -283,7 +327,9 @@
     "name": "CDNJS",
     "description": "",
     "url": "https://cdnjs.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -293,7 +339,9 @@
     "name": "CSS Flexbox Simulator",
     "description": "",
     "url": "https://juliansci.github.io/css-flexbox-simulator/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -303,7 +351,9 @@
     "name": "CSS Grid Garden",
     "description": "",
     "url": "https://cssgridgarden.com/#es",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -313,7 +363,9 @@
     "name": "CSS Reference",
     "description": "",
     "url": "https://cssreference.io/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -323,7 +375,9 @@
     "name": "CSS Tricks",
     "description": "",
     "url": "https://css-tricks.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -333,7 +387,9 @@
     "name": "Dev hints",
     "description": "",
     "url": "https://devhints.io/css",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -343,7 +399,9 @@
     "name": "Flexbox Defense",
     "description": "",
     "url": "http://www.flexboxdefense.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -353,7 +411,9 @@
     "name": "Flexbox Froggy",
     "description": "",
     "url": "https://flexboxfroggy.com/#es",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -363,7 +423,9 @@
     "name": "Flukeout",
     "description": "",
     "url": "https://flukeout.github.io/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -373,7 +435,9 @@
     "name": "Grid Malven",
     "description": "",
     "url": "https://grid.malven.co/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -383,7 +447,9 @@
     "name": "Material UI",
     "description": "",
     "url": "https://mui.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -393,7 +459,9 @@
     "name": "Mint",
     "description": "",
     "url": "https://mint-lang.com/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -403,7 +471,9 @@
     "name": "Pure CSS",
     "description": "",
     "url": "https://purecss.io/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -413,7 +483,9 @@
     "name": "Tailwind CSS",
     "description": "",
     "url": "https://tailwindcss.com/docs/installation",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -423,7 +495,9 @@
     "name": "Flowbite",
     "description": "",
     "url": "https://flowbite.com/docs/components/chat-bubble/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
@@ -433,7 +507,9 @@
     "name": "HyperUI",
     "description": "",
     "url": "https://www.hyperui.dev/",
-    "category": ["CSS"],
+    "category": [
+      "CSS"
+    ],
     "date": "2025-09-15T17:32:27.923452Z",
     "image": "",
     "nameColor": "#FFFFFF",
