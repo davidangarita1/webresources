@@ -2,12 +2,47 @@ name: Auto update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
-  new-resource:
+  add-resource:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Test
-        run: Hello world
+      - uses: actions/checkout@v4
+      - name: Update resources.json
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+
+          const pendingsPath = 'src/data/pendings.json';
+          const resourcesPath = 'src/data/resources.json';
+
+          const pendings = JSON.parse(fs.readFileSync(pendingsPath, 'utf8'));
+          const resources = JSON.parse(fs.readFileSync(resourcesPath, 'utf8'));
+
+          if (pendings.length === 0) {
+            console.error("faltan recursos en el archivo");
+            process.exit(1);
+          }
+
+          const item = pendings.shift();
+          resources.unshift(item);
+
+          fs.writeFileSync(pendingsPath, JSON.stringify(pendings, null, 2));
+          fs.writeFileSync(resourcesPath, JSON.stringify(resources, null, 2));
+
+          console.log(item.name); // se usará para el commit
+          EOF
+
+      - name: Get last resource name
+        id: getname
+        run: echo "NAME=$(jq -r '.[0].name' src/data/resources.json)" >> $GITHUB_ENV
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/pendings.json src/data/resources.json
+          git commit -m "Add new resource ${NAME}" || echo "No changes to commit"
+          git push origin main
