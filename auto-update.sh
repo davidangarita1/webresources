@@ -25,6 +25,7 @@ EOF
 
 NAME=$(jq -r '.[0].name' src/data/resources.json)
 
+git pull
 git add src/data/pendings.json src/data/resources.json
 git commit -m "Add new resource ${NAME}" || echo "No changes to commit"
 git push origin main
