@@ -1,5 +1,17 @@
 [
   {
+    "name": "Anime JS",
+    "description": "A flexible JavaScript animation engine for complex effects.",
+    "url": "https://animejs.com/",
+    "category": [
+      "ANIMATIONS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "Animate Style",
     "description": "A popular library of ready-to-use CSS animations.",
     "url": "https://animate.style/",
