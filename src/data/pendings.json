@@ -1,17 +1,5 @@
 [
   {
-    "name": "CSShake",
-    "description": "A CSS library for applying fun shake animations.",
-    "url": "https://elrumordelaluz.github.io/csshake/",
-    "category": [
-      "ANIMATIONS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Cubic Bezier",
     "description": "An interactive tool to design CSS cubic-bezier curves.",
     "url": "https://cubic-bezier.com/#.17,.67,.83,.67",

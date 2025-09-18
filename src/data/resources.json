@@ -1,5 +1,17 @@
 [
   {
+    "name": "CSShake",
+    "description": "A CSS library for applying fun shake animations.",
+    "url": "https://elrumordelaluz.github.io/csshake/",
+    "category": [
+      "ANIMATIONS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "CSS Triggers",
     "description": "A reference for CSS properties and their performance impact.",
     "url": "https://csstriggers.com/",
