@@ -1,11 +1,14 @@
+@use "sass:color";
+@use "../../themes" as *;
+
 .toggle {
   width: 50px;
   height: 25px;
   border-radius: 20px;
-  border: 1px solid #999;
-  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: $background;
   position: fixed;
-  top: 25px;
+  top: 20px;
   right: 10px;
   z-index: 999;
   display: flex;
@@ -25,4 +28,14 @@
   background-color: #999;
   position: absolute;
   cursor: pointer;
+}
+
+/* Dark mode */
+.dark-mode .toggle {
+  background-color: $background-dark;
+  border-color: rgba(255,255,255,0.2);
+}
+
+.dark-mode .toggle-button {
+  background-color: color.adjust($background-dark, $lightness: 25%);
 }

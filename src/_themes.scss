@@ -1,16 +1,12 @@
-$header-navbar: #74d2b2;
+$header-color: #2196F3;
+$header-text: #FFFFFF;
 $button: #f6c9d0;
-$important: #f5e5c0;
 $text: #221c1c;
-$background: #ffffff;
+$background: #FAFAFA;
 
-$header-navbar-dark: #35A38E;
 $button-dark: #D28790;
-$important-dark: #E5D8AF;
 $text-dark: #ffffff;
-$background-dark: #000000;
+$background-dark: #1a1a1a;
 
-$prueba1:#CCFFBD;
-$prueba2: #7ECA9C;
-$prueba3: #40394A;
-$prueba4: #1C1427;
+$header-navbar: $header-color;
+$header-navbar-dark: $header-color;

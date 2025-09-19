@@ -4,7 +4,6 @@ import { ResourceCard, FilterBar } from "@components";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Resource, Category } from "@models";
-
 import { getAllResources } from "../../redux/middlewares/resourcesMiddleware";
 import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
 
@@ -23,11 +22,6 @@ const Dashboard = () => {
     handleFilter(resources);
   }, [resources.length === 0]);
 
-  const getFilteredCategories = (categoryData: string[]): any[] =>
-    categoryData.map((category: string) =>
-      categories.find((item: Category) => category.toUpperCase() === item.key)
-    );
-
   const handleFilter = (resourceList: Resource[]) => {
     setFilteredResources(resourceList);
   };
@@ -40,8 +34,8 @@ const Dashboard = () => {
             <h1>Dashboard</h1>
           </div>
           <FilterBar
-            categoriyList={categories}
-            resourceList={resources}
+            categoriyList={categories as Category[]}
+            resourceList={resources as Resource[]}
             handleFilter={handleFilter}
           />
         </div>
@@ -49,22 +43,18 @@ const Dashboard = () => {
         {error && <p>Error...</p>}
         {filteredResources.length > 0 && (
           <div className="row">
-            {categories.length > 0 &&
-              filteredResources.map((item: any, index: number) => (
-                <div
-                  className="col col-xs-6 col-sm-4 col-md-3 mb-2"
-                  key={index}
-                >
-                  <ResourceCard
-                    name={item.name}
-                    description={item.description}
-                    url={item.url}
-                    category={getFilteredCategories(item.category)}
-                    nameColor={item.nameColor}
-                    headerColor={item.headerColor}
-                  />
-                </div>
-              ))}
+            {filteredResources.map((item: any, index: number) => (
+              <div
+                className="col col-xs-6 col-sm-4 col-md-3 col-lg-2 mb-3"
+                key={index}
+              >
+                <ResourceCard
+                  name={item.name}
+                  description={item.description}
+                  url={item.url}
+                />
+              </div>
+            ))}
           </div>
         )}
       </div>

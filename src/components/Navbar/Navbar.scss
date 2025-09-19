@@ -1,4 +1,5 @@
-@import "../../themes";
+@use "sass:color";
+@use "../../themes" as *;
 
 .navbar {
   background-color: $header-navbar;
@@ -74,4 +75,20 @@
 
 span {
   margin-left: 16px;
+}
+
+.dark-mode {
+  .navbar,
+  .nav-menu,
+  .navbar-toggle {
+    background-color: $header-navbar-dark;
+  }
+
+  .nav-text a {
+    color: $text-dark;
+    :hover {
+      background-color: color.adjust($header-navbar-dark, $lightness: -6%);
+      color: $text-dark;
+    }
+  }
 }
