@@ -2,7 +2,7 @@ import "./notFound.scss";
 
 import { Fragment } from "react";
 
-const NotFound = (): JSX.Element => (
+const NotFound = () => (
   <Fragment>
     <div id="notFound">
       <div className="container">
