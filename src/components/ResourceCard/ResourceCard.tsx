@@ -7,20 +7,14 @@ interface ResourceCardProps {
   url: string;
 }
 
-export const ResourceCard = ({
-  name,
-  description,
-  url,
-}: ResourceCardProps): JSX.Element => {
+export const ResourceCard = ({ name, description, url }: ResourceCardProps) => {
   const openUrl = () => {
     window.open(url);
   };
 
   return (
     <Card id="resourceCard" onClick={openUrl}>
-      <Card.Header className="resource-header">
-        {name}
-      </Card.Header>
+      <Card.Header className="resource-header">{name}</Card.Header>
       <Card.Body>
         <Card.Text>{description}</Card.Text>
       </Card.Body>

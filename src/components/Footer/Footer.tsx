@@ -1,12 +1,12 @@
 import "./Footer.scss";
 
 import { Fragment } from "react";
-import { useSelector } from "react-redux";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 const DEFAULT_URL = "https://www.dangwebs.com";
 
-export const Footer = (): JSX.Element => {
-  const { isActive } = useSelector((state: any) => state.darkMode);
+export const Footer = () => {
+  const { isActive } = useDarkMode();
 
   return (
     <Fragment>

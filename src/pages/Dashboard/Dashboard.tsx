@@ -1,26 +1,16 @@
+import { FilterBar, ResourceCard } from "@components";
+import { Fragment, useState } from "react";
 import "./Dashboard.scss";
-import { Fragment, useEffect, useState } from "react";
-import { ResourceCard, FilterBar } from "@components";
-import { useDispatch, useSelector } from "react-redux";
 
-import { Resource, Category } from "@models";
-import { getAllResources } from "../../redux/middlewares/resourcesMiddleware";
-import { getAllCategories } from "../../redux/middlewares/categoriesMiddleware";
+import { Resource } from "@models";
+import resources from "../../data/resources.json";
 
 const Dashboard = () => {
-  const dispatch = useDispatch();
-  const { isLoading, resources, error } = useSelector(
-    (state: any) => state.resources
-  );
-  const { categories } = useSelector((state: any) => state.categories);
-
-  const [filteredResources, setFilteredResources] = useState<Resource[]>([]);
-
-  useEffect(() => {
-    dispatch(getAllResources());
-    dispatch(getAllCategories());
-    handleFilter(resources);
-  }, [resources.length === 0]);
+  const new_resources: Resource[] = resources.map((r) => ({
+    ...r,
+    date: new Date(r.date),
+  }));
+  const [filteredResources, setFilteredResources] = useState<Resource[]>(new_resources);
 
   const handleFilter = (resourceList: Resource[]) => {
     setFilteredResources(resourceList);
@@ -34,13 +24,10 @@ const Dashboard = () => {
             <h1>Dashboard</h1>
           </div>
           <FilterBar
-            categoriyList={categories as Category[]}
-            resourceList={resources as Resource[]}
+            resourceList={new_resources as Resource[]}
             handleFilter={handleFilter}
           />
         </div>
-        {isLoading && <p>Loading...</p>}
-        {error && <p>Error...</p>}
         {filteredResources.length > 0 && (
           <div className="row">
             {filteredResources.map((item: any, index: number) => (

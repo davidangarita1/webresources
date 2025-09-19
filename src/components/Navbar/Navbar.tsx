@@ -5,7 +5,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { IconContext } from "react-icons";
 
-export const Navbar = ({ data }: any): JSX.Element => {
+export const Navbar = ({ data }: any) => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = (): void => {

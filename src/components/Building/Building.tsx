@@ -2,7 +2,7 @@ import "./Building.scss";
 import { Fragment } from "react";
 import * as Md from "react-icons/md";
 
-export const BuildingPage = ({ title }: { title: string }): JSX.Element => (
+export const BuildingPage = ({ title }: { title: string }) => (
   <Fragment>
     <div id="building">
       <div className="container">

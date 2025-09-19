@@ -1,12 +1,12 @@
 import "./PublicLayout.scss";
 
-import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 
 import { Footer, Toggle } from "@components";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 const PublicLayout = () => {
-  const { isActive } = useSelector((state: any) => state.darkMode);
+  const { isActive } = useDarkMode();
 
   return (
     <>

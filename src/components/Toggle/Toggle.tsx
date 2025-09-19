@@ -3,15 +3,13 @@ import Sun from "@assets/sun.png";
 import Moon from "@assets/moon.png";
 
 import { Fragment } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { handleToggle } from "../../redux/middlewares/darkModeMiddleware";
+import { useDarkMode } from "../../context/DarkModeContext";
 
-export const Toggle = (): JSX.Element => {
-  const dispatch = useDispatch();
-  const { isActive } = useSelector((state: any) => state.darkMode);
+export const Toggle = () => {
+  const { isActive, toggle } = useDarkMode();
 
   const handleClick = (): void => {
-    dispatch(handleToggle());
+    toggle();
   };
 
   return (
