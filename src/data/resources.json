@@ -1,5 +1,17 @@
 [
   {
+    "name": "Lottie Files",
+    "description": "A platform for sharing and using Lottie animations.",
+    "url": "https://lottiefiles.com/animations",
+    "category": [
+      "ANIMATIONS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "Keyframes",
     "description": "A visual editor for creating CSS keyframe animations.",
     "url": "https://keyframes.app/",
