@@ -24,18 +24,6 @@
     "headerColor": "#542F18"
   },
   {
-    "name": "Keyframes",
-    "description": "A visual editor for creating CSS keyframe animations.",
-    "url": "https://keyframes.app/",
-    "category": [
-      "ANIMATIONS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Cubic Bezier",
     "description": "An interactive tool to design CSS cubic-bezier curves.",
     "url": "https://cubic-bezier.com/#.17,.67,.83,.67",
