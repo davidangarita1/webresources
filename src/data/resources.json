@@ -1,5 +1,17 @@
 [
   {
+    "name": "Maxwellito",
+    "description": "Vivus.js library for animating SVGs with line drawing effects.",
+    "url": "https://maxwellito.github.io/vivus/",
+    "category": [
+      "ANIMATIONS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "Lottie Files",
     "description": "A platform for sharing and using Lottie animations.",
     "url": "https://lottiefiles.com/animations",
