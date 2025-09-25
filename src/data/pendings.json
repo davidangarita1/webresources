@@ -1,17 +1,5 @@
 [
   {
-    "name": "Spirit App",
-    "description": "A tool for creating and managing timeline animations.",
-    "url": "https://spiritapp.io/getstarted/",
-    "category": [
-      "ANIMATIONS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Colorhunt",
     "description": "A free collection of curated color palettes for inspiration.",
     "url": "https://colorhunt.co/",
