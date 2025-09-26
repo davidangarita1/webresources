@@ -1,17 +1,5 @@
 [
   {
-    "name": "Coolors",
-    "description": "A fast color palette generator and tool for designers.",
-    "url": "https://coolors.co/",
-    "category": [
-      "COLORS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "CSS Gradient",
     "description": "An online tool for creating CSS gradient backgrounds.",
     "url": "https://cssgradient.io/gradient-backgrounds/",
