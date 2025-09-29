@@ -1,5 +1,17 @@
 [
   {
+    "name": "Paletton",
+    "description": "A color scheme designer for building harmonious palettes.",
+    "url": "https://paletton.com/",
+    "category": [
+      "COLORS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "Mesh gradient",
     "description": "A simple generator for colorful mesh gradients.",
     "url": "https://meshgradient.in/",
