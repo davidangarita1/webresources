@@ -1,5 +1,17 @@
 [
   {
+    "name": "Picular",
+    "description": "A color search engine that finds colors from images.",
+    "url": "https://picular.co/Video",
+    "category": [
+      "COLORS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "Patternify",
     "description": "A pixel pattern generator that outputs CSS code.",
     "url": "http://www.patternify.com/",
