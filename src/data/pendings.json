@@ -1,17 +1,5 @@
 [
   {
-    "name": "CSS Tricks",
-    "description": "A popular blog and resource site for CSS tips and guides.",
-    "url": "https://css-tricks.com/",
-    "category": [
-      "CSS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Dev hints",
     "description": "A collection of quick CSS cheatsheets for developers.",
     "url": "https://devhints.io/css",
