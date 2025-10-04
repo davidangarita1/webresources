@@ -1,5 +1,17 @@
 [
   {
+    "name": "Flexbox Froggy",
+    "description": "An interactive game to practice CSS flexbox layout.",
+    "url": "https://flexboxfroggy.com/#es",
+    "category": [
+      "CSS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "Flexbox Defense",
     "description": "A tower-defense style game to learn CSS flexbox.",
     "url": "http://www.flexboxdefense.com/",

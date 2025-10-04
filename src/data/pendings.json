@@ -1,17 +1,5 @@
 [
   {
-    "name": "Flexbox Froggy",
-    "description": "An interactive game to practice CSS flexbox layout.",
-    "url": "https://flexboxfroggy.com/#es",
-    "category": [
-      "CSS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Flukeout",
     "description": "A fun game to learn CSS selectors step by step.",
     "url": "https://flukeout.github.io/",
