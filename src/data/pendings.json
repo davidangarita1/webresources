@@ -1,17 +1,5 @@
 [
   {
-    "name": "Dev hints",
-    "description": "A collection of quick CSS cheatsheets for developers.",
-    "url": "https://devhints.io/css",
-    "category": [
-      "CSS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Flexbox Defense",
     "description": "A tower-defense style game to learn CSS flexbox.",
     "url": "http://www.flexboxdefense.com/",
