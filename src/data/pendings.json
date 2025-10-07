@@ -1,41 +1,5 @@
 [
   {
-    "name": "Material UI",
-    "description": "A React component library implementing Google's Material Design.",
-    "url": "https://mui.com/",
-    "category": [
-      "CSS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
-    "name": "Mint",
-    "description": "A programming language for building single-page apps with a focus on simplicity and maintainability.",
-    "url": "https://mint-lang.com/",
-    "category": [
-      "CSS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
-    "name": "Pure CSS",
-    "description": "A minimal, responsive CSS framework built by Yahoo for small projects.",
-    "url": "https://purecss.io/",
-    "category": [
-      "CSS"
-    ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#542F18"
-  },
-  {
     "name": "Tailwind CSS",
     "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
     "url": "https://tailwindcss.com/docs/installation",
