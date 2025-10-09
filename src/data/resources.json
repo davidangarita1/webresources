@@ -1,5 +1,17 @@
 [
   {
+    "name": "HyperUI",
+    "description": "A collection of free Tailwind CSS components for modern interfaces.",
+    "url": "https://www.hyperui.dev/",
+    "category": [
+      "CSS"
+    ],
+    "date": "2025-09-15T17:32:27.923452Z",
+    "image": "",
+    "nameColor": "#FFFFFF",
+    "headerColor": "#542F18"
+  },
+  {
     "name": "Flowbite",
     "description": "A component library built on Tailwind CSS with interactive UI elements.",
     "url": "https://flowbite.com/docs/components/chat-bubble/",
