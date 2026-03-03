@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
       - name: Run changelog checking
         id: changelog
-        uses: geopozo/changelogtxt-parser@david/composite-action
+        uses: geopozo/changelogtxt-parser@main
         with:
           tag-check: ${{ env.IS_TAG_PUSH == 'true' && env.TAG || '' }}
       - name: Delete invalid tag
