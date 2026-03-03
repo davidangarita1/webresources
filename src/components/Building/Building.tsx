@@ -1,17 +1,16 @@
-import "./Building.scss";
-import { Fragment } from "react";
-import * as Md from "react-icons/md";
+import './Building.scss';
+import { MdOutlineBuild } from 'react-icons/md';
 
-export const BuildingPage = ({ title }: { title: string }) => (
-  <Fragment>
-    <div id="building">
-      <div className="container">
-        <h1>{title}</h1>
-        <p>
-          This is a building page. It is a place where you can see the building.
-        </p>
-        <Md.MdOutlineBuild />
-      </div>
+interface BuildingPageProps {
+  title: string;
+}
+
+export const BuildingPage = ({ title }: BuildingPageProps) => (
+  <div id="building">
+    <div className="building-container">
+      <MdOutlineBuild className="building-icon" />
+      <h1>{title}</h1>
+      <p>This section is currently under construction. Check back soon!</p>
     </div>
-  </Fragment>
+  </div>
 );

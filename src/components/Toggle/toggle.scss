@@ -1,41 +1,56 @@
-@use "sass:color";
-@use "../../themes" as *;
+@use '../../themes' as *;
 
 .toggle {
-  width: 50px;
-  height: 25px;
-  border-radius: 20px;
-  border: 1px solid rgba(0,0,0,0.2);
-  background-color: $background;
   position: fixed;
-  top: 15px;
-  right: 25px;
+  top: 1rem;
+  right: 1.25rem;
   z-index: 999;
+  width: 52px;
+  height: 28px;
+  border-radius: 50px;
+  border: 1.5px solid $border;
+  background-color: $card;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.toggle-icon {
-  width: 15px;
-  height: 15px;
-}
-
-.toggle-button {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #999;
-  position: absolute;
+  padding: 2px 5px;
   cursor: pointer;
-}
+  box-shadow: $shadow-sm;
+  transition: background-color $transition, border-color $transition, box-shadow $transition;
+  appearance: none;
 
-/* Dark mode */
-.dark-mode .toggle {
-  background-color: $background-dark;
-  border-color: rgba(255,255,255,0.2);
-}
+  &:hover {
+    box-shadow: $shadow-md;
+  }
 
-.dark-mode .toggle-button {
-  background-color: color.adjust($background-dark, $lightness: 25%);
+  &--dark {
+    background-color: #1E1B4B;
+    border-color: $border-dark;
+
+    .toggle-thumb {
+      transform: translateX(23px);
+      background-color: $primary-dark;
+    }
+  }
+
+  &-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    flex-shrink: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &-thumb {
+    position: absolute;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: $primary;
+    transition: transform $transition, background-color $transition;
+    box-shadow: $shadow-sm;
+    pointer-events: none;
+  }
 }

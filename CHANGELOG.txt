@@ -1,3 +1,19 @@
+0.3.0
+- Refactor: Extract useResources hook for state management (SRP)
+- Refactor: Fix all TypeScript types — remove 'any', add ResourceDTO and NavItem interfaces
+- Refactor: Simplify FilterBar API to onSearch(query: string) callback
+- Refactor: ResourceCard now displays nameColor, headerColor, and category badges
+- Refactor: Toggle component as accessible <button> with aria-pressed
+- Refactor: Footer and NotFound with semantic HTML and rel attributes
+- Refactor: App and PublicLayout cleanup
+- Style: Complete UI redesign with modern color system (Indigo primary)
+- Style: New Inter typography, consistent shadows and border radius tokens
+- Style: Pill-shaped search bar with inline search icon
+- Style: Responsive grid layout with auto-fill and minmax
+- Style: Dark mode full support with color transitions
+- Chore: Add @hooks and @context path aliases
+- Fix: Build errors and import resolution
+
 0.2.0
 - Add new card resources
 

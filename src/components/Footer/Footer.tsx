@@ -1,21 +1,19 @@
-import "./Footer.scss";
+import './Footer.scss';
+import { useDarkMode } from '@context';
 
-import { Fragment } from "react";
-import { useDarkMode } from "../../context/DarkModeContext";
-
-const DEFAULT_URL = "https://www.dangwebs.com";
+const DEFAULT_URL = 'https://www.dangwebs.com';
 
 export const Footer = () => {
   const { isActive } = useDarkMode();
 
   return (
-    <Fragment>
-      <div className={`footerPage ${isActive ? "dark-mode" : ""}`}>
-        &copy; {new Date().getFullYear()} Copyright:{" "}
-        <a href={DEFAULT_URL} target="_blank">
+    <footer className={`footerPage ${isActive ? 'dark-mode' : ''}`}>
+      <span>
+        &copy; {new Date().getFullYear()} Copyright{' '}
+        <a href={DEFAULT_URL} target="_blank" rel="noopener noreferrer">
           DangWebs.com
         </a>
-      </div>
-    </Fragment>
+      </span>
+    </footer>
   );
 };
