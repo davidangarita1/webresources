@@ -10,7 +10,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets'),
       '@models': path.resolve(__dirname, './src/models'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
-      '@context': path.resolve(__dirname, './src/context'),
+      '@context': path.resolve(__dirname, './src/context/index.ts'),
     }
   },
   plugins: [react()]
