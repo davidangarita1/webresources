@@ -1,3 +1,11 @@
+0.4.0
+- Test: Add Vitest + Testing Library unit test infrastructure
+- Test: Configure jsdom environment, coverage with v8 provider
+- Test: Add renderWithProviders helper wrapping MemoryRouter and DarkModeProvider
+- Test: 83 unit tests across 12 test files achieving 100% statement, branch, function and line coverage
+- Test: Cover useResources hook, DarkModeContext, all UI components, layouts and pages
+- Chore: Add test, test:run, test:coverage and test:ui scripts to package.json
+
 0.3.0
 - Refactor: Extract useResources hook for state management (SRP)
 - Refactor: Fix all TypeScript types — remove 'any', add ResourceDTO and NavItem interfaces
