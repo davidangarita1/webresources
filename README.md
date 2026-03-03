@@ -1,13 +1,21 @@
-# WEBRESOURCES
+# WebResources
 
-Deploy URL -> https://webresources.netlify.app
+A curated collection of web development resources, searchable in real time with dark mode support.
 
-## Tech stack
+**Deploy** → https://webresources.netlify.app
 
-- React 19 + TypeScript + Vite
-- SCSS with design tokens
-- React Router v6
-- pnpm
+## Stack
+
+| Layer | Technology |
+|---|---|
+| UI | React 19 + TypeScript (strict) |
+| Build | Vite 7 |
+| Styling | SCSS + Bootstrap + React Bootstrap |
+| Routing | React Router v6 |
+| Forms | Formik |
+| HTTP | Axios |
+| Icons | React Icons |
+| Package manager | pnpm |
 
 ## Getting started
 
@@ -16,23 +24,65 @@ pnpm install
 pnpm dev
 ```
 
-## Testing
-
-Unit tests use [Vitest](https://vitest.dev/) and [Testing Library](https://testing-library.com/).
+## Scripts
 
 | Command | Description |
 |---|---|
+| `pnpm dev` | Start dev server |
+| `pnpm build` | Type-check + bundle |
+| `pnpm preview` | Preview production build |
 | `pnpm test` | Run tests in watch mode |
 | `pnpm test:run` | Run tests once |
-| `pnpm test:coverage` | Run tests with v8 coverage report |
+| `pnpm test:coverage` | Generate coverage report |
 | `pnpm test:ui` | Open Vitest UI |
 
-### Coverage
+## Project structure
 
-100% statement, branch, function and line coverage across all source files.
-
-## Build
-
-```bash
-pnpm build
 ```
+src/
+├── components/       # UI components (Building, FilterBar, Footer, Navbar, ResourceCard, Toggle)
+├── context/          # DarkModeContext
+├── hooks/            # useResources
+├── layouts/          # PublicLayout
+├── models/           # Resource, ResourceDTO
+├── pages/            # Dashboard, NotFound
+├── data/             # resources.json
+└── test/             # setup.ts, utils.tsx
+```
+
+## Architecture
+
+- **SOLID** — each component and hook has a single responsibility
+- **Custom hooks** — `useResources` owns resource state (data parsing, filtering)
+- **Context API** — `DarkModeContext` persists dark mode preference in `localStorage`
+- **Path aliases** — `@components`, `@assets`, `@models`, `@hooks`, `@context`
+
+## Testing
+
+Unit tests with [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/), 100% coverage on all source files.
+
+| Command | Description |
+|---|---|
+| `pnpm test:run` | Run all tests once |
+| `pnpm test:coverage` | Run with v8 coverage report |
+
+## CI
+
+GitHub Actions runs on every push and on PRs targeting `main` or `develop`:
+
+```
+Type check (tsc) → Unit tests (vitest) → Build (vite)
+```
+
+## Branch strategy
+
+| Branch | Rule |
+|---|---|
+| `main` | PR only — production |
+| `develop` | PR only — integration |
+
+Naming: `feat/`, `fix/`, `chore/`, `refactor/`, `test/`, `style/`, `docs/`
+
+## Changelog
+
+See [CHANGELOG.txt](./CHANGELOG.txt)
