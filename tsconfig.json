@@ -6,7 +6,7 @@
       "@assets/*": ["./src/assets/*"],
       "@models": ["./src/models/index.ts"],
       "@hooks": ["./src/hooks/index.ts"],
-      "@context": ["./src/context/DarkModeContext.tsx"]
+      "@context": ["./src/context/index.ts"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
