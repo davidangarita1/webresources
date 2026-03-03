@@ -1,28 +1,21 @@
-import "./toggle.scss";
-import Sun from "@assets/sun.png";
-import Moon from "@assets/moon.png";
-
-import { Fragment } from "react";
-import { useDarkMode } from "../../context/DarkModeContext";
+import './toggle.scss';
+import Sun from '@assets/sun.png';
+import Moon from '@assets/moon.png';
+import { useDarkMode } from '@context';
 
 export const Toggle = () => {
   const { isActive, toggle } = useDarkMode();
 
-  const handleClick = (): void => {
-    toggle();
-  };
-
   return (
-    <Fragment>
-      <div className="toggle">
-        <img src={Sun} alt="" className="toggle-icon" />
-        <img src={Moon} alt="" className="toggle-icon" />
-        <div
-          className="toggle-button"
-          onClick={handleClick}
-          style={{ left: isActive ? 0 : 25 }}
-        />
-      </div>
-    </Fragment>
+    <button
+      className={`toggle ${isActive ? 'toggle--dark' : ''}`}
+      onClick={toggle}
+      aria-label={isActive ? 'Switch to light mode' : 'Switch to dark mode'}
+      aria-pressed={isActive}
+    >
+      <img src={Sun} alt="Light mode" className="toggle-icon" />
+      <img src={Moon} alt="Dark mode" className="toggle-icon" />
+      <span className="toggle-thumb" />
+    </button>
   );
 };

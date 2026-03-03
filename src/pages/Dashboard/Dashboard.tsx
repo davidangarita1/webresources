@@ -1,46 +1,33 @@
-import { FilterBar, ResourceCard } from "@components";
-import { Fragment, useState } from "react";
-import "./Dashboard.scss";
-
-import { Resource } from "@models";
-import resources from "../../data/resources.json";
+import { Fragment } from 'react';
+import './Dashboard.scss';
+import { FilterBar, ResourceCard } from '@components';
+import { useResources } from '@hooks';
 
 const Dashboard = () => {
-  const new_resources: Resource[] = resources.map((r) => ({
-    ...r,
-    date: new Date(r.date),
-  }));
-  const [filteredResources, setFilteredResources] = useState<Resource[]>(new_resources);
-
-  const handleFilter = (resourceList: Resource[]) => {
-    setFilteredResources(resourceList);
-  };
+  const { filtered, filterByName } = useResources();
 
   return (
     <Fragment>
       <div id="api">
-        <div className="row">
-          <div className="col-12 text-center">
-            <h1>Dashboard</h1>
-          </div>
-          <FilterBar
-            resourceList={new_resources as Resource[]}
-            handleFilter={handleFilter}
-          />
+        <div className="dashboard-header">
+          <h1>Resources</h1>
+          <p className="dashboard-subtitle">Discover tools and references for developers</p>
+          <FilterBar onSearch={filterByName} />
         </div>
-        {filteredResources.length > 0 && (
-          <div className="row">
-            {filteredResources.map((item: any, index: number) => (
-              <div
-                className="col col-xs-6 col-sm-4 col-md-3 col-lg-2 mb-3"
+        {filtered.length === 0 ? (
+          <p className="no-results">No resources found matching your search.</p>
+        ) : (
+          <div className="cards">
+            {filtered.map((item, index) => (
+              <ResourceCard
                 key={index}
-              >
-                <ResourceCard
-                  name={item.name}
-                  description={item.description}
-                  url={item.url}
-                />
-              </div>
+                name={item.name}
+                description={item.description}
+                url={item.url}
+                nameColor={item.nameColor}
+                headerColor={item.headerColor}
+                category={item.category}
+              />
             ))}
           </div>
         )}

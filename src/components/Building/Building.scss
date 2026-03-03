@@ -1,21 +1,54 @@
+@use '../../themes' as *;
+
 #building {
   display: grid;
   place-items: center;
-  text-align: center;
-  height: 100vh;
-  .container {
-    border-radius: 15px;
-    padding: 80px;
-    margin: 20px;
-    h1 {
-      color: #e41818;
-    }
-    p {
-      font-size: 2rem;
-    }
-    svg {
-      width: 50px;
-      height: 50px;
-    }
+  min-height: calc(100vh - 52px);
+  padding: 2rem;
+
+  .building-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: $card;
+    border: 1px solid $border;
+    border-radius: $radius-lg;
+    padding: 3rem 4rem;
+    box-shadow: $shadow-md;
+    max-width: 480px;
+    width: 100%;
   }
+
+  .building-icon {
+    width: 56px;
+    height: 56px;
+    color: $primary;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: $text-muted;
+  }
+}
+
+.dark-mode #building {
+  .building-container {
+    background-color: $card-dark;
+    border-color: $border-dark;
+    box-shadow: $shadow-sm-dark;
+  }
+
+  h1 { color: $text-dark; }
+  .building-icon { color: $primary-dark; }
+  p { color: $text-muted-dark; }
 }

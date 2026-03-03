@@ -1,60 +1,84 @@
-@use "sass:color";
-@use "../../themes" as *;
+@use '../../themes' as *;
 
 #resourceCard {
-  margin-bottom: 1rem;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  border-radius: 6px;
-  overflow: hidden;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: $card;
+  border-radius: $radius-md;
+  border: 1px solid $border;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  height: 100%;
+  transition: transform $transition, box-shadow $transition;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: $shadow-lg;
   }
 
   .resource-header {
-    background-color: $header-color;
-    color: $header-text;
-    padding: 0.7rem;
+    padding: 0.85rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .resource-name {
     font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .resource-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.68rem;
     font-weight: 600;
-    border: none;
-    text-align: center;
+    padding: 2px 8px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: inherit;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 
   .card-body {
-    padding: 0.75rem 0.9rem;
-    flex-grow: 1;
+    padding: 0.85rem 1rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
+  }
 
-    .card-text {
-      font-size: 0.8rem;
-      margin: 0;
-      color: #333;
-      line-height: 1.4;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      flex-grow: 1;
-      line-clamp: 3;
-      -webkit-line-clamp: 3;
-    }
+  .card-text {
+    font-size: 0.82rem;
+    color: $text-muted;
+    line-height: 1.55;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
-/* Dark mode for cards */
 .dark-mode #resourceCard {
-  background-color: color.adjust($background-dark, $lightness: 6%);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-}
+  background-color: $card-dark;
+  border-color: $border-dark;
+  box-shadow: $shadow-sm-dark;
 
-.dark-mode #resourceCard .card-body .card-text {
-  color: $text-dark;
+  .card-text {
+    color: $text-muted-dark;
+  }
+
+  &:hover {
+    box-shadow: $shadow-md-dark;
+  }
 }

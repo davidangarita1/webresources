@@ -1,10 +1,14 @@
-export interface Resource {
+export interface ResourceDTO {
     name:        string;
     description: string;
     url:         string;
     category:    string[];
-    date:        Date;
+    date:        string;
     image:       string;
     nameColor:   string;
     headerColor: string;
+}
+
+export interface Resource extends Omit<ResourceDTO, 'date'> {
+    date: Date;
 }
