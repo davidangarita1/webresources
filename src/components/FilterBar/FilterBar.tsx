@@ -1,35 +1,25 @@
-import "./FilterBar.scss";
+import './FilterBar.scss';
+import type { ChangeEvent } from 'react';
 
-import { Input } from "antd";
-
-import { Resource } from "@models";
-
-
-interface FilterProps {
-  resourceList: Resource[];
-  handleFilter: (resources: any) => void;
+interface FilterBarProps {
+  onSearch: (query: string) => void;
 }
 
-export const FilterBar = ({ resourceList, handleFilter }: FilterProps) => {
-  const searchResource = (event: any) => {
-    const search = event.target.value;
-    const filter = resourceList.filter((resource: Resource) =>
-      resource.name.toLowerCase().includes(search.toLowerCase())
-    );
-    handleFilter(filter);
+export const FilterBar = ({ onSearch }: FilterBarProps) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    onSearch(e.target.value);
   };
 
   return (
-    <>
-      <div id="filterBar">
-        <Input
-          className="searchBar"
-          name="searchBar"
-          type="text"
-          placeholder="Search resources by name"
-          onChange={searchResource}
-        />
-      </div>
-    </>
+    <div id="filterBar">
+      <input
+        className="searchBar"
+        name="searchBar"
+        type="text"
+        placeholder="Search resources by name…"
+        onChange={handleChange}
+        aria-label="Search resources"
+      />
+    </div>
   );
 };
