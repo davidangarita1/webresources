@@ -1,9 +1,5 @@
-@use "../../themes" as *;
+@use '../../themes' as *;
 
-.topbar {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  position: fixed;
-  width: 100%;
+.layout {
+  position: relative;
 }

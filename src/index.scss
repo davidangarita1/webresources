@@ -1,41 +1,46 @@
-@use "./themes" as *;
-@import "bootstrap/dist/css/bootstrap.min.css";
+@use './themes' as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 :root {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
-  line-height: 24px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  background-color: $background;
-  position: relative;
+  color-scheme: light dark;
 }
 
 body {
   margin: 0;
-  background-color: $background;
+  padding: 0;
+  background-color: $surface;
   color: $text;
-  h1 {
-    font-size: 3rem;
-    font-weight: bold;
+  transition: background-color $transition, color $transition;
+}
+
+.layout {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: $surface;
+  color: $text;
+  transition: background-color $transition, color $transition;
+
+  &.dark-mode {
+    background-color: $surface-dark;
+    color: $text-dark;
   }
+
   .scroll {
-    height: 95vh;
+    flex: 1;
     overflow-y: auto;
+    padding-bottom: 4rem;
   }
-}
-
-.dark-mode {
-  background-color: $background-dark;
-  color: $text-dark;
-}
-
-.scroll.dark-mode {
-  background-color: $background-dark;
-  color: $text-dark;
 }

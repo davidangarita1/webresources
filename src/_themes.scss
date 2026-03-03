@@ -1,12 +1,33 @@
-$header-color: #2196F3;
-$header-text: #FFFFFF;
-$button: #f6c9d0;
-$text: #2d485d;
-$background: #FAFAFA;
+$primary:          #4F46E5;
+$primary-hover:    #4338CA;
+$primary-dark:     #818CF8;
+$primary-dark-hover: #A5B4FC;
 
-$button-dark: #D28790;
-$text-dark: #ffffff;
-$background-dark: #1a1a1a;
+$surface:          #F9FAFB;
+$surface-dark:     #111827;
 
-$header-navbar: $header-color;
-$header-navbar-dark: $header-color;
+$card:             #FFFFFF;
+$card-dark:        #1F2937;
+
+$text:             #1F2937;
+$text-muted:       #6B7280;
+$text-dark:        #F3F4F6;
+$text-muted-dark:  #9CA3AF;
+
+$border:           rgba(0, 0, 0, 0.08);
+$border-dark:      rgba(255, 255, 255, 0.1);
+
+$footer-bg:        $primary;
+$footer-bg-dark:   #1E1B4B;
+
+$shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md:   0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-lg:   0 10px 25px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08);
+$shadow-sm-dark: 0 1px 3px rgba(0, 0, 0, 0.5);
+$shadow-md-dark: 0 4px 6px rgba(0, 0, 0, 0.4);
+
+$radius-sm:  6px;
+$radius-md:  10px;
+$radius-lg:  16px;
+
+$transition: 0.2s ease;
