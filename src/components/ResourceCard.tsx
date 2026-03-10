@@ -93,7 +93,7 @@ export function ResourceCard({
       <div className="mt-auto flex items-center justify-between gap-2 pt-2">
         <button
           onClick={() => onCycleStatus(resource.id)}
-          className={`rounded-full px-2.5 py-1 text-[11px] font-medium transition-colors ${
+          className={`rounded-full cursor-pointer px-2.5 py-1 text-[11px] font-medium transition-colors ${
             status
               ? STATUS_COLORS[status]
               : "bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400"
