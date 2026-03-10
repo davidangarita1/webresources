@@ -1,775 +1,714 @@
 [
   {
-    "name": "HyperUI",
-    "description": "A collection of free Tailwind CSS components for modern interfaces.",
+    "id": "1",
+    "title": "HyperUI",
     "url": "https://www.hyperui.dev/",
-    "category": [
-      "CSS"
+    "description": "A collection of free Tailwind CSS components for modern interfaces.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Flowbite",
-    "description": "A component library built on Tailwind CSS with interactive UI elements.",
+    "id": "2",
+    "title": "Flowbite",
     "url": "https://flowbite.com/docs/components/chat-bubble/",
-    "category": [
-      "CSS"
+    "description": "A component library built on Tailwind CSS with interactive UI elements.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Tailwind CSS",
-    "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "id": "3",
+    "title": "Tailwind CSS",
     "url": "https://tailwindcss.com/docs/installation",
-    "category": [
-      "CSS"
+    "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Pure CSS",
-    "description": "A minimal, responsive CSS framework built by Yahoo for small projects.",
+    "id": "4",
+    "title": "Pure CSS",
     "url": "https://purecss.io/",
-    "category": [
-      "CSS"
+    "description": "A minimal, responsive CSS framework built by Yahoo for small projects.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Mint",
-    "description": "A programming language for building single-page apps with a focus on simplicity and maintainability.",
+    "id": "5",
+    "title": "Mint",
     "url": "https://mint-lang.com/",
-    "category": [
-      "CSS"
+    "description": "A programming language for building single-page apps with a focus on simplicity and maintainability.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Material UI",
-    "description": "A React component library implementing Google's Material Design.",
+    "id": "6",
+    "title": "Material UI",
     "url": "https://mui.com/",
-    "category": [
-      "CSS"
+    "description": "A React component library implementing Google's Material Design.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Grid Malven",
-    "description": "A simple visual reference for CSS grid layout.",
+    "id": "7",
+    "title": "Grid Malven",
     "url": "https://grid.malven.co/",
-    "category": [
-      "CSS"
+    "description": "A simple visual reference for CSS grid layout.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Flukeout",
-    "description": "A fun game to learn CSS selectors step by step.",
+    "id": "8",
+    "title": "Flukeout",
     "url": "https://flukeout.github.io/",
-    "category": [
-      "CSS"
+    "description": "A fun game to learn CSS selectors step by step.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Flexbox Froggy",
-    "description": "An interactive game to practice CSS flexbox layout.",
+    "id": "9",
+    "title": "Flexbox Froggy",
     "url": "https://flexboxfroggy.com/#es",
-    "category": [
-      "CSS"
+    "description": "An interactive game to practice CSS flexbox layout.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Flexbox Defense",
-    "description": "A tower-defense style game to learn CSS flexbox.",
+    "id": "10",
+    "title": "Flexbox Defense",
     "url": "http://www.flexboxdefense.com/",
-    "category": [
-      "CSS"
+    "description": "A tower-defense style game to learn CSS flexbox.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Dev hints",
-    "description": "A collection of quick CSS cheatsheets for developers.",
+    "id": "11",
+    "title": "Dev hints",
     "url": "https://devhints.io/css",
-    "category": [
-      "CSS"
+    "description": "A collection of quick CSS cheatsheets for developers.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CSS Tricks",
-    "description": "A popular blog and resource site for CSS tips and guides.",
+    "id": "12",
+    "title": "CSS Tricks",
     "url": "https://css-tricks.com/",
-    "category": [
-      "CSS"
+    "description": "A popular blog and resource site for CSS tips and guides.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CSS Reference",
-    "description": "A visual guide to CSS properties with examples.",
+    "id": "13",
+    "title": "CSS Reference",
     "url": "https://cssreference.io/",
-    "category": [
-      "CSS"
+    "description": "A visual guide to CSS properties with examples.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CSS Grid Garden",
-    "description": "A fun game to learn CSS grid layout concepts.",
+    "id": "14",
+    "title": "CSS Grid Garden",
     "url": "https://cssgridgarden.com/#es",
-    "category": [
-      "CSS"
+    "description": "A fun game to learn CSS grid layout concepts.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CSS Flexbox Simulator",
-    "description": "An interactive tool to practice and test flexbox layouts.",
+    "id": "15",
+    "title": "CSS Flexbox Simulator",
     "url": "https://juliansci.github.io/css-flexbox-simulator/",
-    "category": [
-      "CSS"
+    "description": "An interactive tool to practice and test flexbox layouts.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CDNJS",
-    "description": "A free and fast CDN hosting popular web libraries.",
+    "id": "16",
+    "title": "CDNJS",
     "url": "https://cdnjs.com/",
-    "category": [
-      "CSS"
+    "description": "A free and fast CDN hosting popular web libraries.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Andy Brewer",
-    "description": "MVP.css, a lightweight stylesheet for quick prototypes.",
+    "id": "17",
+    "title": "Andy Brewer",
     "url": "https://andybrewer.github.io/mvp/",
-    "category": [
-      "CSS"
+    "description": "MVP.css, a lightweight stylesheet for quick prototypes.",
+    "category": "CSS",
+    "tags": [
+      "css"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#1572B6"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Tabbied",
-    "description": "A generator for unique, colorful background patterns.",
+    "id": "18",
+    "title": "Tabbied",
     "url": "https://tabbied.com/",
-    "category": [
-      "COLORS"
+    "description": "A generator for unique, colorful background patterns.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Stripes Generator",
-    "description": "A tool for creating colorful CSS stripe patterns.",
+    "id": "19",
+    "title": "Stripes Generator",
     "url": "https://stripesgenerator.com/",
-    "category": [
-      "COLORS"
+    "description": "A tool for creating colorful CSS stripe patterns.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Shadows",
-    "description": "A tool for generating layered, smooth CSS box-shadows.",
+    "id": "20",
+    "title": "Shadows",
     "url": "https://shadows.brumm.af/",
-    "category": [
-      "COLORS"
+    "description": "A tool for generating layered, smooth CSS box-shadows.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Picular",
-    "description": "A color search engine that finds colors from images.",
+    "id": "21",
+    "title": "Picular",
     "url": "https://picular.co/Video",
-    "category": [
-      "COLORS"
+    "description": "A color search engine that finds colors from images.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Patternify",
-    "description": "A pixel pattern generator that outputs CSS code.",
+    "id": "22",
+    "title": "Patternify",
     "url": "http://www.patternify.com/",
-    "category": [
-      "COLORS"
+    "description": "A pixel pattern generator that outputs CSS code.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Paletton",
-    "description": "A color scheme designer for building harmonious palettes.",
+    "id": "23",
+    "title": "Paletton",
     "url": "https://paletton.com/",
-    "category": [
-      "COLORS"
+    "description": "A color scheme designer for building harmonious palettes.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Mesh gradient",
-    "description": "A simple generator for colorful mesh gradients.",
+    "id": "24",
+    "title": "Mesh gradient",
     "url": "https://meshgradient.in/",
-    "category": [
-      "COLORS"
+    "description": "A simple generator for colorful mesh gradients.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CSS Gradient",
-    "description": "An online tool for creating CSS gradient backgrounds.",
+    "id": "25",
+    "title": "CSS Gradient",
     "url": "https://cssgradient.io/gradient-backgrounds/",
-    "category": [
-      "COLORS"
+    "description": "An online tool for creating CSS gradient backgrounds.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Coolors",
-    "description": "A fast color palette generator and tool for designers.",
+    "id": "26",
+    "title": "Coolors",
     "url": "https://coolors.co/",
-    "category": [
-      "COLORS"
+    "description": "A fast color palette generator and tool for designers.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Colorhunt",
-    "description": "A free collection of curated color palettes for inspiration.",
+    "id": "27",
+    "title": "Colorhunt",
     "url": "https://colorhunt.co/",
-    "category": [
-      "COLORS"
+    "description": "A free collection of curated color palettes for inspiration.",
+    "category": "COLORS",
+    "tags": [
+      "colors"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#7C3AED"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Spirit App",
-    "description": "A tool for creating and managing timeline animations.",
+    "id": "28",
+    "title": "Spirit App",
     "url": "https://spiritapp.io/getstarted/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A tool for creating and managing timeline animations.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Scroll reveal JS",
-    "description": "A library for animating elements on scroll.",
+    "id": "29",
+    "title": "Scroll reveal JS",
     "url": "https://scrollrevealjs.org/pricing/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A library for animating elements on scroll.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Popmotion",
-    "description": "A functional JavaScript library for animations and physics.",
+    "id": "30",
+    "title": "Popmotion",
     "url": "https://popmotion.io/pure/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A functional JavaScript library for animations and physics.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "MoJS",
-    "description": "A motion graphics library for creative web animations.",
+    "id": "31",
+    "title": "MoJS",
     "url": "https://mojs.github.io/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A motion graphics library for creative web animations.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Michalsnik",
-    "description": "AOS (Animate On Scroll) library for scroll animations.",
+    "id": "32",
+    "title": "Michalsnik",
     "url": "https://michalsnik.github.io/aos/",
-    "category": [
-      "ANIMATIONS"
+    "description": "AOS (Animate On Scroll) library for scroll animations.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Maxwellito",
-    "description": "Vivus.js library for animating SVGs with line drawing effects.",
+    "id": "33",
+    "title": "Maxwellito",
     "url": "https://maxwellito.github.io/vivus/",
-    "category": [
-      "ANIMATIONS"
+    "description": "Vivus.js library for animating SVGs with line drawing effects.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Lottie Files",
-    "description": "A platform for sharing and using Lottie animations.",
+    "id": "34",
+    "title": "Lottie Files",
     "url": "https://lottiefiles.com/animations",
-    "category": [
-      "ANIMATIONS"
+    "description": "A platform for sharing and using Lottie animations.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Cubic Bezier",
-    "description": "An interactive tool to design CSS cubic-bezier curves.",
+    "id": "35",
+    "title": "Cubic Bezier",
     "url": "https://cubic-bezier.com/#.17,.67,.83,.67",
-    "category": [
-      "ANIMATIONS"
+    "description": "An interactive tool to design CSS cubic-bezier curves.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CSShake",
-    "description": "A CSS library for applying fun shake animations.",
+    "id": "36",
+    "title": "CSShake",
     "url": "https://elrumordelaluz.github.io/csshake/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A CSS library for applying fun shake animations.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "CSS Triggers",
-    "description": "A reference for CSS properties and their performance impact.",
+    "id": "37",
+    "title": "CSS Triggers",
     "url": "https://csstriggers.com/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A reference for CSS properties and their performance impact.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Animista",
-    "description": "A collection of premade CSS animations with live previews.",
+    "id": "38",
+    "title": "Animista",
     "url": "https://animista.net/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A collection of premade CSS animations with live previews.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Anime JS",
-    "description": "A flexible JavaScript animation engine for complex effects.",
+    "id": "39",
+    "title": "Anime JS",
     "url": "https://animejs.com/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A flexible JavaScript animation engine for complex effects.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Animate Style",
-    "description": "A popular library of ready-to-use CSS animations.",
+    "id": "40",
+    "title": "Animate Style",
     "url": "https://animate.style/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A popular library of ready-to-use CSS animations.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Anim XYZ",
-    "description": "A composable CSS animation toolkit for building custom effects.",
+    "id": "41",
+    "title": "Anim XYZ",
     "url": "https://animxyz.com/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A composable CSS animation toolkit for building custom effects.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "AniJS",
-    "description": "A library for adding declarative animations using HTML attributes.",
+    "id": "42",
+    "title": "AniJS",
     "url": "https://anijs.github.io/",
-    "category": [
-      "ANIMATIONS"
+    "description": "A library for adding declarative animations using HTML attributes.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Airbnb",
-    "description": "Lottie is Airbnb's open-source tool for adding lightweight, scalable animations to apps and websites.",
+    "id": "43",
+    "title": "Airbnb",
     "url": "https://airbnb.io/lottie/#/",
-    "category": [
-      "ANIMATIONS"
+    "description": "Lottie is Airbnb's open-source tool for adding lightweight, scalable animations to apps and websites.",
+    "category": "ANIMATIONS",
+    "tags": [
+      "animations"
     ],
-    "date": "2025-09-15T17:32:27.923452Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#D44000"
+    "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "name": "Codechef",
-    "description": "Improve problem-solving skills in your college",
+    "id": "44",
+    "title": "Codechef",
     "url": "https://www.codechef.com/",
-    "category": [
-      "PROGRAMMING",
-      "CHALLENGES",
-      "RESOURCES"
+    "description": "Improve problem-solving skills in your college",
+    "category": "PROGRAMMING",
+    "tags": [
+      "programming",
+      "challenges",
+      "resources"
     ],
-    "date": "2022-12-03T03:18:16.456Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#0F766E"
+    "createdAt": "2022-12-03T03:18:16.456Z"
   },
   {
-    "name": "Codewars",
-    "description": "Improve your development skills by training with your peers on code kata that continuously challenge and push your coding practice.",
+    "id": "45",
+    "title": "Codewars",
     "url": "https://www.codewars.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES"
+    "description": "Improve your development skills by training with your peers on code kata that continuously challenge and push your coding practice.",
+    "category": "CHALLENGES",
+    "tags": [
+      "challenges",
+      "programming",
+      "resources"
     ],
-    "date": "2022-12-03T03:23:06.693Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#FF4D4D"
+    "createdAt": "2022-12-03T03:23:06.693Z"
   },
   {
-    "name": "Hacker earth",
-    "description": "Matching great developers with world-class companies.",
+    "id": "46",
+    "title": "Hacker earth",
     "url": "https://www.hackerearth.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES",
-      "JOBS"
+    "description": "Matching great developers with world-class companies.",
+    "category": "CHALLENGES",
+    "tags": [
+      "challenges",
+      "programming",
+      "resources",
+      "jobs"
     ],
-    "date": "2022-12-03T03:25:52.185Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#2C3454"
+    "createdAt": "2022-12-03T03:25:52.185Z"
   },
   {
-    "name": "Code forces",
-    "description": "Codeforces is a project joining people interested in and taking part in programming contests. On one hand, Codeforces is a social network dedicated to programming and programming contests.",
+    "id": "47",
+    "title": "Code forces",
     "url": "https://codeforces.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING"
+    "description": "Codeforces is a project joining people interested in and taking part in programming contests. On one hand, Codeforces is a social network dedicated to programming and programming contests.",
+    "category": "CHALLENGES",
+    "tags": [
+      "challenges",
+      "programming"
     ],
-    "date": "2022-12-03T03:28:44.719Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#168AC9"
+    "createdAt": "2022-12-03T03:28:44.719Z"
   },
   {
-    "name": "Leetcode",
-    "description": "LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.",
+    "id": "48",
+    "title": "Leetcode",
     "url": "https://leetcode.com/",
-    "category": [
-      "RESOURCES",
-      "PROGRAMMING",
-      "CHALLENGES"
+    "description": "LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.",
+    "category": "RESOURCES",
+    "tags": [
+      "resources",
+      "programming",
+      "challenges"
     ],
-    "date": "2022-12-03T03:30:54.931Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#F39C1A"
+    "createdAt": "2022-12-03T03:30:54.931Z"
   },
   {
-    "name": "Topcoder",
-    "description": "We treat our Topcoder talent the way you'd want us to, with respect, transparency, and trust. Ya know, like humans should.",
+    "id": "49",
+    "title": "Topcoder",
     "url": "https://www.topcoder.com/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES",
-      "JOBS"
+    "description": "We treat our Topcoder talent the way you'd want us to, with respect, transparency, and trust. Ya know, like humans should.",
+    "category": "CHALLENGES",
+    "tags": [
+      "challenges",
+      "programming",
+      "resources",
+      "jobs"
     ],
-    "date": "2022-12-03T03:33:20.265Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#000000"
+    "createdAt": "2022-12-03T03:33:20.265Z"
   },
   {
-    "name": "Codin game",
-    "description": "The new way to improve your programming skills while having fun and getting noticed.",
+    "id": "50",
+    "title": "Codin game",
     "url": "https://www.codingame.com/start",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "ACADEMY"
+    "description": "The new way to improve your programming skills while having fun and getting noticed.",
+    "category": "CHALLENGES",
+    "tags": [
+      "challenges",
+      "programming",
+      "academy"
     ],
-    "date": "2022-12-03T03:35:32.495Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#F2BB13"
+    "createdAt": "2022-12-03T03:35:32.495Z"
   },
   {
-    "name": "Hacker rank",
-    "description": "We help companies develop the strongest tech teams around. We help candidates sharpen their tech skills and pursue job opportunities.",
+    "id": "51",
+    "title": "Hacker rank",
     "url": "https://www.hackerrank.com/",
-    "category": [
-      "ACADEMY",
-      "CHALLENGES",
-      "PROGRAMMING"
+    "description": "We help companies develop the strongest tech teams around. We help candidates sharpen their tech skills and pursue job opportunities.",
+    "category": "ACADEMY",
+    "tags": [
+      "academy",
+      "challenges",
+      "programming"
     ],
-    "date": "2022-12-03T03:38:18.252Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#068932"
+    "createdAt": "2022-12-03T03:38:18.252Z"
   },
   {
-    "name": "Exercism",
-    "description": "Develop fluency in 61 programming languages with our unique blend of learning, practice and mentoring. Exercism is fun, effective and 100% free, forever.",
+    "id": "52",
+    "title": "Exercism",
     "url": "https://exercism.org/",
-    "category": [
-      "ACADEMY",
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES"
+    "description": "Develop fluency in 61 programming languages with our unique blend of learning, practice and mentoring. Exercism is fun, effective and 100% free, forever.",
+    "category": "ACADEMY",
+    "tags": [
+      "academy",
+      "challenges",
+      "programming",
+      "resources"
     ],
-    "date": "2022-12-03T03:40:10.184Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#130B43"
+    "createdAt": "2022-12-03T03:40:10.184Z"
   },
   {
-    "name": "Code-projects",
-    "description": "We are fast becoming best open source code & projects organization - Code Projects is developed to provide interested people with resources to build their knowledge, and exchange ideas.",
+    "id": "53",
+    "title": "Code-projects",
     "url": "https://code-projects.org/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "RESOURCES"
+    "description": "We are fast becoming best open source code & projects organization - Code Projects is developed to provide interested people with resources to build their knowledge, and exchange ideas.",
+    "category": "CHALLENGES",
+    "tags": [
+      "challenges",
+      "programming",
+      "resources"
     ],
-    "date": "2022-12-03T03:43:22.494Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#202020"
+    "createdAt": "2022-12-03T03:43:22.494Z"
   },
   {
-    "name": "Javascript30",
-    "description": "30 Day Vanilla JS Coding Challenge.\nBuild 30 things in 30 days with 30 tutorials",
+    "id": "54",
+    "title": "Javascript30",
     "url": "https://javascript30.com/",
-    "category": [
-      "ACADEMY",
-      "CHALLENGES",
-      "JAVASCRIPT",
-      "PROGRAMMING",
-      "RESOURCES"
+    "description": "30 Day Vanilla JS Coding Challenge.\nBuild 30 things in 30 days with 30 tutorials",
+    "category": "ACADEMY",
+    "tags": [
+      "academy",
+      "challenges",
+      "javascript",
+      "programming",
+      "resources"
     ],
-    "date": "2022-12-03T03:47:33.745Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#FFC600"
+    "createdAt": "2022-12-03T03:47:33.745Z"
   },
   {
-    "name": "Dev challenges",
-    "description": "Web Development Resources and Community that help you to become a Web Developer by working with Real-life projects and practices.",
+    "id": "55",
+    "title": "Dev challenges",
     "url": "https://devchallenges.io/",
-    "category": [
-      "CHALLENGES",
-      "PROGRAMMING",
-      "ACADEMY"
+    "description": "Web Development Resources and Community that help you to become a Web Developer by working with Real-life projects and practices.",
+    "category": "CHALLENGES",
+    "tags": [
+      "challenges",
+      "programming",
+      "academy"
     ],
-    "date": "2022-12-03T03:49:00.509Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#F0402C"
+    "createdAt": "2022-12-03T03:49:00.509Z"
   },
   {
-    "name": "Adventjs",
-    "description": "Although it has its roots in the Catholic religion, Advent has become a tradition where children got chocolate for 4 weeks, one per day, from December 1 to 24. Here we adapt it to programming challenges.",
+    "id": "56",
+    "title": "Adventjs",
     "url": "https://adventjs.dev/es",
-    "category": [
-      "ACADEMY",
-      "CHALLENGES",
-      "JAVASCRIPT",
-      "PROGRAMMING"
+    "description": "Although it has its roots in the Catholic religion, Advent has become a tradition where children got chocolate for 4 weeks, one per day, from December 1 to 24. Here we adapt it to programming challenges.",
+    "category": "ACADEMY",
+    "tags": [
+      "academy",
+      "challenges",
+      "javascript",
+      "programming"
     ],
-    "date": "2022-12-03T03:51:11.231Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#FBBF24"
+    "createdAt": "2022-12-03T03:51:11.231Z"
   },
   {
-    "name": "Dzone",
-    "description": "The fastest and easiest way to deploy your react apps online with fire-base hosting by google, explained step by step in detail with screenshots and snippets.",
+    "id": "57",
+    "title": "Dzone",
     "url": "https://dzone.com/articles/react-apps-firebase",
-    "category": [
-      "REACT",
-      "FIREBASE",
-      "PROGRAMMING"
+    "description": "The fastest and easiest way to deploy your react apps online with fire-base hosting by google, explained step by step in detail with screenshots and snippets.",
+    "category": "REACT",
+    "tags": [
+      "react",
+      "firebase",
+      "programming"
     ],
-    "date": "2022-12-03T03:57:32.692Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#2F3E64"
+    "createdAt": "2022-12-03T03:57:32.692Z"
   },
   {
-    "name": "Firebase web",
-    "description": "Firebase tutorial to create a project.",
+    "id": "58",
+    "title": "Firebase web",
     "url": "https://firebase.google.com/docs/web/setup?hl=es",
-    "category": [
-      "FIREBASE",
-      "PROGRAMMING"
+    "description": "Firebase tutorial to create a project.",
+    "category": "FIREBASE",
+    "tags": [
+      "firebase",
+      "programming"
     ],
-    "date": "2022-12-03T03:59:45.668Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#F58A12"
+    "createdAt": "2022-12-03T03:59:45.668Z"
   },
   {
-    "name": "Deploying spring boot",
-    "description": "The Spring Boot model of deploying standalone applications is a great fit for Heroku. You can use either Maven or Gradle to deploy a Spring application on Heroku, but for this guide we’ll assume that you’re using Maven and have Maven 3 installed on your machine.",
+    "id": "59",
+    "title": "Deploying spring boot",
     "url": "https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku",
-    "category": [
-      "PROGRAMMING",
-      "HEROKU",
-      "DEPLOYMENT"
+    "description": "The Spring Boot model of deploying standalone applications is a great fit for Heroku. You can use either Maven or Gradle to deploy a Spring application on Heroku, but for this guide we’ll assume that you’re using Maven and have Maven 3 installed on your machine.",
+    "category": "PROGRAMMING",
+    "tags": [
+      "programming",
+      "heroku",
+      "deployment"
     ],
-    "date": "2022-12-03T04:01:45.396Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#3B2F63"
+    "createdAt": "2022-12-03T04:01:45.396Z"
   },
   {
-    "name": "Azure cli documentation",
-    "description": "The Azure Command Line Interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available in Azure services and is designed to help you quickly work with Azure, with a focus on automation.",
+    "id": "60",
+    "title": "Azure cli documentation",
     "url": "https://learn.microsoft.com/es-es/cli/azure/",
-    "category": [
-      "AZURE",
-      "DEPLOYMENT",
-      "PROGRAMMING"
+    "description": "The Azure Command Line Interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available in Azure services and is designed to help you quickly work with Azure, with a focus on automation.",
+    "category": "AZURE",
+    "tags": [
+      "azure",
+      "deployment",
+      "programming"
     ],
-    "date": "2022-12-03T04:03:37.481Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#091F2C"
+    "createdAt": "2022-12-03T04:03:37.481Z"
   },
   {
-    "name": "Cloud skills challenge",
-    "description": "Computing of Azure",
+    "id": "61",
+    "title": "Cloud skills challenge",
     "url": "https://learn.microsoft.com/es-mx/training/challenges?id=495571f3-ba53-426a-b5cc-2885cf229e8b",
-    "category": [
-      "ACADEMY",
-      "AZURE",
-      "DEPLOYMENT",
-      "PROGRAMMING"
+    "description": "Computing of Azure",
+    "category": "ACADEMY",
+    "tags": [
+      "academy",
+      "azure",
+      "deployment",
+      "programming"
     ],
-    "date": "2022-12-03T04:05:07.387Z",
-    "image": "",
-    "nameColor": "#FFFFFF",
-    "headerColor": "#271E6D"
+    "createdAt": "2022-12-03T04:05:07.387Z"
   }
 ]

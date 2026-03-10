@@ -1,14 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import { DarkModeProvider } from "./context/DarkModeContext";
-import "./index.scss";
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
+import { App } from "./app/App"
+import "./index.css"
 
+const darkMode = localStorage.getItem("bookmark_dark_mode")
+if (darkMode === "true") {
+  document.documentElement.classList.add("dark")
+}
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-      <DarkModeProvider>
-        <App />
-      </DarkModeProvider>
-  </React.StrictMode>
-);
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+)

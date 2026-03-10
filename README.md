@@ -1,8 +1,18 @@
-# WebResources
+# Bookmark Manager PWA
 
-A curated collection of web development resources, searchable in real time with dark mode support.
+A fast, offline-capable PWA to explore and manage a curated collection of 1000+ web bookmarks. Built with React, TypeScript, TailwindCSS, and Zustand.
 
 **Deploy** → https://webresources.netlify.app
+
+## Features
+
+- **Fuzzy search** — search across titles, descriptions, tags, URLs, and categories with Fuse.js
+- **Favorites** — mark resources as favorites, persisted in localStorage
+- **Status tracking** — cycle through states: Pendiente → Consumido → Referencia
+- **Category filtering** — browse resources by category via sidebar navigation
+- **Dark mode** — toggle between light and dark themes
+- **PWA** — installable, works offline with service worker
+- **Virtualization-ready** — designed to handle thousands of resources
 
 ## Stack
 
@@ -10,11 +20,12 @@ A curated collection of web development resources, searchable in real time with 
 |---|---|
 | UI | React 19 + TypeScript (strict) |
 | Build | Vite 7 |
-| Styling | SCSS + Bootstrap + React Bootstrap |
-| Routing | React Router v6 |
-| Forms | Formik |
-| HTTP | Axios |
-| Icons | React Icons |
+| Styling | TailwindCSS 4 |
+| State | Zustand |
+| Search | Fuse.js |
+| Routing | React Router v7 |
+| PWA | vite-plugin-pwa |
+| Testing | Vitest + React Testing Library |
 | Package manager | pnpm |
 
 ## Getting started
@@ -40,26 +51,55 @@ pnpm dev
 
 ```
 src/
-├── components/       # UI components (Building, FilterBar, Footer, Navbar, ResourceCard, Toggle)
-├── context/          # DarkModeContext
-├── hooks/            # useResources
-├── layouts/          # PublicLayout
-├── models/           # Resource, ResourceDTO
-├── pages/            # Dashboard, NotFound
-├── data/             # resources.json
-└── test/             # setup.ts, utils.tsx
+├── app/              # App.tsx (main application shell)
+├── components/       # UI components (ResourceCard, SearchBar, Sidebar, Topbar, TagList, CategoryList)
+├── hooks/            # Custom hooks (useResources, useFavorites, useStatuses, useSearch)
+├── pages/            # Pages (Dashboard, NotFound)
+├── services/         # Business logic (storageService, searchService, resourceService)
+├── store/            # Zustand store (resourceStore)
+├── types/            # TypeScript types (Resource, ResourceStatus, UserState)
+├── utils/            # Utility functions (url, date)
+├── data/             # resources.json (read-only source of truth)
+└── test/             # Test setup and utilities
 ```
 
 ## Architecture
 
-- **SOLID** — each component and hook has a single responsibility
-- **Custom hooks** — `useResources` owns resource state (data parsing, filtering)
-- **Context API** — `DarkModeContext` persists dark mode preference in `localStorage`
-- **Path aliases** — `@components`, `@assets`, `@models`, `@hooks`, `@context`
+- **SOLID** — each component, hook, and service has a single responsibility
+- **Service layer** — `storageService` (localStorage), `searchService` (Fuse.js), `resourceService` (JSON data)
+- **Zustand store** — global state for resources, favorites, statuses, search, and filters
+- **Custom hooks** — `useResources`, `useFavorites`, `useStatuses`, `useSearch`
+- **Path aliases** — `@components`, `@hooks`, `@store`, `@services`, `@types`, `@utils`
+
+## Data model
+
+Resources are stored in `src/data/resources.json` (read-only):
+
+```ts
+interface Resource {
+  id: string
+  title: string
+  url: string
+  description?: string
+  category: string
+  tags: string[]
+  createdAt: string
+}
+```
+
+User state (favorites, statuses) is persisted in `localStorage`:
+
+```ts
+type ResourceStatus = "pending" | "consumed" | "reference"
+```
 
 ## Testing
 
-Unit tests with [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/), 100% coverage on all source files.
+49 unit tests with [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/):
+
+- **Services** — storageService, searchService
+- **Hooks** — useFavorites, useStatuses
+- **Components** — ResourceCard, SearchBar
 
 | Command | Description |
 |---|---|

@@ -4,9 +4,11 @@
     "paths": {
       "@components": ["./src/components/index.ts"],
       "@assets/*": ["./src/assets/*"],
-      "@models": ["./src/models/index.ts"],
       "@hooks": ["./src/hooks/index.ts"],
-      "@context": ["./src/context/index.ts"]
+      "@store": ["./src/store/index.ts"],
+      "@services": ["./src/services/index.ts"],
+      "@types": ["./src/types/index.ts"],
+      "@utils": ["./src/utils/index.ts"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
