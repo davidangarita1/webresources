@@ -1,3 +1,27 @@
+1.0.0
+- Feat: Complete architectural refactor to Bookmark Manager PWA
+- Feat: Replace Bootstrap/SCSS stack with TailwindCSS 4 (class-based dark mode via @custom-variant)
+- Feat: Add Zustand store for global state — resources, favorites, statuses, search, filters
+- Feat: Add Fuse.js fuzzy search across title, description, tags, URL, and category
+- Feat: Add vite-plugin-pwa — installable, offline-capable with auto-updating service worker
+- Feat: Migrate resources.json to new schema (id, title, url, description, category, tags, createdAt)
+- Feat: Remove pendings.json — dynamic state (favorites, statuses) persisted in localStorage
+- Feat: Add status cycling per resource — Pendiente → Consumido → Referencia → none
+- Feat: Add Sidebar navigation with All / Favorites / Pending / Consumed / Categories
+- Feat: Add Topbar with global fuzzy search input and dark mode toggle
+- Feat: Add ResourceCard component with favicon, domain, tags, category, status, and action buttons
+- Refactor: New modular architecture — app/, types/, services/, store/, hooks/, components/, utils/
+- Refactor: Service layer — storageService, searchService, resourceService (repository pattern)
+- Refactor: Custom hooks — useResources, useFavorites, useStatuses, useSearch
+- Refactor: Remove unused dependencies — axios, bootstrap, react-bootstrap, formik, dotenv
+- Fix: Search reactivity — useResources now subscribes to all relevant Zustand slices
+- Fix: Dark mode toggle — applyDarkMode() syncs classList + localStorage atomically
+- Refactor(tests): Migrate all tests to src/__tests__ mirroring src structure
+- Test: 49 unit tests — storageService, searchService, useFavorites, useStatuses, ResourceCard, SearchBar
+- Feat: Add check-links.sh script — parallel URL availability checker with broken-link report
+- Chore: Update path aliases — @components, @hooks, @store, @services, @types, @utils
+- Chore: Update README with new stack, architecture, data model, and usage docs
+
 0.4.0
 - Test: Add Vitest + Testing Library unit test infrastructure
 - Test: Configure jsdom environment, coverage with v8 provider
