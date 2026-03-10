@@ -1,6 +1,6 @@
-import { render, screen } from "../test/utils"
-import { ResourceCard } from "./ResourceCard"
-import type { Resource } from "../types"
+import { render, screen } from "../../test/utils"
+import { ResourceCard } from "../../components/ResourceCard"
+import type { Resource } from "../../types"
 import userEvent from "@testing-library/user-event"
 
 const MOCK_RESOURCE: Resource = {

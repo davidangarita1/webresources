@@ -1,5 +1,5 @@
-import { searchService } from "./searchService"
-import type { Resource } from "../types"
+import { searchService } from "../../services/searchService"
+import type { Resource } from "../../types"
 
 const MOCK_RESOURCES: Resource[] = [
   {

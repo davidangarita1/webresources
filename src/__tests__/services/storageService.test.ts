@@ -1,5 +1,5 @@
-import { storageService } from "./storageService"
-import type { ResourceStatus } from "../types"
+import { storageService } from "../../services/storageService"
+import type { ResourceStatus } from "../../types"
 
 describe("storageService", () => {
   beforeEach(() => {

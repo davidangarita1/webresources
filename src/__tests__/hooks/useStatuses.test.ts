@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react"
-import { useStatuses } from "./useStatuses"
-import { useResourceStore } from "../store"
+import { useStatuses } from "../../hooks/useStatuses"
+import { useResourceStore } from "../../store"
 
 describe("useStatuses", () => {
   beforeEach(() => {

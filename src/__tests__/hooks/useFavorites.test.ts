@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react"
-import { useFavorites } from "./useFavorites"
-import { useResourceStore } from "../store"
+import { useFavorites } from "../../hooks/useFavorites"
+import { useResourceStore } from "../../store"
 
 describe("useFavorites", () => {
   beforeEach(() => {

@@ -1,26 +1,35 @@
-import { useEffect, useState } from "react"
-import { SearchBar } from "../components/SearchBar"
+import { useState } from "react"
+import { SearchBar } from "./SearchBar"
+
+function getInitialDarkMode(): boolean {
+  const stored = localStorage.getItem("bookmark_dark_mode")
+  if (stored !== null) return stored === "true"
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+}
+
+function applyDarkMode(enabled: boolean): void {
+  if (enabled) {
+    document.documentElement.classList.add("dark")
+  } else {
+    document.documentElement.classList.remove("dark")
+  }
+  localStorage.setItem("bookmark_dark_mode", String(enabled))
+}
 
 export function Topbar() {
-  const [darkMode, setDarkMode] = useState(() => {
-    return document.documentElement.classList.contains("dark")
-  })
+  const [darkMode, setDarkMode] = useState<boolean>(getInitialDarkMode)
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark")
-      localStorage.setItem("bookmark_dark_mode", "true")
-    } else {
-      document.documentElement.classList.remove("dark")
-      localStorage.setItem("bookmark_dark_mode", "false")
-    }
-  }, [darkMode])
+  function toggleDarkMode() {
+    const next = !darkMode
+    setDarkMode(next)
+    applyDarkMode(next)
+  }
 
   return (
     <header className="flex h-14 shrink-0 items-center justify-between border-b border-gray-200 bg-white px-6 dark:border-gray-700 dark:bg-gray-900">
       <SearchBar />
       <button
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={toggleDarkMode}
         className="ml-4 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
         aria-label={darkMode ? "Modo claro" : "Modo oscuro"}
       >

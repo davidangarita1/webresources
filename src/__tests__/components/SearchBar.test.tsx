@@ -1,7 +1,7 @@
-import { render, screen } from "../test/utils"
-import { SearchBar } from "./SearchBar"
+import { render, screen } from "../../test/utils"
+import { SearchBar } from "../../components/SearchBar"
 import userEvent from "@testing-library/user-event"
-import { useResourceStore } from "../store"
+import { useResourceStore } from "../../store"
 
 describe("SearchBar", () => {
   beforeEach(() => {
