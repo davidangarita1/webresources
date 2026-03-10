@@ -1,26 +1,43 @@
-import { useMemo, useState } from 'react';
-import type { Resource, ResourceDTO } from '@models';
-import rawResources from '../data/resources.json';
+import { useEffect } from "react"
+import { useResourceStore } from "../store"
+import type { ResourceStatus } from "../types"
 
-const parseResources = (data: ResourceDTO[]): Resource[] =>
-  data.map((r) => ({ ...r, date: new Date(r.date) }));
+export function useResources() {
+  const resources = useResourceStore((s) => s.resources)
+  const favorites = useResourceStore((s) => s.favorites)
+  const statuses = useResourceStore((s) => s.statuses)
+  const searchQuery = useResourceStore((s) => s.searchQuery)
+  const searchResults = useResourceStore((s) => s.searchResults)
+  const activeFilter = useResourceStore((s) => s.activeFilter)
+  const activeCategory = useResourceStore((s) => s.activeCategory)
+  const initialize = useResourceStore((s) => s.initialize)
 
-export const useResources = () => {
-  const allResources = useMemo<Resource[]>(
-    () => parseResources(rawResources as ResourceDTO[]),
-    []
-  );
+  useEffect(() => {
+    if (resources.length === 0) {
+      initialize()
+    }
+  }, [resources.length, initialize])
 
-  const [filtered, setFiltered] = useState<Resource[]>(allResources);
+  const baseResources = searchQuery.trim() ? searchResults : resources
 
-  const filterByName = (query: string): void => {
-    const q = query.trim().toLowerCase();
-    setFiltered(
-      q === ''
-        ? allResources
-        : allResources.filter((r) => r.name.toLowerCase().includes(q))
-    );
-  };
+  const filteredResources = (() => {
+    switch (activeFilter) {
+      case "favorites":
+        return baseResources.filter((r) => favorites.includes(r.id))
+      case "pending":
+        return baseResources.filter((r) => (statuses as Record<string, ResourceStatus>)[r.id] === "pending")
+      case "consumed":
+        return baseResources.filter((r) => (statuses as Record<string, ResourceStatus>)[r.id] === "consumed")
+      case "category":
+        if (!activeCategory) return baseResources
+        return baseResources.filter((r) => r.category === activeCategory)
+      default:
+        return baseResources
+    }
+  })()
 
-  return { allResources, filtered, filterByName };
-};
+  return {
+    resources,
+    filteredResources,
+  }
+}

@@ -1,6 +1,6 @@
-export * from './Building/Building';
-export * from './FilterBar/FilterBar'
-export * from './Footer/Footer';
-export * from './Navbar/Navbar';
-export * from './ResourceCard/ResourceCard';
-export * from './Toggle/Toggle';
+export { ResourceCard } from "./ResourceCard"
+export { SearchBar } from "./SearchBar"
+export { Sidebar } from "./Sidebar"
+export { TagList } from "./TagList"
+export { CategoryList } from "./CategoryList"
+export { Topbar } from "./Topbar"
