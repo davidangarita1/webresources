@@ -107,7 +107,7 @@ export function ResourceCard({
           rel="noopener noreferrer"
           className="rounded-md bg-indigo-600 px-3 py-1 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
         >
-          Abrir ↗
+          Abrir
         </a>
       </div>
     </div>
