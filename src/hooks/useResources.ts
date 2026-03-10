@@ -1,26 +1,19 @@
-import { useMemo, useState } from 'react';
-import type { Resource, ResourceDTO } from '@models';
-import rawResources from '../data/resources.json';
+import { useEffect } from "react"
+import { useResourceStore } from "../store"
 
-const parseResources = (data: ResourceDTO[]): Resource[] =>
-  data.map((r) => ({ ...r, date: new Date(r.date) }));
+export function useResources() {
+  const resources = useResourceStore((s) => s.resources)
+  const initialize = useResourceStore((s) => s.initialize)
+  const getFilteredResources = useResourceStore((s) => s.getFilteredResources)
 
-export const useResources = () => {
-  const allResources = useMemo<Resource[]>(
-    () => parseResources(rawResources as ResourceDTO[]),
-    []
-  );
+  useEffect(() => {
+    if (resources.length === 0) {
+      initialize()
+    }
+  }, [resources.length, initialize])
 
-  const [filtered, setFiltered] = useState<Resource[]>(allResources);
-
-  const filterByName = (query: string): void => {
-    const q = query.trim().toLowerCase();
-    setFiltered(
-      q === ''
-        ? allResources
-        : allResources.filter((r) => r.name.toLowerCase().includes(q))
-    );
-  };
-
-  return { allResources, filtered, filterByName };
-};
+  return {
+    resources,
+    filteredResources: getFilteredResources(),
+  }
+}
