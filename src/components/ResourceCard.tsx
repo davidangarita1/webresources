@@ -57,7 +57,7 @@ export function ResourceCard({
         </div>
         <button
           onClick={() => onToggleFavorite(resource.id)}
-          className="ml-2 shrink-0 text-lg transition-colors hover:scale-110"
+          className="ml-2 shrink-0 rounded-md p-1 text-lg transition-colors hover:scale-110 touch-manipulation"
           aria-label={isFavorite ? "Quitar de favoritos" : "Agregar a favoritos"}
         >
           {isFavorite ? "⭐" : "☆"}
@@ -93,7 +93,7 @@ export function ResourceCard({
       <div className="mt-auto flex items-center justify-between gap-2 pt-2">
         <button
           onClick={() => onCycleStatus(resource.id)}
-          className={`rounded-full cursor-pointer px-2.5 py-1 text-[11px] font-medium transition-colors ${
+          className={`rounded-full cursor-pointer px-3 py-1.5 text-[11px] font-medium transition-colors touch-manipulation ${
             status
               ? STATUS_COLORS[status]
               : "bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400"
@@ -105,7 +105,7 @@ export function ResourceCard({
           href={resource.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-md bg-indigo-600 px-3 py-1 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+          className="rounded-md bg-indigo-600 px-4 py-1.5 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 touch-manipulation"
         >
           Abrir
         </a>
