@@ -11,6 +11,7 @@ A fast, offline-capable PWA to explore and manage a curated collection of 1000+ 
 - **Status tracking** — cycle through states: Pendiente → Consumido → Referencia
 - **Category filtering** — browse resources by category via sidebar navigation
 - **Dark mode** — toggle between light and dark themes
+- **Responsive design** — sidebar converts to a slide-in overlay on mobile; hamburger menu in topbar; optimized touch targets throughout
 - **PWA** — installable, works offline with service worker
 - **Virtualization-ready** — designed to handle thousands of resources
 
@@ -51,7 +52,7 @@ pnpm dev
 
 ```
 src/
-├── app/              # App.tsx (main application shell)
+├── app/              # App.tsx (main application shell + sidebar toggle state)
 ├── components/       # UI components (ResourceCard, SearchBar, Sidebar, Topbar, TagList, CategoryList)
 ├── hooks/            # Custom hooks (useResources, useFavorites, useStatuses, useSearch)
 ├── pages/            # Pages (Dashboard, NotFound)
@@ -61,6 +62,9 @@ src/
 ├── utils/            # Utility functions (url, date)
 ├── data/             # resources.json (read-only source of truth)
 └── test/             # Test setup and utilities
+
+docs/
+└── business_context.md   # Non-technical business context (Spanish)
 ```
 
 ## Architecture
