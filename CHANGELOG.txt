@@ -1,3 +1,14 @@
+1.1.0
+- Style: Full responsive layout for mobile, tablet, and desktop screens
+- Style: Sidebar converts to a slide-in overlay drawer on mobile with backdrop and close button
+- Style: Topbar gains a hamburger menu button (hidden on md+ breakpoint) to toggle the sidebar
+- Style: Dashboard heading and grid padding adapt to screen size (p-3 on mobile, p-6 on sm+)
+- Style: ResourceCard touch targets enlarged (bigger padding on status and open buttons)
+- Style: Sidebar nav items have larger tap areas with gap and rounded background on active state
+- Fix: Test expectation for ResourceCard "Abrir" link text aligned with component output
+- Docs: Add docs/business_context.md — non-technical business context in Spanish
+- Chore: Remove docs/ai/implementation-instructions.md and docs/ai/ directory
+
 1.0.0
 - Feat: Complete architectural refactor to Bookmark Manager PWA
 - Feat: Replace Bootstrap/SCSS stack with TailwindCSS 4 (class-based dark mode via @custom-variant)

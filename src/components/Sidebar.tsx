@@ -7,63 +7,99 @@ const NAV_ITEMS = [
   { key: "consumed" as const, label: "Consumidos", icon: "✅" },
 ] as const
 
-export function Sidebar() {
+interface SidebarProps {
+  isOpen: boolean
+  onClose: () => void
+}
+
+export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const activeFilter = useResourceStore((s) => s.activeFilter)
   const activeCategory = useResourceStore((s) => s.activeCategory)
   const categories = useResourceStore((s) => s.categories)
   const setActiveFilter = useResourceStore((s) => s.setActiveFilter)
   const setActiveCategory = useResourceStore((s) => s.setActiveCategory)
 
+  function handleNavClick(action: () => void) {
+    action()
+    onClose()
+  }
+
   return (
-    <aside className="flex h-full w-64 shrink-0 flex-col border-r border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
-      <div className="border-b border-gray-200 p-4 dark:border-gray-700">
-        <h1 className="text-lg font-bold text-gray-900 dark:text-white">
-          📚 Marcadores
-        </h1>
-      </div>
+    <>
+      {/* Mobile backdrop */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-20 bg-black/40 md:hidden"
+          onClick={onClose}
+          aria-hidden="true"
+        />
+      )}
 
-      <nav className="flex-1 overflow-y-auto p-3">
-        <ul className="space-y-1">
-          {NAV_ITEMS.map((item) => (
-            <li key={item.key}>
-              <button
-                onClick={() => setActiveFilter(item.key)}
-                className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                  activeFilter === item.key
-                    ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200"
-                    : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
-                }`}
-              >
-                <span>{item.icon}</span>
-                {item.label}
-              </button>
-            </li>
-          ))}
-        </ul>
+      <aside
+        className={`
+          fixed inset-y-0 left-0 z-30 flex w-72 flex-col border-r border-gray-200
+          bg-white transition-transform duration-300 ease-in-out
+          dark:border-gray-700 dark:bg-gray-900
+          md:static md:z-auto md:w-64 md:translate-x-0 md:transition-none
+          ${isOpen ? "translate-x-0 shadow-xl" : "-translate-x-full"}
+        `}
+      >
+        <div className="flex items-center justify-between border-b border-gray-200 p-4 dark:border-gray-700">
+          <h1 className="text-lg font-bold text-gray-900 dark:text-white">
+            📚 Marcadores
+          </h1>
+          <button
+            onClick={onClose}
+            className="rounded-md p-1.5 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 md:hidden"
+            aria-label="Cerrar menú"
+          >
+            ✕
+          </button>
+        </div>
 
-        <div className="mt-6">
-          <h2 className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-            Categorías
-          </h2>
-          <ul className="space-y-0.5">
-            {categories.map((category) => (
-              <li key={category}>
+        <nav className="flex-1 overflow-y-auto p-3">
+          <ul className="space-y-1">
+            {NAV_ITEMS.map((item) => (
+              <li key={item.key}>
                 <button
-                  onClick={() => setActiveCategory(category)}
-                  className={`flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-sm transition-colors ${
-                    activeFilter === "category" && activeCategory === category
+                  onClick={() => handleNavClick(() => setActiveFilter(item.key))}
+                  className={`flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium transition-colors ${
+                    activeFilter === item.key
                       ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200"
-                      : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+                      : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
                   }`}
                 >
-                  <span className="text-xs">📁</span>
-                  {category}
+                  <span className="text-base">{item.icon}</span>
+                  {item.label}
                 </button>
               </li>
             ))}
           </ul>
-        </div>
-      </nav>
-    </aside>
+
+          <div className="mt-6">
+            <h2 className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+              Categorías
+            </h2>
+            <ul className="space-y-0.5">
+              {categories.map((category) => (
+                <li key={category}>
+                  <button
+                    onClick={() => handleNavClick(() => setActiveCategory(category))}
+                    className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors ${
+                      activeFilter === "category" && activeCategory === category
+                        ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200"
+                        : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+                    }`}
+                  >
+                    <span className="text-xs">📁</span>
+                    <span className="truncate">{category}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </aside>
+    </>
   )
 }

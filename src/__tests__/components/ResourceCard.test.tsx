@@ -50,7 +50,7 @@ describe("ResourceCard", () => {
 
   it("should render open link with correct URL", () => {
     render(<ResourceCard {...defaultProps} />)
-    const link = screen.getByText("Abrir ↗")
+    const link = screen.getByText("Abrir")
     expect(link).toHaveAttribute("href", "https://react.dev")
     expect(link).toHaveAttribute("target", "_blank")
   })
