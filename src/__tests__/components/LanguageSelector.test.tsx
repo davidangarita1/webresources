@@ -1,7 +1,8 @@
 import { render, screen } from "../../test/utils"
 import { LanguageSelector } from "../../components/LanguageSelector"
 import userEvent from "@testing-library/user-event"
-import i18n, { STORAGE_KEY } from "../../i18n"
+import i18n from "../../i18n"
+import { STORAGE_KEYS } from "../../constants/storageKeys"
 
 describe("LanguageSelector", () => {
   beforeEach(() => {
@@ -45,7 +46,7 @@ describe("LanguageSelector", () => {
 
     await user.click(screen.getByRole("button"))
 
-    expect(localStorage.getItem(STORAGE_KEY)).toBe("en")
+    expect(localStorage.getItem(STORAGE_KEYS.LANGUAGE)).toBe("en")
   })
 
   it("stores Spanish in localStorage when toggling back from English", async () => {
@@ -55,6 +56,6 @@ describe("LanguageSelector", () => {
 
     await user.click(screen.getByRole("button"))
 
-    expect(localStorage.getItem(STORAGE_KEY)).toBe("es")
+    expect(localStorage.getItem(STORAGE_KEYS.LANGUAGE)).toBe("es")
   })
 })
