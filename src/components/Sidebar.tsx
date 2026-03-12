@@ -8,6 +8,8 @@ import {
   CloseOutlined,
   FolderOutlined,
   PlusOutlined,
+  DownloadOutlined,
+  UploadOutlined,
 } from "@ant-design/icons"
 import type { ReactNode } from "react"
 import { useResourceStore } from "../store"
@@ -26,9 +28,11 @@ interface SidebarProps {
   isOpen: boolean
   onClose: () => void
   onCreateResource: () => void
+  onExportBackup: () => void
+  onImportBackup: () => void
 }
 
-export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
+export function Sidebar({ isOpen, onClose, onCreateResource, onExportBackup, onImportBackup }: SidebarProps) {
   const activeFilter = useResourceStore((s) => s.activeFilter)
   const activeCategory = useResourceStore((s) => s.activeCategory)
   const categories = useResourceStore((s) => s.categories)
@@ -116,13 +120,27 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
           </div>
         </nav>
 
-        <div className="border-t border-gray-200 p-3 dark:border-gray-700">
+        <div className="border-t border-gray-200 p-3 dark:border-gray-700 space-y-2">
           <button
             onClick={() => { onCreateResource(); onClose() }}
             className="flex w-full items-center justify-center gap-2 rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
           >
             <PlusOutlined />
             Crear recurso
+          </button>
+          <button
+            onClick={() => { onExportBackup(); onClose() }}
+            className="flex w-full items-center justify-center gap-2 rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+          >
+            <DownloadOutlined />
+            Descargar respaldo
+          </button>
+          <button
+            onClick={() => { onImportBackup(); onClose() }}
+            className="flex w-full items-center justify-center gap-2 rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+          >
+            <UploadOutlined />
+            Cargar respaldo
           </button>
         </div>
       </aside>
