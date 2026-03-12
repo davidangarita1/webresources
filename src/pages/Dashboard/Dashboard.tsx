@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { PushpinOutlined, MessageOutlined, PlusOutlined } from "@ant-design/icons"
 import { useResources, useFavorites, useStatuses, useUserResources } from "../../hooks"
 import { useResourceStore } from "../../store"
 import { ResourceCard } from "../../components/ResourceCard"
@@ -62,7 +63,7 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose }: Dashboa
 
       {filteredResources.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-16 sm:py-24 text-gray-400 dark:text-gray-500">
-          <span className="text-5xl">{activeFilter === "user" ? "📌" : "💭"}</span>
+          <span className="text-5xl">{activeFilter === "user" ? <PushpinOutlined /> : <MessageOutlined />}</span>
           <p className="mt-4 text-base sm:text-lg font-medium">
             {activeFilter === "user" ? "Aún no tienes recursos" : "No se encontraron recursos"}
           </p>
@@ -74,7 +75,7 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose }: Dashboa
               onClick={onOpenCreate}
               className="mt-5 rounded-md bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
             >
-              ➕ Crear recurso
+              <PlusOutlined /> Crear recurso
             </button>
           )}
         </div>

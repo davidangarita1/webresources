@@ -1,12 +1,26 @@
+import {
+  GlobalOutlined,
+  PushpinOutlined,
+  StarOutlined,
+  ClockCircleOutlined,
+  CheckCircleOutlined,
+  BookOutlined,
+  CloseOutlined,
+  FolderOutlined,
+  PlusOutlined,
+} from "@ant-design/icons"
+import type { ReactNode } from "react"
 import { useResourceStore } from "../store"
 
-const NAV_ITEMS = [
-  { key: "community" as const, label: "Comunidad", icon: "🌐" },
-  { key: "user" as const, label: "Tus Recursos", icon: "📌" },
-  { key: "favorites" as const, label: "Favoritos", icon: "⭐" },
-  { key: "pending" as const, label: "Pendientes", icon: "⏳" },
-  { key: "consumed" as const, label: "Consumidos", icon: "✅" },
-] as const
+type NavKey = "community" | "user" | "favorites" | "pending" | "consumed"
+
+const NAV_ITEMS: Array<{ key: NavKey; label: string; icon: ReactNode }> = [
+  { key: "community", label: "Comunidad", icon: <GlobalOutlined /> },
+  { key: "user", label: "Tus Recursos", icon: <PushpinOutlined /> },
+  { key: "favorites", label: "Favoritos", icon: <StarOutlined /> },
+  { key: "pending", label: "Pendientes", icon: <ClockCircleOutlined /> },
+  { key: "consumed", label: "Consumidos", icon: <CheckCircleOutlined /> },
+]
 
 interface SidebarProps {
   isOpen: boolean
@@ -47,15 +61,15 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
         `}
       >
         <div className="flex items-center justify-between border-b border-gray-200 p-4 dark:border-gray-700">
-          <h1 className="text-lg font-bold text-gray-900 dark:text-white">
-            📚 Marcadores
+          <h1 className="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-white">
+            <BookOutlined /> Marcadores
           </h1>
           <button
             onClick={onClose}
             className="rounded-md p-1.5 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 md:hidden"
             aria-label="Cerrar menú"
           >
-            ✕
+            <CloseOutlined />
           </button>
         </div>
 
@@ -93,7 +107,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
                         : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
                     }`}
                   >
-                    <span className="text-xs">📁</span>
+                    <FolderOutlined className="text-xs" />
                     <span className="truncate">{category}</span>
                   </button>
                 </li>
@@ -107,7 +121,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
             onClick={() => { onCreateResource(); onClose() }}
             className="flex w-full items-center justify-center gap-2 rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
           >
-            <span>➕</span>
+            <PlusOutlined />
             Crear recurso
           </button>
         </div>

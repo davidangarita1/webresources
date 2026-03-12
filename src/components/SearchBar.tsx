@@ -1,3 +1,4 @@
+import { SearchOutlined, CloseOutlined } from "@ant-design/icons"
 import { useSearch } from "../hooks"
 
 export function SearchBar() {
@@ -5,9 +6,7 @@ export function SearchBar() {
 
   return (
     <div className="relative w-full max-w-md">
-      <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-        🔍
-      </span>
+      <SearchOutlined className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
       <input
         type="text"
         value={searchQuery}
@@ -22,7 +21,7 @@ export function SearchBar() {
           className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
           aria-label="Limpiar búsqueda"
         >
-          ✕
+          <CloseOutlined />
         </button>
       )}
     </div>

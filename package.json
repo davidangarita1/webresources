@@ -13,6 +13,7 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.0",
     "@tanstack/react-virtual": "^3.13.21",
     "fuse.js": "^7.1.0",
     "react": "^19.1.1",
