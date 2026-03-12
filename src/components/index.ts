@@ -1,8 +1,6 @@
 export { ResourceCard } from "./ResourceCard"
 export { SearchBar } from "./SearchBar"
 export { Sidebar } from "./Sidebar"
-export { TagList } from "./TagList"
-export { CategoryList } from "./CategoryList"
 export { Topbar } from "./Topbar"
 export { ResourceFormModal } from "./ResourceFormModal"
 export { DeleteConfirmModal } from "./DeleteConfirmModal"
