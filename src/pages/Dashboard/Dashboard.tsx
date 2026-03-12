@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { PushpinOutlined, MessageOutlined, PlusOutlined, DownloadOutlined, UploadOutlined, InfoCircleOutlined } from "@ant-design/icons"
+import { useTranslation, Trans } from "react-i18next"
 import { useResources, useFavorites, useStatuses, useUserResources } from "../../hooks"
 import { useResourceStore } from "../../store"
 import { ResourceCard } from "../../components/ResourceCard"
@@ -7,13 +8,13 @@ import { ResourceFormModal } from "../../components/ResourceFormModal"
 import { DeleteConfirmModal } from "../../components/DeleteConfirmModal"
 import type { UserResource } from "../../types"
 
-const FILTER_LABELS: Record<string, string> = {
-  community: "Recursos de la Comunidad",
-  user: "Tus Recursos",
-  favorites: "Favoritos",
-  pending: "Pendientes",
-  consumed: "Consumidos",
-  category: "Categoría",
+const FILTER_TRANS_KEYS: Record<string, string> = {
+  community: "filters.community",
+  user: "filters.yourResources",
+  favorites: "filters.favorites",
+  pending: "filters.pending",
+  consumed: "filters.consumed",
+  category: "filters.category",
 }
 
 interface DashboardProps {
@@ -25,6 +26,7 @@ interface DashboardProps {
 }
 
 export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportBackup, onImportBackup }: DashboardProps) {
+  const { t } = useTranslation()
   const { filteredResources } = useResources()
   const { isFavorite, toggleFavorite } = useFavorites()
   const { getStatus, cycleStatus } = useStatuses()
@@ -40,8 +42,8 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
 
   const title =
     activeFilter === "category" && activeCategory
-      ? `${FILTER_LABELS.category}: ${activeCategory}`
-      : FILTER_LABELS[activeFilter] || "Recursos"
+      ? `${t("filters.category")}: ${activeCategory}`
+      : t(FILTER_TRANS_KEYS[activeFilter] ?? "filters.community")
 
   function handleEdit(id: string) {
     const resource = filteredResources.find((r) => r.id === id) as UserResource | undefined
@@ -62,7 +64,7 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
               {title}
             </h2>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              {filteredResources.length} recurso{filteredResources.length !== 1 ? "s" : ""}
+              {t("dashboard.resourceCount", { count: filteredResources.length })}
             </p>
           </div>
 
@@ -73,21 +75,21 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
                 onClick={onOpenCreate}
                 className="flex items-center gap-1.5 rounded-md bg-indigo-600 px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
               >
-                <PlusOutlined /> Crear recurso
+                <PlusOutlined /> {t("actions.createResource")}
               </button>
               {userResources.length > 0 && (
                 <button
                   onClick={onExportBackup}
                   className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  <DownloadOutlined /> Descargar respaldo
+                  <DownloadOutlined /> {t("actions.downloadBackup")}
                 </button>
               )}
               <button
                 onClick={onImportBackup}
                 className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
               >
-                <UploadOutlined /> Cargar respaldo
+                <UploadOutlined /> {t("actions.uploadBackup")}
               </button>
             </div>
           )}
@@ -98,7 +100,10 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
           <div className="mt-3 flex items-start gap-2 rounded-lg bg-indigo-50 border border-indigo-100 px-3 py-2.5 dark:bg-indigo-950/40 dark:border-indigo-900">
             <InfoCircleOutlined className="mt-0.5 shrink-0 text-indigo-500 dark:text-indigo-400" />
             <p className="text-xs text-indigo-700 dark:text-indigo-300">
-              Tus recursos se guardan localmente en este navegador. Usa <strong>Descargar respaldo</strong> para no perderlos si limpias el historial o cambias de dispositivo.
+              <Trans
+                i18nKey="dashboard.localStorageNotice"
+                components={{ 1: <strong /> }}
+              />
             </p>
           </div>
         )}
@@ -108,17 +113,17 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
         <div className="flex flex-col items-center justify-center py-16 sm:py-24 text-gray-400 dark:text-gray-500">
           <span className="text-5xl">{activeFilter === "user" ? <PushpinOutlined /> : <MessageOutlined />}</span>
           <p className="mt-4 text-base sm:text-lg font-medium">
-            {activeFilter === "user" ? "Aún no tienes recursos" : "No se encontraron recursos"}
+            {activeFilter === "user" ? t("dashboard.emptyUser") : t("dashboard.emptyOther")}
           </p>
           <p className="text-xs sm:text-sm">
-            {activeFilter === "user" ? "¡Crea tu primero!" : "Intenta cambiar los filtros o la búsqueda"}
+            {activeFilter === "user" ? t("dashboard.emptyUserHint") : t("dashboard.emptyOtherHint")}
           </p>
           {activeFilter === "user" && (
             <button
               onClick={onOpenCreate}
               className="mt-5 rounded-md bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
             >
-              <PlusOutlined /> Crear recurso
+              <PlusOutlined /> {t("actions.createResource")}
             </button>
           )}
         </div>

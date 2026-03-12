@@ -1,28 +1,23 @@
 import type { ResourceStatus } from "../types"
-
-const FAVORITES_KEY = "bookmark_favorites"
-const STATUSES_KEY = "bookmark_statuses"
+import { STORAGE_KEYS } from "../constants/storageKeys"
 
 function getFavorites(): string[] {
-  const raw = localStorage.getItem(FAVORITES_KEY)
+  const raw = localStorage.getItem(STORAGE_KEYS.FAVORITES)
   if (!raw) return []
   return JSON.parse(raw) as string[]
 }
 
 function saveFavorites(favorites: string[]): void {
-  localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites))
+  localStorage.setItem(STORAGE_KEYS.FAVORITES, JSON.stringify(favorites))
 }
 
 function toggleFavorite(id: string): string[] {
   const favorites = getFavorites()
-  const index = favorites.indexOf(id)
-  if (index === -1) {
-    favorites.push(id)
-  } else {
-    favorites.splice(index, 1)
-  }
-  saveFavorites(favorites)
-  return favorites
+  const updated = favorites.includes(id)
+    ? favorites.filter((f) => f !== id)
+    : [...favorites, id]
+  saveFavorites(updated)
+  return updated
 }
 
 function isFavorite(id: string): boolean {
@@ -30,27 +25,25 @@ function isFavorite(id: string): boolean {
 }
 
 function getStatuses(): Record<string, ResourceStatus> {
-  const raw = localStorage.getItem(STATUSES_KEY)
+  const raw = localStorage.getItem(STORAGE_KEYS.STATUSES)
   if (!raw) return {}
   return JSON.parse(raw) as Record<string, ResourceStatus>
 }
 
 function saveStatuses(statuses: Record<string, ResourceStatus>): void {
-  localStorage.setItem(STATUSES_KEY, JSON.stringify(statuses))
+  localStorage.setItem(STORAGE_KEYS.STATUSES, JSON.stringify(statuses))
 }
 
 function setStatus(id: string, status: ResourceStatus): Record<string, ResourceStatus> {
-  const statuses = getStatuses()
-  statuses[id] = status
-  saveStatuses(statuses)
-  return statuses
+  const updated = { ...getStatuses(), [id]: status }
+  saveStatuses(updated)
+  return updated
 }
 
 function removeStatus(id: string): Record<string, ResourceStatus> {
-  const statuses = getStatuses()
-  delete statuses[id]
-  saveStatuses(statuses)
-  return statuses
+  const { [id]: _, ...rest } = getStatuses()
+  saveStatuses(rest)
+  return rest
 }
 
 function getStatus(id: string): ResourceStatus | undefined {

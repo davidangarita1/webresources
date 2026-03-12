@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { CheckCircleOutlined } from "@ant-design/icons"
+import { useTranslation } from "react-i18next"
 import type { ConflictInfo } from "../services/backupService"
 
 interface ConflictResolutionDialogProps {
@@ -9,6 +10,7 @@ interface ConflictResolutionDialogProps {
 }
 
 export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: ConflictResolutionDialogProps) {
+  const { t } = useTranslation()
   const [actions, setActions] = useState<Map<string, "update" | "skip">>(
     () => new Map(conflicts.map((c) => [c.importedResource.id, "skip"]))
   )
@@ -27,10 +29,10 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
     <div className="flex flex-col gap-4">
       <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
         <p className="text-sm font-medium text-amber-900">
-          {conflicts.length} resource{conflicts.length !== 1 ? "s" : ""} already exist in your collection.
+          {t("conflictDialog.existing", { count: conflicts.length })}
         </p>
         <p className="text-sm text-amber-800 mt-1">
-          Choose whether to update each one with imported data or keep your current version.
+          {t("conflictDialog.description")}
         </p>
       </div>
 
@@ -40,13 +42,13 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
           onClick={() => setAll("update")}
           className="px-3 py-1.5 text-xs font-medium rounded border border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors"
         >
-          Update all
+          {t("conflictDialog.updateAll")}
         </button>
         <button
           onClick={() => setAll("skip")}
           className="px-3 py-1.5 text-xs font-medium rounded border border-gray-300 bg-gray-50 text-gray-700 hover:bg-gray-100 transition-colors"
         >
-          Skip all
+          {t("conflictDialog.skipAll")}
         </button>
       </div>
 
@@ -60,7 +62,7 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
               <p className="text-xs text-gray-500 mt-0.5 truncate">{existingResource.url}</p>
               {importedResource.title !== existingResource.title && (
                 <p className="text-xs text-gray-500 mt-0.5">
-                  Import title: <span className="italic">{importedResource.title}</span>
+                  {t("conflictDialog.importTitle")} <span className="italic">{importedResource.title}</span>
                 </p>
               )}
               <div className="flex gap-2 mt-2">
@@ -72,7 +74,7 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
                       : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
                   }`}
                 >
-                  Update
+                  {t("conflictDialog.update")}
                 </button>
                 <button
                   onClick={() => setAction(importedResource.id, "skip")}
@@ -82,7 +84,7 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
                       : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
                   }`}
                 >
-                  Skip
+                  {t("conflictDialog.skip")}
                 </button>
               </div>
             </div>
@@ -92,7 +94,7 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
 
       {/* Summary */}
       <p className="text-xs text-gray-500">
-        {updateCount} will be updated · {conflicts.length - updateCount} will be skipped
+        {t("conflictDialog.willUpdate", { update: updateCount, skip: conflicts.length - updateCount })}
       </p>
 
       {/* Actions */}
@@ -101,14 +103,14 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
           onClick={onCancel}
           className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-50 transition-colors"
         >
-          Cancel import
+          {t("conflictDialog.cancelImport")}
         </button>
         <button
           onClick={() => onResolve(actions)}
           className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-md text-sm font-medium hover:bg-blue-600 transition-colors"
         >
           <CheckCircleOutlined />
-          Confirm &amp; import
+          {t("conflictDialog.confirmImport")}
         </button>
       </div>
     </div>

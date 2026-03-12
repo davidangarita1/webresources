@@ -1,30 +1,27 @@
 import type { UserResource } from "../types"
-
-const USER_RESOURCES_KEY = "user-resources"
+import { STORAGE_KEYS } from "../constants/storageKeys"
 
 function getAll(): UserResource[] {
-  const raw = localStorage.getItem(USER_RESOURCES_KEY)
+  const raw = localStorage.getItem(STORAGE_KEYS.USER_RESOURCES)
   if (!raw) return []
 
   try {
     const parsed = JSON.parse(raw)
 
     if (!Array.isArray(parsed)) {
-      // Reset invalid data and return a safe default
-      localStorage.removeItem(USER_RESOURCES_KEY)
+      localStorage.removeItem(STORAGE_KEYS.USER_RESOURCES)
       return []
     }
 
     return parsed as UserResource[]
   } catch {
-    // Malformed JSON: clear corrupted data and return a safe default
-    localStorage.removeItem(USER_RESOURCES_KEY)
+    localStorage.removeItem(STORAGE_KEYS.USER_RESOURCES)
     return []
   }
 }
 
 function save(resources: UserResource[]): void {
-  localStorage.setItem(USER_RESOURCES_KEY, JSON.stringify(resources))
+  localStorage.setItem(STORAGE_KEYS.USER_RESOURCES, JSON.stringify(resources))
 }
 
 function create(data: Omit<UserResource, "id" | "source" | "createdAt">): UserResource {

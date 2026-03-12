@@ -108,4 +108,89 @@ describe("ResourceCard", () => {
     render(<ResourceCard {...defaultProps} status="reference" />)
     expect(screen.getByText("Referencia")).toBeInTheDocument()
   })
+
+  it("renders YouTube thumbnail when resource is a YouTube link", () => {
+    const ytResource: Resource = {
+      ...MOCK_RESOURCE,
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    }
+    render(<ResourceCard {...defaultProps} resource={ytResource} />)
+    const img = screen.getByAltText("React Documentation")
+    expect(img).toHaveAttribute("src", "https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg")
+  })
+
+  it("renders play button for YouTube resources", () => {
+    const ytResource: Resource = {
+      ...MOCK_RESOURCE,
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    }
+    render(<ResourceCard {...defaultProps} resource={ytResource} />)
+    expect(screen.getByText("Reproducir")).toBeInTheDocument()
+  })
+
+  it("opens YouTube player modal when play button clicked", async () => {
+    const ytResource: Resource = {
+      ...MOCK_RESOURCE,
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    }
+    const user = userEvent.setup()
+    render(<ResourceCard {...defaultProps} resource={ytResource} />)
+    await user.click(screen.getByText("Reproducir"))
+    expect(document.querySelector("iframe")).toBeInTheDocument()
+  })
+
+  it("opens YouTube player modal when thumbnail clicked", async () => {
+    const ytResource: Resource = {
+      ...MOCK_RESOURCE,
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    }
+    const user = userEvent.setup()
+    render(<ResourceCard {...defaultProps} resource={ytResource} />)
+    await user.click(screen.getByAltText("React Documentation"))
+    expect(document.querySelector("iframe")).toBeInTheDocument()
+  })
+
+  it("renders edit and delete buttons when handlers are provided", () => {
+    render(<ResourceCard {...defaultProps} onEdit={vi.fn()} onDelete={vi.fn()} />)
+    expect(screen.getByLabelText("Editar recurso")).toBeInTheDocument()
+    expect(screen.getByLabelText("Eliminar recurso")).toBeInTheDocument()
+  })
+
+  it("calls onEdit when edit button clicked", async () => {
+    const onEdit = vi.fn()
+    const user = userEvent.setup()
+    render(<ResourceCard {...defaultProps} onEdit={onEdit} />)
+    await user.click(screen.getByLabelText("Editar recurso"))
+    expect(onEdit).toHaveBeenCalledWith("1")
+  })
+
+  it("calls onDelete when delete button clicked", async () => {
+    const onDelete = vi.fn()
+    const user = userEvent.setup()
+    render(<ResourceCard {...defaultProps} onDelete={onDelete} />)
+    await user.click(screen.getByLabelText("Eliminar recurso"))
+    expect(onDelete).toHaveBeenCalledWith("1")
+  })
+
+  it("shows fallback icon when favicon fails to load", async () => {
+    const { act } = await import("react")
+    render(<ResourceCard {...defaultProps} />)
+    const favicon = document.querySelector("img[src*='favicon']")
+    if (favicon) {
+      act(() => {
+        favicon.dispatchEvent(new Event("error"))
+      })
+    }
+    expect(screen.getByText("R")).toBeInTheDocument()
+  })
+
+  it("closes YouTube player modal when close button is clicked", async () => {
+    const user = userEvent.setup()
+    const ytResource = { ...defaultProps.resource, url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
+    render(<ResourceCard {...defaultProps} resource={ytResource} />)
+    await user.click(screen.getByText("Reproducir"))
+    expect(document.querySelector("iframe")).toBeInTheDocument()
+    await user.click(screen.getByLabelText("Cerrar reproductor"))
+    expect(document.querySelector("iframe")).not.toBeInTheDocument()
+  })
 })

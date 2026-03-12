@@ -100,4 +100,12 @@ describe("useResources", () => {
     expect(ids).toContain("community-1")
     expect(ids).toContain("user-1")
   })
+
+  it("calls initialize when resources are empty", () => {
+    const initSpy = vi.spyOn(useResourceStore.getState(), "initialize")
+    useResourceStore.setState({ resources: [], userResources: [] })
+    renderHook(() => useResources())
+    expect(initSpy).toHaveBeenCalled()
+    initSpy.mockRestore()
+  })
 })

@@ -170,4 +170,11 @@ describe("exportResourcesToJSON", () => {
     removeSpy.mockRestore()
     localStorage.clear()
   })
+
+  it("detects conflicts with invalid URLs (normalizeUrl catch branch)", () => {
+    localStorage.setItem("user-resources", JSON.stringify([makeResource({ id: "e1", url: "not-a-valid-url", title: "Existing" })]))
+    const imported = [makeResource({ id: "i1", url: "not-a-valid-url", title: "Imported" })]
+    const conflicts = detectURLConflicts(imported)
+    expect(conflicts.size).toBe(1)
+  })
 })
