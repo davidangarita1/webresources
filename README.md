@@ -62,13 +62,15 @@ pnpm dev
 ```
 src/
 ├── app/              # App.tsx (main application shell + sidebar toggle state)
-├── components/       # UI components (ResourceCard, SearchBar, Sidebar, Topbar, TagList, CategoryList)
-├── hooks/            # Custom hooks (useResources, useFavorites, useStatuses, useSearch)
+├── components/       # UI components (ResourceCard, SearchBar, Sidebar, Topbar, modals, etc.)
+├── constants/        # Centralized constants (storageKeys)
+├── hooks/            # Custom hooks (useResources, useFavorites, useStatuses, useSearch, useUserResources)
+├── locales/          # i18n translations (en, es)
 ├── pages/            # Pages (Dashboard, NotFound)
-├── services/         # Business logic (storageService, searchService, resourceService)
+├── services/         # Business logic (storageService, searchService, resourceService, backupService, userResourceService)
 ├── store/            # Zustand store (resourceStore)
-├── types/            # TypeScript types (Resource, ResourceStatus, UserState)
-├── utils/            # Utility functions (url, date)
+├── types/            # TypeScript types (Resource, UserResource, ResourceStatus)
+├── utils/            # Utility functions (url, youtube)
 ├── data/             # resources.json (read-only source of truth)
 └── test/             # Test setup and utilities
 
@@ -79,9 +81,11 @@ docs/
 ## Architecture
 
 - **SOLID** — each component, hook, and service has a single responsibility
-- **Service layer** — `storageService` (localStorage), `searchService` (Fuse.js), `resourceService` (JSON data)
-- **Zustand store** — global state for resources, favorites, statuses, search, and filters
-- **Custom hooks** — `useResources`, `useFavorites`, `useStatuses`, `useSearch`
+- **DRY** — centralized storage keys, consolidated filter logic, shared service layer
+- **Functional patterns** — immutable state updates, pure service functions, no side effects in hooks
+- **Service layer** — `storageService` (localStorage), `searchService` (Fuse.js), `resourceService` (JSON data), `userResourceService` (CRUD), `backupService` (export/import)
+- **Zustand store** — global state for resources, favorites, statuses, search, filters, and user resources with `getFilteredResources()` selector
+- **Custom hooks** — `useResources`, `useFavorites`, `useStatuses`, `useSearch`, `useUserResources`
 - **Path aliases** — `@components`, `@hooks`, `@store`, `@services`, `@types`, `@utils`
 
 ## Data model
@@ -108,11 +112,17 @@ type ResourceStatus = "pending" | "consumed" | "reference"
 
 ## Testing
 
-49 unit tests with [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/):
+234+ unit tests with [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/):
 
-- **Services** — storageService, searchService
-- **Hooks** — useFavorites, useStatuses
-- **Components** — ResourceCard, SearchBar
+- **Services** — storageService, searchService, resourceService, userResourceService, backupService
+- **Hooks** — useFavorites, useStatuses, useResources, useUserResources
+- **Components** — ResourceCard, SearchBar, Sidebar, Topbar, ImportResourcesModal, ResourceFormModal, ConflictResolutionDialog, DeleteConfirmModal, YouTubePlayerModal, LanguageSelector
+- **Store** — resourceStore (initialize, filters, CRUD, search)
+- **Pages** — Dashboard, NotFound
+- **App** — App shell (routing, sidebar toggle, import/export, create flow)
+- **Utils** — url, youtube
+
+Coverage: ~99% statements, ~95% branches, ~99% functions, ~99% lines.
 
 | Command | Description |
 |---|---|

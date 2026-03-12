@@ -1,3 +1,19 @@
+1.7.0
+- Chore: Code audit — SOLID, DRY, KISS, YAGNI, clean code, functional programming patterns
+- Chore: Extract centralized STORAGE_KEYS constant replacing magic strings across 6+ files
+- Chore: Rewrite storageService with immutable state updates (filter/spread instead of mutations)
+- Chore: Consolidate filter logic in useResources — delegates to store.getFilteredResources()
+- Chore: Split backupService into buildBackupData() + downloadJSON() + exportResourcesToJSON() (SRP)
+- Chore: Remove dead code — delete date.ts, TagList.tsx, CategoryList.tsx, userState.ts; prune unused service functions
+- Chore: Remove unnecessary comments, simplify applyDarkMode() with classList.toggle()
+- Chore: Add i18n for NotFound and YouTubePlayerModal
+- Fix: Update CI workflow action versions (checkout@v5, setup-node@v5)
+- Test: Increase from 49 to 234+ tests across 25 test files
+- Test: Add tests for App, Dashboard, Sidebar, Topbar, ResourceFormModal, ImportResourcesModal, ConflictResolutionDialog, DeleteConfirmModal, YouTubePlayerModal, ResourceCard, resourceStore, resourceService, userResourceService, backupService, useResources, useUserResources, url utils, youtube utils
+- Test: Coverage raised to ~99% statements, ~95% branches, ~99% functions, ~99% lines
+- Test: Raise coverage thresholds to 95%/90%/95%/95% (stmts/branches/funcs/lines)
+- Docs: Update README — accurate test count, project structure, architecture section
+
 1.6.0
 - Feat: Add Spanish/English language support with real-time switching via ES/EN toggle in the top bar
 - Feat: Add LanguageSelector component — one click to switch languages; preference persisted in browser storage
