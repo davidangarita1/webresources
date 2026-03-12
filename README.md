@@ -7,6 +7,8 @@ A fast, offline-capable PWA to explore and manage a curated collection of 1000+ 
 ## Features
 
 - **Fuzzy search** — search across titles, descriptions, tags, URLs, and categories with Fuse.js
+- **Comunidad view** — dedicated sidebar nav entry that shows all curated resources from `resources.json`
+- **Your Resources view** — dedicated "Tus Recursos" section showing only user-created resources stored in `localStorage`
 - **Favorites** — mark resources as favorites, persisted in localStorage
 - **Status tracking** — cycle through states: Pendiente → Consumido → Referencia
 - **Category filtering** — browse resources by category via sidebar navigation

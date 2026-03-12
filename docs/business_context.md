@@ -22,7 +22,8 @@ No es una plataforma colaborativa ni tiene usuarios registrados. Es una herramie
 
 Una vez abierta la aplicación, el usuario puede:
 
-- **Explorar todos sus recursos** organizados por categorías (CSS, JavaScript, React, diseño, despliegue, etc.).
+- **Explorar la Comunidad** — los recursos del catálogo curado, organizados por categorías (CSS, JavaScript, React, diseño, despliegue, etc.).
+- **Ver sus propios recursos** — a través de la sección **"Tus Recursos"**, el usuario puede acceder a los enlaces que él mismo haya guardado, completamente separados del catálogo de la comunidad.
 - **Buscar rápidamente** cualquier recurso escribiendo palabras clave — el buscador entiende búsquedas aproximadas, por lo que no hace falta escribir exactamente el nombre.
 - **Marcar favoritos** para identificar los recursos más valiosos o consultados frecuentemente.
 - **Cambiar el estado** de cada recurso:
@@ -51,7 +52,9 @@ Los recursos del catálogo solo pueden modificarse editando manualmente un archi
 
 Hay dos tipos de información:
 
-**El catálogo de recursos** — la lista de todos los enlaces — está guardado en un archivo dentro del proyecto. Es fijo y solo cambia cuando el dueño lo edita manualmente.
+**El catálogo de recursos** — la lista de todos los enlaces curados — está guardado en un archivo dentro del proyecto. Es fijo y solo cambia cuando el dueño lo edita manualmente.
+
+**Los recursos personales del usuario** — los enlaces que el propio usuario ha agregado — se guardan en el navegador del dispositivo bajo una clave independiente del catálogo.
 
 **Las preferencias del usuario** — favoritos, estados (pendiente, consumido, referencia) y modo oscuro — se guardan directamente en el navegador del dispositivo que se usa. Esto significa que son privadas, no se comparten ni se sincronizan entre dispositivos.
 
@@ -69,7 +72,8 @@ Además, puede **instalarse como una aplicación** en el dispositivo (como si fu
 
 | Problema | Solución |
 |---|---|
-| Tengo cientos de marcadores y no los encuentro | Búsqueda rápida y filtros por categoría |
+| Tengo cientos de marcadores y no los encuentro | Búsqueda rápida, vista Comunidad y filtros por categoría |
+| Quiero guardar mis propios enlaces | Sección "Tus Recursos" — colección personal separada del catálogo |
 | No sé qué recursos ya revisé | Estados: Pendiente / Consumido / Referencia |
 | Quiero marcar mis favoritos del catálogo | Botón de favorito por recurso |
 | Quiero usarlo desde el teléfono | Diseño adaptable a cualquier pantalla, instalable como app |

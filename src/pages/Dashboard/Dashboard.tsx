@@ -3,7 +3,8 @@ import { useResourceStore } from "../../store"
 import { ResourceCard } from "../../components/ResourceCard"
 
 const FILTER_LABELS: Record<string, string> = {
-  all: "Todos los recursos",
+  community: "Recursos de la Comunidad",
+  user: "Tus Recursos",
   favorites: "Favoritos",
   pending: "Pendientes",
   consumed: "Consumidos",
@@ -36,9 +37,13 @@ export function Dashboard() {
 
       {filteredResources.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-16 sm:py-24 text-gray-400 dark:text-gray-500">
-          <span className="text-5xl">📭</span>
-          <p className="mt-4 text-base sm:text-lg font-medium">No se encontraron recursos</p>
-          <p className="text-xs sm:text-sm">Intenta cambiar los filtros o la búsqueda</p>
+          <span className="text-5xl">{activeFilter === "user" ? "📌" : "💭"}</span>
+          <p className="mt-4 text-base sm:text-lg font-medium">
+            {activeFilter === "user" ? "Aún no tienes recursos" : "No se encontraron recursos"}
+          </p>
+          <p className="text-xs sm:text-sm">
+            {activeFilter === "user" ? "¡Crea tu primero!" : "Intenta cambiar los filtros o la búsqueda"}
+          </p>
         </div>
       ) : (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">

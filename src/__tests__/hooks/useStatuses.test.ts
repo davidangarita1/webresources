@@ -12,7 +12,7 @@ describe("useStatuses", () => {
       searchQuery: "",
       searchResults: [],
       searchIndex: null,
-      activeFilter: "all",
+      activeFilter: "community",
       activeCategory: null,
       categories: [],
     })
