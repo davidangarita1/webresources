@@ -11,9 +11,10 @@ const NAV_ITEMS = [
 interface SidebarProps {
   isOpen: boolean
   onClose: () => void
+  onCreateResource: () => void
 }
 
-export function Sidebar({ isOpen, onClose }: SidebarProps) {
+export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
   const activeFilter = useResourceStore((s) => s.activeFilter)
   const activeCategory = useResourceStore((s) => s.activeCategory)
   const categories = useResourceStore((s) => s.categories)
@@ -100,6 +101,16 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             </ul>
           </div>
         </nav>
+
+        <div className="border-t border-gray-200 p-3 dark:border-gray-700">
+          <button
+            onClick={() => { onCreateResource(); onClose() }}
+            className="flex w-full items-center justify-center gap-2 rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+          >
+            <span>➕</span>
+            Crear recurso
+          </button>
+        </div>
       </aside>
     </>
   )

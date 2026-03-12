@@ -1,6 +1,10 @@
-import { useResources, useFavorites, useStatuses } from "../../hooks"
+import { useState } from "react"
+import { useResources, useFavorites, useStatuses, useUserResources } from "../../hooks"
 import { useResourceStore } from "../../store"
 import { ResourceCard } from "../../components/ResourceCard"
+import { ResourceFormModal } from "../../components/ResourceFormModal"
+import { DeleteConfirmModal } from "../../components/DeleteConfirmModal"
+import type { UserResource } from "../../types"
 
 const FILTER_LABELS: Record<string, string> = {
   community: "Recursos de la Comunidad",
@@ -11,18 +15,39 @@ const FILTER_LABELS: Record<string, string> = {
   category: "Categoría",
 }
 
-export function Dashboard() {
+interface DashboardProps {
+  isCreateOpen: boolean
+  onOpenCreate: () => void
+  onCreateClose: () => void
+}
+
+export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose }: DashboardProps) {
   const { filteredResources } = useResources()
   const { isFavorite, toggleFavorite } = useFavorites()
   const { getStatus, cycleStatus } = useStatuses()
+  const { createUserResource, updateUserResource, deleteUserResource } = useUserResources()
 
   const activeFilter = useResourceStore((s) => s.activeFilter)
   const activeCategory = useResourceStore((s) => s.activeCategory)
+  const categories = useResourceStore((s) => s.categories)
+
+  const [editingResource, setEditingResource] = useState<UserResource | null>(null)
+  const [deletingResource, setDeletingResource] = useState<UserResource | null>(null)
 
   const title =
     activeFilter === "category" && activeCategory
       ? `${FILTER_LABELS.category}: ${activeCategory}`
       : FILTER_LABELS[activeFilter] || "Recursos"
+
+  function handleEdit(id: string) {
+    const resource = filteredResources.find((r) => r.id === id) as UserResource | undefined
+    if (resource) setEditingResource(resource)
+  }
+
+  function handleDelete(id: string) {
+    const resource = filteredResources.find((r) => r.id === id) as UserResource | undefined
+    if (resource) setDeletingResource(resource)
+  }
 
   return (
     <div className="flex-1 overflow-y-auto p-3 sm:p-6">
@@ -44,6 +69,14 @@ export function Dashboard() {
           <p className="text-xs sm:text-sm">
             {activeFilter === "user" ? "¡Crea tu primero!" : "Intenta cambiar los filtros o la búsqueda"}
           </p>
+          {activeFilter === "user" && (
+            <button
+              onClick={onOpenCreate}
+              className="mt-5 rounded-md bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+            >
+              ➕ Crear recurso
+            </button>
+          )}
         </div>
       ) : (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
@@ -55,9 +88,39 @@ export function Dashboard() {
               status={getStatus(resource.id)}
               onToggleFavorite={toggleFavorite}
               onCycleStatus={cycleStatus}
+              onEdit={"source" in resource && resource.source === "user" ? handleEdit : undefined}
+              onDelete={"source" in resource && resource.source === "user" ? handleDelete : undefined}
             />
           ))}
         </div>
+      )}
+
+      {(isCreateOpen || editingResource) && (
+        <ResourceFormModal
+          initialData={editingResource ?? undefined}
+          categories={categories}
+          onSubmit={(data) => {
+            if (editingResource) {
+              updateUserResource(editingResource.id, data)
+              setEditingResource(null)
+            } else {
+              createUserResource(data)
+              onCreateClose()
+            }
+          }}
+          onClose={() => {
+            setEditingResource(null)
+            onCreateClose()
+          }}
+        />
+      )}
+
+      {deletingResource && (
+        <DeleteConfirmModal
+          resourceTitle={deletingResource.title}
+          onConfirm={() => deleteUserResource(deletingResource.id)}
+          onClose={() => setDeletingResource(null)}
+        />
       )}
     </div>
   )

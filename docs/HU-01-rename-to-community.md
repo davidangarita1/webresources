@@ -1,4 +1,4 @@
-# HU-01: Rename "All" to "Community"
+# HU-01: Rename "All" to "Community" [done]
 
 **As** an application user,
 **I want** the navigation button "Todos" (which shows resources from `resources.json`) to be renamed to "Comunidad" (or another representative name),

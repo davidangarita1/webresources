@@ -1,4 +1,4 @@
-# HU-02: "Your Resources" section for user links
+# HU-02: "Your Resources" section for user links [done]
 
 **As** a user,
 **I want** a button in the sidebar called "Tus Recursos" (or "Tus Enlaces"),

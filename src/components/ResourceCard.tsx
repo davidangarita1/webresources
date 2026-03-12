@@ -20,6 +20,8 @@ interface ResourceCardProps {
   status?: ResourceStatus
   onToggleFavorite: (id: string) => void
   onCycleStatus: (id: string) => void
+  onEdit?: (id: string) => void
+  onDelete?: (id: string) => void
 }
 
 export function ResourceCard({
@@ -28,6 +30,8 @@ export function ResourceCard({
   status,
   onToggleFavorite,
   onCycleStatus,
+  onEdit,
+  onDelete,
 }: ResourceCardProps) {
   const [faviconError, setFaviconError] = useState(false)
   const domain = extractDomain(resource.url)
@@ -62,6 +66,28 @@ export function ResourceCard({
         >
           {isFavorite ? "⭐" : "☆"}
         </button>
+        {(onEdit || onDelete) && (
+          <div className="ml-1 flex shrink-0 items-center gap-0.5">
+            {onEdit && (
+              <button
+                onClick={() => onEdit(resource.id)}
+                className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-indigo-400"
+                aria-label="Editar recurso"
+              >
+                ✏️
+              </button>
+            )}
+            {onDelete && (
+              <button
+                onClick={() => onDelete(resource.id)}
+                className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-400"
+                aria-label="Eliminar recurso"
+              >
+                🗑️
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
       <p className="mb-2 text-xs text-gray-500 dark:text-gray-400">
