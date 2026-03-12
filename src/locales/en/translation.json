@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "title": "Bookmarks",
+    "community": "Community",
+    "yourResources": "Your Resources",
+    "favorites": "Favorites",
+    "pending": "Pending",
+    "consumed": "Consumed",
+    "categories": "Categories",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu"
+  },
+  "actions": {
+    "createResource": "Create resource",
+    "saveChanges": "Save changes",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "open": "Open",
+    "play": "Play",
+    "downloadBackup": "Download backup",
+    "uploadBackup": "Upload backup",
+    "close": "Close"
+  },
+  "filters": {
+    "community": "Community Resources",
+    "yourResources": "Your Resources",
+    "favorites": "Favorites",
+    "pending": "Pending",
+    "consumed": "Consumed",
+    "category": "Category"
+  },
+  "dashboard": {
+    "resourceCount_one": "{{count}} resource",
+    "resourceCount_other": "{{count}} resources",
+    "emptyUser": "You have no resources yet",
+    "emptyUserHint": "Create your first one!",
+    "emptyOther": "No resources found",
+    "emptyOtherHint": "Try changing the filters or search",
+    "localStorageNotice": "Your resources are saved locally in this browser. Use <1>Download backup</1> to avoid losing them if you clear your history or switch devices."
+  },
+  "status": {
+    "pending": "Pending",
+    "consumed": "Consumed",
+    "reference": "Reference",
+    "none": "No status"
+  },
+  "resourceCard": {
+    "addFavorite": "Add to favorites",
+    "removeFavorite": "Remove from favorites",
+    "editResource": "Edit resource",
+    "deleteResource": "Delete resource",
+    "playVideo": "Play: {{title}}"
+  },
+  "search": {
+    "placeholder": "Search resources...",
+    "aria": "Search resources",
+    "clear": "Clear search"
+  },
+  "topbar": {
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "selectLanguage": "Select language"
+  },
+  "resourceForm": {
+    "newTitle": "New resource",
+    "editTitle": "Edit resource",
+    "titleLabel": "Title",
+    "urlLabel": "URL",
+    "descriptionLabel": "Description",
+    "categoryLabel": "Category",
+    "tagsLabel": "Tags",
+    "optional": "(optional)",
+    "tagsSeparator": "(comma-separated)",
+    "titlePlaceholder": "Resource name",
+    "descriptionPlaceholder": "Brief description of the resource",
+    "categoryPlaceholder": "E.g.: CSS, REACT, TOOLS",
+    "tagsPlaceholder": "react, hooks, tutorial",
+    "urlPlaceholder": "https://example.com",
+    "errorTitle": "Title is required",
+    "errorUrl": "URL is required",
+    "errorUrlInvalid": "Enter a valid URL (e.g. https://example.com)",
+    "errorCategory": "Category is required"
+  },
+  "deleteConfirm": {
+    "title": "Delete resource",
+    "message": "Delete",
+    "warning": "This action cannot be undone.",
+    "confirm": "Delete"
+  },
+  "importModal": {
+    "title": "Import Resources",
+    "selectLabel": "Click to select JSON backup file",
+    "selectHint": "Only .json files exported from this application",
+    "importInfo": "Importing will restore your resources, favorites, and statuses. Existing data will not be removed unless you choose to update conflicting resources.",
+    "invalidFile": "Invalid backup file:",
+    "cancelButton": "Cancel"
+  },
+  "conflictDialog": {
+    "existing_one": "{{count}} resource already exists in your collection.",
+    "existing_other": "{{count}} resources already exist in your collection.",
+    "description": "Choose whether to update each one with imported data or keep your current version.",
+    "updateAll": "Update all",
+    "skipAll": "Skip all",
+    "willUpdate": "{{update}} will be updated · {{skip}} will be skipped",
+    "willUpdatePlural": "{{update}} will be updated · {{skip}} will be skipped",
+    "cancelImport": "Cancel import",
+    "confirmImport": "Confirm & import",
+    "update": "Update",
+    "skip": "Skip",
+    "importTitle": "Import title:"
+  }
+}
