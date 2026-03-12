@@ -28,6 +28,9 @@ interface ResourceStore {
   setActiveFilter: (filter: ViewFilter) => void
   setActiveCategory: (category: string | null) => void
   getFilteredResources: () => Resource[]
+  createUserResource: (data: Omit<UserResource, "id" | "source" | "createdAt">) => void
+  updateUserResource: (id: string, data: Partial<Omit<UserResource, "id" | "source" | "createdAt">>) => void
+  deleteUserResource: (id: string) => void
 }
 
 export const useResourceStore = create<ResourceStore>((set, get) => ({
@@ -86,6 +89,21 @@ export const useResourceStore = create<ResourceStore>((set, get) => ({
 
   setActiveCategory: (category: string | null) => {
     set({ activeFilter: "category", activeCategory: category })
+  },
+
+  createUserResource: (data) => {
+    userResourceService.create(data)
+    set({ userResources: userResourceService.getAll() })
+  },
+
+  updateUserResource: (id, data) => {
+    userResourceService.update(id, data)
+    set({ userResources: userResourceService.getAll() })
+  },
+
+  deleteUserResource: (id) => {
+    userResourceService.remove(id)
+    set({ userResources: userResourceService.getAll() })
   },
 
   getFilteredResources: () => {
