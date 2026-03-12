@@ -1,3 +1,15 @@
+1.5.0
+- Feat: Export all user resources, favorites, and statuses to a JSON backup file (user-resources-backup-{date}.json)
+- Feat: Import resources from a JSON backup file with structure validation
+- Feat: URL conflict detection on import — compare existing vs imported resources (case-insensitive, query params ignored)
+- Feat: ConflictResolutionDialog — per-resource Update/Skip controls plus bulk "Update all" / "Skip all" actions
+- Feat: ImportResourcesModal — file picker, validation errors display, conflict flow, cancel/confirm
+- Feat: "Descargar respaldo" and "Cargar respaldo" buttons in Sidebar footer
+- Feat: Toast notification on successful import (added / updated / skipped counts)
+- Test: Add 14 tests for backupService (validateBackupFile, detectURLConflicts, importBackup, exportResourcesToJSON)
+- Docs: Update business_context.md — backup and restore section
+- Docs: Update README features list with backup/restore entry
+
 1.4.0
 - Feat: Detect YouTube URLs automatically (youtube.com/watch, youtu.be, youtube.com/embed)
 - Feat: ResourceCard shows video thumbnail (img.youtube.com mqdefault) with hover play overlay for YouTube resources

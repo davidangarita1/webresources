@@ -11,6 +11,7 @@ A fast, offline-capable PWA to explore and manage a curated collection of 1000+ 
 - **Your Resources view** — dedicated "Tus Recursos" section showing only user-created resources stored in `localStorage`
 - **Personal resource CRUD** — create, edit, and delete personal resources via a modal form (title, URL, description, category, tags); changes persist in `localStorage`
 - **YouTube video support** — YouTube URLs auto-detected; ResourceCard shows thumbnail with play overlay; embedded player via `youtube-nocookie.com` modal
+- **Backup & restore** — export all personal resources, favorites and statuses to a JSON file; import back with URL-conflict detection and per-resource update/skip controls
 - **Ant Design icons** — all UI icons use `@ant-design/icons` SVG components
 - **Favorites** — mark resources as favorites, persisted in localStorage
 - **Status tracking** — cycle through states: Pendiente → Consumido → Referencia

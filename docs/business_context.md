@@ -36,6 +36,8 @@ Una vez abierta la aplicación, el usuario puede:
 - **Filtrar por estado** para ver únicamente los recursos pendientes, consumidos o favoritos.
 - **Navegar por categorías** para explorar recursos agrupados por tema.
 - **Reproducir videos de YouTube** — cuando un recurso (de la comunidad o personal) tiene una URL de YouTube, la tarjeta muestra la miniatura del video y permite reproducirlo directamente dentro de la aplicación mediante un reproductor embebido.
+- **Exportar respaldo** — desde la barra lateral, el usuario puede descargar un archivo JSON con todos sus recursos personales, favoritos y estados (`user-resources-backup-{fecha}.json`).
+- **Importar respaldo** — el usuario puede cargar un archivo de respaldo previamente exportado; la aplicación valida la estructura del archivo, detecta conflictos de URL con la colección actual y permite elegir recurso a recurso si actualizar o mantener la versión existente.
 
 ---
 
