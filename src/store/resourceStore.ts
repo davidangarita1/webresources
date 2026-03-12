@@ -1,14 +1,16 @@
 import { create } from "zustand"
-import type { Resource, ResourceStatus } from "../types"
+import type { Resource, ResourceStatus, UserResource } from "../types"
 import { resourceService } from "../services/resourceService"
 import { storageService } from "../services/storageService"
 import { searchService } from "../services/searchService"
+import { userResourceService } from "../services/userResourceService"
 import Fuse from "fuse.js"
 
-type ViewFilter = "community" | "favorites" | "pending" | "consumed" | "category"
+type ViewFilter = "community" | "user" | "favorites" | "pending" | "consumed" | "category"
 
 interface ResourceStore {
   resources: Resource[]
+  userResources: UserResource[]
   favorites: string[]
   statuses: Record<string, ResourceStatus>
   searchQuery: string
@@ -30,6 +32,7 @@ interface ResourceStore {
 
 export const useResourceStore = create<ResourceStore>((set, get) => ({
   resources: [],
+  userResources: [],
   favorites: [],
   statuses: {},
   searchQuery: "",
@@ -41,12 +44,13 @@ export const useResourceStore = create<ResourceStore>((set, get) => ({
 
   initialize: () => {
     const resources = resourceService.getAllResources()
+    const userResources = userResourceService.getAll()
     const favorites = storageService.getFavorites()
     const statuses = storageService.getStatuses()
     const categories = resourceService.getCategories()
     const searchIndex = searchService.createSearchIndex(resources)
 
-    set({ resources, favorites, statuses, categories, searchIndex })
+    set({ resources, userResources, favorites, statuses, categories, searchIndex })
   },
 
   toggleFavorite: (id: string) => {
@@ -85,7 +89,9 @@ export const useResourceStore = create<ResourceStore>((set, get) => ({
   },
 
   getFilteredResources: () => {
-    const { resources, favorites, statuses, searchQuery, searchResults, activeFilter, activeCategory } = get()
+    const { resources, userResources, favorites, statuses, searchQuery, searchResults, activeFilter, activeCategory } = get()
+
+    if (activeFilter === "user") return userResources
 
     const baseResources = searchQuery.trim() ? searchResults : resources
 
