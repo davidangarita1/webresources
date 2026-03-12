@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { SunOutlined, MoonOutlined } from "@ant-design/icons"
 import { SearchBar } from "./SearchBar"
 
 function getInitialDarkMode(): boolean {
@@ -51,7 +52,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
         className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
         aria-label={darkMode ? "Modo claro" : "Modo oscuro"}
       >
-        {darkMode ? "☀️" : "🌙"}
+        {darkMode ? <SunOutlined /> : <MoonOutlined />}
       </button>
     </header>
   )

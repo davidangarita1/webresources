@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { StarFilled, StarOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons"
 import type { Resource, ResourceStatus } from "../types"
 import { extractDomain, getFaviconUrl } from "../utils"
 
@@ -64,7 +65,7 @@ export function ResourceCard({
           className="ml-2 shrink-0 rounded-md p-1 text-lg transition-colors hover:scale-110 touch-manipulation"
           aria-label={isFavorite ? "Quitar de favoritos" : "Agregar a favoritos"}
         >
-          {isFavorite ? "⭐" : "☆"}
+          {isFavorite ? <StarFilled className="text-yellow-400" /> : <StarOutlined />}
         </button>
         {(onEdit || onDelete) && (
           <div className="ml-1 flex shrink-0 items-center gap-0.5">
@@ -74,7 +75,7 @@ export function ResourceCard({
                 className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-indigo-400"
                 aria-label="Editar recurso"
               >
-                ✏️
+                <EditOutlined />
               </button>
             )}
             {onDelete && (
@@ -83,7 +84,7 @@ export function ResourceCard({
                 className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-400"
                 aria-label="Eliminar recurso"
               >
-                🗑️
+                <DeleteOutlined />
               </button>
             )}
           </div>

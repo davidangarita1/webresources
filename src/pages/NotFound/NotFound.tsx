@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import { SearchOutlined } from "@ant-design/icons"
 
 export function NotFound() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
-      <span className="text-7xl">🔍</span>
+      <SearchOutlined style={{ fontSize: "80px" }} className="text-gray-300 dark:text-gray-600" />
       <h1 className="mt-6 text-4xl font-bold text-gray-900 dark:text-white">
         404
       </h1>
