@@ -1,4 +1,4 @@
-# HU-03: Create personal resource (CRUD — Create)
+# HU-03: Create personal resource (CRUD — Create) [done]
 
 **As** a user,
 **I want** to be able to create a new resource by filling out a form in a modal,
@@ -8,16 +8,16 @@
 
 ## Acceptance Criteria
 
-- [ ] A visible **"Crear Recurso"** button (e.g., with ➕ icon) exists and is accessible from the sidebar or top bar.
+- [ ] A visible **"Crear Recurso"** button exists and is accessible from the sidebar or top bar.
 - [ ] Clicking it opens a **modal** with a form that includes the following fields:
 
   | Field       | Type         | Required | Notes                                           |
   |-------------|--------------|----------|--------------------------------------------------|
-  | Título      | text         | ✅       | Name of the resource                            |
-  | URL         | url          | ✅       | Link to the resource. URL format is validated   |
-  | Descripción | textarea     | ❌       | Optional description                            |
-  | Categoría   | select/text  | ✅       | Can choose an existing one or write a new one   |
-  | Tags        | chips/text   | ❌       | Tags separated by comma                         |
+  | Título      | text         | Yes      | Name of the resource                            |
+  | URL         | url          | Yes      | Link to the resource. URL format is validated   |
+  | Descripción | textarea     | No       | Optional description                            |
+  | Categoría   | select/text  | Yes      | Can choose an existing one or write a new one   |
+  | Tags        | chips/text   | No       | Tags separated by comma                         |
 
 - [ ] When saving, a unique `id` (e.g., UUID) and `createdAt` timestamp are generated.
 - [ ] The resource is persisted in `localStorage` (key `user-resources`).

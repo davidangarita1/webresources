@@ -8,7 +8,7 @@
 
 ## Acceptance Criteria
 
-- [ ] The sidebar navigation item that currently says **"Todos"** with icon 📋 is renamed to **"Comunidad"** with an appropriate icon (e.g., 🌐).
+- [ ] The sidebar navigation item that currently says **"Todos"** is renamed to **"Comunidad"** with an appropriate icon.
 - [ ] The Dashboard view title when this filter is selected shows **"Recursos de la Comunidad"** instead of "Todos los recursos".
 - [ ] The internal filter (`ViewFilter`) changes from `"all"` to `"community"` (or remains `"all"` with updated visual labels).
 - [ ] Resources displayed continue to come from `resources.json` (no data logic changes).

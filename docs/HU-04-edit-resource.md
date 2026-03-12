@@ -1,4 +1,4 @@
-# HU-04: Edit personal resource
+# HU-04: Edit personal resource [done]
 
 **As** a user,
 **I want** to be able to edit the data of a resource I created,
@@ -8,7 +8,7 @@
 
 ## Acceptance Criteria
 
-- [ ] Each `ResourceCard` of a user resource shows an **edit** button/icon (e.g., ✏️), visible only on personal resources (not on community ones).
+- [ ] Each `ResourceCard` of a user resource shows an **edit** button/icon, visible only on personal resources (not on community ones).
 - [ ] Clicking it opens the same creation modal, but **pre-filled** with the current resource data.
 - [ ] When saving changes, the resource is updated in `localStorage` and immediately reflected in the UI.
 - [ ] The original `createdAt` date is preserved; optionally an `updatedAt` record is added.

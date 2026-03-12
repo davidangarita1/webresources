@@ -11,7 +11,7 @@
 - [ ] The application automatically detects if a URL is from YouTube (supported formats: `youtube.com/watch?v=`, `youtu.be/`, `youtube.com/embed/`).
 - [ ] If the resource is a YouTube video, the `ResourceCard` renders in a **video card format** that includes:
   - **Thumbnail** of the video (obtained from `https://img.youtube.com/vi/{VIDEO_ID}/mqdefault.jpg`).
-  - ▶️ icon overlaid on the thumbnail to indicate it's playable.
+  - A play icon overlaid on the thumbnail to indicate it's playable.
   - Resource title, description, and metadata as in normal cards.
 - [ ] Clicking the thumbnail or play button opens an **embedded player** (YouTube iframe) within the same page, either:
   - By expanding the card inline, or
