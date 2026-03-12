@@ -1,7 +1,7 @@
 1.2.0
 - Feat: Add 'Tus Recursos' (📌) sidebar section — dedicated view for user-created resources stored in localStorage
 - Feat: Add UserResource type extending Resource with source 'user' and optional updatedAt
-- Feat: Add userResourceService — CRUD for user resources in localStorage (key: user-resources)
+- Feat: Add userResourceService — helpers to get and save user resources in localStorage (key: user-resources)
 - Feat: Add useUserResources hook exposing userResources from store
 - Feat: Extend ViewFilter with 'user' value; resourceStore loads userResources on initialize
 - Feat: Dashboard 'Tus Recursos' empty state with 'Aún no tienes recursos / ¡Crea tu primero!'
