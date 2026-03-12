@@ -36,8 +36,6 @@ export function App() {
           isOpen={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
           onCreateResource={() => setCreateOpen(true)}
-          onExportBackup={() => backupService.exportResourcesToJSON()}
-          onImportBackup={() => setImportOpen(true)}
         />
         <div className="flex min-w-0 flex-1 flex-col">
           <Topbar onMenuClick={() => setSidebarOpen((v) => !v)} />
@@ -49,6 +47,8 @@ export function App() {
                   isCreateOpen={createOpen}
                   onOpenCreate={() => setCreateOpen(true)}
                   onCreateClose={() => setCreateOpen(false)}
+                  onExportBackup={() => backupService.exportResourcesToJSON()}
+                  onImportBackup={() => setImportOpen(true)}
                 />
               }
             />

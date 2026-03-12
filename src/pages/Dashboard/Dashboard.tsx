@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { PushpinOutlined, MessageOutlined, PlusOutlined } from "@ant-design/icons"
+import { PushpinOutlined, MessageOutlined, PlusOutlined, DownloadOutlined, UploadOutlined, InfoCircleOutlined } from "@ant-design/icons"
 import { useResources, useFavorites, useStatuses, useUserResources } from "../../hooks"
 import { useResourceStore } from "../../store"
 import { ResourceCard } from "../../components/ResourceCard"
@@ -20,13 +20,16 @@ interface DashboardProps {
   isCreateOpen: boolean
   onOpenCreate: () => void
   onCreateClose: () => void
+  onExportBackup: () => void
+  onImportBackup: () => void
 }
 
-export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose }: DashboardProps) {
+export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportBackup, onImportBackup }: DashboardProps) {
   const { filteredResources } = useResources()
   const { isFavorite, toggleFavorite } = useFavorites()
   const { getStatus, cycleStatus } = useStatuses()
   const { createUserResource, updateUserResource, deleteUserResource } = useUserResources()
+  const userResources = useResourceStore((s) => s.userResources)
 
   const activeFilter = useResourceStore((s) => s.activeFilter)
   const activeCategory = useResourceStore((s) => s.activeCategory)
@@ -53,12 +56,52 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose }: Dashboa
   return (
     <div className="flex-1 overflow-y-auto p-3 sm:p-6">
       <div className="mb-4 sm:mb-6">
-        <h2 className="text-lg font-bold text-gray-900 sm:text-xl dark:text-white">
-          {title}
-        </h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          {filteredResources.length} recurso{filteredResources.length !== 1 ? "s" : ""}
-        </p>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h2 className="text-lg font-bold text-gray-900 sm:text-xl dark:text-white">
+              {title}
+            </h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              {filteredResources.length} recurso{filteredResources.length !== 1 ? "s" : ""}
+            </p>
+          </div>
+
+          {/* Action buttons — only shown in "Tus Recursos" view */}
+          {activeFilter === "user" && (
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                onClick={onOpenCreate}
+                className="flex items-center gap-1.5 rounded-md bg-indigo-600 px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+              >
+                <PlusOutlined /> Crear recurso
+              </button>
+              {userResources.length > 0 && (
+                <button
+                  onClick={onExportBackup}
+                  className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+                >
+                  <DownloadOutlined /> Descargar respaldo
+                </button>
+              )}
+              <button
+                onClick={onImportBackup}
+                className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+              >
+                <UploadOutlined /> Cargar respaldo
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* localStorage notice — only in Tus Recursos */}
+        {activeFilter === "user" && (
+          <div className="mt-3 flex items-start gap-2 rounded-lg bg-indigo-50 border border-indigo-100 px-3 py-2.5 dark:bg-indigo-950/40 dark:border-indigo-900">
+            <InfoCircleOutlined className="mt-0.5 shrink-0 text-indigo-500 dark:text-indigo-400" />
+            <p className="text-xs text-indigo-700 dark:text-indigo-300">
+              Tus recursos se guardan localmente en este navegador. Usa <strong>Descargar respaldo</strong> para no perderlos si limpias el historial o cambias de dispositivo.
+            </p>
+          </div>
+        )}
       </div>
 
       {filteredResources.length === 0 ? (
