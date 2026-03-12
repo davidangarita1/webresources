@@ -1,13 +1,14 @@
 import { useState } from "react"
 import { StarFilled, StarOutlined, EditOutlined, DeleteOutlined, PlayCircleFilled } from "@ant-design/icons"
+import { useTranslation } from "react-i18next"
 import type { Resource, ResourceStatus } from "../types"
 import { extractDomain, getFaviconUrl, isYouTubeUrl, extractYouTubeId, getYouTubeThumbnail } from "../utils"
 import { YouTubePlayerModal } from "./YouTubePlayerModal"
 
-const STATUS_LABELS: Record<ResourceStatus, string> = {
-  pending: "Pendiente",
-  consumed: "Consumido",
-  reference: "Referencia",
+const STATUS_KEYS: Record<ResourceStatus, string> = {
+  pending: "status.pending",
+  consumed: "status.consumed",
+  reference: "status.reference",
 }
 
 const STATUS_COLORS: Record<ResourceStatus, string> = {
@@ -35,6 +36,7 @@ export function ResourceCard({
   onEdit,
   onDelete,
 }: ResourceCardProps) {
+  const { t } = useTranslation()
   const [faviconError, setFaviconError] = useState(false)
   const [playerOpen, setPlayerOpen] = useState(false)
   const domain = extractDomain(resource.url)
@@ -50,9 +52,8 @@ export function ResourceCard({
         <button
           onClick={() => setPlayerOpen(true)}
           className="relative cursor-pointer mb-3 w-full overflow-hidden rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          aria-label={`Reproducir: ${resource.title}`}
-        >
-          <img
+          aria-label={`${t("resourceCard.playVideo", { title: resource.title })}`}
+        >          <img
             src={thumbnail}
             alt={resource.title}
             className="aspect-video w-full object-cover transition-opacity group-hover:opacity-90"
@@ -88,7 +89,7 @@ export function ResourceCard({
           className={`ml-2 shrink-0 rounded-md p-1 text-lg transition-all hover:scale-125 touch-manipulation ${
             isFavorite ? "text-yellow-400 drop-shadow-[0_0_4px_rgba(250,204,21,0.7)]" : "text-gray-400 hover:text-yellow-400"
           }`}
-          aria-label={isFavorite ? "Quitar de favoritos" : "Agregar a favoritos"}
+          aria-label={isFavorite ? t("resourceCard.removeFavorite") : t("resourceCard.addFavorite")}
         >
           {isFavorite ? <StarFilled /> : <StarOutlined />}
         </button>
@@ -98,7 +99,7 @@ export function ResourceCard({
               <button
                 onClick={() => onEdit(resource.id)}
                 className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-indigo-400"
-                aria-label="Editar recurso"
+                aria-label={t("resourceCard.editResource")}
               >
                 <EditOutlined />
               </button>
@@ -107,7 +108,7 @@ export function ResourceCard({
               <button
                 onClick={() => onDelete(resource.id)}
                 className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-400"
-                aria-label="Eliminar recurso"
+                aria-label={t("resourceCard.deleteResource")}
               >
                 <DeleteOutlined />
               </button>
@@ -151,7 +152,7 @@ export function ResourceCard({
               : "bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400"
           }`}
         >
-          {status ? STATUS_LABELS[status] : "Sin estado"}
+          {status ? t(STATUS_KEYS[status]) : t("status.none")}
         </button>
         <a
           href={resource.url}
@@ -159,14 +160,14 @@ export function ResourceCard({
           rel="noopener noreferrer"
           className="rounded-md bg-indigo-600 px-4 py-1.5 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 touch-manipulation"
         >
-          Abrir
+          {t("actions.open")}
         </a>
         {isYouTube && (
           <button
             onClick={() => setPlayerOpen(true)}
             className="rounded-md cursor-pointer border border-indigo-600 px-4 py-1.5 text-xs font-medium text-indigo-600 transition-colors hover:bg-indigo-50 dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-950 touch-manipulation"
           >
-            Reproducir
+            {t("actions.play")}
           </button>
         )}
       </div>
