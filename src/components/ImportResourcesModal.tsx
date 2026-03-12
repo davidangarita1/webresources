@@ -1,5 +1,6 @@
 import { useState, useRef } from "react"
 import { CloseOutlined, UploadOutlined } from "@ant-design/icons"
+import { useTranslation } from "react-i18next"
 import { backupService, type BackupData } from "../services/backupService"
 import { ConflictResolutionDialog } from "./ConflictResolutionDialog"
 
@@ -11,6 +12,7 @@ interface ImportResourcesModalProps {
 type Step = "select" | "conflicts" | "done"
 
 export function ImportResourcesModal({ onClose, onImportComplete }: ImportResourcesModalProps) {
+  const { t } = useTranslation()
   const [step, setStep] = useState<Step>("select")
   const [errors, setErrors] = useState<string[]>([])
   const [backup, setBackup] = useState<BackupData | null>(null)
@@ -24,7 +26,7 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
     try {
       parsed = JSON.parse(await file.text())
     } catch {
-      setErrors(["Invalid JSON file. Please select a valid backup file."])
+      setErrors([t("importModal.invalidFile") + " Invalid JSON file."])
       return
     }
 
@@ -71,11 +73,11 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
       <div className="bg-white rounded-lg shadow-xl w-full max-w-lg mx-4 max-h-[90vh] flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between p-5 border-b">
-          <h2 className="text-lg font-semibold text-gray-900">Import Resources</h2>
+          <h2 className="text-lg font-semibold text-gray-900">{t("importModal.title")}</h2>
           <button
             onClick={onClose}
             className="p-1.5 rounded-md hover:bg-gray-100 transition-colors text-gray-500"
-            aria-label="Close"
+            aria-label={t("actions.close")}
           >
             <CloseOutlined />
           </button>
@@ -90,8 +92,8 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
                 className="flex flex-col items-center gap-3 border-2 border-dashed border-gray-300 rounded-lg p-8 cursor-pointer hover:border-indigo-400 hover:bg-indigo-50 transition-colors"
               >
                 <UploadOutlined className="text-3xl text-gray-400" />
-                <span className="text-sm font-medium text-gray-700">Click to select JSON backup file</span>
-                <span className="text-xs text-gray-400">Only .json files exported from this application</span>
+                <span className="text-sm font-medium text-gray-700">{t("importModal.selectLabel")}</span>
+                <span className="text-xs text-gray-400">{t("importModal.selectHint")}</span>
                 <input
                   ref={fileRef}
                   id="backup-file"
@@ -104,7 +106,7 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
 
               {errors.length > 0 && (
                 <div className="rounded-lg bg-red-50 border border-red-200 p-4">
-                  <p className="text-sm font-medium text-red-800 mb-1">Invalid backup file:</p>
+                  <p className="text-sm font-medium text-red-800 mb-1">{t("importModal.invalidFile")}</p>
                   <ul className="list-disc list-inside text-xs text-red-700 space-y-0.5">
                     {errors.map((err, i) => <li key={i}>{err}</li>)}
                   </ul>
@@ -112,7 +114,7 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
               )}
 
               <p className="text-xs text-gray-500">
-                Importing will restore your resources, favorites, and statuses. Existing data will not be removed unless you choose to update conflicting resources.
+                {t("importModal.importInfo")}
               </p>
             </div>
           )}
@@ -133,7 +135,7 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
               onClick={onClose}
               className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors"
             >
-              Cancel
+              {t("importModal.cancelButton")}
             </button>
           </div>
         )}

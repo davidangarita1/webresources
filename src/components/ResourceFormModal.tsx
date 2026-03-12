@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react"
 import { EditOutlined, PlusOutlined, CloseOutlined } from "@ant-design/icons"
+import { useTranslation } from "react-i18next"
 import type { UserResource } from "../types"
 
 interface FormData {
@@ -27,6 +28,7 @@ function isValidUrl(value: string): boolean {
 }
 
 export function ResourceFormModal({ initialData, categories, onSubmit, onClose }: ResourceFormModalProps) {
+  const { t } = useTranslation()
   const isEdit = Boolean(initialData)
 
   const [form, setForm] = useState<FormData>({
@@ -41,13 +43,13 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
 
   function validate(): boolean {
     const next: Partial<Record<keyof FormData, string>> = {}
-    if (!form.title.trim()) next.title = "El título es obligatorio"
+    if (!form.title.trim()) next.title = t("resourceForm.errorTitle")
     if (!form.url.trim()) {
-      next.url = "La URL es obligatoria"
+      next.url = t("resourceForm.errorUrl")
     } else if (!isValidUrl(form.url.trim())) {
-      next.url = "Ingresa una URL válida (ej. https://ejemplo.com)"
+      next.url = t("resourceForm.errorUrlInvalid")
     }
-    if (!form.category.trim()) next.category = "La categoría es obligatoria"
+    if (!form.category.trim()) next.category = t("resourceForm.errorCategory")
     setErrors(next)
     return Object.keys(next).length === 0
   }
@@ -86,12 +88,12 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
       <div className="w-full max-w-lg rounded-xl bg-white shadow-xl dark:bg-gray-900">
         <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4 dark:border-gray-700">
           <h2 id="form-modal-title" className="text-base font-semibold text-gray-900 dark:text-white">
-            {isEdit ? <><EditOutlined /> Editar recurso</> : <><PlusOutlined /> Nuevo recurso</>}
+            {isEdit ? <><EditOutlined /> {t("resourceForm.editTitle")}</> : <><PlusOutlined /> {t("resourceForm.newTitle")}</>}
           </h2>
           <button
             onClick={onClose}
             className="rounded-md p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
-            aria-label="Cerrar"
+            aria-label={t("actions.close")}
           >
             <CloseOutlined />
           </button>
@@ -101,14 +103,14 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
           {/* Title */}
           <div>
             <label htmlFor="rf-title" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Título <span className="text-red-500">*</span>
+              {t("resourceForm.titleLabel")} <span className="text-red-500">*</span>
             </label>
             <input
               id="rf-title"
               type="text"
               value={form.title}
               onChange={(e) => handleChange("title", e.target.value)}
-              placeholder="Nombre del recurso"
+              placeholder={t("resourceForm.titlePlaceholder")}
               className={`w-full rounded-md border px-3 py-2 text-sm text-gray-900 outline-none transition-colors placeholder:text-gray-400 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 ${
                 errors.title
                   ? "border-red-400 focus:ring-2 focus:ring-red-400"
@@ -121,14 +123,14 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
           {/* URL */}
           <div>
             <label htmlFor="rf-url" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
-              URL <span className="text-red-500">*</span>
+              {t("resourceForm.urlLabel")} <span className="text-red-500">*</span>
             </label>
             <input
               id="rf-url"
               type="url"
               value={form.url}
               onChange={(e) => handleChange("url", e.target.value)}
-              placeholder="https://ejemplo.com"
+              placeholder={t("resourceForm.urlPlaceholder")}
               className={`w-full rounded-md border px-3 py-2 text-sm text-gray-900 outline-none transition-colors placeholder:text-gray-400 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 ${
                 errors.url
                   ? "border-red-400 focus:ring-2 focus:ring-red-400"
@@ -141,13 +143,13 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
           {/* Description */}
           <div>
             <label htmlFor="rf-desc" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Descripción <span className="text-xs font-normal text-gray-400">(opcional)</span>
+              {t("resourceForm.descriptionLabel")} <span className="text-xs font-normal text-gray-400">{t("resourceForm.optional")}</span>
             </label>
             <textarea
               id="rf-desc"
               value={form.description}
               onChange={(e) => handleChange("description", e.target.value)}
-              placeholder="Breve descripción del recurso"
+              placeholder={t("resourceForm.descriptionPlaceholder")}
               rows={2}
               className="w-full resize-none rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 outline-none transition-colors placeholder:text-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-indigo-400"
             />
@@ -156,7 +158,7 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
           {/* Category */}
           <div>
             <label htmlFor="rf-category" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Categoría <span className="text-red-500">*</span>
+              {t("resourceForm.categoryLabel")} <span className="text-red-500">*</span>
             </label>
             <input
               id="rf-category"
@@ -164,7 +166,7 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
               list="rf-category-list"
               value={form.category}
               onChange={(e) => handleChange("category", e.target.value)}
-              placeholder="Ej.: CSS, REACT, TOOLS"
+              placeholder={t("resourceForm.categoryPlaceholder")}
               className={`w-full rounded-md border px-3 py-2 text-sm text-gray-900 outline-none transition-colors placeholder:text-gray-400 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 ${
                 errors.category
                   ? "border-red-400 focus:ring-2 focus:ring-red-400"
@@ -182,14 +184,14 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
           {/* Tags */}
           <div>
             <label htmlFor="rf-tags" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Etiquetas <span className="text-xs font-normal text-gray-400">(separadas por coma)</span>
+              {t("resourceForm.tagsLabel")} <span className="text-xs font-normal text-gray-400">{t("resourceForm.tagsSeparator")}</span>
             </label>
             <input
               id="rf-tags"
               type="text"
               value={form.tags}
               onChange={(e) => handleChange("tags", e.target.value)}
-              placeholder="react, hooks, tutorial"
+              placeholder={t("resourceForm.tagsPlaceholder")}
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 outline-none transition-colors placeholder:text-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-indigo-400"
             />
           </div>
@@ -201,13 +203,13 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
               onClick={onClose}
               className="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
             >
-              Cancelar
+              {t("actions.cancel")}
             </button>
             <button
               type="submit"
               className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
             >
-              {isEdit ? "Guardar cambios" : "Crear recurso"}
+              {isEdit ? t("actions.saveChanges") : t("actions.createResource")}
             </button>
           </div>
         </form>

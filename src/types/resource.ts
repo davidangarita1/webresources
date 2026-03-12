@@ -1,3 +1,5 @@
+export type ResourceStatus = "pending" | "consumed" | "reference"
+
 export interface Resource {
   id: string
   title: string

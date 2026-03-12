@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "title": "Marcadores",
+    "community": "Comunidad",
+    "yourResources": "Tus Recursos",
+    "favorites": "Favoritos",
+    "pending": "Pendientes",
+    "consumed": "Consumidos",
+    "categories": "Categorías",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú"
+  },
+  "actions": {
+    "createResource": "Crear recurso",
+    "saveChanges": "Guardar cambios",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "open": "Abrir",
+    "play": "Reproducir",
+    "downloadBackup": "Descargar respaldo",
+    "uploadBackup": "Cargar respaldo",
+    "close": "Cerrar"
+  },
+  "filters": {
+    "community": "Recursos de la Comunidad",
+    "yourResources": "Tus Recursos",
+    "favorites": "Favoritos",
+    "pending": "Pendientes",
+    "consumed": "Consumidos",
+    "category": "Categoría"
+  },
+  "dashboard": {
+    "resourceCount_one": "{{count}} recurso",
+    "resourceCount_other": "{{count}} recursos",
+    "emptyUser": "Aún no tienes recursos",
+    "emptyUserHint": "¡Crea tu primero!",
+    "emptyOther": "No se encontraron recursos",
+    "emptyOtherHint": "Intenta cambiar los filtros o la búsqueda",
+    "localStorageNotice": "Tus recursos se guardan localmente en este navegador. Usa <1>Descargar respaldo</1> para no perderlos si limpias el historial o cambias de dispositivo."
+  },
+  "status": {
+    "pending": "Pendiente",
+    "consumed": "Consumido",
+    "reference": "Referencia",
+    "none": "Sin estado"
+  },
+  "resourceCard": {
+    "addFavorite": "Agregar a favoritos",
+    "removeFavorite": "Quitar de favoritos",
+    "editResource": "Editar recurso",
+    "deleteResource": "Eliminar recurso",
+    "playVideo": "Reproducir: {{title}}"
+  },
+  "search": {
+    "placeholder": "Buscar recursos...",
+    "aria": "Buscar recursos",
+    "clear": "Limpiar búsqueda"
+  },
+  "topbar": {
+    "lightMode": "Modo claro",
+    "darkMode": "Modo oscuro",
+    "selectLanguage": "Seleccionar idioma"
+  },
+  "resourceForm": {
+    "newTitle": "Nuevo recurso",
+    "editTitle": "Editar recurso",
+    "titleLabel": "Título",
+    "urlLabel": "URL",
+    "descriptionLabel": "Descripción",
+    "categoryLabel": "Categoría",
+    "tagsLabel": "Etiquetas",
+    "optional": "(opcional)",
+    "tagsSeparator": "(separadas por coma)",
+    "titlePlaceholder": "Nombre del recurso",
+    "descriptionPlaceholder": "Breve descripción del recurso",
+    "categoryPlaceholder": "Ej.: CSS, REACT, TOOLS",
+    "tagsPlaceholder": "react, hooks, tutorial",
+    "urlPlaceholder": "https://ejemplo.com",
+    "errorTitle": "El título es obligatorio",
+    "errorUrl": "La URL es obligatoria",
+    "errorUrlInvalid": "Ingresa una URL válida (ej. https://ejemplo.com)",
+    "errorCategory": "La categoría es obligatoria"
+  },
+  "deleteConfirm": {
+    "title": "Eliminar recurso",
+    "message": "¿Eliminar",
+    "warning": "Esta acción no se puede deshacer.",
+    "confirm": "Eliminar"
+  },
+  "importModal": {
+    "title": "Cargar respaldo",
+    "selectLabel": "Haz clic para seleccionar el archivo de respaldo JSON",
+    "selectHint": "Solo archivos .json exportados desde esta aplicación",
+    "importInfo": "Importar restaurará tus recursos, favoritos y estados. Los datos existentes no se eliminarán a menos que elijas actualizar los recursos en conflicto.",
+    "invalidFile": "Archivo de respaldo inválido:",
+    "cancelButton": "Cancelar"
+  },
+  "conflictDialog": {
+    "existing_one": "{{count}} recurso ya existe en tu colección.",
+    "existing_other": "{{count}} recursos ya existen en tu colección.",
+    "description": "Elige si actualizar cada uno con los datos importados o conservar tu versión actual.",
+    "updateAll": "Actualizar todo",
+    "skipAll": "Omitir todo",
+    "willUpdate": "{{update}} se actualizará · {{skip}} se omitirá",
+    "willUpdatePlural": "{{update}} se actualizarán · {{skip}} se omitirán",
+    "cancelImport": "Cancelar importación",
+    "confirmImport": "Confirmar e importar",
+    "update": "Actualizar",
+    "skip": "Omitir",
+    "importTitle": "Título importado:"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Página no encontrada",
+    "backHome": "Volver al inicio"
+  },
+  "youtubePlayer": {
+    "closePlayer": "Cerrar reproductor"
+  }
+}

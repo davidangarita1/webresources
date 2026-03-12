@@ -39,6 +39,7 @@ Una vez abierta la aplicación, el usuario puede:
 - **Exportar respaldo** — desde la sección "Tus Recursos", el usuario puede descargar un archivo de respaldo con todos sus recursos personales, favoritos y estados. El botón solo aparece cuando el usuario tiene al menos un recurso guardado.
 - **Importar respaldo** — el usuario puede cargar un archivo de respaldo descargado previamente; la aplicación verifica que sea válido, detecta si algún enlace ya existe en la colección y permite decidir recurso a recurso si actualizar o conservar la versión actual.
 - **Recordatorio de seguridad de datos** — en la sección "Tus Recursos" se muestra un aviso recordando que los datos se guardan en el navegador y que conviene descargar un respaldo para no perderlos al cambiar de dispositivo o limpiar el historial.
+- **Cambiar idioma** — el usuario puede cambiar entre español e inglés usando el botón ES/EN en la barra superior; la preferencia se guarda en el navegador y se recuerda en la próxima visita. Si el usuario no ha elegido idioma antes, la aplicación detecta automáticamente el idioma del navegador.
 - **Recursos personales en todos los filtros** — los recursos guardados por el usuario aparecen junto con los del catálogo en los filtros de Favoritos, Pendientes, Consumidos y Categoría.
 
 ---
@@ -60,7 +61,7 @@ Hay dos tipos de información:
 
 **Los recursos personales del usuario** — los enlaces que el propio usuario ha agregado — se guardan en el navegador del dispositivo que usa. Si cambia de navegador o dispositivo, no estarán disponibles a menos que haya descargado un respaldo.
 
-**Las preferencias del usuario** — favoritos, estados (pendiente, consumido, referencia) y modo oscuro — también se guardan en el navegador del dispositivo. Son privadas y no se comparten ni sincronizan entre dispositivos.
+**Las preferencias del usuario** — favoritos, estados (pendiente, consumido, referencia), modo oscuro e idioma de la interfaz — también se guardan en el navegador del dispositivo. Son privadas y no se comparten ni sincronizan entre dispositivos.
 
 ---
 
@@ -82,6 +83,7 @@ Además, puede **instalarse como una aplicación** en el dispositivo (como si fu
 | Quiero marcar mis favoritos del catálogo | Botón de favorito por recurso (estrella amarilla con animación) |
 | Quiero ver mis recursos en favoritos o pendientes | Los recursos personales aparecen en todos los filtros junto al catálogo |
 | No quiero perder mis recursos al limpiar el navegador | Descarga de respaldo desde "Tus Recursos"; aviso recordatorio visible en todo momento |
+| Quiero usar la app en inglés | Botón ES/EN en la barra superior; el idioma se recuerda para la próxima visita |
 | Quiero usarlo desde el teléfono | Diseño adaptable a cualquier pantalla, instalable como app |
 | No quiero depender de internet | Funciona offline una vez cargada |
 
