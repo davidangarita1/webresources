@@ -1,12 +1,11 @@
 import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
+import { STORAGE_KEYS } from "./constants/storageKeys"
 import en from "./locales/en/translation.json"
 import es from "./locales/es/translation.json"
 
-const STORAGE_KEY = "bookmark_language"
-
 function getInitialLanguage(): string {
-  const stored = localStorage.getItem(STORAGE_KEY)
+  const stored = localStorage.getItem(STORAGE_KEYS.LANGUAGE)
   if (stored === "en" || stored === "es") return stored
   const browser = navigator.language.split("-")[0]
   return browser === "es" ? "es" : "en"
@@ -22,5 +21,4 @@ i18n.use(initReactI18next).init({
   interpolation: { escapeValue: false },
 })
 
-export { STORAGE_KEY }
 export default i18n

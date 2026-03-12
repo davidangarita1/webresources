@@ -1,4 +1,5 @@
 import { CloseOutlined } from "@ant-design/icons"
+import { useTranslation } from "react-i18next"
 
 interface YouTubePlayerModalProps {
   videoId: string
@@ -7,6 +8,7 @@ interface YouTubePlayerModalProps {
 }
 
 export function YouTubePlayerModal({ videoId, title, onClose }: YouTubePlayerModalProps) {
+  const { t } = useTranslation()
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
@@ -21,7 +23,7 @@ export function YouTubePlayerModal({ videoId, title, onClose }: YouTubePlayerMod
           <button
             onClick={onClose}
             className="shrink-0 ml-2 rounded-md p-1 text-gray-400 hover:text-white transition-colors"
-            aria-label="Cerrar reproductor"
+            aria-label={t("youtubePlayer.closePlayer")}
           >
             <CloseOutlined />
           </button>

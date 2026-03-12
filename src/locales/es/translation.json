@@ -108,5 +108,13 @@
     "update": "Actualizar",
     "skip": "Omitir",
     "importTitle": "Título importado:"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Página no encontrada",
+    "backHome": "Volver al inicio"
+  },
+  "youtubePlayer": {
+    "closePlayer": "Cerrar reproductor"
   }
 }
