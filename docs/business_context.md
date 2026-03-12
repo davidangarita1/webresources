@@ -35,7 +35,7 @@ Una vez abierta la aplicación, el usuario puede:
   - **Referencia** — algo que consulta de forma recurrente, como una guía o documentación oficial.
 - **Filtrar por estado** para ver únicamente los recursos pendientes, consumidos o favoritos.
 - **Navegar por categorías** para explorar recursos agrupados por tema.
-- **Cambiar entre modo claro y oscuro** según su preferencia o condiciones de luz.
+- **Reproducir videos de YouTube** — cuando un recurso (de la comunidad o personal) tiene una URL de YouTube, la tarjeta muestra la miniatura del video y permite reproducirlo directamente dentro de la aplicación mediante un reproductor embebido.
 
 ---
 

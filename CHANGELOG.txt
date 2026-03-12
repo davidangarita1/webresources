@@ -1,3 +1,14 @@
+1.4.0
+- Feat: Detect YouTube URLs automatically (youtube.com/watch, youtu.be, youtube.com/embed)
+- Feat: ResourceCard shows video thumbnail (img.youtube.com mqdefault) with hover play overlay for YouTube resources
+- Feat: Add YouTubePlayerModal — embedded player using youtube-nocookie.com with 16:9 aspect ratio
+- Feat: Add 'Reproducir' button on YouTube ResourceCards alongside 'Abrir'
+- Feat: Add youtubeUtils (isYouTubeUrl, extractYouTubeId, getYouTubeThumbnail) in src/utils
+- Refactor: Replace all emoji characters in UI components with @ant-design/icons SVG components
+- Chore: Add @ant-design/icons 6.1.0 dependency
+- Docs: Update business_context.md — add YouTube video support capability
+- Docs: Update README features list with YouTube video support and Ant Design icons entries
+
 1.3.0
 - Feat: Add ResourceFormModal — create/edit form with validation for title, URL (validated), description, category (datalist), and comma-separated tags
 - Feat: Add DeleteConfirmModal — confirmation dialog before permanently removing a resource
