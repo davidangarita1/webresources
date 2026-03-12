@@ -1,3 +1,13 @@
+1.2.0
+- Feat: Add 'Tus Recursos' (📌) sidebar section — dedicated view for user-created resources stored in localStorage
+- Feat: Add UserResource type extending Resource with source 'user' and optional updatedAt
+- Feat: Add userResourceService — CRUD for user resources in localStorage (key: user-resources)
+- Feat: Add useUserResources hook exposing userResources from store
+- Feat: Extend ViewFilter with 'user' value; resourceStore loads userResources on initialize
+- Feat: Dashboard 'Tus Recursos' empty state with 'Aún no tienes recursos / ¡Crea tu primero!'
+- Docs: Update business_context.md — add user resources to capabilities and data storage sections
+- Docs: Update README features list with 'Your Resources view' entry
+
 1.1.1
 - Feat: Rename 'Todos' sidebar filter to 'Comunidad' (🌐) — visually differentiates the curated catalog from future personal resources
 - Refactor: Replace internal ViewFilter value 'all' with 'community' across store, components, and tests
