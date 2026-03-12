@@ -24,6 +24,9 @@ Una vez abierta la aplicación, el usuario puede:
 
 - **Explorar la Comunidad** — los recursos del catálogo curado, organizados por categorías (CSS, JavaScript, React, diseño, despliegue, etc.).
 - **Ver sus propios recursos** — a través de la sección **"Tus Recursos"**, el usuario puede acceder a los enlaces que él mismo haya guardado, completamente separados del catálogo de la comunidad.
+- **Crear recursos personales** — mediante el botón **"➕ Crear recurso"** en la barra lateral o en el estado vacío de "Tus Recursos", el usuario puede agregar nuevos enlaces con título, URL, descripción, categoría y etiquetas.
+- **Editar recursos personales** — cada recurso creado por el usuario muestra un botón ✏️ que abre el formulario pre-completado para modificar cualquier campo.
+- **Eliminar recursos personales** — cada recurso creado por el usuario muestra un botón 🗑️ que solicita confirmación antes de eliminar el enlace definitivamente.
 - **Buscar rápidamente** cualquier recurso escribiendo palabras clave — el buscador entiende búsquedas aproximadas, por lo que no hace falta escribir exactamente el nombre.
 - **Marcar favoritos** para identificar los recursos más valiosos o consultados frecuentemente.
 - **Cambiar el estado** de cada recurso:
@@ -38,13 +41,10 @@ Una vez abierta la aplicación, el usuario puede:
 
 ## ¿Qué NO puede hacer la aplicación?
 
-La aplicación es solo para **leer y organizar** — no para editar el catálogo de recursos:
+La aplicación no tiene servidor propio ni base de datos externa:
 
-- **No permite agregar nuevos recursos** desde la pantalla.
-- **No permite editar ni eliminar recursos** existentes.
-- **No tiene un servidor propio** — no guarda datos en una base de datos externa.
-
-Los recursos del catálogo solo pueden modificarse editando manualmente un archivo de texto en el código del proyecto.
+- **No permite editar ni eliminar los recursos del catálogo curado** (la sección "Comunidad") — esos solo pueden modificarse editando manualmente `src/data/resources.json`.
+- **No tiene un servidor propio** — no guarda datos en una base de datos externa. Todo se almacena en el navegador.
 
 ---
 
