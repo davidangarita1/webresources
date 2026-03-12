@@ -44,7 +44,6 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
 
   return (
     <>
-      {/* Mobile backdrop */}
       {isOpen && (
         <div
           className="fixed inset-0 z-20 bg-black/40 md:hidden"
