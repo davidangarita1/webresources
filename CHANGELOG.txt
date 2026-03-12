@@ -1,3 +1,12 @@
+1.6.0
+- Feat: Add Spanish/English language support with real-time switching via ES/EN toggle in the top bar
+- Feat: Add LanguageSelector component — one click to switch languages; preference persisted in browser storage
+- Feat: Auto-detect browser language on first visit (defaults to English)
+- Feat: All UI text translated — navigation, buttons, forms, empty states, modals, status labels, validation errors
+- Chore: Add i18next 25.8.18 and react-i18next 16.5.8
+- Test: Add LanguageSelector tests (6); update test setup to run with Spanish locale
+- Docs: Update README, business_context.md for language support
+
 1.5.1
 - Feat: Move "Crear recurso", "Descargar respaldo", and "Cargar respaldo" buttons to the "Tus Recursos" section header (removed from Sidebar footer)
 - Feat: "Descargar respaldo" button only visible when at least one user resource exists

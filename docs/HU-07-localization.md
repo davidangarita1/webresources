@@ -1,4 +1,4 @@
-# HU-07: Localization (i18n) - Spanish and English support
+# HU-07: Localization (i18n) - Spanish and English support [done]
 
 **As** a user,
 **I want** the application to support both Spanish and English languages with the ability to switch between them,
@@ -8,13 +8,13 @@
 
 ## Acceptance Criteria
 
-- [ ] The application detects the user's browser language preference and loads the corresponding language (Spanish or English by default).
-- [ ] A language selector is available in the top bar or settings (language codes: "ES / EN").
-- [ ] When the user changes the language, the entire UI updates in real-time except for:
+- [x] The application detects the user's browser language preference and loads the corresponding language (Spanish or English by default).
+- [x] A language selector is available in the top bar or settings (language codes: "ES / EN").
+- [x] When the user changes the language, the entire UI updates in real-time except for:
   - User-created resource titles, descriptions, and tags (remain as entered)
   - Community resource data from `resources.json` (remain hardcoded unless separately translated)
-- [ ] The selected language preference is persisted in `localStorage` so it's remembered on subsequent visits.
-- [ ] All UI text is translated, including:
+- [x] The selected language preference is persisted in `localStorage` so it's remembered on subsequent visits.
+- [x] All UI text is translated, including:
   - Navigation labels (Comunidad, Tus Recursos, Favoritos, Pendientes, Consumidos)
   - Button labels (Crear Recurso, Guardar, Cancelar, Editar, Eliminar)
   - Form labels and placeholders (Título, URL, Descripción, Categoría, Tags)
