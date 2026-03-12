@@ -1,4 +1,4 @@
-# HU-08: Backup and restore user resources (import/export)
+# HU-08: Backup and restore user resources (import/export) [done]
 
 **As** a user,
 **I want** to be able to export my personal resources as a backup file and import them back to restore my collection,
