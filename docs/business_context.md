@@ -22,7 +22,7 @@ No es una plataforma colaborativa ni tiene usuarios registrados. Es una herramie
 
 Una vez abierta la aplicación, el usuario puede:
 
-- **Explorar todos sus recursos** organizados por categorías (CSS, JavaScript, React, diseño, despliegue, etc.).
+- **Explorar la Comunidad** — los recursos del catálogo curado, organizados por categorías (CSS, JavaScript, React, diseño, despliegue, etc.).
 - **Buscar rápidamente** cualquier recurso escribiendo palabras clave — el buscador entiende búsquedas aproximadas, por lo que no hace falta escribir exactamente el nombre.
 - **Marcar favoritos** para identificar los recursos más valiosos o consultados frecuentemente.
 - **Cambiar el estado** de cada recurso:
@@ -69,7 +69,7 @@ Además, puede **instalarse como una aplicación** en el dispositivo (como si fu
 
 | Problema | Solución |
 |---|---|
-| Tengo cientos de marcadores y no los encuentro | Búsqueda rápida y filtros por categoría |
+| Tengo cientos de marcadores y no los encuentro | Búsqueda rápida, vista Comunidad y filtros por categoría |
 | No sé qué recursos ya revisé | Estados: Pendiente / Consumido / Referencia |
 | Quiero marcar mis favoritos del catálogo | Botón de favorito por recurso |
 | Quiero usarlo desde el teléfono | Diseño adaptable a cualquier pantalla, instalable como app |
