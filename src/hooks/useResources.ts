@@ -20,20 +20,22 @@ export function useResources() {
   }, [resources.length, initialize])
 
   const baseResources = searchQuery.trim() ? searchResults : resources
+  // All resources combined (community + user) for cross-cutting filters
+  const allResources = [...baseResources, ...userResources]
 
   const filteredResources = (() => {
     switch (activeFilter) {
       case "user":
         return userResources
       case "favorites":
-        return baseResources.filter((r) => favorites.includes(r.id))
+        return allResources.filter((r) => favorites.includes(r.id))
       case "pending":
-        return baseResources.filter((r) => (statuses as Record<string, ResourceStatus>)[r.id] === "pending")
+        return allResources.filter((r) => (statuses as Record<string, ResourceStatus>)[r.id] === "pending")
       case "consumed":
-        return baseResources.filter((r) => (statuses as Record<string, ResourceStatus>)[r.id] === "consumed")
+        return allResources.filter((r) => (statuses as Record<string, ResourceStatus>)[r.id] === "consumed")
       case "category":
-        if (!activeCategory) return baseResources
-        return baseResources.filter((r) => r.category === activeCategory)
+        if (!activeCategory) return allResources
+        return allResources.filter((r) => r.category === activeCategory)
       default:
         return baseResources
     }
