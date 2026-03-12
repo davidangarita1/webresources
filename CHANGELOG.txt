@@ -1,5 +1,17 @@
+1.3.0
+- Feat: Add ResourceFormModal — create/edit form with validation for title, URL (validated), description, category (datalist), and comma-separated tags
+- Feat: Add DeleteConfirmModal — confirmation dialog before permanently removing a resource
+- Feat: Extend ResourceCard with optional onEdit/onDelete props — edit and delete action buttons shown only for user-created resources
+- Feat: Add 'Crear Recurso' button to Sidebar footer — opens create modal from any view
+- Feat: Add inline 'Crear recurso' button to 'Tus Recursos' empty state
+- Feat: Extend userResourceService with create (crypto.randomUUID), update, and remove methods
+- Feat: Extend resourceStore with createUserResource, updateUserResource, deleteUserResource actions
+- Feat: Expose CRUD methods in useUserResources hook
+- Docs: Update business_context.md — add create/edit/delete capabilities; narrow 'no puede hacer' section
+- Docs: Update README features list with personal resource CRUD entry
+
 1.2.0
-- Feat: Add 'Tus Recursos' (📌) sidebar section — dedicated view for user-created resources stored in localStorage
+- Feat: Add 'Tus Recursos' sidebar section — dedicated view for user-created resources stored in localStorage
 - Feat: Add UserResource type extending Resource with source 'user' and optional updatedAt
 - Feat: Add userResourceService — helpers to get and save user resources in localStorage (key: user-resources)
 - Feat: Add useUserResources hook exposing userResources from store
@@ -9,7 +21,7 @@
 - Docs: Update README features list with 'Your Resources view' entry
 
 1.1.1
-- Feat: Rename 'Todos' sidebar filter to 'Comunidad' (🌐) — visually differentiates the curated catalog from future personal resources
+- Feat: Rename 'Todos' sidebar filter to 'Comunidad' — visually differentiates the curated catalog from future personal resources
 - Refactor: Replace internal ViewFilter value 'all' with 'community' across store, components, and tests
 - Docs: Update business_context.md to reflect 'Comunidad' navigation entry
 - Docs: Update README features list with 'Comunidad view' entry
