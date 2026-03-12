@@ -24,9 +24,9 @@ Una vez abierta la aplicación, el usuario puede:
 
 - **Explorar la Comunidad** — los recursos del catálogo curado, organizados por categorías (CSS, JavaScript, React, diseño, despliegue, etc.).
 - **Ver sus propios recursos** — a través de la sección **"Tus Recursos"**, el usuario puede acceder a los enlaces que él mismo haya guardado, completamente separados del catálogo de la comunidad.
-- **Crear recursos personales** — mediante el botón **"➕ Crear recurso"** en la barra lateral o en el estado vacío de "Tus Recursos", el usuario puede agregar nuevos enlaces con título, URL, descripción, categoría y etiquetas.
-- **Editar recursos personales** — cada recurso creado por el usuario muestra un botón ✏️ que abre el formulario pre-completado para modificar cualquier campo.
-- **Eliminar recursos personales** — cada recurso creado por el usuario muestra un botón 🗑️ que solicita confirmación antes de eliminar el enlace definitivamente.
+- **Crear recursos personales** — mediante el botón **"Crear recurso"** en la barra lateral o en el estado vacío de "Tus Recursos", el usuario puede agregar nuevos enlaces con título, URL, descripción, categoría y etiquetas.
+- **Editar recursos personales** — cada recurso creado por el usuario muestra un botón de edición que abre el formulario pre-completado para modificar cualquier campo.
+- **Eliminar recursos personales** — cada recurso creado por el usuario muestra un botón de eliminación que solicita confirmación antes de eliminar el enlace definitivamente.
 - **Buscar rápidamente** cualquier recurso escribiendo palabras clave — el buscador entiende búsquedas aproximadas, por lo que no hace falta escribir exactamente el nombre.
 - **Marcar favoritos** para identificar los recursos más valiosos o consultados frecuentemente.
 - **Cambiar el estado** de cada recurso:
