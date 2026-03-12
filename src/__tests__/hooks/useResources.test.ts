@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react"
 import { useResources } from "../../hooks/useResources"
 import { useResourceStore } from "../../store"
-import type { Resource } from "../../types"
+import type { Resource, UserResource } from "../../types"
 
 const communityResource: Resource = {
   id: "community-1",
@@ -13,7 +13,7 @@ const communityResource: Resource = {
   createdAt: "2024-01-01",
 }
 
-const userResource: Resource = {
+const userResource: UserResource = {
   id: "user-1",
   title: "User Resource",
   url: "https://example.com/user",
@@ -21,6 +21,7 @@ const userResource: Resource = {
   category: "Design",
   tags: ["css"],
   createdAt: "2024-06-01",
+  source: "user",
 }
 
 describe("useResources", () => {
