@@ -3,7 +3,7 @@ import { useResourceStore } from "../../store"
 import { ResourceCard } from "../../components/ResourceCard"
 
 const FILTER_LABELS: Record<string, string> = {
-  all: "Todos los recursos",
+  community: "Recursos de la Comunidad",
   favorites: "Favoritos",
   pending: "Pendientes",
   consumed: "Consumidos",
