@@ -1,3 +1,13 @@
+1.5.1
+- Feat: Move "Crear recurso", "Descargar respaldo", and "Cargar respaldo" buttons to the "Tus Recursos" section header (removed from Sidebar footer)
+- Feat: "Descargar respaldo" button only visible when at least one user resource exists
+- Feat: User resources now appear in Favoritos, Pendientes, Consumidos, and Categoría cross-cutting filters
+- Feat: Yellow star with glow effect (drop-shadow) and scale-125 hover animation on active favorites
+- Feat: Add localStorage persistence notice in "Tus Recursos" — "Tus recursos se guardan localmente en este navegador. Usa Descargar respaldo para no perderlos si limpias el historial o cambias de dispositivo."
+- Test: Add ResourceCard tests for yellow-star class on active/inactive favorites
+- Test: Add useResources hook tests covering user resource inclusion in all cross-cutting filters
+- Docs: Update CHANGELOG, README, business_context.md, and HU-08 for v1.5.1 refinements
+
 1.5.0
 - Feat: Export all user resources, favorites, and statuses to a JSON backup file (user-resources-backup-{date}.json)
 - Feat: Import resources from a JSON backup file with structure validation

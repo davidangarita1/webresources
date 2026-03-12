@@ -36,8 +36,10 @@ Una vez abierta la aplicación, el usuario puede:
 - **Filtrar por estado** para ver únicamente los recursos pendientes, consumidos o favoritos.
 - **Navegar por categorías** para explorar recursos agrupados por tema.
 - **Reproducir videos de YouTube** — cuando un recurso (de la comunidad o personal) tiene una URL de YouTube, la tarjeta muestra la miniatura del video y permite reproducirlo directamente dentro de la aplicación mediante un reproductor embebido.
-- **Exportar respaldo** — desde la barra lateral, el usuario puede descargar un archivo JSON con todos sus recursos personales, favoritos y estados (`user-resources-backup-{fecha}.json`).
-- **Importar respaldo** — el usuario puede cargar un archivo de respaldo previamente exportado; la aplicación valida la estructura del archivo, detecta conflictos de URL con la colección actual y permite elegir recurso a recurso si actualizar o mantener la versión existente.
+- **Exportar respaldo** — desde la cabecera de la sección "Tus Recursos", el usuario puede descargar un archivo JSON con todos sus recursos personales, favoritos y estados (`user-resources-backup-{fecha}.json`). El botón sólo aparece cuando el usuario tiene al menos un recurso guardado.
+- **Importar respaldo** — el usuario puede cargar un archivo de respaldo previamente exportado (botón en la cabecera de "Tus Recursos"); la aplicación valida la estructura del archivo, detecta conflictos de URL con la colección actual y permite elegir recurso a recurso si actualizar o mantener la versión existente.
+- **Aviso de almacenamiento local** — en la sección "Tus Recursos" se muestra un mensaje informativo: _"Tus recursos se guardan localmente en este navegador. Usa Descargar respaldo para no perderlos si limpias el historial o cambias de dispositivo."_
+- **Filtros cruzados** — los recursos personales del usuario aparecen junto con los de la comunidad en los filtros de Favoritos, Pendientes, Consumidos y Categoría.
 
 ---
 
@@ -77,7 +79,9 @@ Además, puede **instalarse como una aplicación** en el dispositivo (como si fu
 | Tengo cientos de marcadores y no los encuentro | Búsqueda rápida, vista Comunidad y filtros por categoría |
 | Quiero guardar mis propios enlaces | Sección "Tus Recursos" — colección personal separada del catálogo |
 | No sé qué recursos ya revisé | Estados: Pendiente / Consumido / Referencia |
-| Quiero marcar mis favoritos del catálogo | Botón de favorito por recurso |
+| Quiero marcar mis favoritos del catálogo | Botón de favorito por recurso (estrella amarilla con animación) |
+| Quiero ver mis recursos en favoritos o pendientes | Filtros cruzados incluyen recursos personales y de comunidad |
+| No quiero perder mis recursos al limpiar el navegador | Respaldo y restauración con archivo JSON; aviso informativo en "Tus Recursos" |
 | Quiero usarlo desde el teléfono | Diseño adaptable a cualquier pantalla, instalable como app |
 | No quiero depender de internet | Funciona offline una vez cargada |
 

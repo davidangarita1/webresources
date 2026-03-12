@@ -8,9 +8,14 @@
 
 ## Acceptance Criteria
 
-- [ ] An **export** button exists and is accessible (e.g., in the sidebar or "Tus Recursos" view header), labeled **"Descargar Respaldo"** or **"Exportar Recursos"**.
+- [ ] **"Crear recurso"**, **"Descargar respaldo"**, and **"Cargar respaldo"** action buttons are displayed in the **"Tus Recursos" section header** (not in the sidebar footer).
+- [ ] **"Descargar respaldo"** button is only visible when the user has **at least one personal resource** saved.
+- [ ] An **export** button exists in the "Tus Recursos" header, labeled **"Descargar Respaldo"**.
 - [ ] Clicking the export button downloads a JSON file named `user-resources-backup-{timestamp}.json` containing all user-created resources with their favorites and status states.
-- [ ] An **import** button exists, labeled **"Cargar Respaldo"** or **"Importar Recursos"**.
+- [ ] An **import** button exists in the "Tus Recursos" header, labeled **"Cargar Respaldo"**.
+- [ ] A **localStorage persistence notice** is shown in the "Tus Recursos" view: _"Tus recursos se guardan localmente en este navegador. Usa Descargar respaldo para no perderlos si limpias el historial o cambias de dispositivo."_
+- [ ] **User resources appear in cross-cutting filters**: Favoritos, Pendientes, Consumidos, and Categoría filters show both community and personal resources.
+- [ ] The favorite star icon renders in **yellow with a glow effect** (`text-yellow-400` + `drop-shadow`) when a resource is marked as favorite; scale-125 on hover.
 - [ ] Clicking the import button opens a file picker to select a previously exported JSON backup file.
 - [ ] When a backup file is selected, the application validates its structure before processing:
   - [ ] File must be valid JSON
