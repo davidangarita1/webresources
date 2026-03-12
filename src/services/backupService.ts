@@ -35,13 +35,13 @@ function normalizeUrl(url: string): string {
   }
 }
 
-export function exportResourcesToJSON(): void {
+export function buildBackupData(): BackupData {
   const resources = userResourceService.getAll()
   const favorites = storageService.getFavorites()
   const statuses = storageService.getStatuses()
   const language = localStorage.getItem("language") ?? "es"
 
-  const backup: BackupData = {
+  return {
     meta: {
       exportedAt: new Date().toISOString(),
       version: "1.0",
@@ -52,8 +52,10 @@ export function exportResourcesToJSON(): void {
     favorites,
     statuses,
   }
+}
 
-  const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" })
+export function downloadJSON(data: BackupData): void {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" })
   const url = URL.createObjectURL(blob)
   const link = document.createElement("a")
   link.href = url
@@ -62,6 +64,10 @@ export function exportResourcesToJSON(): void {
   link.click()
   document.body.removeChild(link)
   URL.revokeObjectURL(url)
+}
+
+export function exportResourcesToJSON(): void {
+  downloadJSON(buildBackupData())
 }
 
 export function validateBackupFile(data: unknown): ValidationResult {
@@ -166,6 +172,8 @@ export function importBackup(
 }
 
 export const backupService = {
+  buildBackupData,
+  downloadJSON,
   exportResourcesToJSON,
   validateBackupFile,
   detectURLConflicts,
