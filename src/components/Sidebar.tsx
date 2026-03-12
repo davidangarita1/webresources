@@ -1,7 +1,7 @@
 import { useResourceStore } from "../store"
 
 const NAV_ITEMS = [
-  { key: "all" as const, label: "Todos", icon: "📋" },
+  { key: "community" as const, label: "Comunidad", icon: "🌐" },
   { key: "favorites" as const, label: "Favoritos", icon: "⭐" },
   { key: "pending" as const, label: "Pendientes", icon: "⏳" },
   { key: "consumed" as const, label: "Consumidos", icon: "✅" },

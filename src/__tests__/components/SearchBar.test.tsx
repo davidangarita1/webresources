@@ -12,7 +12,7 @@ describe("SearchBar", () => {
       favorites: [],
       statuses: {},
       searchIndex: null,
-      activeFilter: "all",
+      activeFilter: "community",
       activeCategory: null,
       categories: [],
     })

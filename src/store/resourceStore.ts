@@ -5,7 +5,7 @@ import { storageService } from "../services/storageService"
 import { searchService } from "../services/searchService"
 import Fuse from "fuse.js"
 
-type ViewFilter = "all" | "favorites" | "pending" | "consumed" | "category"
+type ViewFilter = "community" | "favorites" | "pending" | "consumed" | "category"
 
 interface ResourceStore {
   resources: Resource[]
@@ -35,7 +35,7 @@ export const useResourceStore = create<ResourceStore>((set, get) => ({
   searchQuery: "",
   searchResults: [],
   searchIndex: null,
-  activeFilter: "all",
+  activeFilter: "community",
   activeCategory: null,
   categories: [],
 
