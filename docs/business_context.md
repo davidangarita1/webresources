@@ -36,10 +36,10 @@ Una vez abierta la aplicación, el usuario puede:
 - **Filtrar por estado** para ver únicamente los recursos pendientes, consumidos o favoritos.
 - **Navegar por categorías** para explorar recursos agrupados por tema.
 - **Reproducir videos de YouTube** — cuando un recurso (de la comunidad o personal) tiene una URL de YouTube, la tarjeta muestra la miniatura del video y permite reproducirlo directamente dentro de la aplicación mediante un reproductor embebido.
-- **Exportar respaldo** — desde la cabecera de la sección "Tus Recursos", el usuario puede descargar un archivo JSON con todos sus recursos personales, favoritos y estados (`user-resources-backup-{fecha}.json`). El botón sólo aparece cuando el usuario tiene al menos un recurso guardado.
-- **Importar respaldo** — el usuario puede cargar un archivo de respaldo previamente exportado (botón en la cabecera de "Tus Recursos"); la aplicación valida la estructura del archivo, detecta conflictos de URL con la colección actual y permite elegir recurso a recurso si actualizar o mantener la versión existente.
-- **Aviso de almacenamiento local** — en la sección "Tus Recursos" se muestra un mensaje informativo: _"Tus recursos se guardan localmente en este navegador. Usa Descargar respaldo para no perderlos si limpias el historial o cambias de dispositivo."_
-- **Filtros cruzados** — los recursos personales del usuario aparecen junto con los de la comunidad en los filtros de Favoritos, Pendientes, Consumidos y Categoría.
+- **Exportar respaldo** — desde la sección "Tus Recursos", el usuario puede descargar un archivo de respaldo con todos sus recursos personales, favoritos y estados. El botón solo aparece cuando el usuario tiene al menos un recurso guardado.
+- **Importar respaldo** — el usuario puede cargar un archivo de respaldo descargado previamente; la aplicación verifica que sea válido, detecta si algún enlace ya existe en la colección y permite decidir recurso a recurso si actualizar o conservar la versión actual.
+- **Recordatorio de seguridad de datos** — en la sección "Tus Recursos" se muestra un aviso recordando que los datos se guardan en el navegador y que conviene descargar un respaldo para no perderlos al cambiar de dispositivo o limpiar el historial.
+- **Recursos personales en todos los filtros** — los recursos guardados por el usuario aparecen junto con los del catálogo en los filtros de Favoritos, Pendientes, Consumidos y Categoría.
 
 ---
 
@@ -47,8 +47,8 @@ Una vez abierta la aplicación, el usuario puede:
 
 La aplicación no tiene servidor propio ni base de datos externa:
 
-- **No permite editar ni eliminar los recursos del catálogo curado** (la sección "Comunidad") — esos solo pueden modificarse editando manualmente `src/data/resources.json`.
-- **No tiene un servidor propio** — no guarda datos en una base de datos externa. Todo se almacena en el navegador.
+- **No permite editar ni eliminar los recursos del catálogo curado** (la sección "Comunidad") — esos solo pueden cambiarse por el dueño del proyecto de forma manual.
+- **No tiene un servidor propio** — no guarda datos en ningún servicio externo. Todo se almacena en el propio navegador del usuario.
 
 ---
 
@@ -56,11 +56,11 @@ La aplicación no tiene servidor propio ni base de datos externa:
 
 Hay dos tipos de información:
 
-**El catálogo de recursos** — la lista de todos los enlaces curados — está guardado en un archivo dentro del proyecto. Es fijo y solo cambia cuando el dueño lo edita manualmente.
+**El catálogo de recursos** — la lista de todos los enlaces curados — es fijo y solo cambia cuando el dueño del proyecto decide actualizarlo manualmente.
 
-**Los recursos personales del usuario** — los enlaces que el propio usuario ha agregado — se guardan en el navegador del dispositivo bajo una clave independiente del catálogo.
+**Los recursos personales del usuario** — los enlaces que el propio usuario ha agregado — se guardan en el navegador del dispositivo que usa. Si cambia de navegador o dispositivo, no estarán disponibles a menos que haya descargado un respaldo.
 
-**Las preferencias del usuario** — favoritos, estados (pendiente, consumido, referencia) y modo oscuro — se guardan directamente en el navegador del dispositivo que se usa. Esto significa que son privadas, no se comparten ni se sincronizan entre dispositivos.
+**Las preferencias del usuario** — favoritos, estados (pendiente, consumido, referencia) y modo oscuro — también se guardan en el navegador del dispositivo. Son privadas y no se comparten ni sincronizan entre dispositivos.
 
 ---
 
@@ -80,8 +80,8 @@ Además, puede **instalarse como una aplicación** en el dispositivo (como si fu
 | Quiero guardar mis propios enlaces | Sección "Tus Recursos" — colección personal separada del catálogo |
 | No sé qué recursos ya revisé | Estados: Pendiente / Consumido / Referencia |
 | Quiero marcar mis favoritos del catálogo | Botón de favorito por recurso (estrella amarilla con animación) |
-| Quiero ver mis recursos en favoritos o pendientes | Filtros cruzados incluyen recursos personales y de comunidad |
-| No quiero perder mis recursos al limpiar el navegador | Respaldo y restauración con archivo JSON; aviso informativo en "Tus Recursos" |
+| Quiero ver mis recursos en favoritos o pendientes | Los recursos personales aparecen en todos los filtros junto al catálogo |
+| No quiero perder mis recursos al limpiar el navegador | Descarga de respaldo desde "Tus Recursos"; aviso recordatorio visible en todo momento |
 | Quiero usarlo desde el teléfono | Diseño adaptable a cualquier pantalla, instalable como app |
 | No quiero depender de internet | Funciona offline una vez cargada |
 
@@ -89,4 +89,4 @@ Además, puede **instalarse como una aplicación** en el dispositivo (como si fu
 
 ## Mantenimiento
 
-Agregar o quitar recursos del catálogo es una tarea manual y técnica — requiere editar el archivo de datos y volver a publicar la aplicación. Está pensado para que el dueño del proyecto lo haga de forma ocasional cuando quiera actualizar su colección.
+Agregar o quitar recursos del catálogo es una tarea que solo puede hacer el dueño del proyecto. Requiere actualizar la colección de forma manual y volver a publicar la aplicación. Está pensado para hacerse de vez en cuando, cuando se quiera ampliar o renovar el catálogo.
