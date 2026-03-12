@@ -1,4 +1,4 @@
-# HU-05: Delete personal resource
+# HU-05: Delete personal resource [done]
 
 **As** a user,
 **I want** to be able to delete a resource I created,
@@ -8,7 +8,7 @@
 
 ## Acceptance Criteria
 
-- [ ] Each `ResourceCard` of a user resource shows a **delete** button/icon (e.g., 🗑️), visible only on personal resources.
+- [ ] Each `ResourceCard` of a user resource shows a **delete** button/icon, visible only on personal resources.
 - [ ] Clicking it shows a **confirmation** (e.g., dialog or small modal): "¿Eliminar este recurso? Esta acción no se puede deshacer."
 - [ ] Upon confirmation, the resource is deleted from `localStorage` and immediately disappears from the UI.
 - [ ] Favorites and states associated with that resource are also cleaned up.

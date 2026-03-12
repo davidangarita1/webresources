@@ -1,3 +1,5 @@
+import { DeleteOutlined } from "@ant-design/icons"
+
 interface DeleteConfirmModalProps {
   resourceTitle: string
   onConfirm: () => void
@@ -15,7 +17,7 @@ export function DeleteConfirmModal({ resourceTitle, onConfirm, onClose }: Delete
     >
       <div className="w-full max-w-sm rounded-xl bg-white p-6 shadow-xl dark:bg-gray-900">
         <h2 id="delete-modal-title" className="mb-2 text-base font-semibold text-gray-900 dark:text-white">
-          🗑️ Eliminar recurso
+          <DeleteOutlined /> Eliminar recurso
         </h2>
         <p className="mb-1 text-sm text-gray-600 dark:text-gray-300">
           ¿Eliminar <span className="font-medium text-gray-900 dark:text-white">"{resourceTitle}"</span>?

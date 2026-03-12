@@ -9,7 +9,7 @@
 ## Acceptance Criteria
 
 - [ ] The application detects the user's browser language preference and loads the corresponding language (Spanish or English by default).
-- [ ] A language selector is available in the top bar or settings (flag icons or language codes: 🇪🇸 / 🇬🇧 or "ES / EN").
+- [ ] A language selector is available in the top bar or settings (language codes: "ES / EN").
 - [ ] When the user changes the language, the entire UI updates in real-time except for:
   - User-created resource titles, descriptions, and tags (remain as entered)
   - Community resource data from `resources.json` (remain hardcoded unless separately translated)

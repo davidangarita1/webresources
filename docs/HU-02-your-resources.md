@@ -8,7 +8,7 @@
 
 ## Acceptance Criteria
 
-- [ ] A new sidebar item is added: **"Tus Recursos"** with a representative icon (e.g., 👤 or 📌).
+- [ ] A new sidebar item is added: **"Tus Recursos"** with a representative icon.
 - [ ] Clicking it displays Dashboard showing exclusively resources created by the user (stored in `localStorage`).
 - [ ] If the user has no personal resources, an empty state is shown with a guide message (e.g., "Aún no tienes recursos. ¡Crea tu primero!") and a button/link to create one.
 - [ ] User resources are rendered with the same `ResourceCard` component and support favorites, states (pending, consumed, reference), and tags.

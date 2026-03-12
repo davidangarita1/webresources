@@ -1,6 +1,8 @@
 import { useState } from "react"
+import { StarFilled, StarOutlined, EditOutlined, DeleteOutlined, PlayCircleFilled } from "@ant-design/icons"
 import type { Resource, ResourceStatus } from "../types"
-import { extractDomain, getFaviconUrl } from "../utils"
+import { extractDomain, getFaviconUrl, isYouTubeUrl, extractYouTubeId, getYouTubeThumbnail } from "../utils"
+import { YouTubePlayerModal } from "./YouTubePlayerModal"
 
 const STATUS_LABELS: Record<ResourceStatus, string> = {
   pending: "Pendiente",
@@ -34,11 +36,33 @@ export function ResourceCard({
   onDelete,
 }: ResourceCardProps) {
   const [faviconError, setFaviconError] = useState(false)
+  const [playerOpen, setPlayerOpen] = useState(false)
   const domain = extractDomain(resource.url)
   const faviconUrl = getFaviconUrl(resource.url)
+  const isYouTube = isYouTubeUrl(resource.url)
+  const youTubeId = isYouTube ? extractYouTubeId(resource.url) : null
+  const thumbnail = youTubeId ? getYouTubeThumbnail(youTubeId) : null
 
   return (
     <div className="group flex flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
+      {/* YouTube thumbnail */}
+      {thumbnail && (
+        <button
+          onClick={() => setPlayerOpen(true)}
+          className="relative cursor-pointer mb-3 w-full overflow-hidden rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          aria-label={`Reproducir: ${resource.title}`}
+        >
+          <img
+            src={thumbnail}
+            alt={resource.title}
+            className="aspect-video w-full object-cover transition-opacity group-hover:opacity-90"
+            loading="lazy"
+          />
+          <span className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition-opacity group-hover:opacity-100">
+            <PlayCircleFilled style={{ fontSize: "48px" }} className="text-white drop-shadow-lg" />
+          </span>
+        </button>
+      )}
       <div className="mb-3 flex items-start justify-between">
         <div className="flex items-center gap-2 min-w-0">
           {!faviconError && faviconUrl && (
@@ -64,7 +88,7 @@ export function ResourceCard({
           className="ml-2 shrink-0 rounded-md p-1 text-lg transition-colors hover:scale-110 touch-manipulation"
           aria-label={isFavorite ? "Quitar de favoritos" : "Agregar a favoritos"}
         >
-          {isFavorite ? "⭐" : "☆"}
+          {isFavorite ? <StarFilled className="text-yellow-400" /> : <StarOutlined />}
         </button>
         {(onEdit || onDelete) && (
           <div className="ml-1 flex shrink-0 items-center gap-0.5">
@@ -74,7 +98,7 @@ export function ResourceCard({
                 className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-indigo-400"
                 aria-label="Editar recurso"
               >
-                ✏️
+                <EditOutlined />
               </button>
             )}
             {onDelete && (
@@ -83,7 +107,7 @@ export function ResourceCard({
                 className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-400"
                 aria-label="Eliminar recurso"
               >
-                🗑️
+                <DeleteOutlined />
               </button>
             )}
           </div>
@@ -135,7 +159,23 @@ export function ResourceCard({
         >
           Abrir
         </a>
+        {isYouTube && (
+          <button
+            onClick={() => setPlayerOpen(true)}
+            className="rounded-md cursor-pointer border border-indigo-600 px-4 py-1.5 text-xs font-medium text-indigo-600 transition-colors hover:bg-indigo-50 dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-950 touch-manipulation"
+          >
+            Reproducir
+          </button>
+        )}
       </div>
+
+      {playerOpen && youTubeId && (
+        <YouTubePlayerModal
+          videoId={youTubeId}
+          title={resource.title}
+          onClose={() => setPlayerOpen(false)}
+        />
+      )}
     </div>
   )
 }
