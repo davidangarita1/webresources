@@ -2,6 +2,7 @@ import { useResourceStore } from "../store"
 
 const NAV_ITEMS = [
   { key: "community" as const, label: "Comunidad", icon: "🌐" },
+  { key: "user" as const, label: "Tus Recursos", icon: "📌" },
   { key: "favorites" as const, label: "Favoritos", icon: "⭐" },
   { key: "pending" as const, label: "Pendientes", icon: "⏳" },
   { key: "consumed" as const, label: "Consumidos", icon: "✅" },

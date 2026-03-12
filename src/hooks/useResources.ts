@@ -4,6 +4,7 @@ import type { ResourceStatus } from "../types"
 
 export function useResources() {
   const resources = useResourceStore((s) => s.resources)
+  const userResources = useResourceStore((s) => s.userResources)
   const favorites = useResourceStore((s) => s.favorites)
   const statuses = useResourceStore((s) => s.statuses)
   const searchQuery = useResourceStore((s) => s.searchQuery)
@@ -22,6 +23,8 @@ export function useResources() {
 
   const filteredResources = (() => {
     switch (activeFilter) {
+      case "user":
+        return userResources
       case "favorites":
         return baseResources.filter((r) => favorites.includes(r.id))
       case "pending":
