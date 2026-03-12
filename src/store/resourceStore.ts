@@ -112,17 +112,18 @@ export const useResourceStore = create<ResourceStore>((set, get) => ({
     if (activeFilter === "user") return userResources
 
     const baseResources = searchQuery.trim() ? searchResults : resources
+    const allResources = [...baseResources, ...userResources]
 
     switch (activeFilter) {
       case "favorites":
-        return baseResources.filter((r) => favorites.includes(r.id))
+        return allResources.filter((r) => favorites.includes(r.id))
       case "pending":
-        return baseResources.filter((r) => statuses[r.id] === "pending")
+        return allResources.filter((r) => statuses[r.id] === "pending")
       case "consumed":
-        return baseResources.filter((r) => statuses[r.id] === "consumed")
+        return allResources.filter((r) => statuses[r.id] === "consumed")
       case "category":
-        if (!activeCategory) return baseResources
-        return baseResources.filter((r) => r.category === activeCategory)
+        if (!activeCategory) return allResources
+        return allResources.filter((r) => r.category === activeCategory)
       default:
         return baseResources
     }

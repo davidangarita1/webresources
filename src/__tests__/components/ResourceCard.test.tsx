@@ -65,6 +65,19 @@ describe("ResourceCard", () => {
     expect(screen.getByLabelText("Quitar de favoritos")).toBeInTheDocument()
   })
 
+  it("filled star button has yellow color class when favorite", () => {
+    render(<ResourceCard {...defaultProps} isFavorite={true} />)
+    const btn = screen.getByLabelText("Quitar de favoritos")
+    expect(btn.className).toContain("text-yellow-400")
+  })
+
+  it("unfilled star button does not have standalone text-yellow-400 class when not favorite", () => {
+    render(<ResourceCard {...defaultProps} isFavorite={false} />)
+    const btn = screen.getByLabelText("Agregar a favoritos")
+    // hover:text-yellow-400 is present for hover state, but the unconditional class should not be
+    expect(btn.className).not.toMatch(/(?<![:\w])text-yellow-400/)
+  })
+
   it("should call onToggleFavorite when favorite button clicked", async () => {
     const user = userEvent.setup()
     render(<ResourceCard {...defaultProps} />)
