@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { SunOutlined, MoonOutlined } from "@ant-design/icons"
+import { useTranslation } from "react-i18next"
 import { SearchBar } from "./SearchBar"
+import { LanguageSelector } from "./LanguageSelector"
 
 function getInitialDarkMode(): boolean {
   const stored = localStorage.getItem("bookmark_dark_mode")
@@ -23,6 +25,7 @@ interface TopbarProps {
 
 export function Topbar({ onMenuClick }: TopbarProps) {
   const [darkMode, setDarkMode] = useState<boolean>(getInitialDarkMode)
+  const { t } = useTranslation()
 
   function toggleDarkMode() {
     const next = !darkMode
@@ -36,7 +39,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
       <button
         onClick={onMenuClick}
         className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 md:hidden"
-        aria-label="Abrir menú"
+        aria-label={t("nav.openMenu")}
       >
         <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -47,10 +50,12 @@ export function Topbar({ onMenuClick }: TopbarProps) {
         <SearchBar />
       </div>
 
+      <LanguageSelector />
+
       <button
         onClick={toggleDarkMode}
         className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
-        aria-label={darkMode ? "Modo claro" : "Modo oscuro"}
+        aria-label={darkMode ? t("topbar.lightMode") : t("topbar.darkMode")}
       >
         {darkMode ? <SunOutlined /> : <MoonOutlined />}
       </button>

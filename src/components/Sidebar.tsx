@@ -10,17 +10,18 @@ import {
   PlusOutlined,
 } from "@ant-design/icons"
 import type { ReactNode } from "react"
+import { useTranslation } from "react-i18next"
 import { useResourceStore } from "../store"
 
 type NavKey = "community" | "user" | "favorites" | "pending" | "consumed"
 
-const NAV_ITEMS: Array<{ key: NavKey; label: string; icon: ReactNode }> = [
-  { key: "community", label: "Comunidad", icon: <GlobalOutlined /> },
-  { key: "user", label: "Tus Recursos", icon: <PushpinOutlined /> },
-  { key: "favorites", label: "Favoritos", icon: <StarOutlined /> },
-  { key: "pending", label: "Pendientes", icon: <ClockCircleOutlined /> },
-  { key: "consumed", label: "Consumidos", icon: <CheckCircleOutlined /> },
-]
+const NAV_ICONS: Record<NavKey, ReactNode> = {
+  community: <GlobalOutlined />,
+  user: <PushpinOutlined />,
+  favorites: <StarOutlined />,
+  pending: <ClockCircleOutlined />,
+  consumed: <CheckCircleOutlined />,
+}
 
 interface SidebarProps {
   isOpen: boolean
@@ -29,6 +30,7 @@ interface SidebarProps {
 }
 
 export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
+  const { t } = useTranslation()
   const activeFilter = useResourceStore((s) => s.activeFilter)
   const activeCategory = useResourceStore((s) => s.activeCategory)
   const categories = useResourceStore((s) => s.categories)
@@ -62,12 +64,12 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
       >
         <div className="flex items-center justify-between border-b border-gray-200 p-4 dark:border-gray-700">
           <h1 className="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-white">
-            <BookOutlined /> Marcadores
+            <BookOutlined /> {t("nav.title")}
           </h1>
           <button
             onClick={onClose}
             className="rounded-md p-1.5 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 md:hidden"
-            aria-label="Cerrar menú"
+            aria-label={t("nav.closeMenu")}
           >
             <CloseOutlined />
           </button>
@@ -75,18 +77,18 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
 
         <nav className="flex-1 overflow-y-auto p-3">
           <ul className="space-y-1">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.key}>
+            {(Object.keys(NAV_ICONS) as NavKey[]).map((key) => (
+              <li key={key}>
                 <button
-                  onClick={() => handleNavClick(() => setActiveFilter(item.key))}
+                  onClick={() => handleNavClick(() => setActiveFilter(key))}
                   className={`flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium transition-colors ${
-                    activeFilter === item.key
+                    activeFilter === key
                       ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200"
                       : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
                   }`}
                 >
-                  <span className="text-base">{item.icon}</span>
-                  {item.label}
+                  <span className="text-base">{NAV_ICONS[key]}</span>
+                  {t(`nav.${key === "user" ? "yourResources" : key}`)}
                 </button>
               </li>
             ))}
@@ -94,7 +96,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
 
           <div className="mt-6">
             <h2 className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              Categorías
+              {t("nav.categories")}
             </h2>
             <ul className="space-y-0.5">
               {categories.map((category) => (
@@ -122,7 +124,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
             className="flex w-full items-center justify-center gap-2 rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
           >
             <PlusOutlined />
-            Crear recurso
+            {t("actions.createResource")}
           </button>
         </div>
       </aside>
