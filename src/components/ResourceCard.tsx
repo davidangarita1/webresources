@@ -85,10 +85,12 @@ export function ResourceCard({
         </div>
         <button
           onClick={() => onToggleFavorite(resource.id)}
-          className="ml-2 shrink-0 rounded-md p-1 text-lg transition-colors hover:scale-110 touch-manipulation"
+          className={`ml-2 shrink-0 rounded-md p-1 text-lg transition-all hover:scale-125 touch-manipulation ${
+            isFavorite ? "text-yellow-400 drop-shadow-[0_0_4px_rgba(250,204,21,0.7)]" : "text-gray-400 hover:text-yellow-400"
+          }`}
           aria-label={isFavorite ? "Quitar de favoritos" : "Agregar a favoritos"}
         >
-          {isFavorite ? <StarFilled className="text-yellow-400" /> : <StarOutlined />}
+          {isFavorite ? <StarFilled /> : <StarOutlined />}
         </button>
         {(onEdit || onDelete) && (
           <div className="ml-1 flex shrink-0 items-center gap-0.5">
