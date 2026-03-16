@@ -62,6 +62,37 @@ describe("validateBackupFile", () => {
     expect(r.errors.some((e) => e.includes("category"))).toBe(true)
   })
 
+  it("rejects resources with non-http(s) URLs", () => {
+    const data = makeBackup([makeResource({ url: "javascript:alert(1)" })])
+    const r = validateBackupFile(data)
+    expect(r.valid).toBe(false)
+    expect(r.errors.some((e) => e.includes("url"))).toBe(true)
+  })
+
+  it("rejects resources with invalid URL format", () => {
+    const data = makeBackup([makeResource({ url: "not-a-url" })])
+    const r = validateBackupFile(data)
+    expect(r.valid).toBe(false)
+    expect(r.errors.some((e) => e.includes("url"))).toBe(true)
+  })
+
+  it("rejects backups with invalid status values", () => {
+    const data = makeBackup([], { statuses: { "r1": "invalid" as "pending" } })
+    const r = validateBackupFile(data)
+    expect(r.valid).toBe(false)
+    expect(r.errors.some((e) => e.includes("status"))).toBe(true)
+  })
+
+  it("rejects backup with more than 1000 resources", () => {
+    const resources = Array.from({ length: 1001 }, (_, i) =>
+      makeResource({ id: `r${i}`, url: `https://example.com/${i}` })
+    )
+    const data = makeBackup(resources)
+    const r = validateBackupFile(data)
+    expect(r.valid).toBe(false)
+    expect(r.errors.some((e) => e.includes("Too many resources"))).toBe(true)
+  })
+
   it("accepts a valid backup", () => {
     expect(validateBackupFile(makeBackup([makeResource()]))).toMatchObject({ valid: true, errors: [] })
   })
@@ -140,6 +171,14 @@ describe("importBackup", () => {
     importBackup(backup, new Map())
     const statuses = JSON.parse(localStorage.getItem("bookmark_statuses") ?? "{}") as Record<string, string>
     expect(statuses["r1"]).toBe("consumed")
+  })
+
+  it("skips invalid status values during import", () => {
+    const backup = makeBackup([], { favorites: [], statuses: { "r1": "invalid" as "pending", "r2": "pending" } })
+    importBackup(backup, new Map())
+    const statuses = JSON.parse(localStorage.getItem("bookmark_statuses") ?? "{}") as Record<string, string>
+    expect(statuses["r1"]).toBeUndefined()
+    expect(statuses["r2"]).toBe("pending")
   })
 })
 

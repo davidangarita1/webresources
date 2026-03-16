@@ -4,7 +4,12 @@ import { STORAGE_KEYS } from "../constants/storageKeys"
 function getFavorites(): string[] {
   const raw = localStorage.getItem(STORAGE_KEYS.FAVORITES)
   if (!raw) return []
-  return JSON.parse(raw) as string[]
+  try {
+    const parsed = JSON.parse(raw)
+    return Array.isArray(parsed) ? (parsed as string[]) : []
+  } catch {
+    return []
+  }
 }
 
 function saveFavorites(favorites: string[]): void {
@@ -27,7 +32,13 @@ function isFavorite(id: string): boolean {
 function getStatuses(): Record<string, ResourceStatus> {
   const raw = localStorage.getItem(STORAGE_KEYS.STATUSES)
   if (!raw) return {}
-  return JSON.parse(raw) as Record<string, ResourceStatus>
+  try {
+    const parsed = JSON.parse(raw)
+    if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) return {}
+    return parsed as Record<string, ResourceStatus>
+  } catch {
+    return {}
+  }
 }
 
 function saveStatuses(statuses: Record<string, ResourceStatus>): void {

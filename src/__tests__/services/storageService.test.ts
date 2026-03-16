@@ -16,6 +16,16 @@ describe("storageService", () => {
       expect(storageService.getFavorites()).toEqual(["1", "2", "3"])
     })
 
+    it("should return empty array when localStorage contains corrupted JSON", () => {
+      localStorage.setItem("bookmark_favorites", "not-valid-json{")
+      expect(storageService.getFavorites()).toEqual([])
+    })
+
+    it("should return empty array when localStorage contains a non-array JSON value", () => {
+      localStorage.setItem("bookmark_favorites", JSON.stringify({ not: "array" }))
+      expect(storageService.getFavorites()).toEqual([])
+    })
+
     it("should toggle favorite on when not present", () => {
       const result = storageService.toggleFavorite("1")
       expect(result).toContain("1")
@@ -39,6 +49,16 @@ describe("storageService", () => {
 
   describe("statuses", () => {
     it("should return empty object when no statuses stored", () => {
+      expect(storageService.getStatuses()).toEqual({})
+    })
+
+    it("should return empty object when localStorage contains corrupted JSON", () => {
+      localStorage.setItem("bookmark_statuses", "not-valid-json{")
+      expect(storageService.getStatuses()).toEqual({})
+    })
+
+    it("should return empty object when localStorage contains a non-object JSON value", () => {
+      localStorage.setItem("bookmark_statuses", JSON.stringify([1, 2, 3]))
       expect(storageService.getStatuses()).toEqual({})
     })
 

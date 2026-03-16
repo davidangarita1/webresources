@@ -26,6 +26,9 @@ export interface ValidationResult {
   errors: string[]
 }
 
+const VALID_STATUSES = new Set<string>(["pending", "consumed", "reference"])
+const MAX_RESOURCES_PER_IMPORT = 1000
+
 function normalizeUrl(url: string): string {
   try {
     const u = new URL(url)
@@ -90,13 +93,37 @@ export function validateBackupFile(data: unknown): ValidationResult {
   if (errors.length > 0) return { valid: false, errors }
 
   const resources = obj.resources as unknown[]
+
+  if (resources.length > MAX_RESOURCES_PER_IMPORT) {
+    errors.push(`Too many resources: maximum allowed is ${MAX_RESOURCES_PER_IMPORT}`)
+    return { valid: false, errors }
+  }
+
   resources.forEach((r, i) => {
     const res = r as Record<string, unknown>
     if (!res.id || typeof res.id !== "string") errors.push(`resources[${i}]: missing required field 'id'`)
     if (!res.title || typeof res.title !== "string") errors.push(`resources[${i}]: missing required field 'title'`)
-    if (!res.url || typeof res.url !== "string") errors.push(`resources[${i}]: missing required field 'url'`)
+    if (!res.url || typeof res.url !== "string") {
+      errors.push(`resources[${i}]: missing required field 'url'`)
+    } else {
+      try {
+        const parsed = new URL(res.url as string)
+        if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+          errors.push(`resources[${i}]: url must use http or https protocol`)
+        }
+      } catch {
+        errors.push(`resources[${i}]: url is not a valid URL`)
+      }
+    }
     if (!res.category || typeof res.category !== "string") errors.push(`resources[${i}]: missing required field 'category'`)
   })
+
+  const statuses = obj.statuses as Record<string, unknown>
+  for (const [key, value] of Object.entries(statuses)) {
+    if (typeof value !== "string" || !VALID_STATUSES.has(value)) {
+      errors.push(`statuses['${key}']: invalid status value '${String(value)}'`)
+    }
+  }
 
   return { valid: errors.length === 0, errors }
 }
@@ -163,9 +190,11 @@ export function importBackup(
     }
   }
 
-  // Restore statuses from backup (additive)
+  // Restore statuses from backup (additive — only save valid status values)
   for (const [id, status] of Object.entries(backup.statuses)) {
-    storageService.setStatus(id, status)
+    if (typeof status === "string" && VALID_STATUSES.has(status)) {
+      storageService.setStatus(id, status as ResourceStatus)
+    }
   }
 
   return { addedCount, updatedCount, skippedCount }

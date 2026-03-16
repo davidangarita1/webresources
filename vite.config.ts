@@ -45,6 +45,14 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    headers: {
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
+      'Permissions-Policy': 'geolocation=(), camera=(), microphone=()',
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',
