@@ -1,4 +1,4 @@
-import { renderHook } from "@testing-library/react"
+import { renderHook, act } from "@testing-library/react"
 import { useResources } from "../../hooks/useResources"
 import { useResourceStore } from "../../store"
 import type { Resource, UserResource } from "../../types"
@@ -107,5 +107,18 @@ describe("useResources", () => {
     renderHook(() => useResources())
     expect(initSpy).toHaveBeenCalled()
     initSpy.mockRestore()
+  })
+
+  it("updates filteredResources reactively when searchQuery changes", () => {
+    const { result } = renderHook(() => useResources())
+
+    act(() => {
+      useResourceStore.setState({
+        searchQuery: "Community",
+        searchResults: [communityResource],
+      })
+    })
+
+    expect(result.current.filteredResources.map((r) => r.id)).toContain("community-1")
   })
 })
