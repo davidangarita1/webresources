@@ -1,3 +1,18 @@
+1.8.0
+- Feat: Add dedicated YouTube Videos section — YouTube-URL resources are automatically grouped under a collapsible "YouTube Videos" heading in every Dashboard view
+- Feat: Add "Videos" sidebar filter — shows only community and personal resources whose URLs are detected as YouTube
+- Feat: YouTubeSection component — collapsible section with YouTube icon, video count badge, and responsive ResourceCard grid (1/2/3/4 col)
+- Feat: "Other Resources" sub-heading — shown only when both YouTube and regular resources coexist in the active view
+- Feat: Add "videos" ViewFilter to Zustand store — getFilteredResources() returns all resources with YouTube URLs across community + user collections
+- i18n: Add youtubeSection.* keys (title, count badge, collapse/expand aria-labels, otherResources) in Spanish and English
+- i18n: Add nav.videos and filters.videos translation keys
+- Test: Add 17 YouTubeSection unit tests (rendering, collapse/expand, delegated interactions)
+- Test: Add 6 Dashboard YouTube-section integration tests (split layout, Otros Recursos heading, Videos filter)
+- Test: Fix pre-existing flaky "renders resource cards" Dashboard test
+- Docs: Add HU-09-youtube-section.md user story (English)
+- Docs: Update README — YouTube section feature, updated test count (251+)
+- Docs: Update business_context.md — new capability and value-table row
+
 1.7.0
 - Chore: Code audit — SOLID, DRY, KISS, YAGNI, clean code, functional programming patterns
 - Chore: Extract centralized STORAGE_KEYS constant replacing magic strings across 6+ files
