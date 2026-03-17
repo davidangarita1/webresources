@@ -11,6 +11,7 @@ A fast, offline-capable PWA to explore and manage a curated collection of 1000+ 
 - **Your Resources view** — dedicated "Tus Recursos" section showing only user-created resources stored in `localStorage`
 - **Personal resource CRUD** — create, edit, and delete personal resources via a modal form (title, URL, description, category, tags); changes persist in `localStorage`
 - **YouTube video support** — YouTube URLs auto-detected; ResourceCard shows thumbnail with play overlay; embedded player via `youtube-nocookie.com` modal
+- **YouTube section** — resources with YouTube URLs are grouped in a dedicated collapsible **"Videos de YouTube"** section, visually separated from regular resources in every view; a **Videos** sidebar filter shows only YouTube resources across community and personal collections
 - **Language support** — switch between Spanish and English at any time using the ES/EN button in the top bar; your preference is remembered across sessions and the app auto-detects your browser language on first visit
 - **Backup & restore** — export all personal resources, favorites and statuses to a JSON file; import back with URL-conflict detection and per-resource update/skip controls; export/import buttons live in the "Tus Recursos" header (export only shown when resources exist)
 - **Cross-filter user resources** — personal resources appear in Favoritos, Pendientes, Consumidos, and Categoría filters alongside community resources
@@ -116,7 +117,7 @@ type ResourceStatus = "pending" | "consumed" | "reference"
 
 - **Services** — storageService, searchService, resourceService, userResourceService, backupService
 - **Hooks** — useFavorites, useStatuses, useResources, useUserResources
-- **Components** — ResourceCard, SearchBar, Sidebar, Topbar, ImportResourcesModal, ResourceFormModal, ConflictResolutionDialog, DeleteConfirmModal, YouTubePlayerModal, LanguageSelector
+- **Components** — ResourceCard, SearchBar, Sidebar, Topbar, ImportResourcesModal, ResourceFormModal, ConflictResolutionDialog, DeleteConfirmModal, YouTubePlayerModal, YouTubeSection, LanguageSelector
 - **Store** — resourceStore (initialize, filters, CRUD, search)
 - **Pages** — Dashboard, NotFound
 - **App** — App shell (routing, sidebar toggle, import/export, create flow)
