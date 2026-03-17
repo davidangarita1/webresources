@@ -1,0 +1,98 @@
+name: Weekly Link Check
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: develop
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Check and remove broken links
+        id: check
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+          const resources = JSON.parse(fs.readFileSync('src/data/resources.json', 'utf8'));
+          const TIMEOUT = 20000;
+          const CONCURRENCY = 15;
+          const BROKEN_CODES = new Set([404, 410]);
+          const UA = 'Mozilla/5.0 (compatible; LinkChecker/1.0)';
+
+          async function check(url) {
+            for (const method of ['HEAD', 'GET']) {
+              const ctrl = new AbortController();
+              const t = setTimeout(() => ctrl.abort(), TIMEOUT);
+              try {
+                const r = await fetch(url, { method, signal: ctrl.signal, redirect: 'follow', headers: { 'User-Agent': UA } });
+                clearTimeout(t);
+                if (BROKEN_CODES.has(r.status) && method === 'HEAD') continue;
+                return { ok: !BROKEN_CODES.has(r.status), status: r.status };
+              } catch (e) {
+                clearTimeout(t);
+                if (method === 'HEAD') continue;
+                return { ok: false, status: 0, error: e.name === 'AbortError' ? 'timeout' : e.message };
+              }
+            }
+            return { ok: false, status: 0, error: 'failed' };
+          }
+
+          async function run() {
+            const broken = [];
+            for (let i = 0; i < resources.length; i += CONCURRENCY) {
+              const batch = resources.slice(i, i + CONCURRENCY);
+              const results = await Promise.all(batch.map(r => check(r.url).then(res => ({ ...r, ...res }))));
+              results.filter(r => !r.ok).forEach(r => broken.push(r));
+              process.stderr.write(`\r${Math.min(i + CONCURRENCY, resources.length)}/${resources.length}`);
+            }
+            process.stderr.write('\n');
+            if (broken.length) {
+              const ids = new Set(broken.map(r => r.id));
+              fs.writeFileSync('src/data/resources.json', JSON.stringify(resources.filter(r => !ids.has(r.id)), null, 4) + '\n');
+            }
+            fs.writeFileSync('/tmp/broken.json', JSON.stringify(broken));
+          }
+
+          run();
+          EOF
+
+          COUNT=$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync('/tmp/broken.json')).length))")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Broken: $COUNT"
+
+      - name: Open PR
+        if: steps.check.outputs.count > 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          BRANCH="fix/remove-broken-links-${DATE}"
+          git ls-remote --exit-code origin "refs/heads/${BRANCH}" &>/dev/null && BRANCH="${BRANCH}-$(date +%H%M)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add src/data/resources.json
+          git commit -m "fix(data): remove ${{ steps.check.outputs.count }} broken link(s) [$DATE]"
+          git push origin "$BRANCH"
+          node -e "
+            const b=JSON.parse(require('fs').readFileSync('/tmp/broken.json'));
+            const rows=b.map(r=>'| '+r.title+' | '+r.url+' | '+(r.status?'HTTP '+r.status:r.error||'error')+' |').join('\\n');
+            require('fs').writeFileSync('/tmp/body.md','## Broken Links Removed\\n\\n| Title | URL | Reason |\\n|---|---|---|\\n'+rows);
+          "
+          gh pr create --base develop --head "$BRANCH" \
+            --title "fix(data): remove ${{ steps.check.outputs.count }} broken link(s) ($DATE)" \
+            --body-file /tmp/body.md
