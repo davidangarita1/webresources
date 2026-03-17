@@ -28,6 +28,7 @@ describe("Sidebar", () => {
     expect(screen.getByText("Favoritos")).toBeInTheDocument()
     expect(screen.getByText("Pendientes")).toBeInTheDocument()
     expect(screen.getByText("Consumidos")).toBeInTheDocument()
+    expect(screen.getByText("Videos")).toBeInTheDocument()
   })
 
   it("renders categories", () => {
@@ -36,6 +37,14 @@ describe("Sidebar", () => {
     const categories = useResourceStore.getState().categories
     expect(categories.length).toBeGreaterThan(0)
     expect(screen.getByText(categories[0])).toBeInTheDocument()
+  })
+
+  it("activates videos filter when Videos nav item clicked", async () => {
+    const user = userEvent.setup()
+    render(<Sidebar {...defaultProps} />)
+    await user.click(screen.getByText("Videos"))
+    expect(defaultProps.onClose).toHaveBeenCalled()
+    expect(useResourceStore.getState().activeFilter).toBe("videos")
   })
 
   it("calls onClose and sets filter when nav item clicked", async () => {
