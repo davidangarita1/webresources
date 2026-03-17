@@ -209,20 +209,9 @@
     "createdAt": "2025-09-15T17:32:27.923452Z"
   },
   {
-    "id": "20",
-    "title": "Shadows",
-    "url": "https://shadows.brumm.af/",
-    "description": "A tool for generating layered, smooth CSS box-shadows.",
-    "category": "COLORS",
-    "tags": [
-      "colors"
-    ],
-    "createdAt": "2025-09-15T17:32:27.923452Z"
-  },
-  {
     "id": "21",
     "title": "Picular",
-    "url": "https://picular.co/Video",
+    "url": "https://picular.co",
     "description": "A color search engine that finds colors from images.",
     "category": "COLORS",
     "tags": [
@@ -301,17 +290,6 @@
     "title": "Spirit App",
     "url": "https://spiritapp.io/getstarted/",
     "description": "A tool for creating and managing timeline animations.",
-    "category": "ANIMATIONS",
-    "tags": [
-      "animations"
-    ],
-    "createdAt": "2025-09-15T17:32:27.923452Z"
-  },
-  {
-    "id": "29",
-    "title": "Scroll reveal JS",
-    "url": "https://scrollrevealjs.org/pricing/",
-    "description": "A library for animating elements on scroll.",
     "category": "ANIMATIONS",
     "tags": [
       "animations"
@@ -789,17 +767,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "69",
-    "title": "AI Code Reviewer",
-    "url": "https://ai-code-reviewer.com/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "70",
     "title": "AI For Beginners",
     "url": "https://microsoft.github.io/AI-For-Beginners/",
@@ -813,7 +780,7 @@
   {
     "id": "71",
     "title": "AI Tuts",
-    "url": "https://prompts.aituts.com/",
+    "url": "https://aituts.com/",
     "description": "",
     "category": "ARTIFICIAL INTELLIGENCE",
     "tags": [
@@ -855,17 +822,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "75",
-    "title": "Better waifu",
-    "url": "https://betterwaifu.com/stable-diffusion-nsfw/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "76",
     "title": "BGrem",
     "url": "https://bgrem.ai/es/",
@@ -891,17 +847,6 @@
     "id": "78",
     "title": "ChatGPT",
     "url": "https://chat.openai.com/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "79",
-    "title": "Chichi Pui",
-    "url": "https://www.chichi-pui.com/",
     "description": "",
     "category": "ARTIFICIAL INTELLIGENCE",
     "tags": [
@@ -998,17 +943,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "88",
-    "title": "Instant Art",
-    "url": "https://instantart.io/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "89",
     "title": "Kapwing",
     "url": "https://www.kapwing.com/es",
@@ -1075,53 +1009,9 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "95",
-    "title": "Majin AI",
-    "url": "https://majinai.art/ja/index.php",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "96",
-    "title": "Mixo",
-    "url": "https://www.mixo.io/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "97",
-    "title": "Motion Brush",
-    "url": "https://academy.runwayml.com/gen2/gen2-motion-brush",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "98",
     "title": "NLTK",
     "url": "https://www.nltk.org/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "99",
-    "title": "Open AI",
-    "url": "https://platform.openai.com/",
     "description": "",
     "category": "ARTIFICIAL INTELLIGENCE",
     "tags": [
@@ -1163,28 +1053,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "103",
-    "title": "Pixel hunter",
-    "url": "https://pixelhunter.io/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "104",
-    "title": "Pixi AI",
-    "url": "https://pixai.art/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "105",
     "title": "Profile Maker",
     "url": "https://pfpmaker.com/",
@@ -1210,17 +1078,6 @@
     "id": "107",
     "title": "Run diffusion",
     "url": "https://rundiffusion.com/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "108",
-    "title": "See Art",
-    "url": "https://www.seaart.ai/home",
     "description": "",
     "category": "ARTIFICIAL INTELLIGENCE",
     "tags": [
@@ -1287,17 +1144,6 @@
     "id": "114",
     "title": "Textblob",
     "url": "https://textblob.readthedocs.io/en/dev/",
-    "description": "",
-    "category": "ARTIFICIAL INTELLIGENCE",
-    "tags": [
-      "ai"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "115",
-    "title": "Topazlabs",
-    "url": "https://www.topazlabs.com/gigapixel",
     "description": "",
     "category": "ARTIFICIAL INTELLIGENCE",
     "tags": [
@@ -1559,17 +1405,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "139",
-    "title": "Certification Template Monster",
-    "url": "https://certification.templatemonster.com/",
-    "description": "",
-    "category": "COURSES",
-    "tags": [
-      "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "140",
     "title": "Certiprof",
     "url": "https://certiprof.com/pages/remote-worker-professional-certificate-rwpc-spanish",
@@ -1694,17 +1529,6 @@
     "id": "151",
     "title": "Digital defynd",
     "url": "https://digitaldefynd.com/",
-    "description": "",
-    "category": "COURSES",
-    "tags": [
-      "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "152",
-    "title": "Dostin Hurtado",
-    "url": "https://dostinhurtado.com/site/",
     "description": "",
     "category": "COURSES",
     "tags": [
@@ -1955,31 +1779,9 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "175",
-    "title": "M3O",
-    "url": "https://m3o.com/",
-    "description": "",
-    "category": "COURSES",
-    "tags": [
-      "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "176",
     "title": "Mastermind",
     "url": "https://www.mastermind.ac/",
-    "description": "",
-    "category": "COURSES",
-    "tags": [
-      "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "177",
-    "title": "Mecabot",
-    "url": "http://mecabot-ula.org/category/tutoriales/arduino/",
     "description": "",
     "category": "COURSES",
     "tags": [
@@ -2013,17 +1815,6 @@
     "id": "180",
     "title": "Open bootcamp",
     "url": "https://open-bootcamp.com/",
-    "description": "",
-    "category": "COURSES",
-    "tags": [
-      "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "181",
-    "title": "Operation Aleph",
-    "url": "https://aleph.redporlaciberseguridad.org/",
     "description": "",
     "category": "COURSES",
     "tags": [
@@ -2252,17 +2043,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "202",
-    "title": "Platzi Courses [Mega]",
-    "url": "https://mega.nz/folder/jZJ1TJKZ#0PCphxviLyvTGDC-JAgkjQ/folder/jFw3yRBD",
-    "description": "",
-    "category": "COURSES",
-    "tags": [
-      "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "203",
     "title": "Platzi",
     "url": "https://platzi.com/home/",
@@ -2277,17 +2057,6 @@
     "id": "204",
     "title": "Crehana",
     "url": "https://www.crehana.com/",
-    "description": "",
-    "category": "COURSES",
-    "tags": [
-      "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "205",
-    "title": "Platzi Apps [MinTIC]",
-    "url": "https://platzi.com/new-home/mis-rutas/6773",
     "description": "",
     "category": "COURSES",
     "tags": [
@@ -2314,17 +2083,6 @@
     "category": "COURSES",
     "tags": [
       "courses"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "208",
-    "title": "Keyframes",
-    "url": "https://keyframes.app/",
-    "description": "",
-    "category": "ANIMATIONS",
-    "tags": [
-      "animations"
     ],
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
@@ -2494,17 +2252,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "224",
-    "title": "Little Nippets",
-    "url": "https://www.littlesnippets.net/",
-    "description": "",
-    "category": "TEMPLATES",
-    "tags": [
-      "templates"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "225",
     "title": "Screenlane",
     "url": "https://screenlane.com/?ref=uimovement",
@@ -2650,7 +2397,7 @@
   {
     "id": "238",
     "title": "First aid git",
-    "url": "https://firstaidgit.io/#/",
+    "url": "https://firstaidgit.io",
     "description": "",
     "category": "DOCS",
     "tags": [
@@ -2714,17 +2461,6 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
-    "id": "244",
-    "title": "Javatpoint",
-    "url": "https://www.javatpoint.com/",
-    "description": "",
-    "category": "DOCS",
-    "tags": [
-      "docs"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
     "id": "245",
     "title": "Jekyllrb",
     "url": "https://jekyllrb.com/",
@@ -2772,17 +2508,6 @@
     "id": "249",
     "title": "Principios First",
     "url": "https://crysol.org/recipe/2011-05-03/principios-first.html",
-    "description": "",
-    "category": "DOCS",
-    "tags": [
-      "docs"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "250",
-    "title": "Propuesta upwork",
-    "url": "https://docs.google.com/document/d/1EbBt4gLYdd8fAY-Eyu5O3ivYRFIhnAm5VrpFI-tcQDM/edit",
     "description": "",
     "category": "DOCS",
     "tags": [
@@ -2849,17 +2574,6 @@
     "id": "256",
     "title": "stdout (Standard Out)",
     "url": "https://linuxjourney.com/lesson/stdout-standard-out-redirect",
-    "description": "",
-    "category": "DOCS",
-    "tags": [
-      "docs"
-    ],
-    "createdAt": "2026-03-17T00:56:18.000000Z"
-  },
-  {
-    "id": "257",
-    "title": "The algorithms",
-    "url": "https://the-algorithms.com/es",
     "description": "",
     "category": "DOCS",
     "tags": [
@@ -3036,17 +2750,6 @@
     "id": "273",
     "title": "Dibujo Anime",
     "url": "https://teachlr.com/cursos-online/dibujo-de-anime-vol-1-creacion-de-personajes/",
-    "description": "",
-    "category": "EDUCATION",
-    "tags": [
-      "education"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
-    "id": "274",
-    "title": "Generacion TIC",
-    "url": "https://generaciontic.gov.co/",
     "description": "",
     "category": "EDUCATION",
     "tags": [
@@ -3275,17 +2978,6 @@
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
   {
-    "id": "295",
-    "title": "Sosty",
-    "url": "https://www.sosty.co/",
-    "description": "",
-    "category": "INVESTMENT",
-    "tags": [
-      "investment"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
     "id": "296",
     "title": "Student Coin",
     "url": "https://app.studentcoin.org",
@@ -3343,7 +3035,7 @@
   {
     "id": "301",
     "title": "Bug crowd",
-    "url": "https://bugcrowd.com/agilebits",
+    "url": "https://bugcrowd.com",
     "description": "",
     "category": "FREELANCE",
     "tags": [
@@ -3781,28 +3473,6 @@
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
   {
-    "id": "341",
-    "title": "Flexworklatam",
-    "url": "https://flexworklatam.pro/",
-    "description": "",
-    "category": "FREELANCE",
-    "tags": [
-      "freelance"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
-    "id": "342",
-    "title": "Epic NPC",
-    "url": "https://www.epicnpc.com/",
-    "description": "",
-    "category": "GAMING",
-    "tags": [
-      "gaming"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
     "id": "343",
     "title": "Lichess",
     "url": "https://lichess.org/",
@@ -3824,17 +3494,7 @@
     ],
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
-  {
-    "id": "345",
-    "title": "My emulator online",
-    "url": "https://myemulator.online/",
-    "description": "",
-    "category": "GAMING",
-    "tags": [
-      "gaming"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
+
   {
     "id": "346",
     "title": "Player Auctions",
@@ -3997,17 +3657,6 @@
     "category": "GITHUB",
     "tags": [
       "github"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
-    "id": "361",
-    "title": "Git explorer",
-    "url": "https://gitexplorer.com/",
-    "description": "",
-    "category": "GIT",
-    "tags": [
-      "git"
     ],
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
@@ -4320,17 +3969,6 @@
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
   {
-    "id": "390",
-    "title": "Lucas Santillan",
-    "url": "https://github.com/Luc4st1574",
-    "description": "",
-    "category": "GITHUB",
-    "tags": [
-      "github"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
     "id": "391",
     "title": "Screenshot to code",
     "url": "https://github.com/abi/screenshot-to-code",
@@ -4355,7 +3993,7 @@
   {
     "id": "393",
     "title": "Fitia",
-    "url": "https://fitia.app/co/calorias-informacion-nutricional/",
+    "url": "https://fitia.app",
     "description": "",
     "category": "HEALTHY",
     "tags": [
@@ -4366,7 +4004,7 @@
   {
     "id": "394",
     "title": "Myfitnesspal",
-    "url": "https://www.myfitnesspal.com/es/nutrition-facts-calories",
+    "url": "https://www.myfitnesspal.com",
     "description": "",
     "category": "HEALTHY",
     "tags": [
@@ -4418,17 +4056,7 @@
     ],
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
-  {
-    "id": "399",
-    "title": "Metatags generator",
-    "url": "https://www.metatags.org/seo-tips/why-use-meta-tags/metatags-generator/",
-    "description": "",
-    "category": "HTML",
-    "tags": [
-      "html"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
+
   {
     "id": "400",
     "title": "Validator Html",
@@ -4587,17 +4215,6 @@
     "id": "414",
     "title": "Blobmaker",
     "url": "https://www.blobmaker.app/",
-    "description": "",
-    "category": "ILLUSTRATIONS",
-    "tags": [
-      "illustrations"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
-    "id": "415",
-    "title": "Charco",
-    "url": "https://www.charco.design/illustrations",
     "description": "",
     "category": "ILLUSTRATIONS",
     "tags": [
@@ -5266,17 +4883,6 @@
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
   {
-    "id": "476",
-    "title": "Adecco",
-    "url": "https://empleo.adeccocol.com/#/avisos",
-    "description": "",
-    "category": "JOBS",
-    "tags": [
-      "jobs"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
     "id": "477",
     "title": "Agencia Publica de Empleo",
     "url": "https://agenciapublicadeempleo.sena.edu.co/",
@@ -5554,7 +5160,7 @@
   {
     "id": "502",
     "title": "Job Run",
-    "url": "https://jobrun.dev/ofertas",
+    "url": "https://jobrun.dev",
     "description": "",
     "category": "JOBS",
     "tags": [
@@ -5566,17 +5172,6 @@
     "id": "503",
     "title": "Jobomas",
     "url": "https://co.jobomas.com/",
-    "description": "",
-    "category": "JOBS",
-    "tags": [
-      "jobs"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
-    "id": "504",
-    "title": "Joobs",
-    "url": "https://www.joobs.lat/",
     "description": "",
     "category": "JOBS",
     "tags": [
@@ -5599,17 +5194,6 @@
     "id": "506",
     "title": "La pieza",
     "url": "https://lapieza.io/",
-    "description": "",
-    "category": "JOBS",
-    "tags": [
-      "jobs"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
-    "id": "507",
-    "title": "Lupa recruiter",
-    "url": "https://luparecruiter.com/",
     "description": "",
     "category": "JOBS",
     "tags": [
@@ -5871,17 +5455,6 @@
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
   {
-    "id": "531",
-    "title": "Smartalentit",
-    "url": "https://smartalentit.zohorecruit.com/candidateportal#Skills",
-    "description": "",
-    "category": "JOBS",
-    "tags": [
-      "jobs"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
     "id": "532",
     "title": "Busuu",
     "url": "https://www.busuu.com/es",
@@ -6080,17 +5653,6 @@
     "createdAt": "2026-03-17T01:06:13.000000Z"
   },
   {
-    "id": "550",
-    "title": "Refold",
-    "url": "https://refold.la/es/",
-    "description": "",
-    "category": "ENGLISH",
-    "tags": [
-      "english"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
     "id": "551",
     "title": "Spanish dict",
     "url": "https://www.spanishdict.com/",
@@ -6215,17 +5777,6 @@
     "id": "562",
     "title": "Remote Jobs (Github)",
     "url": "https://github.com/aqeelsidd/remote-jobs",
-    "description": "",
-    "category": "MIGRATE",
-    "tags": [
-      "migrate"
-    ],
-    "createdAt": "2026-03-17T01:06:13.000000Z"
-  },
-  {
-    "id": "563",
-    "title": "Visa cake",
-    "url": "https://www.visacake.com/es",
     "description": "",
     "category": "MIGRATE",
     "tags": [
@@ -6377,17 +5928,6 @@
     "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
-    "id": "577",
-    "title": "Bruno simon",
-    "url": "https://bruno-simon.com/",
-    "description": "",
-    "category": "PORTFOLIOS",
-    "tags": [
-      "portfolios"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
     "id": "578",
     "title": "Camilo Pardo",
     "url": "https://www.parddo.com/",
@@ -6417,28 +5957,6 @@
     "category": "PORTFOLIOS",
     "tags": [
       "portfolios"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "581",
-    "title": "R leonardi",
-    "url": "http://www.rleonardi.com/interactive-resume/",
-    "description": "",
-    "category": "PORTFOLIOS",
-    "tags": [
-      "portfolios"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "582",
-    "title": "Streaming data python",
-    "url": "https://www.dataquest.io/blog/streaming-data-python/",
-    "description": "",
-    "category": "PYTHON",
-    "tags": [
-      "python"
     ],
     "createdAt": "2026-03-17T01:10:07.000000Z"
   },
@@ -6839,17 +6357,6 @@
     "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
-    "id": "619",
-    "title": "Deposit Photos",
-    "url": "https://depositphotos.com/es/",
-    "description": "",
-    "category": "RESOURCES",
-    "tags": [
-      "resources"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
     "id": "620",
     "title": "Dev Docs",
     "url": "https://devdocs.io/",
@@ -6864,17 +6371,6 @@
     "id": "621",
     "title": "Dev hints",
     "url": "https://devhints.io/",
-    "description": "",
-    "category": "RESOURCES",
-    "tags": [
-      "resources"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "622",
-    "title": "Doctor PDF",
-    "url": "https://doctorpdf.org/libros/",
     "description": "",
     "category": "RESOURCES",
     "tags": [
@@ -6908,17 +6404,6 @@
     "id": "625",
     "title": "Envato",
     "url": "https://envato.com/",
-    "description": "",
-    "category": "RESOURCES",
-    "tags": [
-      "resources"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "626",
-    "title": "Envato Elements",
-    "url": "https://elements.envato.com/es/",
     "description": "",
     "category": "RESOURCES",
     "tags": [
@@ -7147,17 +6632,6 @@
     "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
-    "id": "647",
-    "title": "Telegram Channels",
-    "url": "https://telegramchannels.me/",
-    "description": "",
-    "category": "RESOURCES",
-    "tags": [
-      "resources"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
     "id": "648",
     "title": "V0 UI",
     "url": "https://v0.dev/",
@@ -7312,17 +6786,6 @@
     "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
-    "id": "662",
-    "title": "Kaspersky pssword",
-    "url": "https://password.kaspersky.com/es/",
-    "description": "",
-    "category": "SECURITY",
-    "tags": [
-      "security"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
     "id": "663",
     "title": "Lasspass generator",
     "url": "https://www.lastpass.com/es/features/password-generator",
@@ -7347,7 +6810,7 @@
   {
     "id": "665",
     "title": "Scam adviser",
-    "url": "https://www.scamadviser.com/es/comprobar-sitio-web",
+    "url": "https://www.scamadviser.com",
     "description": "",
     "category": "SECURITY",
     "tags": [
@@ -7414,17 +6877,6 @@
     "id": "671",
     "title": "Who is",
     "url": "https://www.whois.com/whois",
-    "description": "",
-    "category": "SECURITY",
-    "tags": [
-      "security"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "672",
-    "title": "Cybermap kaspersky",
-    "url": "https://cybermap.kaspersky.com",
     "description": "",
     "category": "SECURITY",
     "tags": [
@@ -7664,17 +7116,6 @@
     "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
-    "id": "694",
-    "title": "CVshine",
-    "url": "https://cvshine.standuply.com/",
-    "description": "",
-    "category": "TOOLS",
-    "tags": [
-      "tools"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
     "id": "695",
     "title": "Cymath",
     "url": "https://www.cymath.com/sp/",
@@ -7733,17 +7174,6 @@
     "id": "700",
     "title": "Fake update",
     "url": "https://fakeupdate.net/",
-    "description": "",
-    "category": "TOOLS",
-    "tags": [
-      "tools"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "701",
-    "title": "Form submit",
-    "url": "https://formsubmit.co/",
     "description": "",
     "category": "TOOLS",
     "tags": [
@@ -7832,17 +7262,6 @@
     "id": "709",
     "title": "Page speed",
     "url": "https://pagespeed.web.dev/",
-    "description": "",
-    "category": "TOOLS",
-    "tags": [
-      "tools"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "710",
-    "title": "Phishcheck",
-    "url": "https://phishcheck.me/",
     "description": "",
     "category": "TOOLS",
     "tags": [
@@ -8115,17 +7534,6 @@
     "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
-    "id": "735",
-    "title": "Sharkpos Demo",
-    "url": "https://sharkpos.net/demo/",
-    "description": "",
-    "category": "TOOLS",
-    "tags": [
-      "tools"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
     "id": "736",
     "title": "Devtoys",
     "url": "https://devtoys.app/",
@@ -8313,17 +7721,6 @@
     "id": "752",
     "title": "UNV",
     "url": "https://www.unv.org/",
-    "description": "",
-    "category": "VOLUNTEER",
-    "tags": [
-      "volunteer"
-    ],
-    "createdAt": "2026-03-17T01:10:07.000000Z"
-  },
-  {
-    "id": "753",
-    "title": "Volunteering solutions",
-    "url": "https://www.volunteeringsolutions.com/",
     "description": "",
     "category": "VOLUNTEER",
     "tags": [
