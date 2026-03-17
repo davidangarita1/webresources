@@ -1,4 +1,4 @@
-import { extractDomain, getFaviconUrl } from "../../utils/url"
+import { extractDomain, getFaviconUrl, isSafeUrl } from "../../utils/url"
 
 describe("url utils", () => {
   describe("extractDomain", () => {
@@ -14,8 +14,8 @@ describe("url utils", () => {
       expect(extractDomain("https://docs.google.com")).toBe("docs.google.com")
     })
 
-    it("returns original string for invalid URL", () => {
-      expect(extractDomain("not-a-url")).toBe("not-a-url")
+    it("returns empty string for invalid URL", () => {
+      expect(extractDomain("not-a-url")).toBe("")
     })
   })
 
@@ -26,6 +26,28 @@ describe("url utils", () => {
 
     it("returns empty string for invalid URL", () => {
       expect(getFaviconUrl("not-a-url")).toBe("")
+    })
+  })
+
+  describe("isSafeUrl", () => {
+    it("returns true for https URLs", () => {
+      expect(isSafeUrl("https://example.com")).toBe(true)
+    })
+
+    it("returns true for http URLs", () => {
+      expect(isSafeUrl("http://example.com")).toBe(true)
+    })
+
+    it("returns false for javascript: URLs", () => {
+      expect(isSafeUrl("javascript:alert(1)")).toBe(false)
+    })
+
+    it("returns false for data: URLs", () => {
+      expect(isSafeUrl("data:text/html,<script>alert(1)</script>")).toBe(false)
+    })
+
+    it("returns false for invalid URLs", () => {
+      expect(isSafeUrl("not-a-url")).toBe(false)
     })
   })
 })
