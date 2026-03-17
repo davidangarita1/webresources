@@ -50,6 +50,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
     css: true,
+    testTimeout: 15000,
     alias,
     coverage: {
       provider: 'v8',
