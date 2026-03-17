@@ -35,7 +35,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
         className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
         aria-label={isDarkMode ? t("topbar.lightMode") : t("topbar.darkMode")}
       >
-        {isDarkMode ? <SunOutlined /> : <MoonOutlined />}
+        {isDarkMode ? <SunOutlined style={{ color: '#fbbf24', fontSize: '18px' }} /> : <MoonOutlined style={{ color: '#6366f1', fontSize: '18px' }} />}
       </button>
     </header>
   )
