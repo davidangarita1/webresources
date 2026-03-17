@@ -8267,11 +8267,38 @@
     },
     {
         "id": "748",
-        "description": "",
+        "description": "Software architecture is key in responding to dynamic market pressures.",
         "tags": [],
-        "category": "",
-        "title": "",
-        "url": "",
+        "category": "ARCHITECTURE",
+        "title": "NestJS Clean Code using Hexagonal Architecture",
+        "url": "https://ridakaddir.com/blog/post/nestjs-clean-code-using-hexagonal-architecture",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "749",
+        "description": "A curated collection of Awesome LLM apps built with RAG, AI Agents, Multi-agent Teams, MCP, Voice Agents, and more.",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "Awesome LLM Apps",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "750",
+        "description": "A workshop focused on Test-Driven Development (TDD) practices.",
+        "tags": [],
+        "category": "TESTING",
+        "title": "Tdd-workshop",
+        "url": "https://github.com/joeeames/tdd-workshop/",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "751",
+        "description": "An open-source toolkit for spec-driven development with AI, enabling developers to create and manage specifications using AI-powered tools.",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "Spec-Driven Development with AI",
+        "url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
     }
 ]
