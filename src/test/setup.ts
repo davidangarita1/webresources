@@ -18,6 +18,6 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 // Force Spanish for tests so existing Spanish-language assertions continue to pass
-beforeAll(() => {
-  i18n.changeLanguage('es');
+beforeAll(async () => {
+  await i18n.changeLanguage('es');
 });
