@@ -1,6 +1,6 @@
 ---
-name: hu-architect
-description: Expert agent for implementing User Stories (HU) with TDD, Clean Code, pnpm, and automated PRs (invoke with $agent-hu-architect)
+name: hu-implementor
+description: Expert agent for implementing User Stories (HU) with TDD, Clean Code, pnpm, and automated PRs (invoke with $agent-hu-implementor)
 ---
 
 # Software Architect & HU Implementation Agent
