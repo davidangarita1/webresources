@@ -62,6 +62,27 @@ describe("validateBackupFile", () => {
     expect(r.errors.some((e) => e.includes("category"))).toBe(true)
   })
 
+  it("rejects resources with javascript: protocol URLs", () => {
+    const data = makeBackup([makeResource({ url: "javascript:alert(1)" })])
+    const r = validateBackupFile(data)
+    expect(r.valid).toBe(false)
+    expect(r.errors.some((e) => e.includes("http or https protocol"))).toBe(true)
+  })
+
+  it("rejects resources with data: protocol URLs", () => {
+    const data = makeBackup([makeResource({ url: "data:text/html,<script>alert(1)</script>" })])
+    const r = validateBackupFile(data)
+    expect(r.valid).toBe(false)
+    expect(r.errors.some((e) => e.includes("http or https protocol"))).toBe(true)
+  })
+
+  it("rejects resources with invalid URL format", () => {
+    const data = makeBackup([makeResource({ url: "not-a-valid-url" })])
+    const r = validateBackupFile(data)
+    expect(r.valid).toBe(false)
+    expect(r.errors.some((e) => e.includes("invalid URL format"))).toBe(true)
+  })
+
   it("accepts a valid backup", () => {
     expect(validateBackupFile(makeBackup([makeResource()]))).toMatchObject({ valid: true, errors: [] })
   })

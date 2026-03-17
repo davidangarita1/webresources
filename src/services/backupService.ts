@@ -94,7 +94,18 @@ export function validateBackupFile(data: unknown): ValidationResult {
     const res = r as Record<string, unknown>
     if (!res.id || typeof res.id !== "string") errors.push(`resources[${i}]: missing required field 'id'`)
     if (!res.title || typeof res.title !== "string") errors.push(`resources[${i}]: missing required field 'title'`)
-    if (!res.url || typeof res.url !== "string") errors.push(`resources[${i}]: missing required field 'url'`)
+    if (!res.url || typeof res.url !== "string") {
+      errors.push(`resources[${i}]: missing required field 'url'`)
+    } else {
+      try {
+        const parsed = new URL(res.url)
+        if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+          errors.push(`resources[${i}]: URL must use http or https protocol`)
+        }
+      } catch {
+        errors.push(`resources[${i}]: invalid URL format`)
+      }
+    }
     if (!res.category || typeof res.category !== "string") errors.push(`resources[${i}]: missing required field 'category'`)
   })
 

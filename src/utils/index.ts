@@ -1,2 +1,2 @@
-export { extractDomain, getFaviconUrl } from "./url"
+export { extractDomain, getFaviconUrl, isSafeUrl } from "./url"
 export { isYouTubeUrl, extractYouTubeId, getYouTubeThumbnail } from "./youtube"
