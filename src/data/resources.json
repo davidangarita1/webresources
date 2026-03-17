@@ -8129,15 +8129,13 @@
     },
     {
         "id": "734",
-        "description": "Collection of free Tailwind CSS components for modern interfaces",
+        "description": "Google's AI-powered notebook for organizing and exploring knowledge",
         "tags": [
-            "tailwind",
-            "css",
-            "components"
+            "notebooklm"
         ],
-        "category": "CSS",
-        "title": "HyperUI",
-        "url": "https://www.hyperui.dev/",
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "NotebookLM",
+        "url": "https://notebooklm.google.com/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
     },
     {
@@ -8164,6 +8162,143 @@
         "category": "PROGRAMMING",
         "title": "14 Funciones Avanzadas de Python",
         "url": "https://blog.edward-li.com/tech/advanced-python-features/#1-typing-overloads",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "737",
+        "description": "A simple open format for guiding coding agents",
+        "tags": [
+            "agent"
+        ],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "AGENTS.md",
+        "url": "https://agents.md",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "738",
+        "description": "Skills are reusable capabilities for AI agents",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "Skills.sh",
+        "url": "https://skills.sh/",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "739",
+        "description": "From Basics to Advanced Messaging Patterns (A Practical Guide)",
+        "tags": [],
+        "category": "PROGRAMMING",
+        "title": "RabbitMQ with Python",
+        "url": "https://medium.com/@sujakhu.umesh/rabbitmq-with-python-from-basics-to-advanced-messaging-patterns-a-practical-guide-18f8b43b94f8",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "740",
+        "description": "This directory contains Agent Skills following the Agent Skills open standard",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "AI Agent Skills",
+        "url": "https://github.com/prowler-cloud/prowler",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "741",
+        "description": "Skills are an open standard for extending agent capabilities. ",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "Antigravity Google Skills",
+        "url": "https://antigravity.google/docs/skills",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "742",
+        "description": "Architects design workloads by integrating platform services, functionality, and code to meet both functional and nonfunctional requirements.",
+        "tags": [],
+        "category": "ARCHITECTURE",
+        "title": "Cloud design patterns - Microsoft",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "743",
+        "description": "Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions.",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "Claude Mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "744",
+        "description": " TestingIT es una empresa mexicana especializada en servicios de testing y calidad de software, ofreciendo soluciones integrales para garantizar el rendimiento, seguridad y funcionalidad de las aplicaciones.",
+        "tags": [],
+        "category": "TESTING",
+        "title": "TestingIT",
+        "url": "https://www.testingit.com.mx/",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "745",
+        "description": "This guide shows you how to set up a context engineering workflow in VS Code using custom instructions, custom agents, and prompt files.",
+        "tags": [],
+        "category": "ARCHITECTURE",
+        "title": "Context engineering workflow",
+        "url": "https://code.visualstudio.com/docs/copilot/guides/context-engineering-guide",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "746",
+        "description": "An automated acceptance tests reporting library (previously known as Thucydides)",
+        "tags": [],
+        "category": "TESTING",
+        "title": "Serenity BDD",
+        "url": "https://github.com/serenity-bdd",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "747",
+        "description": "Build More Architect Dreams",
+        "tags": [],
+        "category": "ARCHITECTURE",
+        "title": "BMAD-METHOD",
+        "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "748",
+        "description": "Software architecture is key in responding to dynamic market pressures.",
+        "tags": [],
+        "category": "ARCHITECTURE",
+        "title": "NestJS Clean Code using Hexagonal Architecture",
+        "url": "https://ridakaddir.com/blog/post/nestjs-clean-code-using-hexagonal-architecture",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "749",
+        "description": "A curated collection of Awesome LLM apps built with RAG, AI Agents, Multi-agent Teams, MCP, Voice Agents, and more.",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "Awesome LLM Apps",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "750",
+        "description": "A workshop focused on Test-Driven Development (TDD) practices.",
+        "tags": [],
+        "category": "TESTING",
+        "title": "Tdd-workshop",
+        "url": "https://github.com/joeeames/tdd-workshop/",
+        "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "751",
+        "description": "An open-source toolkit for spec-driven development with AI, enabling developers to create and manage specifications using AI-powered tools.",
+        "tags": [],
+        "category": "ARTIFICIAL INTELLIGENCE",
+        "title": "Spec-Driven Development with AI",
+        "url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
     }
 ]
