@@ -15,7 +15,7 @@ export function LanguageSelector() {
   return (
     <button
       onClick={toggle}
-      className="shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-semibold text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+      className="shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-semibold text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 cursor-pointer"
       aria-label={current === "es" ? "Switch to English" : "Cambiar a Español"}
       title={current === "es" ? "Switch to English" : "Cambiar a Español"}
     >

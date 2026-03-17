@@ -22,7 +22,7 @@ export function YouTubePlayerModal({ videoId, title, onClose }: YouTubePlayerMod
           <p className="truncate text-sm font-medium text-white max-w-[calc(100%-2rem)]">{title}</p>
           <button
             onClick={onClose}
-            className="shrink-0 ml-2 rounded-md p-1 text-gray-400 hover:text-white transition-colors"
+            className="shrink-0 ml-2 rounded-md p-1 text-gray-400 hover:text-white transition-colors cursor-pointer"
             aria-label={t("youtubePlayer.closePlayer")}
           >
             <CloseOutlined />

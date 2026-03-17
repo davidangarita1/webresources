@@ -86,7 +86,7 @@ export function ResourceCard({
         </div>
         <button
           onClick={() => onToggleFavorite(resource.id)}
-          className={`ml-2 shrink-0 rounded-md p-1 text-lg transition-all hover:scale-125 touch-manipulation ${
+          className={`ml-2 shrink-0 rounded-md p-1 text-lg transition-all hover:scale-125 touch-manipulation cursor-pointer ${
             isFavorite ? "text-yellow-400 drop-shadow-[0_0_4px_rgba(250,204,21,0.7)]" : "text-gray-400 hover:text-yellow-400"
           }`}
           aria-label={isFavorite ? t("resourceCard.removeFavorite") : t("resourceCard.addFavorite")}
@@ -98,7 +98,7 @@ export function ResourceCard({
             {onEdit && (
               <button
                 onClick={() => onEdit(resource.id)}
-                className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-indigo-400"
+                className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-indigo-400 cursor-pointer"
                 aria-label={t("resourceCard.editResource")}
               >
                 <EditOutlined />
@@ -107,7 +107,7 @@ export function ResourceCard({
             {onDelete && (
               <button
                 onClick={() => onDelete(resource.id)}
-                className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-400"
+                className="rounded-md p-1 text-sm text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-400 cursor-pointer"
                 aria-label={t("resourceCard.deleteResource")}
               >
                 <DeleteOutlined />

@@ -15,7 +15,7 @@ export function NotFound() {
       </p>
       <Link
         to="/"
-        className="mt-6 rounded-lg bg-indigo-600 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700"
+        className="mt-6 rounded-lg bg-indigo-600 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 cursor-pointer"
       >
         {t("notFound.backHome")}
       </Link>

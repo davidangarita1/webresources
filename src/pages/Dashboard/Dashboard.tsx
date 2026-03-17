@@ -73,21 +73,21 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
             <div className="flex flex-wrap items-center gap-2">
               <button
                 onClick={onOpenCreate}
-                className="flex items-center gap-1.5 rounded-md bg-indigo-600 px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+                className="flex items-center gap-1.5 rounded-md bg-indigo-600 px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 cursor-pointer"
               >
                 <PlusOutlined /> {t("actions.createResource")}
               </button>
               {userResources.length > 0 && (
                 <button
                   onClick={onExportBackup}
-                  className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+                  className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800 cursor-pointer"
                 >
                   <DownloadOutlined /> {t("actions.downloadBackup")}
                 </button>
               )}
               <button
                 onClick={onImportBackup}
-                className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+                className="flex items-center gap-1.5 rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800 cursor-pointer"
               >
                 <UploadOutlined /> {t("actions.uploadBackup")}
               </button>
@@ -121,7 +121,7 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
           {activeFilter === "user" && (
             <button
               onClick={onOpenCreate}
-              className="mt-5 rounded-md bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+              className="mt-5 rounded-md bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 cursor-pointer"
             >
               <PlusOutlined /> {t("actions.createResource")}
             </button>

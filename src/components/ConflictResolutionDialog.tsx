@@ -40,13 +40,13 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
       <div className="flex gap-2">
         <button
           onClick={() => setAll("update")}
-          className="px-3 py-1.5 text-xs font-medium rounded border border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors"
+          className="px-3 py-1.5 text-xs font-medium rounded border border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors cursor-pointer"
         >
           {t("conflictDialog.updateAll")}
         </button>
         <button
           onClick={() => setAll("skip")}
-          className="px-3 py-1.5 text-xs font-medium rounded border border-gray-300 bg-gray-50 text-gray-700 hover:bg-gray-100 transition-colors"
+          className="px-3 py-1.5 text-xs font-medium rounded border border-gray-300 bg-gray-50 text-gray-700 hover:bg-gray-100 transition-colors cursor-pointer"
         >
           {t("conflictDialog.skipAll")}
         </button>
@@ -68,7 +68,7 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
               <div className="flex gap-2 mt-2">
                 <button
                   onClick={() => setAction(importedResource.id, "update")}
-                  className={`px-3 py-1 rounded text-xs font-medium transition-colors ${
+                  className={`px-3 py-1 rounded text-xs font-medium transition-colors cursor-pointer ${
                     action === "update"
                       ? "bg-blue-500 text-white"
                       : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
@@ -78,7 +78,7 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
                 </button>
                 <button
                   onClick={() => setAction(importedResource.id, "skip")}
-                  className={`px-3 py-1 rounded text-xs font-medium transition-colors ${
+                  className={`px-3 py-1 rounded text-xs font-medium transition-colors cursor-pointer ${
                     action === "skip"
                       ? "bg-gray-600 text-white"
                       : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
@@ -101,13 +101,13 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
       <div className="flex justify-end gap-3">
         <button
           onClick={onCancel}
-          className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-50 transition-colors"
+          className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-50 transition-colors cursor-pointer"
         >
           {t("conflictDialog.cancelImport")}
         </button>
         <button
           onClick={() => onResolve(actions)}
-          className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-md text-sm font-medium hover:bg-blue-600 transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-md text-sm font-medium hover:bg-blue-600 transition-colors cursor-pointer"
         >
           <CheckCircleOutlined />
           {t("conflictDialog.confirmImport")}
