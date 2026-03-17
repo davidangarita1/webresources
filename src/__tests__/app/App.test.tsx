@@ -26,6 +26,7 @@ describe("App", () => {
   })
 
   it("toggles sidebar open/close via hamburger", async () => {
+    useResourceStore.getState().setActiveFilter("user")
     const user = userEvent.setup()
     render(<App />)
     await user.click(screen.getByLabelText("Abrir menú"))

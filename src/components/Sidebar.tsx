@@ -102,7 +102,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
                 <li key={category}>
                   <button
                     onClick={() => handleNavClick(() => setActiveCategory(category))}
-                    className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors ${
+                    className={`flex cursor-pointer w-full items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors ${
                       activeFilter === "category" && activeCategory === category
                         ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200"
                         : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
