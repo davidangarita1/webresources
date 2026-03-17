@@ -4,8 +4,10 @@ import { useTranslation, Trans } from "react-i18next"
 import { useResources, useFavorites, useStatuses, useUserResources } from "../../hooks"
 import { useResourceStore } from "../../store"
 import { ResourceCard } from "../../components/ResourceCard"
+import { YouTubeSection } from "../../components/YouTubeSection"
 import { ResourceFormModal } from "../../components/ResourceFormModal"
 import { DeleteConfirmModal } from "../../components/DeleteConfirmModal"
+import { isYouTubeUrl } from "../../utils"
 import type { UserResource } from "../../types"
 
 const FILTER_TRANS_KEYS: Record<string, string> = {
@@ -14,6 +16,7 @@ const FILTER_TRANS_KEYS: Record<string, string> = {
   favorites: "filters.favorites",
   pending: "filters.pending",
   consumed: "filters.consumed",
+  videos: "filters.videos",
   category: "filters.category",
 }
 
@@ -39,6 +42,10 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
 
   const [editingResource, setEditingResource] = useState<UserResource | null>(null)
   const [deletingResource, setDeletingResource] = useState<UserResource | null>(null)
+
+  const youtubeResources = filteredResources.filter((r) => isYouTubeUrl(r.url))
+  const regularResources = filteredResources.filter((r) => !isYouTubeUrl(r.url))
+  const hasBothSections = youtubeResources.length > 0 && regularResources.length > 0
 
   const title =
     activeFilter === "category" && activeCategory
@@ -128,19 +135,39 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
           )}
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
-          {filteredResources.map((resource) => (
-            <ResourceCard
-              key={resource.id}
-              resource={resource}
-              isFavorite={isFavorite(resource.id)}
-              status={getStatus(resource.id)}
-              onToggleFavorite={toggleFavorite}
-              onCycleStatus={cycleStatus}
-              onEdit={"source" in resource && resource.source === "user" ? handleEdit : undefined}
-              onDelete={"source" in resource && resource.source === "user" ? handleDelete : undefined}
-            />
-          ))}
+        <div>
+          <YouTubeSection
+            resources={youtubeResources}
+            isFavorite={isFavorite}
+            getStatus={getStatus}
+            onToggleFavorite={toggleFavorite}
+            onCycleStatus={cycleStatus}
+            onEdit={activeFilter === "user" ? handleEdit : undefined}
+            onDelete={activeFilter === "user" ? handleDelete : undefined}
+          />
+
+          {hasBothSections && (
+            <h3 className="mb-3 text-sm font-semibold text-gray-500 uppercase tracking-wider dark:text-gray-400">
+              {t("youtubeSection.otherResources")}
+            </h3>
+          )}
+
+          {regularResources.length > 0 && (
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
+              {regularResources.map((resource) => (
+                <ResourceCard
+                  key={resource.id}
+                  resource={resource}
+                  isFavorite={isFavorite(resource.id)}
+                  status={getStatus(resource.id)}
+                  onToggleFavorite={toggleFavorite}
+                  onCycleStatus={cycleStatus}
+                  onEdit={"source" in resource && resource.source === "user" ? handleEdit : undefined}
+                  onDelete={"source" in resource && resource.source === "user" ? handleDelete : undefined}
+                />
+              ))}
+            </div>
+          )}
         </div>
       )}
 

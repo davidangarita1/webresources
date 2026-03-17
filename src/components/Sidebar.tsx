@@ -8,12 +8,13 @@ import {
   CloseOutlined,
   FolderOutlined,
   PlusOutlined,
+  YoutubeOutlined,
 } from "@ant-design/icons"
 import type { ReactNode } from "react"
 import { useTranslation } from "react-i18next"
 import { useResourceStore } from "../store"
 
-type NavKey = "community" | "user" | "favorites" | "pending" | "consumed"
+type NavKey = "community" | "user" | "favorites" | "pending" | "consumed" | "videos"
 
 const NAV_ICONS: Record<NavKey, ReactNode> = {
   community: <GlobalOutlined style={{ color: '#3b82f6' }} />,
@@ -21,6 +22,7 @@ const NAV_ICONS: Record<NavKey, ReactNode> = {
   favorites: <StarOutlined style={{ color: '#eab308' }} />,
   pending: <ClockCircleOutlined style={{ color: '#f97316' }} />,
   consumed: <CheckCircleOutlined style={{ color: '#22c55e' }} />,
+  videos: <YoutubeOutlined style={{ color: '#ef4444' }} />,
 }
 
 interface SidebarProps {

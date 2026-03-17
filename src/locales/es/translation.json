@@ -6,6 +6,7 @@
     "favorites": "Favoritos",
     "pending": "Pendientes",
     "consumed": "Consumidos",
+    "videos": "Videos",
     "categories": "Categorías",
     "closeMenu": "Cerrar menú",
     "openMenu": "Abrir menú"
@@ -27,6 +28,7 @@
     "favorites": "Favoritos",
     "pending": "Pendientes",
     "consumed": "Consumidos",
+    "videos": "Videos de YouTube",
     "category": "Categoría"
   },
   "dashboard": {
@@ -116,5 +118,13 @@
   },
   "youtubePlayer": {
     "closePlayer": "Cerrar reproductor"
+  },
+  "youtubeSection": {
+    "title": "Videos de YouTube",
+    "resourceCount_one": "{{count}} video",
+    "resourceCount_other": "{{count}} videos",
+    "collapse": "Colapsar videos",
+    "expand": "Expandir videos",
+    "otherResources": "Otros Recursos"
   }
 }

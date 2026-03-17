@@ -5,8 +5,9 @@ import { storageService } from "../services/storageService"
 import { searchService } from "../services/searchService"
 import { userResourceService } from "../services/userResourceService"
 import Fuse from "fuse.js"
+import { isYouTubeUrl } from "../utils"
 
-type ViewFilter = "community" | "user" | "favorites" | "pending" | "consumed" | "category"
+type ViewFilter = "community" | "user" | "favorites" | "pending" | "consumed" | "category" | "videos"
 
 interface ResourceStore {
   resources: Resource[]
@@ -124,6 +125,8 @@ export const useResourceStore = create<ResourceStore>((set, get) => ({
       case "category":
         if (!activeCategory) return allResources
         return allResources.filter((r) => r.category === activeCategory)
+      case "videos":
+        return allResources.filter((r) => isYouTubeUrl(r.url))
       default:
         return baseResources
     }
