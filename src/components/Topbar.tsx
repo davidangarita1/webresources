@@ -16,7 +16,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
     <header className="flex h-14 shrink-0 items-center gap-3 border-b border-gray-200 bg-white px-4 dark:border-gray-700 dark:bg-gray-900 md:px-6">
       <button
         onClick={onMenuClick}
-        className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 md:hidden"
+        className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 md:hidden cursor-pointer"
         aria-label={t("nav.openMenu")}
       >
         <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
 
       <button
         onClick={toggleDarkMode}
-        className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+        className="shrink-0 rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 cursor-pointer"
         aria-label={isDarkMode ? t("topbar.lightMode") : t("topbar.darkMode")}
       >
         {isDarkMode ? <SunOutlined style={{ color: '#fbbf24', fontSize: '18px' }} /> : <MoonOutlined style={{ color: '#6366f1', fontSize: '18px' }} />}

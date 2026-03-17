@@ -76,7 +76,7 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
           <h2 className="text-lg font-semibold text-gray-900">{t("importModal.title")}</h2>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-md hover:bg-gray-100 transition-colors text-gray-500"
+            className="p-1.5 rounded-md hover:bg-gray-100 transition-colors text-gray-500 cursor-pointer"
             aria-label={t("actions.close")}
           >
             <CloseOutlined />
@@ -133,7 +133,7 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
           <div className="flex justify-end gap-3 p-5 border-t bg-gray-50">
             <button
               onClick={onClose}
-              className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors"
+              className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors cursor-pointer"
             >
               {t("importModal.cancelButton")}
             </button>
