@@ -1,119 +1,98 @@
 name: Weekly Link Check
 
-# ─── Triggers ────────────────────────────────────────────────────────────────
 on:
   schedule:
-    - cron: '0 9 * * 1'   # Every Monday at 09:00 UTC
-  workflow_dispatch:       # Manual trigger from the Actions tab
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
 
-# ─── Permissions ─────────────────────────────────────────────────────────────
 permissions:
-  contents: write          # Push a new branch
-  pull-requests: write     # Open the PR
+  contents: write
+  pull-requests: write
 
 jobs:
   check-links:
-    name: Detect and remove broken links
     runs-on: ubuntu-latest
-
     steps:
-      # ── 1. Checkout develop (always work on the latest integration base) ──
-      - name: Checkout develop branch
-        uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           ref: develop
-          fetch-depth: 0   # full history so git push works correctly
+          fetch-depth: 0
 
-      # ── 2. Node.js 22 (built-in fetch, no extra deps needed) ─────────────
-      - name: Setup Node.js 22
-        uses: actions/setup-node@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
-      # ── 3. Run the link checker ────────────────────────────────────────────
-      - name: Check all links
-        id: checker
+      - name: Check and remove broken links
+        id: check
         run: |
-          node .github/scripts/check-broken-links.mjs > /tmp/report.json
-          COUNT=$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync('/tmp/report.json','utf8')).broken.length))")
-          echo "broken_count=${COUNT}" >> "$GITHUB_OUTPUT"
-          if [[ "$COUNT" -gt 0 ]]; then
-            echo "Found ${COUNT} broken link(s)."
-          else
-            echo "All links are healthy."
-          fi
+          node - <<'EOF'
+          const fs = require('fs');
+          const resources = JSON.parse(fs.readFileSync('src/data/resources.json', 'utf8'));
+          const TIMEOUT = 20000;
+          const CONCURRENCY = 15;
+          const BROKEN_CODES = new Set([404, 410]);
+          const UA = 'Mozilla/5.0 (compatible; LinkChecker/1.0)';
 
-      # ── 4. Commit + PR (only when broken links were found) ────────────────
-      - name: Create PR with cleaned resources.json
-        if: steps.checker.outputs.broken_count > 0
+          async function check(url) {
+            for (const method of ['HEAD', 'GET']) {
+              const ctrl = new AbortController();
+              const t = setTimeout(() => ctrl.abort(), TIMEOUT);
+              try {
+                const r = await fetch(url, { method, signal: ctrl.signal, redirect: 'follow', headers: { 'User-Agent': UA } });
+                clearTimeout(t);
+                if (BROKEN_CODES.has(r.status) && method === 'HEAD') continue;
+                return { ok: !BROKEN_CODES.has(r.status), status: r.status };
+              } catch (e) {
+                clearTimeout(t);
+                if (method === 'HEAD') continue;
+                return { ok: false, status: 0, error: e.name === 'AbortError' ? 'timeout' : e.message };
+              }
+            }
+            return { ok: false, status: 0, error: 'failed' };
+          }
+
+          async function run() {
+            const broken = [];
+            for (let i = 0; i < resources.length; i += CONCURRENCY) {
+              const batch = resources.slice(i, i + CONCURRENCY);
+              const results = await Promise.all(batch.map(r => check(r.url).then(res => ({ ...r, ...res }))));
+              results.filter(r => !r.ok).forEach(r => broken.push(r));
+              process.stderr.write(`\r${Math.min(i + CONCURRENCY, resources.length)}/${resources.length}`);
+            }
+            process.stderr.write('\n');
+            if (broken.length) {
+              const ids = new Set(broken.map(r => r.id));
+              fs.writeFileSync('src/data/resources.json', JSON.stringify(resources.filter(r => !ids.has(r.id)), null, 4) + '\n');
+            }
+            fs.writeFileSync('/tmp/broken.json', JSON.stringify(broken));
+          }
+
+          run();
+          EOF
+
+          COUNT=$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync('/tmp/broken.json')).length))")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Broken: $COUNT"
+
+      - name: Open PR
+        if: steps.check.outputs.count > 0
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BROKEN_COUNT: ${{ steps.checker.outputs.broken_count }}
         run: |
           DATE=$(date +%Y-%m-%d)
           BRANCH="fix/remove-broken-links-${DATE}"
-
-          # Avoid collision if the workflow runs more than once on the same day
-          if git ls-remote --exit-code origin "refs/heads/${BRANCH}" &>/dev/null; then
-            BRANCH="${BRANCH}-$(date +%H%M)"
-          fi
-
-          git config user.name  "github-actions[bot]"
+          git ls-remote --exit-code origin "refs/heads/${BRANCH}" &>/dev/null && BRANCH="${BRANCH}-$(date +%H%M)"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           git checkout -b "$BRANCH"
           git add src/data/resources.json
-          git commit -m "fix(data): remove ${BROKEN_COUNT} broken link(s) [${DATE}]"
+          git commit -m "fix(data): remove ${{ steps.check.outputs.count }} broken link(s) [$DATE]"
           git push origin "$BRANCH"
-
-          # ── Generate PR body ──────────────────────────────────────────────
-          # Save the run date so the Node.js heredoc can read it without
-          # relying on shell-variable expansion inside single-quoted JSEOF.
-          echo "$DATE" > /tmp/run-date.txt
-
-          node - <<'JSEOF'
-const fs = require('fs');
-const { broken } = JSON.parse(fs.readFileSync('/tmp/report.json', 'utf8'));
-const date       = fs.readFileSync('/tmp/run-date.txt', 'utf8').trim();
-
-const rows = broken
-  .map(b => {
-    const reason = b.status ? `HTTP ${b.status}` : (b.error || 'Connection error');
-    return `| ${b.title} | \`${b.url}\` | ${reason} |`;
-  })
-  .join('\n');
-
-const body = [
-  '## Broken Links Removed',
-  '',
-  'This PR was automatically generated by the **Weekly Link Checker** workflow.',
-  '',
-  '### Summary',
-  `- **Removed:** ${broken.length} resource(s)`,
-  `- **Run date:** ${date}`,
-  `- **Trigger:** Scheduled (Monday) / Manual`,
-  '',
-  '### Removed Resources',
-  '',
-  '| Title | URL | Reason |',
-  '|-------|-----|--------|',
-  rows,
-  '',
-  '---',
-  '_Automated by the [Weekly Link Check](.github/workflows/weekly-link-check.yml) workflow._',
-  '_Review the list above and merge when ready._',
-].join('\n');
-
-fs.writeFileSync('/tmp/pr-body.md', body);
-JSEOF
-
-          gh pr create \
-            --base develop \
-            --head "$BRANCH" \
-            --title "fix(data): remove ${BROKEN_COUNT} broken link(s) ($DATE)" \
-            --body-file /tmp/pr-body.md
-
-      # ── 5. Summary when nothing was broken ────────────────────────────────
-      - name: All links healthy
-        if: steps.checker.outputs.broken_count == 0
-        run: echo "No broken links found. Nothing to do."
+          node -e "
+            const b=JSON.parse(require('fs').readFileSync('/tmp/broken.json'));
+            const rows=b.map(r=>'| '+r.title+' | '+r.url+' | '+(r.status?'HTTP '+r.status:r.error||'error')+' |').join('\\n');
+            require('fs').writeFileSync('/tmp/body.md','## Broken Links Removed\\n\\n| Title | URL | Reason |\\n|---|---|---|\\n'+rows);
+          "
+          gh pr create --base develop --head "$BRANCH" \
+            --title "fix(data): remove ${{ steps.check.outputs.count }} broken link(s) ($DATE)" \
+            --body-file /tmp/body.md
