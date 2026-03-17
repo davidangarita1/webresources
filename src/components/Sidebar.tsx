@@ -16,11 +16,11 @@ import { useResourceStore } from "../store"
 type NavKey = "community" | "user" | "favorites" | "pending" | "consumed"
 
 const NAV_ICONS: Record<NavKey, ReactNode> = {
-  community: <GlobalOutlined />,
-  user: <PushpinOutlined />,
-  favorites: <StarOutlined />,
-  pending: <ClockCircleOutlined />,
-  consumed: <CheckCircleOutlined />,
+  community: <GlobalOutlined style={{ color: '#3b82f6' }} />,
+  user: <PushpinOutlined style={{ color: '#6366f1' }} />,
+  favorites: <StarOutlined style={{ color: '#eab308' }} />,
+  pending: <ClockCircleOutlined style={{ color: '#f97316' }} />,
+  consumed: <CheckCircleOutlined style={{ color: '#22c55e' }} />,
 }
 
 interface SidebarProps {
@@ -63,7 +63,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
       >
         <div className="flex items-center justify-between border-b border-gray-200 p-4 dark:border-gray-700">
           <h1 className="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-white">
-            <BookOutlined /> {t("nav.title")}
+            <BookOutlined style={{ color: '#4f46e5' }} /> {t("nav.title")}
           </h1>
           <button
             onClick={onClose}
@@ -108,7 +108,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
                         : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
                     }`}
                   >
-                    <FolderOutlined className="text-xs" />
+                    <FolderOutlined style={{ color: '#b45309' }} className="text-xs" />
                     <span className="truncate">{category}</span>
                   </button>
                 </li>
