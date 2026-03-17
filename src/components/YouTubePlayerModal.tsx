@@ -34,6 +34,7 @@ export function YouTubePlayerModal({ videoId, title, onClose }: YouTubePlayerMod
             src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`}
             title={title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerPolicy="no-referrer"
             allowFullScreen
           />
         </div>

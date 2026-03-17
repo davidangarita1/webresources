@@ -3,7 +3,7 @@ export function extractDomain(url: string): string {
     const hostname = new URL(url).hostname
     return hostname.replace(/^www\./, "")
   } catch {
-    return url
+    return ""
   }
 }
 
@@ -13,5 +13,14 @@ export function getFaviconUrl(url: string): string {
     return `${domain}/favicon.ico`
   } catch {
     return ""
+  }
+}
+
+export function isSafeUrl(url: string): boolean {
+  try {
+    const parsed = new URL(url)
+    return parsed.protocol === "https:" || parsed.protocol === "http:"
+  } catch {
+    return false
   }
 }

@@ -1,4 +1,5 @@
 import { storageService } from "../../services/storageService"
+import { STORAGE_KEYS } from "../../constants/storageKeys"
 import type { ResourceStatus } from "../../types"
 
 describe("storageService", () => {
@@ -34,6 +35,18 @@ describe("storageService", () => {
       storageService.saveFavorites(["5"])
       expect(storageService.isFavorite("5")).toBe(true)
       expect(storageService.isFavorite("999")).toBe(false)
+    })
+
+    it("should return empty array and clear corrupted JSON in favorites", () => {
+      localStorage.setItem(STORAGE_KEYS.FAVORITES, "not-valid-json")
+      expect(storageService.getFavorites()).toEqual([])
+      expect(localStorage.getItem(STORAGE_KEYS.FAVORITES)).toBeNull()
+    })
+
+    it("should return empty array and clear when favorites is not an array", () => {
+      localStorage.setItem(STORAGE_KEYS.FAVORITES, '{"key":"value"}')
+      expect(storageService.getFavorites()).toEqual([])
+      expect(localStorage.getItem(STORAGE_KEYS.FAVORITES)).toBeNull()
     })
   })
 
@@ -79,6 +92,18 @@ describe("storageService", () => {
       expect(result["1"]).toBe("pending")
       expect(result["2"]).toBeUndefined()
       expect(result["3"]).toBe("reference")
+    })
+
+    it("should return empty object and clear corrupted JSON in statuses", () => {
+      localStorage.setItem(STORAGE_KEYS.STATUSES, "not-valid-json")
+      expect(storageService.getStatuses()).toEqual({})
+      expect(localStorage.getItem(STORAGE_KEYS.STATUSES)).toBeNull()
+    })
+
+    it("should return empty object and clear when statuses is an array", () => {
+      localStorage.setItem(STORAGE_KEYS.STATUSES, '[1, 2, 3]')
+      expect(storageService.getStatuses()).toEqual({})
+      expect(localStorage.getItem(STORAGE_KEYS.STATUSES)).toBeNull()
     })
   })
 })

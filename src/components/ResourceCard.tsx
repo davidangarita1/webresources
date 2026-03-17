@@ -2,7 +2,7 @@ import { useState } from "react"
 import { StarFilled, StarOutlined, EditOutlined, DeleteOutlined, PlayCircleFilled } from "@ant-design/icons"
 import { useTranslation } from "react-i18next"
 import type { Resource, ResourceStatus } from "../types"
-import { extractDomain, getFaviconUrl, isYouTubeUrl, extractYouTubeId, getYouTubeThumbnail } from "../utils"
+import { extractDomain, getFaviconUrl, isSafeUrl, isYouTubeUrl, extractYouTubeId, getYouTubeThumbnail } from "../utils"
 import { YouTubePlayerModal } from "./YouTubePlayerModal"
 
 const STATUS_KEYS: Record<ResourceStatus, string> = {
@@ -155,7 +155,7 @@ export function ResourceCard({
           {status ? t(STATUS_KEYS[status]) : t("status.none")}
         </button>
         <a
-          href={resource.url}
+          href={isSafeUrl(resource.url) ? resource.url : "#"}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-md bg-indigo-600 px-4 py-1.5 text-xs font-medium text-white transition-colors hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 touch-manipulation"
