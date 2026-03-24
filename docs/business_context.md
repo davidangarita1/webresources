@@ -94,3 +94,17 @@ Además, puede **instalarse como una aplicación** en el dispositivo (como si fu
 ## Mantenimiento
 
 Agregar o quitar recursos del catálogo es una tarea que solo puede hacer el dueño del proyecto. Requiere actualizar la colección de forma manual y volver a publicar la aplicación. Está pensado para hacerse de vez en cuando, cuando se quiera ampliar o renovar el catálogo.
+
+---
+
+## Seguridad
+
+La aplicación aplica un modelo de defensa en profundidad centrado en el cliente:
+
+- **Content Security Policy (CSP):** Declarada tanto en cabecera HTTP (via `public/_headers` para Netlify) como en meta tag de `index.html`. Restringe scripts, estilos, imágenes, conexiones y frames a orígenes de confianza. Solo `youtube-nocookie.com` puede embeberse en iframes.
+- **Cabeceras de seguridad HTTP:** `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `X-XSS-Protection`, `Referrer-Policy: strict-origin-when-cross-origin` y `Permissions-Policy` aplicadas globalmente en Netlify.
+- **Iframes sandboxed:** El reproductor de YouTube utiliza el atributo `sandbox` con permisos mínimos para reducir la superficie de ataque del contenido embebido.
+- **URLs seguras:** `isSafeUrl()` bloquea protocolos peligrosos (`javascript:`, `data:`). `getFaviconUrl()` fuerza HTTPS para evitar contenido mixto.
+- **Almacenamiento local validado:** Todos los datos leídos de `localStorage` se validan antes de usarse; en caso de corrupción se limpia el ítem afectado.
+- **Dependencias sin CVEs conocidas:** Las dependencias de desarrollo con vulnerabilidades transitivas (`undici`, `serialize-javascript`) son controladas con `pnpm overrides` apuntando a versiones parcheadas.
+

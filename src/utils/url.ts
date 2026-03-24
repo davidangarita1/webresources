@@ -9,8 +9,9 @@ export function extractDomain(url: string): string {
 
 export function getFaviconUrl(url: string): string {
   try {
-    const domain = new URL(url).origin
-    return `${domain}/favicon.ico`
+    const origin = new URL(url).origin
+    const secureOrigin = origin.replace(/^http:\/\//, "https://")
+    return `${secureOrigin}/favicon.ico`
   } catch {
     return ""
   }

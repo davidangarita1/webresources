@@ -1,6 +1,7 @@
 import type { UserResource, ResourceStatus } from "../types"
 import { userResourceService } from "./userResourceService"
 import { storageService } from "./storageService"
+import { STORAGE_KEYS } from "../constants/storageKeys"
 
 export interface BackupMeta {
   exportedAt: string
@@ -39,7 +40,7 @@ export function buildBackupData(): BackupData {
   const resources = userResourceService.getAll()
   const favorites = storageService.getFavorites()
   const statuses = storageService.getStatuses()
-  const language = localStorage.getItem("language") ?? "es"
+  const language = localStorage.getItem(STORAGE_KEYS.LANGUAGE) ?? "es"
 
   return {
     meta: {

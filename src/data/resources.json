@@ -6619,17 +6619,6 @@
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
     {
-        "id": "604",
-        "title": "NextUI",
-        "url": "https://nextui.org/docs/guide/introduction",
-        "description": "",
-        "category": "RESOURCES",
-        "tags": [
-            "resources"
-        ],
-        "createdAt": "2026-03-17T01:10:07.000000Z"
-    },
-    {
         "id": "605",
         "title": "Transitional Hooks",
         "url": "https://transitionalhooks.com/",
