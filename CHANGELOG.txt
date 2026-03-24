@@ -1,3 +1,13 @@
+1.9.0
+- Security: Fix 8 CVEs in transitive devDependencies — undici (HIGH x3 + MODERATE x4) and serialize-javascript (HIGH x1)
+- Security: Add pnpm overrides to pin undici>=7.24.0 and serialize-javascript>=7.0.3, eliminating all known vulnerabilities
+- Security: Create public/_headers (Netlify) — enforces X-Frame-Options, X-Content-Type-Options, X-XSS-Protection, Referrer-Policy, Permissions-Policy, and Content-Security-Policy on every response
+- Security: Add CSP meta tag and X-Content-Type-Options meta to index.html as browser-level fallback
+- Security: Fix getFaviconUrl — HTTP origins are upgraded to HTTPS to prevent mixed-content warnings on HTTPS deployments
+- Security: Add sandbox attribute to YouTube iframe in YouTubePlayerModal — restricts allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox
+- Fix: backupService.buildBackupData — replace hardcoded "language" localStorage key with STORAGE_KEYS.LANGUAGE constant (was reading from wrong key, backup language field was always empty/default)
+- Test: Update getFaviconUrl tests — rename existing test; add new test "upgrades http origin to https for favicon URL"
+
 1.8.0
 - Feat: Add dedicated YouTube Videos section — YouTube-URL resources are automatically grouped under a collapsible "YouTube Videos" heading in every Dashboard view
 - Feat: Add "Videos" sidebar filter — shows only community and personal resources whose URLs are detected as YouTube
