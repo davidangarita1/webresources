@@ -20,8 +20,12 @@ describe("url utils", () => {
   })
 
   describe("getFaviconUrl", () => {
-    it("returns favicon URL for valid URL", () => {
+    it("returns favicon URL for valid https URL", () => {
       expect(getFaviconUrl("https://example.com/path")).toBe("https://example.com/favicon.ico")
+    })
+
+    it("upgrades http origin to https for favicon URL", () => {
+      expect(getFaviconUrl("http://example.com/path")).toBe("https://example.com/favicon.ico")
     })
 
     it("returns empty string for invalid URL", () => {
