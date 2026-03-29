@@ -6928,5 +6928,23 @@
     "category": "EDUCATION",
     "tags": ["training", "education", "professional development"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Godmode AI",
+    "url": "https://www.godmodeai.co/",
+    "description": "AI Sprite Generator",
+    "category": "TOOLS",
+    "tags": ["AI", "sprite", "generator", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Piskel",
+    "url": "https://www.piskelapp.com/",
+    "description": "Piskel is a free online editor for animated sprites & pixel art.",
+    "category": "TOOLS",
+    "tags": ["pixel art", "sprites", "animation", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
