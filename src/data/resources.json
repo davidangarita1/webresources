@@ -848,9 +848,10 @@
         "title": "ChatGPT",
         "url": "https://chat.openai.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI CHAT",
         "tags": [
-            "ai"
+            "ai",
+            "chat"
         ],
         "createdAt": "2026-03-17T00:56:18.000000Z"
     },
@@ -8167,7 +8168,7 @@
     {
         "id": "738",
         "description": "Skills are reusable capabilities for AI agents",
-        "tags": [],
+        "tags": ["skills", "ai"],
         "category": "ARTIFICIAL INTELLIGENCE",
         "title": "Skills.sh",
         "url": "https://skills.sh/",
@@ -8176,7 +8177,7 @@
     {
         "id": "739",
         "description": "From Basics to Advanced Messaging Patterns (A Practical Guide)",
-        "tags": [],
+        "tags": ["rabbitmq", "python", "programming"],
         "category": "PROGRAMMING",
         "title": "RabbitMQ with Python",
         "url": "https://medium.com/@sujakhu.umesh/rabbitmq-with-python-from-basics-to-advanced-messaging-patterns-a-practical-guide-18f8b43b94f8",
@@ -8185,7 +8186,7 @@
     {
         "id": "740",
         "description": "This directory contains Agent Skills following the Agent Skills open standard",
-        "tags": [],
+        "tags": ["ai", "agents", "skills"],
         "category": "ARTIFICIAL INTELLIGENCE",
         "title": "AI Agent Skills",
         "url": "https://github.com/prowler-cloud/prowler",
@@ -8194,7 +8195,7 @@
     {
         "id": "741",
         "description": "Skills are an open standard for extending agent capabilities. ",
-        "tags": [],
+        "tags": ["ai", "agents", "skills"],
         "category": "ARTIFICIAL INTELLIGENCE",
         "title": "Antigravity Google Skills",
         "url": "https://antigravity.google/docs/skills",
@@ -8203,7 +8204,7 @@
     {
         "id": "742",
         "description": "Architects design workloads by integrating platform services, functionality, and code to meet both functional and nonfunctional requirements.",
-        "tags": [],
+        "tags": ["architecture", "azure", "design-patterns"],
         "category": "ARCHITECTURE",
         "title": "Cloud design patterns - Microsoft",
         "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
@@ -8212,7 +8213,7 @@
     {
         "id": "743",
         "description": "Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions.",
-        "tags": [],
+        "tags": ["ai", "claude", "memory"],
         "category": "ARTIFICIAL INTELLIGENCE",
         "title": "Claude Mem",
         "url": "https://github.com/thedotmack/claude-mem",
@@ -8221,7 +8222,7 @@
     {
         "id": "744",
         "description": " TestingIT es una empresa mexicana especializada en servicios de testing y calidad de software, ofreciendo soluciones integrales para garantizar el rendimiento, seguridad y funcionalidad de las aplicaciones.",
-        "tags": [],
+        "tags": ["testing", "qa"],
         "category": "TESTING",
         "title": "TestingIT",
         "url": "https://www.testingit.com.mx/",
@@ -8230,7 +8231,7 @@
     {
         "id": "745",
         "description": "This guide shows you how to set up a context engineering workflow in VS Code using custom instructions, custom agents, and prompt files.",
-        "tags": [],
+        "tags": ["architecture", "vscode", "ai"],
         "category": "ARCHITECTURE",
         "title": "Context engineering workflow",
         "url": "https://code.visualstudio.com/docs/copilot/guides/context-engineering-guide",
@@ -8239,7 +8240,7 @@
     {
         "id": "746",
         "description": "An automated acceptance tests reporting library (previously known as Thucydides)",
-        "tags": [],
+        "tags": ["testing", "bdd"],
         "category": "TESTING",
         "title": "Serenity BDD",
         "url": "https://github.com/serenity-bdd",
@@ -8248,7 +8249,7 @@
     {
         "id": "747",
         "description": "Build More Architect Dreams",
-        "tags": [],
+        "tags": ["architecture"],
         "category": "ARCHITECTURE",
         "title": "BMAD-METHOD",
         "url": "https://github.com/bmad-code-org/BMAD-METHOD",
@@ -8257,7 +8258,7 @@
     {
         "id": "748",
         "description": "Software architecture is key in responding to dynamic market pressures.",
-        "tags": [],
+        "tags": ["architecture", "nestjs", "clean-code"],
         "category": "ARCHITECTURE",
         "title": "NestJS Clean Code using Hexagonal Architecture",
         "url": "https://ridakaddir.com/blog/post/nestjs-clean-code-using-hexagonal-architecture",
@@ -8266,7 +8267,7 @@
     {
         "id": "749",
         "description": "A curated collection of Awesome LLM apps built with RAG, AI Agents, Multi-agent Teams, MCP, Voice Agents, and more.",
-        "tags": [],
+        "tags": ["ai", "llm", "agents"],
         "category": "ARTIFICIAL INTELLIGENCE",
         "title": "Awesome LLM Apps",
         "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
@@ -8275,7 +8276,7 @@
     {
         "id": "750",
         "description": "A workshop focused on Test-Driven Development (TDD) practices.",
-        "tags": [],
+        "tags": ["testing", "tdd"],
         "category": "TESTING",
         "title": "Tdd-workshop",
         "url": "https://github.com/joeeames/tdd-workshop/",
@@ -8284,10 +8285,46 @@
     {
         "id": "751",
         "description": "An open-source toolkit for spec-driven development with AI, enabling developers to create and manage specifications using AI-powered tools.",
-        "tags": [],
+        "tags": ["ai", "spec-driven", "development"],
         "category": "ARTIFICIAL INTELLIGENCE",
         "title": "Spec-Driven Development with AI",
         "url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
+    },
+    {
+        "id": "752",
+        "description": "Explore la documentación del producto de Microsoft, el entrenamiento, las credenciales, las preguntas y respuestas, las referencias de código y las muestras.",
+        "tags": ["courses", "microsoft"],
+        "category": "COURSES",
+        "title": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/es-es/",
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "753",
+        "description": "Reasoning-first models built for agents.",
+        "tags": ["ai", "chat"],
+        "category": "AI CHAT",
+        "title": "DeepSeek",
+        "url": "https://www.deepseek.com/",
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "754",
+        "description": "An AI assistant that understands and generates human-like text, designed to help with a wide range of tasks and provide information on various topics.",
+        "tags": ["ai", "chat"],
+        "category": "AI CHAT",
+        "title": "Grok",
+        "url": "https://grok.com/",
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "755",
+        "description": "A platform for exploring and experimenting with AI models and tools.",
+        "tags": ["ai", "chat"],
+        "category": "AI CHAT",
+        "title": "AI Studio",
+        "url": "https://aistudio.google.com/",
+        "createdAt": "2026-03-29T00:00:00.000000Z"
     }
 ]
