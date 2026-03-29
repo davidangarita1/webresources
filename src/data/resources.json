@@ -7000,5 +7000,32 @@
     "category": "SERVICES",
     "tags": ["shipping", "logistics", "services"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Apify",
+    "url": "https://apify.com/",
+    "description": "Apify is a platform for web scraping and automation.",
+    "category": "TOOLS",
+    "tags": ["web scraping", "automation", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "MagicLoops",
+    "url": "https://magicloops.dev/es",
+    "description": "La plataforma sin código que te permite crear aplicaciones profesionales en minutos, no meses.",
+    "category": "TOOLS",
+    "tags": ["no-code", "applications", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "AvanzaTech",
+    "url": "https://avanzatech.co/",
+    "description": "Conviértete en Programador, ¡hoy!",
+    "category": "EDUCATION",
+    "tags": ["programming", "education", "courses"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
