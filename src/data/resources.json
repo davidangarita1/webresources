@@ -6921,7 +6921,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "a93c48e5-c1be-4305-982b-3c4baa8252da",
     "title": "EPAM Training Campus",
     "url": "https://campus.epam.com/en/training",
     "description": "EPAM Training Campus offers a variety of training programs and courses for professional development.",
@@ -6930,7 +6930,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "d71da073-451b-4518-a611-a3fb474a6559",
     "title": "Godmode AI",
     "url": "https://www.godmodeai.co/",
     "description": "AI Sprite Generator",
@@ -6939,7 +6939,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "8a883495-9231-4a77-9b0f-dc9690a48f4c",
     "title": "Piskel",
     "url": "https://www.piskelapp.com/",
     "description": "Piskel is a free online editor for animated sprites & pixel art.",
@@ -6948,7 +6948,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "f314a6b9-489c-4965-b4e9-c6a851c1b221",
     "title": "BBYCroft LLM",
     "url": "https://bbycroft.net/llm",
     "description": "A platform for exploring and experimenting with large language models.",
@@ -6957,7 +6957,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "c305eab7-1442-44f6-a029-c95695f1dea8",
     "title": "RetroArch",
     "url": "https://retroarch.com/",
     "description": "RetroArch is a frontend for emulators, game engines, and media players.",
@@ -6966,7 +6966,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "2043756d-8541-42c3-b52f-56f6c6ef349c",
     "title": "Curso Inglés",
     "url": "https://curso-ingles.com/",
     "description": "Aprende Inglés Gratis.",
@@ -6975,7 +6975,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "fc38feef-4c91-4d7a-9518-9e0df8919ee9",
     "title": "Playphrase.me",
     "url": "https://www.playphrase.me/",
     "description": "Playphrase.me is a platform for finding and watching movie and TV show clips.",
@@ -6984,7 +6984,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "ac9377a1-27bf-4760-9412-4415711d1a23",
     "title": "AWS Educate",
     "url": "https://aws.amazon.com/es/education/awseducate/",
     "description": "AWS Educate provides students and educators with resources for learning about cloud computing.",
@@ -6993,7 +6993,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "19f196d0-ac97-4e60-8e42-636a571eecb5",
     "title": "Shipfast",
     "url": "https://shipfa.st/",
     "description": "The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app and make your first $ online fast.",
@@ -7002,7 +7002,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "17d0ba6e-56ba-45ad-a899-32dc82b2bc44",
     "title": "Apify",
     "url": "https://apify.com/",
     "description": "Apify is a platform for web scraping and automation.",
@@ -7011,7 +7011,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "19c23aa3-4273-4750-a306-2ade406b123f",
     "title": "MagicLoops",
     "url": "https://magicloops.dev/es",
     "description": "La plataforma sin código que te permite crear aplicaciones profesionales en minutos, no meses.",
@@ -7020,7 +7020,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "4a9d8956-9dd4-4e19-a1f2-bc69f69c72a9",
     "title": "AvanzaTech",
     "url": "https://avanzatech.co/",
     "description": "Conviértete en Programador, ¡hoy!",
@@ -7029,7 +7029,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "8b27e07b-a68f-4f96-b152-913d2d5d1988",
     "title": "LibreSprite",
     "url": "https://libresprite.github.io/",
     "description": "LibreSprite is a free and open-source sprite editor.",
@@ -7038,7 +7038,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "84031b98-fe06-4c61-85d0-abf8c60c848f",
     "title": "Google LLL",
     "url": "https://labs.google/lll/en",
     "description": "Google LLL is a platform for exploring and experimenting with large language models.",
@@ -7047,7 +7047,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "623e0ed1-bd58-41c9-8fdc-ae25d99458d0",
     "title": "DocsBot AI Prompts",
     "url": "https://docsbot.ai/prompts",
     "description": "Ultimate AI Prompt Library: Best ChatGPT Prompts & More",
@@ -7056,7 +7056,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "f15b4d51-457d-45ee-b4ce-cf6a133133b4",
     "title": "Magic Poser",
     "url": "https://webapp.magicposer.com/",
     "description": "Magic Poser is a tool for creating and posing 3D characters.",
@@ -7065,7 +7065,7 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
-    "id": "",
+    "id": "22764f65-bd1a-4540-b0f4-32a34a4f7558",
     "title": "Drawcademy 3D Models of the Head",
     "url": "https://www.drawcademy.net/3d-models-of-the-head",
     "description": "Drawcademy offers 3D models of the head for artists and designers.",
