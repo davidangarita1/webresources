@@ -6964,5 +6964,41 @@
     "category": "GAMING",
     "tags": ["emulator", "gaming", "tools"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Curso Inglés",
+    "url": "https://curso-ingles.com/",
+    "description": "Aprende Inglés Gratis.",
+    "category": "EDUCATION",
+    "tags": ["English", "language", "education", "courses"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Playphrase.me",
+    "url": "https://www.playphrase.me/",
+    "description": "Playphrase.me is a platform for finding and watching movie and TV show clips.",
+    "category": "ENTERTAINMENT",
+    "tags": ["movies", "TV shows", "clips", "entertainment"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "AWS Educate",
+    "url": "https://aws.amazon.com/es/education/awseducate/",
+    "description": "AWS Educate provides students and educators with resources for learning about cloud computing.",
+    "category": "EDUCATION",
+    "tags": ["AWS", "cloud", "education", "resources"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Shipfast",
+    "url": "https://shipfa.st/",
+    "description": "The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app and make your first $ online fast.",
+    "category": "SERVICES",
+    "tags": ["shipping", "logistics", "services"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
