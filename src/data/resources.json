@@ -6910,5 +6910,14 @@
     "category": "RESOURCES",
     "tags": ["environment", "information", "services"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "769",
+    "title": "My Abandonware",
+    "url": "https://www.myabandonware.com/",
+    "description": "My Abandonware is a platform for finding and downloading abandoned video games.",
+    "category": "RESOURCES",
+    "tags": ["gaming", "abandonware", "resources"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
