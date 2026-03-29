@@ -6766,5 +6766,23 @@
     "category": "PROGRAMMING",
     "tags": ["open-source"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "753",
+    "title": "Crypton",
+    "url": "https://crypton.sh/",
+    "description": "Crypton is a platform for secure and private communication using blockchain technology.",
+    "category": "SECURITY",
+    "tags": ["blockchain", "security", "privacy"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "754",
+    "title": "SMS Pool",
+    "url": "https://www.smspool.net/",
+    "description": "SMS Pool is a service for managing and sending SMS messages efficiently.",
+    "category": "SECURITY",
+    "tags": ["security", "communication", "messaging"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
