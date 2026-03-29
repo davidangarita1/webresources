@@ -6847,5 +6847,68 @@
     "category": "FINANCE",
     "tags": ["algorithmic trading", "finance", "github"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "762",
+    "title": "Hitmarker Jobs",
+    "url": "https://hitmarker.net/jobs",
+    "description": "Hitmarker Jobs is a platform for finding jobs in the gaming industry.",
+    "category": "CAREERS",
+    "tags": ["gaming", "jobs", "careers"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "763",
+    "title": "Change Job",
+    "url": "https://change-job.com/",
+    "description": "Change provides expert headhunting services on a worldwide basis. Our prolific network began in 1999 which is our ultimate asset.",
+    "category": "CAREERS",
+    "tags": ["headhunting", "recruitment", "careers"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "764",
+    "title": "Codedex",
+    "url": "https://www.codedex.io/home",
+    "description": "Codedex is a platform for learning and sharing coding knowledge.",
+    "category": "EDUCATION",
+    "tags": ["coding", "education", "platform"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "765",
+    "title": "Game Developer",
+    "url": "https://www.gamedeveloper.com/",
+    "description": "Game Developer is a resource for game development news, tutorials, and community.",
+    "category": "EDUCATION",
+    "tags": ["game development", "education", "resources"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "766",
+    "title": "Agents Towards Production",
+    "url": "https://github.com/NirDiamant/agents-towards-production",
+    "description": "The open-source playbook for turning AI agents into real-world products.",
+    "category": "EDUCATION",
+    "tags": ["AI", "agents", "open-source", "playbook"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "767",
+    "title": "AI Agents for Beginners",
+    "url": "https://github.com/microsoft/ai-agents-for-beginners",
+    "description": "A course teaching everything you need to know to start building AI Agents.",
+    "category": "EDUCATION",
+    "tags": ["AI", "agents", "beginners", "guide"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "768",
+    "title": "SIATA",
+    "url": "https://siata.gov.co/siata_nuevo/",
+    "description": "SIATA is a platform for environmental information and services.",
+    "category": "RESOURCES",
+    "tags": ["environment", "information", "services"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
