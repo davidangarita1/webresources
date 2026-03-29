@@ -6784,5 +6784,32 @@
     "category": "SECURITY",
     "tags": ["security", "communication", "messaging"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "755",
+    "title": "Hushed",
+    "url": "https://hushed.com/",
+    "description": "Hushed is a service that provides temporary, disposable phone numbers for privacy and security.",
+    "category": "SECURITY",
+    "tags": ["privacy", "security", "communication"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "756",
+    "title": "Bitrefill",
+    "url": "https://www.bitrefill.com/co/es/",
+    "description": "Bitrefill is a platform that allows users to purchase gift cards and mobile top-ups using cryptocurrencies.",
+    "category": "SECURITY",
+    "tags": ["privacy", "cryptocurrency", "payments", "gift-cards"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "757",
+    "title": "Antigravity Awesome Skills",
+    "url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "description": "Antigravity Awesome Skills is a GitHub repository and installer CLI for reusable SKILL.md playbooks.",
+    "category": "PROGRAMMING",
+    "tags": ["open-source", "cli", "playbooks"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
