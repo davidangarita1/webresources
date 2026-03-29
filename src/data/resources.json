@@ -6820,5 +6820,32 @@
     "category": "PROGRAMMING",
     "tags": ["programming", "interviews", "guide", "github"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "759",
+    "title": "Think Python",
+    "url": "https://allendowney.github.io/ThinkPython/",
+    "description": "Think Python is a book that introduces Python programming and computer science concepts.",
+    "category": "EDUCATION",
+    "tags": ["python", "programming", "education", "book"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "760",
+    "title": "SP500 HedgeFund Bootcamp",
+    "url": "https://github.com/EstellaYu/SP500-HedgeFund-Bootcamp",
+    "description": "A comprehensive bootcamp for learning about SP500 hedge fund strategies.",
+    "category": "EDUCATION",
+    "tags": ["finance", "hedge fund", "bootcamp", "github"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "761",
+    "title": "Algorithmic Trading UR2023I",
+    "url": "https://github.com/ELOSPO/algorithmic-tradingUR2023I",
+    "description": "A repository for algorithmic trading strategies and resources.",
+    "category": "FINANCE",
+    "tags": ["algorithmic trading", "finance", "github"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
