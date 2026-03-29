@@ -7027,5 +7027,32 @@
     "category": "EDUCATION",
     "tags": ["programming", "education", "courses"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "LibreSprite",
+    "url": "https://libresprite.github.io/",
+    "description": "LibreSprite is a free and open-source sprite editor.",
+    "category": "TOOLS",
+    "tags": ["sprite", "editor", "open-source", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Google LLL",
+    "url": "https://labs.google/lll/en",
+    "description": "Google LLL is a platform for exploring and experimenting with large language models.",
+    "category": "EDUCATION",
+    "tags": ["AI", "LLM", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "DocsBot AI Prompts",
+    "url": "https://docsbot.ai/prompts",
+    "description": "Ultimate AI Prompt Library: Best ChatGPT Prompts & More",
+    "category": "TOOLS",
+    "tags": ["AI", "prompts", "ChatGPT", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
