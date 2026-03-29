@@ -8452,5 +8452,38 @@
         "title": "Pixellab",
         "url": "https://www.pixellab.ai/",
         "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "759",
+        "title": "Binance",
+        "url": "https://binance.com/",
+        "description": "Binance es el exchange de criptomonedas líder a nivel mundial, ofreciendo una plataforma segura y fácil de usar para comprar, vender y gestionar una amplia variedad de criptomonedas.",
+        "category": "FINANCE",
+        "tags": [
+            "investment"
+        ],
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "760",
+        "title": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/",
+        "description": "CoinMarketCap es una plataforma líder en el seguimiento de precios, capitalización de mercado y datos relacionados con criptomonedas, proporcionando información actualizada y análisis para inversores y entusiastas del mundo cripto.",
+        "category": "FINANCE",
+        "tags": [
+            "investment"
+        ],
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "761",
+        "title": "Hapi Trade",
+        "url": "https://app.hapi.trade/",
+        "description": "Hapi Trade es una plataforma de intercambio de criptomonedas que ofrece herramientas avanzadas para el comercio y la gestión de activos digitales.",
+        "category": "FINANCE",
+        "tags": [
+            "investment"
+        ],
+        "createdAt": "2026-03-29T00:00:00.000000Z"
     }
 ]
