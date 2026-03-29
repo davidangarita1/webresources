@@ -9,8 +9,10 @@ import {
   FolderOutlined,
   PlusOutlined,
   YoutubeOutlined,
+  DownOutlined,
+  RightOutlined,
 } from "@ant-design/icons"
-import type { ReactNode } from "react"
+import { type ReactNode, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useResourceStore } from "../store"
 
@@ -38,6 +40,7 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
   const categories = useResourceStore((s) => s.categories)
   const setActiveFilter = useResourceStore((s) => s.setActiveFilter)
   const setActiveCategory = useResourceStore((s) => s.setActiveCategory)
+  const [categoriesOpen, setCategoriesOpen] = useState(true)
 
   function handleNavClick(action: () => void) {
     action()
@@ -96,26 +99,33 @@ export function Sidebar({ isOpen, onClose, onCreateResource }: SidebarProps) {
           </ul>
 
           <div className="mt-6">
-            <h2 className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              {t("nav.categories")}
-            </h2>
-            <ul className="space-y-0.5">
-              {categories.map((category) => (
-                <li key={category}>
-                  <button
-                    onClick={() => handleNavClick(() => setActiveCategory(category))}
-                    className={`flex cursor-pointer w-full items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors ${
-                      activeFilter === "category" && activeCategory === category
-                        ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200"
-                        : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
-                    }`}
-                  >
-                    <FolderOutlined style={{ color: '#b45309' }} className="text-xs" />
-                    <span className="truncate">{category}</span>
-                  </button>
-                </li>
-              ))}
-            </ul>
+            <button
+              onClick={() => setCategoriesOpen((o) => !o)}
+              className="flex w-full items-center justify-between px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
+              aria-expanded={categoriesOpen}
+            >
+              <span>{t("nav.categories")}</span>
+              {categoriesOpen ? <DownOutlined className="text-[10px]" /> : <RightOutlined className="text-[10px]" />}
+            </button>
+            {categoriesOpen && (
+              <ul className="mt-1 space-y-0.5">
+                {categories.map((category) => (
+                  <li key={category}>
+                    <button
+                      onClick={() => handleNavClick(() => setActiveCategory(category))}
+                      className={`flex cursor-pointer w-full items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors ${
+                        activeFilter === "category" && activeCategory === category
+                          ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200"
+                          : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+                      }`}
+                    >
+                      <FolderOutlined style={{ color: '#b45309' }} className="text-xs" />
+                      <span className="truncate">{category}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </nav>
 
