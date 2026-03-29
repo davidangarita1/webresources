@@ -7054,5 +7054,23 @@
     "category": "TOOLS",
     "tags": ["AI", "prompts", "ChatGPT", "tools"],
     "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Magic Poser",
+    "url": "https://webapp.magicposer.com/",
+    "description": "Magic Poser is a tool for creating and posing 3D characters.",
+    "category": "TOOLS",
+    "tags": ["3D", "characters", "posing", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
+  },
+  {
+    "id": "",
+    "title": "Drawcademy 3D Models of the Head",
+    "url": "https://www.drawcademy.net/3d-models-of-the-head",
+    "description": "Drawcademy offers 3D models of the head for artists and designers.",
+    "category": "TOOLS",
+    "tags": ["3D", "models", "head", "tools"],
+    "createdAt": "2026-03-29T00:00:00.000000Z"
   }
 ]
