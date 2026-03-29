@@ -4,7 +4,7 @@
         "title": "HyperUI",
         "url": "https://www.hyperui.dev/",
         "description": "A collection of free Tailwind CSS components for modern interfaces.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -15,7 +15,7 @@
         "title": "Flowbite",
         "url": "https://flowbite.com/docs/components/chat-bubble/",
         "description": "A component library built on Tailwind CSS with interactive UI elements.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -26,7 +26,7 @@
         "title": "Tailwind CSS",
         "url": "https://tailwindcss.com/docs/installation",
         "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -37,7 +37,7 @@
         "title": "Pure CSS",
         "url": "https://purecss.io/",
         "description": "A minimal, responsive CSS framework built by Yahoo for small projects.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -48,7 +48,7 @@
         "title": "Mint",
         "url": "https://mint-lang.com/",
         "description": "A programming language for building single-page apps with a focus on simplicity and maintainability.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -59,7 +59,7 @@
         "title": "Material UI",
         "url": "https://mui.com/",
         "description": "A React component library implementing Google's Material Design.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -70,7 +70,7 @@
         "title": "Grid Malven",
         "url": "https://grid.malven.co/",
         "description": "A simple visual reference for CSS grid layout.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -81,7 +81,7 @@
         "title": "Flukeout",
         "url": "https://flukeout.github.io/",
         "description": "A fun game to learn CSS selectors step by step.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -92,7 +92,7 @@
         "title": "Flexbox Froggy",
         "url": "https://flexboxfroggy.com/#es",
         "description": "An interactive game to practice CSS flexbox layout.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -103,7 +103,7 @@
         "title": "Flexbox Defense",
         "url": "http://www.flexboxdefense.com/",
         "description": "A tower-defense style game to learn CSS flexbox.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -114,7 +114,7 @@
         "title": "Dev hints",
         "url": "https://devhints.io/css",
         "description": "A collection of quick CSS cheatsheets for developers.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -125,7 +125,7 @@
         "title": "CSS Tricks",
         "url": "https://css-tricks.com/",
         "description": "A popular blog and resource site for CSS tips and guides.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -136,7 +136,7 @@
         "title": "CSS Reference",
         "url": "https://cssreference.io/",
         "description": "A visual guide to CSS properties with examples.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -147,7 +147,7 @@
         "title": "CSS Grid Garden",
         "url": "https://cssgridgarden.com/#es",
         "description": "A fun game to learn CSS grid layout concepts.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -158,7 +158,7 @@
         "title": "CSS Flexbox Simulator",
         "url": "https://juliansci.github.io/css-flexbox-simulator/",
         "description": "An interactive tool to practice and test flexbox layouts.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -169,7 +169,7 @@
         "title": "CDNJS",
         "url": "https://cdnjs.com/",
         "description": "A free and fast CDN hosting popular web libraries.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -180,7 +180,7 @@
         "title": "Andy Brewer",
         "url": "https://andybrewer.github.io/mvp/",
         "description": "MVP.css, a lightweight stylesheet for quick prototypes.",
-        "category": "CSS",
+        "category": "FRONTEND",
         "tags": [
             "css"
         ],
@@ -191,7 +191,7 @@
         "title": "Tabbied",
         "url": "https://tabbied.com/",
         "description": "A generator for unique, colorful background patterns.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -202,7 +202,7 @@
         "title": "Stripes Generator",
         "url": "https://stripesgenerator.com/",
         "description": "A tool for creating colorful CSS stripe patterns.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -213,7 +213,7 @@
         "title": "Picular",
         "url": "https://picular.co",
         "description": "A color search engine that finds colors from images.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -224,7 +224,7 @@
         "title": "Patternify",
         "url": "http://www.patternify.com/",
         "description": "A pixel pattern generator that outputs CSS code.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -235,7 +235,7 @@
         "title": "Paletton",
         "url": "https://paletton.com/",
         "description": "A color scheme designer for building harmonious palettes.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -246,7 +246,7 @@
         "title": "Mesh gradient",
         "url": "https://meshgradient.in/",
         "description": "A simple generator for colorful mesh gradients.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -257,7 +257,7 @@
         "title": "CSS Gradient",
         "url": "https://cssgradient.io/gradient-backgrounds/",
         "description": "An online tool for creating CSS gradient backgrounds.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -268,7 +268,7 @@
         "title": "Coolors",
         "url": "https://coolors.co/",
         "description": "A fast color palette generator and tool for designers.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -279,7 +279,7 @@
         "title": "Colorhunt",
         "url": "https://colorhunt.co/",
         "description": "A free collection of curated color palettes for inspiration.",
-        "category": "COLORS",
+        "category": "DESIGN",
         "tags": [
             "colors"
         ],
@@ -290,7 +290,7 @@
         "title": "Spirit App",
         "url": "https://spiritapp.io/getstarted/",
         "description": "A tool for creating and managing timeline animations.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -301,7 +301,7 @@
         "title": "Popmotion",
         "url": "https://popmotion.io/pure/",
         "description": "A functional JavaScript library for animations and physics.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -312,7 +312,7 @@
         "title": "MoJS",
         "url": "https://mojs.github.io/",
         "description": "A motion graphics library for creative web animations.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -323,7 +323,7 @@
         "title": "Michalsnik",
         "url": "https://michalsnik.github.io/aos/",
         "description": "AOS (Animate On Scroll) library for scroll animations.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -334,7 +334,7 @@
         "title": "Maxwellito",
         "url": "https://maxwellito.github.io/vivus/",
         "description": "Vivus.js library for animating SVGs with line drawing effects.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -345,7 +345,7 @@
         "title": "Lottie Files",
         "url": "https://lottiefiles.com/animations",
         "description": "A platform for sharing and using Lottie animations.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -356,7 +356,7 @@
         "title": "Cubic Bezier",
         "url": "https://cubic-bezier.com/#.17,.67,.83,.67",
         "description": "An interactive tool to design CSS cubic-bezier curves.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -367,7 +367,7 @@
         "title": "CSShake",
         "url": "https://elrumordelaluz.github.io/csshake/",
         "description": "A CSS library for applying fun shake animations.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -378,7 +378,7 @@
         "title": "CSS Triggers",
         "url": "https://csstriggers.com/",
         "description": "A reference for CSS properties and their performance impact.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -389,7 +389,7 @@
         "title": "Animista",
         "url": "https://animista.net/",
         "description": "A collection of premade CSS animations with live previews.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -400,7 +400,7 @@
         "title": "Anime JS",
         "url": "https://animejs.com/",
         "description": "A flexible JavaScript animation engine for complex effects.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -411,7 +411,7 @@
         "title": "Animate Style",
         "url": "https://animate.style/",
         "description": "A popular library of ready-to-use CSS animations.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -422,7 +422,7 @@
         "title": "Anim XYZ",
         "url": "https://animxyz.com/",
         "description": "A composable CSS animation toolkit for building custom effects.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -433,7 +433,7 @@
         "title": "AniJS",
         "url": "https://anijs.github.io/",
         "description": "A library for adding declarative animations using HTML attributes.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -444,7 +444,7 @@
         "title": "Airbnb",
         "url": "https://airbnb.io/lottie/#/",
         "description": "Lottie is Airbnb's open-source tool for adding lightweight, scalable animations to apps and websites.",
-        "category": "ANIMATIONS",
+        "category": "FRONTEND",
         "tags": [
             "animations"
         ],
@@ -468,7 +468,7 @@
         "title": "Codewars",
         "url": "https://www.codewars.com/",
         "description": "Improve your development skills by training with your peers on code kata that continuously challenge and push your coding practice.",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges",
             "programming",
@@ -481,7 +481,7 @@
         "title": "Hacker earth",
         "url": "https://www.hackerearth.com/",
         "description": "Matching great developers with world-class companies.",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges",
             "programming",
@@ -495,7 +495,7 @@
         "title": "Code forces",
         "url": "https://codeforces.com/",
         "description": "Codeforces is a project joining people interested in and taking part in programming contests. On one hand, Codeforces is a social network dedicated to programming and programming contests.",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges",
             "programming"
@@ -520,7 +520,7 @@
         "title": "Topcoder",
         "url": "https://www.topcoder.com/",
         "description": "We treat our Topcoder talent the way you'd want us to, with respect, transparency, and trust. Ya know, like humans should.",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges",
             "programming",
@@ -534,7 +534,7 @@
         "title": "Codin game",
         "url": "https://www.codingame.com/start",
         "description": "The new way to improve your programming skills while having fun and getting noticed.",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges",
             "programming",
@@ -547,7 +547,7 @@
         "title": "Hacker rank",
         "url": "https://www.hackerrank.com/",
         "description": "We help companies develop the strongest tech teams around. We help candidates sharpen their tech skills and pursue job opportunities.",
-        "category": "ACADEMY",
+        "category": "EDUCATION",
         "tags": [
             "academy",
             "challenges",
@@ -560,7 +560,7 @@
         "title": "Exercism",
         "url": "https://exercism.org/",
         "description": "Develop fluency in 61 programming languages with our unique blend of learning, practice and mentoring. Exercism is fun, effective and 100% free, forever.",
-        "category": "ACADEMY",
+        "category": "EDUCATION",
         "tags": [
             "academy",
             "challenges",
@@ -574,7 +574,7 @@
         "title": "Code-projects",
         "url": "https://code-projects.org/",
         "description": "We are fast becoming best open source code & projects organization - Code Projects is developed to provide interested people with resources to build their knowledge, and exchange ideas.",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges",
             "programming",
@@ -587,7 +587,7 @@
         "title": "Javascript30",
         "url": "https://javascript30.com/",
         "description": "30 Day Vanilla JS Coding Challenge.\nBuild 30 things in 30 days with 30 tutorials",
-        "category": "ACADEMY",
+        "category": "EDUCATION",
         "tags": [
             "academy",
             "challenges",
@@ -602,7 +602,7 @@
         "title": "Dev challenges",
         "url": "https://devchallenges.io/",
         "description": "Web Development Resources and Community that help you to become a Web Developer by working with Real-life projects and practices.",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges",
             "programming",
@@ -615,7 +615,7 @@
         "title": "Adventjs",
         "url": "https://adventjs.dev/es",
         "description": "Although it has its roots in the Catholic religion, Advent has become a tradition where children got chocolate for 4 weeks, one per day, from December 1 to 24. Here we adapt it to programming challenges.",
-        "category": "ACADEMY",
+        "category": "EDUCATION",
         "tags": [
             "academy",
             "challenges",
@@ -629,7 +629,7 @@
         "title": "Dzone",
         "url": "https://dzone.com/articles/react-apps-firebase",
         "description": "The fastest and easiest way to deploy your react apps online with fire-base hosting by google, explained step by step in detail with screenshots and snippets.",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react",
             "firebase",
@@ -642,7 +642,7 @@
         "title": "Firebase web",
         "url": "https://firebase.google.com/docs/web/setup?hl=es",
         "description": "Firebase tutorial to create a project.",
-        "category": "FIREBASE",
+        "category": "DEPLOYMENT",
         "tags": [
             "firebase",
             "programming"
@@ -667,7 +667,7 @@
         "title": "Azure cli documentation",
         "url": "https://learn.microsoft.com/es-es/cli/azure/",
         "description": "The Azure Command Line Interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available in Azure services and is designed to help you quickly work with Azure, with a focus on automation.",
-        "category": "AZURE",
+        "category": "DEPLOYMENT",
         "tags": [
             "azure",
             "deployment",
@@ -680,7 +680,7 @@
         "title": "Cloud skills challenge",
         "url": "https://learn.microsoft.com/es-mx/training/challenges?id=495571f3-ba53-426a-b5cc-2885cf229e8b",
         "description": "Computing of Azure",
-        "category": "ACADEMY",
+        "category": "EDUCATION",
         "tags": [
             "academy",
             "azure",
@@ -771,7 +771,7 @@
         "title": "AI For Beginners",
         "url": "https://microsoft.github.io/AI-For-Beginners/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -782,7 +782,7 @@
         "title": "AI Tuts",
         "url": "https://aituts.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -793,7 +793,7 @@
         "title": "Altered AI",
         "url": "https://www.altered.ai/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -804,7 +804,7 @@
         "title": "Anaconda",
         "url": "https://www.anaconda.com/download-success",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -815,7 +815,7 @@
         "title": "Apps AI blog",
         "url": "https://www.inboundcycle.com/blog-de-inbound-marketing/aplicaciones-inteligencia-artificial",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -826,7 +826,7 @@
         "title": "BGrem",
         "url": "https://bgrem.ai/es/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -837,7 +837,7 @@
         "title": "Blobr",
         "url": "https://www.blobr.io/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -848,10 +848,11 @@
         "title": "ChatGPT",
         "url": "https://chat.openai.com/",
         "description": "",
-        "category": "AI CHAT",
+        "category": "AI",
         "tags": [
             "ai",
-            "chat"
+            "chat",
+            "ai-chat"
         ],
         "createdAt": "2026-03-17T00:56:18.000000Z"
     },
@@ -860,7 +861,7 @@
         "title": "Cleanup pictures",
         "url": "https://cleanup.pictures/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -871,7 +872,7 @@
         "title": "Dall-e2",
         "url": "https://openai.com/dall-e-2",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -882,7 +883,7 @@
         "title": "Deeplearning AI",
         "url": "https://www.deeplearning.ai/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -893,7 +894,7 @@
         "title": "Fake you",
         "url": "https://fakeyou.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -904,7 +905,7 @@
         "title": "Futurepedia",
         "url": "https://www.futurepedia.io/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -915,7 +916,7 @@
         "title": "Get Vois",
         "url": "https://getvois.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -926,7 +927,7 @@
         "title": "Hey gen",
         "url": "https://www.heygen.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -937,7 +938,7 @@
         "title": "Hugging face",
         "url": "https://huggingface.co/welcome",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -948,7 +949,7 @@
         "title": "Kapwing",
         "url": "https://www.kapwing.com/es",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -959,7 +960,7 @@
         "title": "Kombitz",
         "url": "https://www.kombitz.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -970,7 +971,7 @@
         "title": "Learn prompting",
         "url": "https://learnprompting.org/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -981,7 +982,7 @@
         "title": "Learning Studio AI",
         "url": "https://learningstudioai.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -992,7 +993,7 @@
         "title": "Leiapix",
         "url": "https://www.leiapix.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1003,7 +1004,7 @@
         "title": "Leonardo AI",
         "url": "https://app.leonardo.ai/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1014,7 +1015,7 @@
         "title": "NLTK",
         "url": "https://www.nltk.org/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1025,7 +1026,7 @@
         "title": "Photoroom",
         "url": "https://www.photoroom.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1036,7 +1037,7 @@
         "title": "Pika Art",
         "url": "https://pika.art/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1047,7 +1048,7 @@
         "title": "Pixcut Wondershare",
         "url": "https://pixcut.wondershare.es/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1058,7 +1059,7 @@
         "title": "Profile Maker",
         "url": "https://pfpmaker.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1069,7 +1070,7 @@
         "title": "Prompt base",
         "url": "https://promptbase.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1080,7 +1081,7 @@
         "title": "Run diffusion",
         "url": "https://rundiffusion.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1091,7 +1092,7 @@
         "title": "Spacy",
         "url": "https://spacy.io/usage",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1102,7 +1103,7 @@
         "title": "Stable Video",
         "url": "https://stability.ai/stable-video",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1113,7 +1114,7 @@
         "title": "Sweethome 3D",
         "url": "https://www.sweethome3d.com/SweetHome3DJSOnline.jsp",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1124,7 +1125,7 @@
         "title": "Synthesia",
         "url": "https://www.synthesia.io/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1135,7 +1136,7 @@
         "title": "Text 2 SQL",
         "url": "https://www.text2sql.ai/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1146,7 +1147,7 @@
         "title": "Textblob",
         "url": "https://textblob.readthedocs.io/en/dev/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1157,7 +1158,7 @@
         "title": "Vocal Remover",
         "url": "https://vocalremover.org/es/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1168,7 +1169,7 @@
         "title": "Watermark Remover",
         "url": "https://www.watermarkremover.io/es/upload",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1179,7 +1180,7 @@
         "title": "Whismsical",
         "url": "https://whimsical.com/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1190,7 +1191,7 @@
         "title": "NVIDIA Deep Learning Institute",
         "url": "https://www.nvidia.com/en-us/training/",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1201,7 +1202,7 @@
         "title": "Copilot",
         "url": "https://github.com/copilot",
         "description": "",
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "tags": [
             "ai"
         ],
@@ -1212,7 +1213,7 @@
         "title": "Battle code",
         "url": "https://battlecode.org/",
         "description": "",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges"
         ],
@@ -1223,7 +1224,7 @@
         "title": "Codilitily",
         "url": "https://www.codility.com/",
         "description": "",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges"
         ],
@@ -1234,7 +1235,7 @@
         "title": "Codingame",
         "url": "https://www.codingame.com/",
         "description": "",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges"
         ],
@@ -1245,7 +1246,7 @@
         "title": "Front end mentor",
         "url": "https://www.frontendmentor.io/challenges",
         "description": "",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges"
         ],
@@ -1256,7 +1257,7 @@
         "title": "India bix",
         "url": "https://www.indiabix.com/",
         "description": "",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges"
         ],
@@ -1267,7 +1268,7 @@
         "title": "Prevalentware",
         "url": "https://github.com/prevalentWare/prueba-tecnica-fullstack",
         "description": "",
-        "category": "CHALLENGES",
+        "category": "PROGRAMMING",
         "tags": [
             "challenges"
         ],
@@ -1278,7 +1279,7 @@
         "title": "Alison",
         "url": "https://alison.com/es",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1289,7 +1290,7 @@
         "title": "Alkemy",
         "url": "https://www.alkemy.org/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1300,7 +1301,7 @@
         "title": "Ambition box",
         "url": "https://www.ambitionbox.com/interviews",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1311,7 +1312,7 @@
         "title": "Avanza Tech",
         "url": "https://www.avanzatech.co/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1322,7 +1323,7 @@
         "title": "Bancolombia Tech",
         "url": "https://medium.com/bancolombia-tech",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1333,7 +1334,7 @@
         "title": "Bit2me",
         "url": "https://learn.bit2me.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1344,7 +1345,7 @@
         "title": "Cambridge English",
         "url": "https://www.cambridgeenglish.org/latinamerica/learning-english/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1355,7 +1356,7 @@
         "title": "Capacitate para el empleo",
         "url": "https://capacitateparaelempleo.org/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1366,7 +1367,7 @@
         "title": "Carrer cup",
         "url": "https://www.careercup.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1377,7 +1378,7 @@
         "title": "CCB Campus",
         "url": "https://campusvirtual.ccb.org.co/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1388,7 +1389,7 @@
         "title": "Certification Facebook",
         "url": "https://www.facebook.com/business/learn/certification",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1399,7 +1400,7 @@
         "title": "Certiprof",
         "url": "https://certiprof.com/pages/remote-worker-professional-certificate-rwpc-spanish",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1410,7 +1411,7 @@
         "title": "ChatGPT Cheetsheet",
         "url": "https://www.kdnuggets.com/publications/sheets/ChatGPT_Cheatsheet_Costa.pdf",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1421,7 +1422,7 @@
         "title": "Class central",
         "url": "https://www.classcentral.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1432,7 +1433,7 @@
         "title": "Code Academy",
         "url": "https://www.codecademy.com/catalog",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1443,7 +1444,7 @@
         "title": "Codedex",
         "url": "https://www.codedex.io/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1454,7 +1455,7 @@
         "title": "Coding potions",
         "url": "https://codingpotions.com/archivo/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1465,7 +1466,7 @@
         "title": "Coding torque",
         "url": "https://codingtorque.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1476,7 +1477,7 @@
         "title": "Colfuturo Becas",
         "url": "https://www.colfuturo.org/programas/credito-beca/convenios",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1487,7 +1488,7 @@
         "title": "Comprehensive Rust",
         "url": "https://github.com/google/comprehensive-rust",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1498,7 +1499,7 @@
         "title": "Coursera",
         "url": "https://www.coursera.org/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1509,7 +1510,7 @@
         "title": "Coursesity",
         "url": "https://coursesity.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1520,7 +1521,7 @@
         "title": "Digital defynd",
         "url": "https://digitaldefynd.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1531,7 +1532,7 @@
         "title": "Educalingo",
         "url": "https://educalingo.com/es/dic-es",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1542,7 +1543,7 @@
         "title": "Education Oracle",
         "url": "https://education.oracle.com/es/business-process-training-program-lad",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1553,7 +1554,7 @@
         "title": "Escuela Vue",
         "url": "https://escuelavue.es/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1564,7 +1565,7 @@
         "title": "Faztweb",
         "url": "https://www.faztweb.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1575,7 +1576,7 @@
         "title": "Full Stack Open",
         "url": "https://fullstackopen.com/en/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1586,7 +1587,7 @@
         "title": "Fullstackopen",
         "url": "https://fullstackopen.com/es/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1597,7 +1598,7 @@
         "title": "Fun Javascript Projects",
         "url": "https://fun-javascript-projects.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1608,7 +1609,7 @@
         "title": "Geeks for geeks",
         "url": "https://www.geeksforgeeks.org/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1619,7 +1620,7 @@
         "title": "Goalkicker books",
         "url": "https://books.goalkicker.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1630,7 +1631,7 @@
         "title": "Google Ads Certifications",
         "url": "https://skillshop.exceedlms.com/student/catalog/list?category_ids=2844-google-ads-certifications",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1641,7 +1642,7 @@
         "title": "Google AI Training",
         "url": "https://cloud.google.com/blog/topics/training-certifications/new-google-cloud-generative-ai-training-resources",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1652,7 +1653,7 @@
         "title": "Hacks planning",
         "url": "https://www.hacksplaining.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1663,7 +1664,7 @@
         "title": "Hardvard CS50",
         "url": "https://www.freecodecamp.org/news/harvard-cs50/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1674,7 +1675,7 @@
         "title": "IBM SkillsBuild",
         "url": "https://sb-auth.skillsbuild.org/signup",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1685,7 +1686,7 @@
         "title": "Incluye me",
         "url": "https://www.incluyeme.com/desarrolla-tu-futuro/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1696,7 +1697,7 @@
         "title": "Javascript Info",
         "url": "https://javascript.info/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1707,7 +1708,7 @@
         "title": "Kaggle",
         "url": "https://www.kaggle.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1718,7 +1719,7 @@
         "title": "Kashipara",
         "url": "https://www.kashipara.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1729,7 +1730,7 @@
         "title": "Kodeco",
         "url": "https://www.kodeco.com/android/books",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1740,7 +1741,7 @@
         "title": "Leet code",
         "url": "https://leetcode.com/problemset/all/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1751,7 +1752,7 @@
         "title": "Linkedin Learning",
         "url": "https://www.linkedin.com/learning/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1762,7 +1763,7 @@
         "title": "Luminosity",
         "url": "https://www.lumosity.com/es/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1773,7 +1774,7 @@
         "title": "Mastermind",
         "url": "https://www.mastermind.ac/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1784,7 +1785,7 @@
         "title": "Mercado Ads",
         "url": "https://academy.mercadoads.com/student/catalog",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1795,7 +1796,7 @@
         "title": "Muscle wiki",
         "url": "https://musclewiki.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1806,7 +1807,7 @@
         "title": "Open bootcamp",
         "url": "https://open-bootcamp.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1817,7 +1818,7 @@
         "title": "Programacion Dev",
         "url": "https://programacion-es.dev/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1828,7 +1829,7 @@
         "title": "Programacion facil Cobol",
         "url": "https://programacionfacil.org/cursos/cobol/cobol_index.html",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1839,7 +1840,7 @@
         "title": "Real python",
         "url": "https://realpython.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1850,7 +1851,7 @@
         "title": "Refactoring Guru",
         "url": "https://refactoring.guru/es",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1861,7 +1862,7 @@
         "title": "Roadmap",
         "url": "https://roadmap.sh/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1872,7 +1873,7 @@
         "title": "Ruta N",
         "url": "https://www.rutanmedellin.org/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1883,7 +1884,7 @@
         "title": "Simpli learn",
         "url": "https://www.simplilearn.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1894,7 +1895,7 @@
         "title": "Social pychology",
         "url": "https://www.edx.org/learn/social-psychology/the-university-of-queensland-introduction-to-social-psychology",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1905,7 +1906,7 @@
         "title": "Solidity Course",
         "url": "https://github.com/smartcontractkit/full-blockchain-solidity-course-js",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1916,7 +1917,7 @@
         "title": "Speedwrite",
         "url": "https://speedwrite.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1927,7 +1928,7 @@
         "title": "Study green",
         "url": "https://studygreen.info/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1938,7 +1939,7 @@
         "title": "Study mafia",
         "url": "https://studymafia.org/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1949,7 +1950,7 @@
         "title": "Teachlr",
         "url": "https://teachlr.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1960,7 +1961,7 @@
         "title": "Tutoriales Ya",
         "url": "https://www.tutorialesprogramacionya.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1971,7 +1972,7 @@
         "title": "Use Web",
         "url": "https://www.useweb3.xyz/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1982,7 +1983,7 @@
         "title": "W3Schools",
         "url": "https://www.w3schools.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -1993,7 +1994,7 @@
         "title": "Wolframalpha",
         "url": "https://www.wolframalpha.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2004,7 +2005,7 @@
         "title": "Zooniverse",
         "url": "https://www.zooniverse.org/projects/cobalt-lensing/black-hole-hunters",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2015,7 +2016,7 @@
         "title": "Code with Antonio",
         "url": "https://www.codewithantonio.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2026,7 +2027,7 @@
         "title": "Tutorials Point",
         "url": "https://www.tutorialspoint.com/index.htm",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2037,7 +2038,7 @@
         "title": "Platzi",
         "url": "https://platzi.com/home/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2048,7 +2049,7 @@
         "title": "Crehana",
         "url": "https://www.crehana.com/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2059,7 +2060,7 @@
         "title": "Machine Learning University",
         "url": "https://aws.amazon.com/es/machine-learning/mlu/",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2070,7 +2071,7 @@
         "title": "English for Developers",
         "url": "https://cursos.desafiolatam.com/courses/english-for-developers-it-professionals",
         "description": "",
-        "category": "COURSES",
+        "category": "EDUCATION",
         "tags": [
             "courses"
         ],
@@ -2081,7 +2082,7 @@
         "title": "1001 Fonts",
         "url": "https://www.1001fonts.com/",
         "description": "",
-        "category": "FONT",
+        "category": "DESIGN",
         "tags": [
             "font"
         ],
@@ -2092,7 +2093,7 @@
         "title": "Font Awesome",
         "url": "https://fontawesome.com/",
         "description": "",
-        "category": "FONT",
+        "category": "DESIGN",
         "tags": [
             "font"
         ],
@@ -2103,7 +2104,7 @@
         "title": "Font Google",
         "url": "https://fonts.google.com/",
         "description": "",
-        "category": "FONT",
+        "category": "DESIGN",
         "tags": [
             "font"
         ],
@@ -2114,7 +2115,7 @@
         "title": "Font Joy",
         "url": "https://fontjoy.com/",
         "description": "",
-        "category": "FONT",
+        "category": "DESIGN",
         "tags": [
             "font"
         ],
@@ -2125,7 +2126,7 @@
         "title": "Font Share",
         "url": "https://www.fontshare.com/",
         "description": "",
-        "category": "FONT",
+        "category": "DESIGN",
         "tags": [
             "font"
         ],
@@ -2136,7 +2137,7 @@
         "title": "Font space",
         "url": "https://www.fontspace.com/",
         "description": "",
-        "category": "FONT",
+        "category": "DESIGN",
         "tags": [
             "font"
         ],
@@ -2147,7 +2148,7 @@
         "title": "Fontesk",
         "url": "https://fontesk.com/",
         "description": "",
-        "category": "FONT",
+        "category": "DESIGN",
         "tags": [
             "font"
         ],
@@ -2158,7 +2159,7 @@
         "title": "Bootstrap",
         "url": "https://getbootstrap.com/",
         "description": "",
-        "category": "FRAMEWORKS",
+        "category": "FRONTEND",
         "tags": [
             "frameworks"
         ],
@@ -2169,7 +2170,7 @@
         "title": "Bootstrap Studio",
         "url": "https://bootstrapstudio.io/",
         "description": "",
-        "category": "FRAMEWORKS",
+        "category": "FRONTEND",
         "tags": [
             "frameworks"
         ],
@@ -2180,7 +2181,7 @@
         "title": "Formik",
         "url": "https://formik.org/",
         "description": "",
-        "category": "FRAMEWORKS",
+        "category": "FRONTEND",
         "tags": [
             "frameworks"
         ],
@@ -2191,7 +2192,7 @@
         "title": "Foundation",
         "url": "https://get.foundation/",
         "description": "",
-        "category": "FRAMEWORKS",
+        "category": "FRONTEND",
         "tags": [
             "frameworks"
         ],
@@ -2202,7 +2203,7 @@
         "title": "Styled Components",
         "url": "https://styled-components.com/",
         "description": "",
-        "category": "FRAMEWORKS",
+        "category": "FRONTEND",
         "tags": [
             "frameworks"
         ],
@@ -2213,7 +2214,7 @@
         "title": "1 Line Layouts",
         "url": "https://1linelayouts.glitch.me/",
         "description": "",
-        "category": "TEMPLATES",
+        "category": "FRONTEND",
         "tags": [
             "templates"
         ],
@@ -2224,7 +2225,7 @@
         "title": "Collect UI",
         "url": "https://collectui.com/",
         "description": "",
-        "category": "TEMPLATES",
+        "category": "FRONTEND",
         "tags": [
             "templates"
         ],
@@ -2235,7 +2236,7 @@
         "title": "Enjoy CSS",
         "url": "https://enjoycss.com/",
         "description": "",
-        "category": "TEMPLATES",
+        "category": "FRONTEND",
         "tags": [
             "templates"
         ],
@@ -2246,7 +2247,7 @@
         "title": "Screenlane",
         "url": "https://screenlane.com/?ref=uimovement",
         "description": "",
-        "category": "TEMPLATES",
+        "category": "FRONTEND",
         "tags": [
             "templates"
         ],
@@ -2257,7 +2258,7 @@
         "title": "UI Deck",
         "url": "https://uideck.com/",
         "description": "",
-        "category": "TEMPLATES",
+        "category": "FRONTEND",
         "tags": [
             "templates"
         ],
@@ -2268,7 +2269,7 @@
         "title": "UI Garage",
         "url": "https://uigarage.net/",
         "description": "",
-        "category": "TEMPLATES",
+        "category": "FRONTEND",
         "tags": [
             "templates"
         ],
@@ -2279,7 +2280,7 @@
         "title": "Ant design",
         "url": "https://ant.design/",
         "description": "",
-        "category": "TEMPLATES",
+        "category": "FRONTEND",
         "tags": [
             "templates"
         ],
@@ -2356,7 +2357,7 @@
         "title": "Apuntes de Majo",
         "url": "https://losapuntesdemajo.vercel.app/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2367,7 +2368,7 @@
         "title": "Conseguir trabajo tecnologia",
         "url": "https://dedalomx.notion.site/Conseguir-Trabajo-en-Tecnolog-a-f5e01b215bfa4816a0717a972b4b36eb",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2378,7 +2379,7 @@
         "title": "Enviar un mail con Spring Boot",
         "url": "https://medium.com/karibu-blog/c%C3%B3mo-enviar-un-mail-con-spring-boot-f86c2f7af678",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2389,7 +2390,7 @@
         "title": "First aid git",
         "url": "https://firstaidgit.io",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2400,7 +2401,7 @@
         "title": "Gist Github",
         "url": "https://gist.github.com/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2411,7 +2412,7 @@
         "title": "Git commit message convention",
         "url": "https://dev.to/ishanmakadia/git-commit-message-convention-that-you-can-follow-1709",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2422,7 +2423,7 @@
         "title": "GNU grep cheatsheet",
         "url": "https://devhints.io/grep",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2433,7 +2434,7 @@
         "title": "How to Configure Git Settings",
         "url": "https://www.freecodecamp.org/news/git-config-how-to-configure-git-settings/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2444,7 +2445,7 @@
         "title": "i18 nexus",
         "url": "https://i18nexus.com/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2455,7 +2456,7 @@
         "title": "Jekyllrb",
         "url": "https://jekyllrb.com/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2466,7 +2467,7 @@
         "title": "Look for Code Smells",
         "url": "https://betterprogramming.pub/looking-for-code-smells-in-javascript-677f1a312f29",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2477,7 +2478,7 @@
         "title": "Mintlify",
         "url": "https://mintlify.com/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2488,7 +2489,7 @@
         "title": "Object Calisthenics",
         "url": "https://slides.williamdurand.fr/object-calisthenics/#/3/2",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2499,7 +2500,7 @@
         "title": "Principios First",
         "url": "https://crysol.org/recipe/2011-05-03/principios-first.html",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2510,7 +2511,7 @@
         "title": "Rabbit MQ Docs",
         "url": "https://www.rabbitmq.com/docs/documentation",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2521,7 +2522,7 @@
         "title": "React Architecture Best Practices",
         "url": "https://www.sitepoint.com/react-architecture-best-practices/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2532,7 +2533,7 @@
         "title": "Regex 101",
         "url": "https://regex101.com/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2543,7 +2544,7 @@
         "title": "Spring boot docs",
         "url": "https://docs.spring.io/spring-boot/docs/current/reference/html/index.html",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2554,7 +2555,7 @@
         "title": "State of JS",
         "url": "https://stateofjs.com/es-ES/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2565,7 +2566,7 @@
         "title": "stdout (Standard Out)",
         "url": "https://linuxjourney.com/lesson/stdout-standard-out-redirect",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2576,7 +2577,7 @@
         "title": "Trunk",
         "url": "https://trunk.io/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2587,7 +2588,7 @@
         "title": "UI kit",
         "url": "https://getuikit.com/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2598,7 +2599,7 @@
         "title": "W3 resource",
         "url": "https://www.w3resource.com/",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2609,7 +2610,7 @@
         "title": "Prisma",
         "url": "https://www.prisma.io/orm",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2620,7 +2621,7 @@
         "title": "OctoBot",
         "url": "https://github.com/Drakkar-Software/OctoBot",
         "description": "",
-        "category": "DOCS",
+        "category": "RESOURCES",
         "tags": [
             "docs"
         ],
@@ -2939,7 +2940,7 @@
         "title": "Kucoin",
         "url": "https://www.kucoin.com",
         "description": "",
-        "category": "INVESTMENT",
+        "category": "FINANCE",
         "tags": [
             "investment"
         ],
@@ -2950,7 +2951,7 @@
         "title": "Open Insider",
         "url": "http://openinsider.com/",
         "description": "",
-        "category": "INVESTMENT",
+        "category": "FINANCE",
         "tags": [
             "investment"
         ],
@@ -2961,7 +2962,7 @@
         "title": "Student Coin",
         "url": "https://app.studentcoin.org",
         "description": "",
-        "category": "INVESTMENT",
+        "category": "FINANCE",
         "tags": [
             "investment"
         ],
@@ -2972,7 +2973,7 @@
         "title": "Testnet Binance",
         "url": "https://testnet.binancefuture.com/en/futures/BTCUSDT",
         "description": "",
-        "category": "INVESTMENT",
+        "category": "FINANCE",
         "tags": [
             "investment"
         ],
@@ -2983,7 +2984,7 @@
         "title": "Too Good to go",
         "url": "https://www.toogoodtogo.com/es",
         "description": "",
-        "category": "INVESTMENT",
+        "category": "FINANCE",
         "tags": [
             "investment"
         ],
@@ -2994,7 +2995,7 @@
         "title": "Unergy",
         "url": "https://unergy.io/",
         "description": "",
-        "category": "INVESTMENT",
+        "category": "FINANCE",
         "tags": [
             "investment"
         ],
@@ -3500,7 +3501,7 @@
         "title": "50 projects 50 days",
         "url": "https://github.com/bradtraversy/50projects50days",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3511,7 +3512,7 @@
         "title": "Amazon scraper",
         "url": "https://github.com/tducret/amazon-scraper-python",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3522,7 +3523,7 @@
         "title": "App ideas",
         "url": "https://github.com/florinpop17/app-ideas",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3533,7 +3534,7 @@
         "title": "Awesome advent code",
         "url": "https://github.com/Bogdanp/awesome-advent-of-code",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3544,7 +3545,7 @@
         "title": "Build Your Own X",
         "url": "https://github.com/codecrafters-io/build-your-own-x",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3555,7 +3556,7 @@
         "title": "Clean code JS",
         "url": "https://github.com/andersontr15/clean-code-javascript-es",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3566,7 +3567,7 @@
         "title": "Coding Interview University",
         "url": "https://github.com/jwasham/coding-interview-university",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3577,7 +3578,7 @@
         "title": "Data analytics coursera",
         "url": "https://github.com/BDFD-LearningGround/Cousera_Google-Data-Analytics-Professional-Certificate",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3588,7 +3589,7 @@
         "title": "El Arte del terminal",
         "url": "https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3599,7 +3600,7 @@
         "title": "Free certifications",
         "url": "https://github.com/cloudcommunity/Free-Certifications",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3610,7 +3611,7 @@
         "title": "Free Programming Books",
         "url": "https://github.com/EbookFoundation/free-programming-books",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3621,7 +3622,7 @@
         "title": "Free Web3 resources",
         "url": "https://github.com/FrancescoXX/free-Web3-resources",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3632,7 +3633,7 @@
         "title": "Git live",
         "url": "https://git.live/",
         "description": "",
-        "category": "GIT",
+        "category": "TOOLS",
         "tags": [
             "git"
         ],
@@ -3643,7 +3644,7 @@
         "title": "Git-Github pro",
         "url": "https://github.com/jocode/git-github-pro",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3654,7 +3655,7 @@
         "title": "Github Actions",
         "url": "https://docs.github.com/en/actions",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3665,7 +3666,7 @@
         "title": "Github Resume",
         "url": "https://github.com/resume/resume.github.com",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3676,7 +3677,7 @@
         "title": "Hexagonal Architecture",
         "url": "https://github.com/PacktPublishing/Designing-Hexagonal-Architecture-with-Java",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3687,7 +3688,7 @@
         "title": "Instalaciones Next.js",
         "url": "https://gist.github.com/klerith/2d46749155918952b593e952dc7cf5c8",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3698,7 +3699,7 @@
         "title": "Javascript algorithms",
         "url": "https://github.com/trekhleb/javascript-algorithms",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3709,7 +3710,7 @@
         "title": "Javascript best practices",
         "url": "https://github.com/goldbergyoni/javascript-testing-best-practices",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3720,7 +3721,7 @@
         "title": "Javascript questions",
         "url": "https://github.com/lydiahallie/javascript-questions",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3731,7 +3732,7 @@
         "title": "Awesome React",
         "url": "https://github.com/enaqx/awesome-react?tab=readme-ov-file",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3742,7 +3743,7 @@
         "title": "Linkedin Jobs scraper",
         "url": "https://github.com/kirkhunter/linkedin-jobs-scraper",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3753,7 +3754,7 @@
         "title": "Linkedin scraper",
         "url": "https://github.com/joeyism/linkedin_scraper",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3764,7 +3765,7 @@
         "title": "NES CSS",
         "url": "https://nostalgic-css.github.io/NES.css/",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3775,7 +3776,7 @@
         "title": "NG2 Dragula",
         "url": "https://github.com/valor-software/ng2-dragula",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3786,7 +3787,7 @@
         "title": "Posh git",
         "url": "https://github.com/dahlbyk/posh-git",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3797,7 +3798,7 @@
         "title": "Powerlevel10k",
         "url": "https://github.com/romkatv/powerlevel10k",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3808,7 +3809,7 @@
         "title": "Public APIS",
         "url": "https://github.com/public-apis/public-apis",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3819,7 +3820,7 @@
         "title": "React CLI Scaffolding",
         "url": "https://github.com/vberistain/react-cli-scaffolding",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3830,7 +3831,7 @@
         "title": "React nice avatar",
         "url": "https://github.com/dapi-labs/react-nice-avatar",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3841,7 +3842,7 @@
         "title": "React Projects",
         "url": "https://github.com/ajayns/react-projects",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3852,7 +3853,7 @@
         "title": "React use",
         "url": "https://github.com/streamich/react-use",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3863,7 +3864,7 @@
         "title": "Refactoring code smells",
         "url": "https://github.com/CodelyTV/refactoring-code-smells",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3874,7 +3875,7 @@
         "title": "Scaffold clean architecture",
         "url": "https://github.com/bancolombia/scaffold-clean-architecture",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3885,7 +3886,7 @@
         "title": "Skills github",
         "url": "https://skills.github.com/",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3896,7 +3897,7 @@
         "title": "Solidity patterns",
         "url": "https://github.com/fravoll/solidity-patterns",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3907,7 +3908,7 @@
         "title": "Spring Webflux pagination",
         "url": "https://github.com/bullet-tooth/spring-webflux-pagination-example",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3918,7 +3919,7 @@
         "title": "Steam scraper",
         "url": "https://github.com/prncc/steam-scraper",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3929,7 +3930,7 @@
         "title": "Tech Interview Handbook",
         "url": "https://github.com/yangshun/tech-interview-handbook",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -3940,7 +3941,7 @@
         "title": "Screenshot to code",
         "url": "https://github.com/abi/screenshot-to-code",
         "description": "",
-        "category": "GITHUB",
+        "category": "TOOLS",
         "tags": [
             "github"
         ],
@@ -4006,7 +4007,7 @@
         "title": "Html Reference",
         "url": "https://htmlreference.io/",
         "description": "",
-        "category": "HTML",
+        "category": "FRONTEND",
         "tags": [
             "html"
         ],
@@ -4017,7 +4018,7 @@
         "title": "Html5 Up",
         "url": "https://html5up.net/",
         "description": "",
-        "category": "HTML",
+        "category": "FRONTEND",
         "tags": [
             "html"
         ],
@@ -4028,7 +4029,7 @@
         "title": "Validator Html",
         "url": "https://validator.w3.org/",
         "description": "",
-        "category": "HTML",
+        "category": "FRONTEND",
         "tags": [
             "html"
         ],
@@ -4039,7 +4040,7 @@
         "title": "Flaticon",
         "url": "https://www.flaticon.com/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4050,7 +4051,7 @@
         "title": "Freepik",
         "url": "https://www.freepik.com/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4061,7 +4062,7 @@
         "title": "icongr",
         "url": "https://icongr.am/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4072,7 +4073,7 @@
         "title": "Iconly",
         "url": "https://iconly.pro/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4083,7 +4084,7 @@
         "title": "Icons8",
         "url": "https://icons8.com/illustrations",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4094,7 +4095,7 @@
         "title": "Iconsax",
         "url": "https://iconsax.io/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4105,7 +4106,7 @@
         "title": "lord icon",
         "url": "https://lordicon.com/icons",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4116,7 +4117,7 @@
         "title": "onfire craftwork",
         "url": "https://onfire.craftwork.design/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4127,7 +4128,7 @@
         "title": "openpeeps",
         "url": "https://www.openpeeps.com/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4138,7 +4139,7 @@
         "title": "Spline",
         "url": "https://spline.design/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4149,7 +4150,7 @@
         "title": "The noun project",
         "url": "https://thenounproject.com/",
         "description": "",
-        "category": "ICONS",
+        "category": "DESIGN",
         "tags": [
             "icons"
         ],
@@ -4160,7 +4161,7 @@
         "title": "9 elements",
         "url": "https://9elements.github.io/fancy-border-radius/#30.30.28.30--.",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4171,7 +4172,7 @@
         "title": "BG Jar",
         "url": "https://bgjar.com/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4182,7 +4183,7 @@
         "title": "Blobmaker",
         "url": "https://www.blobmaker.app/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4193,7 +4194,7 @@
         "title": "Delesign",
         "url": "https://delesign.com/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4204,7 +4205,7 @@
         "title": "Drawkit",
         "url": "https://www.drawkit.com/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4215,7 +4216,7 @@
         "title": "Get waves",
         "url": "https://getwaves.io/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4226,7 +4227,7 @@
         "title": "Humaaans",
         "url": "https://www.humaaans.com/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4237,7 +4238,7 @@
         "title": "Hype4 Academy",
         "url": "https://hype4.academy/tools/glassmorphism-generator",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4248,7 +4249,7 @@
         "title": "Interfacer",
         "url": "https://interfacer.xyz/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4259,7 +4260,7 @@
         "title": "Ira design",
         "url": "https://iradesign.io/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4270,7 +4271,7 @@
         "title": "Neumorphism",
         "url": "https://neumorphism.io/#e0e0e0",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4281,7 +4282,7 @@
         "title": "Scribbbles",
         "url": "https://www.scribbbles.design/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4292,7 +4293,7 @@
         "title": "Shapest",
         "url": "https://www.shapefest.com/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4303,7 +4304,7 @@
         "title": "Sketch valley",
         "url": "https://sketchvalley.com/",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4314,7 +4315,7 @@
         "title": "Undraw",
         "url": "https://undraw.co/illustrations",
         "description": "",
-        "category": "ILLUSTRATIONS",
+        "category": "DESIGN",
         "tags": [
             "illustrations"
         ],
@@ -4325,7 +4326,7 @@
         "title": "Animated Backgrounds",
         "url": "https://animatedbackgrounds.me/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4336,7 +4337,7 @@
         "title": "Big JPG",
         "url": "https://bigjpg.com/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4347,7 +4348,7 @@
         "title": "Jenni AI",
         "url": "https://jenni.ai/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4358,7 +4359,7 @@
         "title": "Map editor",
         "url": "https://www.mapeditor.org/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4369,7 +4370,7 @@
         "title": "Pexels",
         "url": "https://www.pexels.com/es-es/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4380,7 +4381,7 @@
         "title": "Pixabay",
         "url": "https://pixabay.com/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4391,7 +4392,7 @@
         "title": "Pixi Set",
         "url": "https://pixieset.com/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4402,7 +4403,7 @@
         "title": "PIxil art",
         "url": "https://www.pixilart.com/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4413,7 +4414,7 @@
         "title": "Shopify",
         "url": "https://www.shopify.com/stock-photos",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4424,7 +4425,7 @@
         "title": "SVGator",
         "url": "https://www.svgator.com/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4435,7 +4436,7 @@
         "title": "Tabler icons",
         "url": "https://tablericons.com/",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4446,7 +4447,7 @@
         "title": "Unsplash",
         "url": "https://unsplash.com/es",
         "description": "",
-        "category": "IMAGES",
+        "category": "DESIGN",
         "tags": [
             "images"
         ],
@@ -4457,7 +4458,7 @@
         "title": "GSON",
         "url": "https://howtodoinjava.com/gson/gson/",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4468,7 +4469,7 @@
         "title": "Herencia Java",
         "url": "https://jarroba.com/herencia-en-la-programacion-orientada-a-objetos-ejemplo-en-java/",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4479,7 +4480,7 @@
         "title": "IBM Java",
         "url": "https://skills.yourlearning.ibm.com/activity/PLAN-73255AB6778F",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4490,7 +4491,7 @@
         "title": "Jetbrains",
         "url": "https://account.jetbrains.com/login",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4501,7 +4502,7 @@
         "title": "JSOUP",
         "url": "https://jsoup.org/",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4512,7 +4513,7 @@
         "title": "Kubernetes",
         "url": "https://kubernetes.io/training/",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4523,7 +4524,7 @@
         "title": "Plugins IntelliJ",
         "url": "https://medium.com/javarevisited/5-useful-intellij-idea-plugins-to-improve-your-coding-efficiency-36bc75440477",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4534,7 +4535,7 @@
         "title": "RabbitMQ",
         "url": "https://www.rabbitmq.com/tutorials/tutorial-three-java",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4545,7 +4546,7 @@
         "title": "RX Java",
         "url": "https://github.com/ReactiveX/RxJava",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4556,7 +4557,7 @@
         "title": "Spring",
         "url": "https://start.spring.io/",
         "description": "",
-        "category": "JAVA",
+        "category": "PROGRAMMING",
         "tags": [
             "java"
         ],
@@ -4567,7 +4568,7 @@
         "title": "AtroposJS",
         "url": "https://atroposjs.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4578,7 +4579,7 @@
         "title": "Babylon JS",
         "url": "https://www.babylonjs.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4589,7 +4590,7 @@
         "title": "Chart JS",
         "url": "https://www.chartjs.org/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4600,7 +4601,7 @@
         "title": "D3 JS",
         "url": "https://d3js.org/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4611,7 +4612,7 @@
         "title": "Date FNS",
         "url": "https://date-fns.org/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4622,7 +4623,7 @@
         "title": "Driver JS",
         "url": "https://driverjs.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4633,7 +4634,7 @@
         "title": "Fresh Deno",
         "url": "https://fresh.deno.dev/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4644,7 +4645,7 @@
         "title": "G Develop",
         "url": "https://gdevelop.io/es-es",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4655,7 +4656,7 @@
         "title": "Gsap",
         "url": "https://gsap.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4666,7 +4667,7 @@
         "title": "Impact JS",
         "url": "https://impactjs.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4677,7 +4678,7 @@
         "title": "Ionic",
         "url": "https://ionicframework.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4688,7 +4689,7 @@
         "title": "JS Fuck",
         "url": "http://www.jsfuck.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4699,7 +4700,7 @@
         "title": "Leaflet JS",
         "url": "https://leafletjs.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4710,7 +4711,7 @@
         "title": "Melon JS",
         "url": "https://melonjs.org/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4721,7 +4722,7 @@
         "title": "Node js Course",
         "url": "https://bluuweb.github.io/node/07-jwt/#jwt",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4732,7 +4733,7 @@
         "title": "Nodered",
         "url": "https://nodered.org/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4743,7 +4744,7 @@
         "title": "P5 JS",
         "url": "https://p5js.org/es/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4754,7 +4755,7 @@
         "title": "Parall ax",
         "url": "https://parall.ax/products/jspdf",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4765,7 +4766,7 @@
         "title": "Phaser",
         "url": "https://phaser.io/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4776,7 +4777,7 @@
         "title": "Pixi JS",
         "url": "https://pixijs.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4787,7 +4788,7 @@
         "title": "Play canvas",
         "url": "https://playcanvas.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4798,7 +4799,7 @@
         "title": "Reveal JS",
         "url": "https://revealjs.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4809,7 +4810,7 @@
         "title": "Slides JS",
         "url": "https://slides.com/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4820,7 +4821,7 @@
         "title": "Sweet Alert",
         "url": "https://sweetalert2.github.io/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4831,7 +4832,7 @@
         "title": "Three JS",
         "url": "https://threejs.org/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -4842,7 +4843,7 @@
         "title": "Trix editor",
         "url": "https://trix-editor.org/",
         "description": "",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript"
         ],
@@ -5414,7 +5415,7 @@
         "title": "Busuu",
         "url": "https://www.busuu.com/es",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5425,7 +5426,7 @@
         "title": "Context reverso",
         "url": "https://context.reverso.net/traduccion/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5436,7 +5437,7 @@
         "title": "Curso ingles",
         "url": "https://www.curso-ingles.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5447,7 +5448,7 @@
         "title": "Deepl",
         "url": "https://www.deepl.com/translator",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5458,7 +5459,7 @@
         "title": "Dictionary Cambridge",
         "url": "https://dictionary.cambridge.org/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5469,7 +5470,7 @@
         "title": "EF Set",
         "url": "https://www.efset.org/es/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5480,7 +5481,7 @@
         "title": "English4 IT",
         "url": "https://english4it.online/en#courses",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5491,7 +5492,7 @@
         "title": "Forvo",
         "url": "https://forvo.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5502,7 +5503,7 @@
         "title": "Free4talk",
         "url": "https://www.free4talk.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5513,7 +5514,7 @@
         "title": "Golingo",
         "url": "https://www.golingo.co.uk/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5524,7 +5525,7 @@
         "title": "Ingles",
         "url": "https://www.ingles.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5535,7 +5536,7 @@
         "title": "Italki",
         "url": "https://www.italki.com/es",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5546,7 +5547,7 @@
         "title": "Language tool",
         "url": "https://languagetool.org/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5557,7 +5558,7 @@
         "title": "Learn a language",
         "url": "https://www.learnalanguage.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5568,7 +5569,7 @@
         "title": "Linguee",
         "url": "https://www.linguee.es/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5579,7 +5580,7 @@
         "title": "Lyrics training",
         "url": "https://es.lyricstraining.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5590,7 +5591,7 @@
         "title": "Mansion ingles",
         "url": "https://www.mansioningles.com/audio-vocabulario/audio-vocabulario.htm",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5601,7 +5602,7 @@
         "title": "Play Phrase",
         "url": "https://playphrase.me/#/search",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5612,7 +5613,7 @@
         "title": "Spanish dict",
         "url": "https://www.spanishdict.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5623,7 +5624,7 @@
         "title": "Ted",
         "url": "https://www.ted.com/",
         "description": "",
-        "category": "ENGLISH",
+        "category": "EDUCATION",
         "tags": [
             "english"
         ],
@@ -5634,7 +5635,7 @@
         "title": "Frances sencillo",
         "url": "https://www.francessencillo.com/aprender-frances-desde-cero",
         "description": "",
-        "category": "FRENCH",
+        "category": "EDUCATION",
         "tags": [
             "french"
         ],
@@ -5645,7 +5646,7 @@
         "title": "NHK",
         "url": "https://www.nhk.or.jp/lesson/spanish/learn/list/1.html",
         "description": "",
-        "category": "JAPANESE",
+        "category": "EDUCATION",
         "tags": [
             "japanese"
         ],
@@ -5656,7 +5657,7 @@
         "title": "Seek (NZ)",
         "url": "https://www.seek.co.nz/",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5667,7 +5668,7 @@
         "title": "Aiesec",
         "url": "https://aiesec.org.ve/",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5678,7 +5679,7 @@
         "title": "Chevening becas",
         "url": "https://www.chevening.org/",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5689,7 +5690,7 @@
         "title": "Job Bank Canada",
         "url": "https://www.jobbank.gc.ca/home",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5700,7 +5701,7 @@
         "title": "Passport index",
         "url": "https://www.passportindex.org/",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5711,7 +5712,7 @@
         "title": "Quebecentete",
         "url": "https://www.quebecentete.com/es/travailler-a-quebec",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5722,7 +5723,7 @@
         "title": "Relocate me",
         "url": "https://relocate.me/",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5733,7 +5734,7 @@
         "title": "Volunteer Canada",
         "url": "https://volunteer.ca/",
         "description": "",
-        "category": "MIGRATE",
+        "category": "TOOLS",
         "tags": [
             "migrate"
         ],
@@ -5744,7 +5745,7 @@
         "title": "16 personalities",
         "url": "https://www.16personalities.com/es/test-de-personalidad",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5755,7 +5756,7 @@
         "title": "6 nomads",
         "url": "https://6nomads.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5766,7 +5767,7 @@
         "title": "ADPList Mentors",
         "url": "https://adplist.org/explore",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5777,7 +5778,7 @@
         "title": "Answer public",
         "url": "https://answerthepublic.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5788,7 +5789,7 @@
         "title": "Bumble",
         "url": "https://bumble.com/es/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5799,7 +5800,7 @@
         "title": "Discover profile",
         "url": "https://discoverprofile.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5810,7 +5811,7 @@
         "title": "Friend PC",
         "url": "https://www.friendpc.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5821,7 +5822,7 @@
         "title": "Kickresume",
         "url": "https://www.kickresume.com/en/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5832,7 +5833,7 @@
         "title": "Lunch club",
         "url": "https://lunchclub.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5843,7 +5844,7 @@
         "title": "Medium",
         "url": "https://medium.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5854,7 +5855,7 @@
         "title": "Meetup",
         "url": "https://www.meetup.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5865,7 +5866,7 @@
         "title": "Social Bee",
         "url": "https://socialbee.com/",
         "description": "",
-        "category": "NETWORKING",
+        "category": "PROGRAMMING",
         "tags": [
             "networking"
         ],
@@ -5876,7 +5877,7 @@
         "title": "Camilo Pardo",
         "url": "https://www.parddo.com/",
         "description": "",
-        "category": "PORTFOLIOS",
+        "category": "RESOURCES",
         "tags": [
             "portfolios"
         ],
@@ -5887,7 +5888,7 @@
         "title": "Jossilab",
         "url": "https://www.jossilab.com/",
         "description": "",
-        "category": "PORTFOLIOS",
+        "category": "RESOURCES",
         "tags": [
             "portfolios"
         ],
@@ -5898,7 +5899,7 @@
         "title": "Juon",
         "url": "https://www.kuon.space/#top",
         "description": "",
-        "category": "PORTFOLIOS",
+        "category": "RESOURCES",
         "tags": [
             "portfolios"
         ],
@@ -5909,7 +5910,7 @@
         "title": "Boundingbox",
         "url": "https://boundingbox.klokantech.com/",
         "description": "",
-        "category": "PYTHON",
+        "category": "PROGRAMMING",
         "tags": [
             "python"
         ],
@@ -5920,7 +5921,7 @@
         "title": "40 JavaScript Projects",
         "url": "https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -5931,7 +5932,7 @@
         "title": "Autocomplete React",
         "url": "https://www.algolia.com/doc/ui-libraries/autocomplete/integrations/using-react/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -5942,7 +5943,7 @@
         "title": "Canvas Confetti",
         "url": "https://www.kirilv.com/canvas-confetti/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -5953,7 +5954,7 @@
         "title": "Code Playground React",
         "url": "https://pusher.com/tutorials/code-playground-react/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -5964,7 +5965,7 @@
         "title": "Emoji Picker React",
         "url": "https://www.npmjs.com/package/emoji-picker-react",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -5975,7 +5976,7 @@
         "title": "Framer",
         "url": "https://www.framer.com/motion/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -5986,7 +5987,7 @@
         "title": "Lazy Load Images in React",
         "url": "https://www.freecodecamp.org/news/how-to-lazy-load-images-in-react/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -5997,7 +5998,7 @@
         "title": "Quick type",
         "url": "https://quicktype.io/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6008,7 +6009,7 @@
         "title": "React bootstrap",
         "url": "https://react-bootstrap.github.io/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6019,7 +6020,7 @@
         "title": "React Express",
         "url": "https://www.react.express/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6030,7 +6031,7 @@
         "title": "React Icons",
         "url": "https://react-icons.github.io/react-icons/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6041,7 +6042,7 @@
         "title": "React PDF",
         "url": "https://react-pdf.org/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6052,7 +6053,7 @@
         "title": "React Quill",
         "url": "https://www.npmjs.com/package/react-quill",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6063,7 +6064,7 @@
         "title": "React Router",
         "url": "https://reactrouter.com/en/main",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6074,7 +6075,7 @@
         "title": "React toastify",
         "url": "https://fkhadra.github.io/react-toastify/introduction/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6085,7 +6086,7 @@
         "title": "React typical",
         "url": "https://www.npmjs.com/package/react-typical",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6096,7 +6097,7 @@
         "title": "React Vertical Timeline",
         "url": "https://www.npmjs.com/package/react-vertical-timeline-component",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6107,7 +6108,7 @@
         "title": "Sweet Alert",
         "url": "https://sweetalert.js.org/guides/#getting-started",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6118,7 +6119,7 @@
         "title": "Tipos de componentes",
         "url": "https://dev.to/ajpalacios/tipos-de-componentes-en-react-js-4epg",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6129,7 +6130,7 @@
         "title": "Typewriter effect",
         "url": "https://www.npmjs.com/package/typewriter-effect",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6140,7 +6141,7 @@
         "title": "Vite JS",
         "url": "https://vitejs.dev/",
         "description": "",
-        "category": "REACT",
+        "category": "PROGRAMMING",
         "tags": [
             "react"
         ],
@@ -6151,7 +6152,7 @@
         "title": "Dialnet",
         "url": "https://dialnet.unirioja.es/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6162,7 +6163,7 @@
         "title": "Glimps",
         "url": "https://meetglimpse.com/trends/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6173,7 +6174,7 @@
         "title": "Google trends",
         "url": "https://trends.google.es/trends/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6184,7 +6185,7 @@
         "title": "Pubmed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6195,7 +6196,7 @@
         "title": "Scielo",
         "url": "https://scielo.org/es/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6206,7 +6207,7 @@
         "title": "Worldometer",
         "url": "https://www.worldometers.info/es/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6217,7 +6218,7 @@
         "title": "Scopus",
         "url": "https://www.scopus.com/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6228,7 +6229,7 @@
         "title": "Layoffs",
         "url": "https://layoffs.fyi/",
         "description": "",
-        "category": "RESEARCHING",
+        "category": "RESOURCES",
         "tags": [
             "researching"
         ],
@@ -6855,7 +6856,7 @@
         "title": "Cypress",
         "url": "https://docs.cypress.io/guides/overview/why-cypress",
         "description": "",
-        "category": "TESTING",
+        "category": "PROGRAMMING",
         "tags": [
             "testing"
         ],
@@ -6866,7 +6867,7 @@
         "title": "Jest",
         "url": "https://jestjs.io/docs/getting-started",
         "description": "",
-        "category": "TESTING",
+        "category": "PROGRAMMING",
         "tags": [
             "testing"
         ],
@@ -6877,7 +6878,7 @@
         "title": "Jest cheat sheet",
         "url": "https://devhints.io/jest",
         "description": "",
-        "category": "TESTING",
+        "category": "PROGRAMMING",
         "tags": [
             "testing"
         ],
@@ -6888,7 +6889,7 @@
         "title": "React Unit Test Handbook",
         "url": "https://www.freecodecamp.org/news/how-to-write-unit-tests-in-react-redux/",
         "description": "",
-        "category": "TESTING",
+        "category": "PROGRAMMING",
         "tags": [
             "testing"
         ],
@@ -6899,7 +6900,7 @@
         "title": "Testing Library",
         "url": "https://testing-library.com/docs/",
         "description": "",
-        "category": "TESTING",
+        "category": "PROGRAMMING",
         "tags": [
             "testing"
         ],
@@ -7548,10 +7549,11 @@
         "title": "Daily UI",
         "url": "https://dailyui.com/",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7560,10 +7562,11 @@
         "title": "Dribble",
         "url": "https://dribbble.com/",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7572,10 +7575,11 @@
         "title": "Lookup",
         "url": "https://lookup.design/",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7584,10 +7588,11 @@
         "title": "Mobbin",
         "url": "https://mobbin.com/browse/ios/apps",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7596,10 +7601,11 @@
         "title": "Nicely done",
         "url": "https://nicelydone.club/",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7608,10 +7614,11 @@
         "title": "Savee",
         "url": "https://savee.it/",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7620,10 +7627,11 @@
         "title": "Toools design",
         "url": "https://www.toools.design/",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7632,10 +7640,11 @@
         "title": "UI Design daily",
         "url": "https://uidesigndaily.com/",
         "description": "",
-        "category": "UI/UX",
+        "category": "DESIGN",
         "tags": [
             "ui",
-            "ux"
+            "ux",
+            "ui-ux"
         ],
         "createdAt": "2026-03-17T01:10:07.000000Z"
     },
@@ -7688,7 +7697,7 @@
         "title": "Bun",
         "url": "https://bun.sh/",
         "description": "Modern JavaScript runtime and package manager with focus on speed and compatibility.",
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "tags": [
             "javascript",
             "tools",
@@ -7701,7 +7710,7 @@
         "title": "Streamlit",
         "url": "https://streamlit.io/",
         "description": "Python library for creating custom web apps for machine learning and data science.",
-        "category": "PYTHON",
+        "category": "PROGRAMMING",
         "tags": [
             "python",
             "machine learning",
@@ -7730,7 +7739,7 @@
             "web-components",
             "framework"
         ],
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "title": "lit/lit",
         "url": "https://github.com/lit/lit/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7756,7 +7765,7 @@
             "html",
             "processing"
         ],
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "title": "rehypejs/rehype",
         "url": "https://github.com/rehypejs/rehype?tab=readme-ov-file#what-is-this",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7796,7 +7805,7 @@
             "data",
             "ui"
         ],
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "title": "AG Grid",
         "url": "https://www.ag-grid.com/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7809,7 +7818,7 @@
             "browser",
             "webassembly"
         ],
-        "category": "PYTHON",
+        "category": "PROGRAMMING",
         "title": "Pyodide",
         "url": "https://pyodide.org/en/stable/index.html",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7835,9 +7844,10 @@
             "python",
             "workshop",
             "agents",
-            "ai"
+            "ai",
+            "courses"
         ],
-        "category": "COURSES",
+        "category": "EDUCATION",
         "title": "PyConf 2025 Agentic Workshop",
         "url": "https://github.com/yemauricio/pycon2025_agentic_workshop",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7863,7 +7873,7 @@
             "serialization",
             "validation"
         ],
-        "category": "PYTHON",
+        "category": "PROGRAMMING",
         "title": "msgspec",
         "url": "https://jcristharif.com/msgspec/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7876,7 +7886,7 @@
             "highlighting",
             "syntax"
         ],
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "title": "highlight.js",
         "url": "https://highlightjs.org/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7889,7 +7899,7 @@
             "auth",
             "security"
         ],
-        "category": "JAVASCRIPT",
+        "category": "PROGRAMMING",
         "title": "Better Auth",
         "url": "https://www.better-auth.com/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7902,7 +7912,7 @@
             "dashboard",
             "data-science"
         ],
-        "category": "PYTHON",
+        "category": "PROGRAMMING",
         "title": "Dash",
         "url": "https://dash.plotly.com/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7915,7 +7925,7 @@
             "physics",
             "units"
         ],
-        "category": "PYTHON",
+        "category": "PROGRAMMING",
         "title": "Pint",
         "url": "https://pint.readthedocs.io/en/stable/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7939,9 +7949,10 @@
         "tags": [
             "mkdocs",
             "documentation",
-            "theme"
+            "theme",
+            "docs"
         ],
-        "category": "DOCUMENTATION",
+        "category": "RESOURCES",
         "title": "Material for MkDocs",
         "url": "https://squidfunk.github.io/mkdocs-material/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7954,7 +7965,7 @@
             "notebook",
             "reactive"
         ],
-        "category": "PYTHON",
+        "category": "PROGRAMMING",
         "title": "marimo",
         "url": "https://marimo.io/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7965,9 +7976,10 @@
         "tags": [
             "python",
             "tutorial",
-            "learning"
+            "learning",
+            "courses"
         ],
-        "category": "COURSES",
+        "category": "EDUCATION",
         "title": "W3Schools Python",
         "url": "https://www.w3schools.com/python/default.asp",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7979,9 +7991,10 @@
             "python",
             "spanish",
             "files",
-            "os"
+            "os",
+            "courses"
         ],
-        "category": "COURSES",
+        "category": "EDUCATION",
         "title": "El Libro De Python",
         "url": "https://ellibrodepython.com/ficheros-os-python",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -7993,9 +8006,10 @@
             "python",
             "tutorial",
             "free",
-            "learning"
+            "learning",
+            "courses"
         ],
-        "category": "COURSES",
+        "category": "EDUCATION",
         "title": "FreeCodeCamp Python",
         "url": "https://www.freecodecamp.org/news/search/?query=python",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8006,9 +8020,10 @@
         "tags": [
             "machine-learning",
             "data-science",
-            "kaggle"
+            "kaggle",
+            "courses"
         ],
-        "category": "COURSES",
+        "category": "EDUCATION",
         "title": "Kaggle Learn",
         "url": "https://www.kaggle.com/learn",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8047,7 +8062,7 @@
             "patch",
             "workflow"
         ],
-        "category": "GIT",
+        "category": "TOOLS",
         "title": "Git Patch",
         "url": "https://carboleda.medium.com/git-patch-aplicando-parches-con-estilo-no-copy-paste-e63f3de2e61",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8084,9 +8099,10 @@
         "tags": [
             "cheatsheet",
             "reference",
-            "quick-guide"
+            "quick-guide",
+            "docs"
         ],
-        "category": "DOCUMENTATION",
+        "category": "RESOURCES",
         "title": "Cheat Sheets",
         "url": "https://www.cheat-sheets.org/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8097,9 +8113,10 @@
         "tags": [
             "python",
             "cheatsheet",
-            "reference"
+            "reference",
+            "docs"
         ],
-        "category": "DOCUMENTATION",
+        "category": "RESOURCES",
         "title": "Python Cheatsheet",
         "url": "https://www.pythoncheatsheet.org/cheatsheet/basics",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8110,9 +8127,10 @@
         "tags": [
             "python",
             "spanish",
-            "cheatsheet"
+            "cheatsheet",
+            "docs"
         ],
-        "category": "DOCUMENTATION",
+        "category": "RESOURCES",
         "title": "Cheatsheet de Python",
         "url": "https://www.luisllamas.es/cheatsheet-python/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8121,9 +8139,10 @@
         "id": "734",
         "description": "Google's AI-powered notebook for organizing and exploring knowledge",
         "tags": [
-            "notebooklm"
+            "notebooklm",
+            "ai"
         ],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "title": "NotebookLM",
         "url": "https://notebooklm.google.com/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8158,9 +8177,10 @@
         "id": "737",
         "description": "A simple open format for guiding coding agents",
         "tags": [
-            "agent"
+            "agent",
+            "ai"
         ],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "category": "AI",
         "title": "AGENTS.md",
         "url": "https://agents.md",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8168,8 +8188,11 @@
     {
         "id": "738",
         "description": "Skills are reusable capabilities for AI agents",
-        "tags": ["skills", "ai"],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "tags": [
+            "skills",
+            "ai"
+        ],
+        "category": "AI",
         "title": "Skills.sh",
         "url": "https://skills.sh/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8177,7 +8200,11 @@
     {
         "id": "739",
         "description": "From Basics to Advanced Messaging Patterns (A Practical Guide)",
-        "tags": ["rabbitmq", "python", "programming"],
+        "tags": [
+            "rabbitmq",
+            "python",
+            "programming"
+        ],
         "category": "PROGRAMMING",
         "title": "RabbitMQ with Python",
         "url": "https://medium.com/@sujakhu.umesh/rabbitmq-with-python-from-basics-to-advanced-messaging-patterns-a-practical-guide-18f8b43b94f8",
@@ -8186,8 +8213,12 @@
     {
         "id": "740",
         "description": "This directory contains Agent Skills following the Agent Skills open standard",
-        "tags": ["ai", "agents", "skills"],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "tags": [
+            "ai",
+            "agents",
+            "skills"
+        ],
+        "category": "AI",
         "title": "AI Agent Skills",
         "url": "https://github.com/prowler-cloud/prowler",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8195,8 +8226,12 @@
     {
         "id": "741",
         "description": "Skills are an open standard for extending agent capabilities. ",
-        "tags": ["ai", "agents", "skills"],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "tags": [
+            "ai",
+            "agents",
+            "skills"
+        ],
+        "category": "AI",
         "title": "Antigravity Google Skills",
         "url": "https://antigravity.google/docs/skills",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8204,8 +8239,12 @@
     {
         "id": "742",
         "description": "Architects design workloads by integrating platform services, functionality, and code to meet both functional and nonfunctional requirements.",
-        "tags": ["architecture", "azure", "design-patterns"],
-        "category": "ARCHITECTURE",
+        "tags": [
+            "architecture",
+            "azure",
+            "design-patterns"
+        ],
+        "category": "PROGRAMMING",
         "title": "Cloud design patterns - Microsoft",
         "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8213,8 +8252,12 @@
     {
         "id": "743",
         "description": "Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions.",
-        "tags": ["ai", "claude", "memory"],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "tags": [
+            "ai",
+            "claude",
+            "memory"
+        ],
+        "category": "AI",
         "title": "Claude Mem",
         "url": "https://github.com/thedotmack/claude-mem",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8222,8 +8265,11 @@
     {
         "id": "744",
         "description": " TestingIT es una empresa mexicana especializada en servicios de testing y calidad de software, ofreciendo soluciones integrales para garantizar el rendimiento, seguridad y funcionalidad de las aplicaciones.",
-        "tags": ["testing", "qa"],
-        "category": "TESTING",
+        "tags": [
+            "testing",
+            "qa"
+        ],
+        "category": "PROGRAMMING",
         "title": "TestingIT",
         "url": "https://www.testingit.com.mx/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8231,8 +8277,12 @@
     {
         "id": "745",
         "description": "This guide shows you how to set up a context engineering workflow in VS Code using custom instructions, custom agents, and prompt files.",
-        "tags": ["architecture", "vscode", "ai"],
-        "category": "ARCHITECTURE",
+        "tags": [
+            "architecture",
+            "vscode",
+            "ai"
+        ],
+        "category": "PROGRAMMING",
         "title": "Context engineering workflow",
         "url": "https://code.visualstudio.com/docs/copilot/guides/context-engineering-guide",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8240,8 +8290,11 @@
     {
         "id": "746",
         "description": "An automated acceptance tests reporting library (previously known as Thucydides)",
-        "tags": ["testing", "bdd"],
-        "category": "TESTING",
+        "tags": [
+            "testing",
+            "bdd"
+        ],
+        "category": "PROGRAMMING",
         "title": "Serenity BDD",
         "url": "https://github.com/serenity-bdd",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8249,8 +8302,10 @@
     {
         "id": "747",
         "description": "Build More Architect Dreams",
-        "tags": ["architecture"],
-        "category": "ARCHITECTURE",
+        "tags": [
+            "architecture"
+        ],
+        "category": "PROGRAMMING",
         "title": "BMAD-METHOD",
         "url": "https://github.com/bmad-code-org/BMAD-METHOD",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8258,8 +8313,12 @@
     {
         "id": "748",
         "description": "Software architecture is key in responding to dynamic market pressures.",
-        "tags": ["architecture", "nestjs", "clean-code"],
-        "category": "ARCHITECTURE",
+        "tags": [
+            "architecture",
+            "nestjs",
+            "clean-code"
+        ],
+        "category": "PROGRAMMING",
         "title": "NestJS Clean Code using Hexagonal Architecture",
         "url": "https://ridakaddir.com/blog/post/nestjs-clean-code-using-hexagonal-architecture",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8267,8 +8326,12 @@
     {
         "id": "749",
         "description": "A curated collection of Awesome LLM apps built with RAG, AI Agents, Multi-agent Teams, MCP, Voice Agents, and more.",
-        "tags": ["ai", "llm", "agents"],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "tags": [
+            "ai",
+            "llm",
+            "agents"
+        ],
+        "category": "AI",
         "title": "Awesome LLM Apps",
         "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8276,8 +8339,11 @@
     {
         "id": "750",
         "description": "A workshop focused on Test-Driven Development (TDD) practices.",
-        "tags": ["testing", "tdd"],
-        "category": "TESTING",
+        "tags": [
+            "testing",
+            "tdd"
+        ],
+        "category": "PROGRAMMING",
         "title": "Tdd-workshop",
         "url": "https://github.com/joeeames/tdd-workshop/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8285,8 +8351,12 @@
     {
         "id": "751",
         "description": "An open-source toolkit for spec-driven development with AI, enabling developers to create and manage specifications using AI-powered tools.",
-        "tags": ["ai", "spec-driven", "development"],
-        "category": "ARTIFICIAL INTELLIGENCE",
+        "tags": [
+            "ai",
+            "spec-driven",
+            "development"
+        ],
+        "category": "AI",
         "title": "Spec-Driven Development with AI",
         "url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
         "createdAt": "2026-03-16T00:00:00.000000Z"
@@ -8294,8 +8364,11 @@
     {
         "id": "752",
         "description": "Explore la documentación del producto de Microsoft, el entrenamiento, las credenciales, las preguntas y respuestas, las referencias de código y las muestras.",
-        "tags": ["courses", "microsoft"],
-        "category": "COURSES",
+        "tags": [
+            "courses",
+            "microsoft"
+        ],
+        "category": "EDUCATION",
         "title": "Microsoft Learn",
         "url": "https://learn.microsoft.com/es-es/",
         "createdAt": "2026-03-29T00:00:00.000000Z"
@@ -8303,8 +8376,12 @@
     {
         "id": "753",
         "description": "Reasoning-first models built for agents.",
-        "tags": ["ai", "chat"],
-        "category": "AI CHAT",
+        "tags": [
+            "ai",
+            "chat",
+            "ai-chat"
+        ],
+        "category": "AI",
         "title": "DeepSeek",
         "url": "https://www.deepseek.com/",
         "createdAt": "2026-03-29T00:00:00.000000Z"
@@ -8312,8 +8389,12 @@
     {
         "id": "754",
         "description": "An AI assistant that understands and generates human-like text, designed to help with a wide range of tasks and provide information on various topics.",
-        "tags": ["ai", "chat"],
-        "category": "AI CHAT",
+        "tags": [
+            "ai",
+            "chat",
+            "ai-chat"
+        ],
+        "category": "AI",
         "title": "Grok",
         "url": "https://grok.com/",
         "createdAt": "2026-03-29T00:00:00.000000Z"
@@ -8321,10 +8402,55 @@
     {
         "id": "755",
         "description": "A platform for exploring and experimenting with AI models and tools.",
-        "tags": ["ai", "chat"],
-        "category": "AI CHAT",
+        "tags": [
+            "ai",
+            "chat",
+            "ai-chat"
+        ],
+        "category": "AI",
         "title": "AI Studio",
         "url": "https://aistudio.google.com/",
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "756",
+        "description": "Crea tu estilo visual, sin depender de I.A. o copiar a otros, y lo mejor de todo, aprende de los mejores.",
+        "tags": [
+            "manga",
+            "art",
+            "academy"
+        ],
+        "category": "EDUCATION",
+        "title": "Manga Studio",
+        "url": "https://www.mangaestudio.com/",
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "757",
+        "description": "ArtStation es una plataforma en línea que permite a los artistas compartir su trabajo, conectarse con otros creativos y encontrar oportunidades laborales en la industria del arte y el diseño.",
+        "tags": [
+            "art",
+            "design",
+            "portfolio",
+            "graphic-design"
+        ],
+        "category": "DESIGN",
+        "title": "Artstation",
+        "url": "https://www.artstation.com/",
+        "createdAt": "2026-03-29T00:00:00.000000Z"
+    },
+    {
+        "id": "758",
+        "description": "Create unique pixel art assets for your game 10x faster with AI.",
+        "tags": [
+            "pixel-art",
+            "ai",
+            "game-assets",
+            "graphic-design"
+        ],
+        "category": "DESIGN",
+        "title": "Pixellab",
+        "url": "https://www.pixellab.ai/",
         "createdAt": "2026-03-29T00:00:00.000000Z"
     }
 ]
