@@ -2493,6 +2493,15 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
+    "id": "edfaf1d4-7d7a-40ae-8cbf-1b0e4aa5e0ae",
+    "title": "Alpha Coders",
+    "url": "https://alphacoders.com/",
+    "description": "Content Creators, Curators, and Fans - United!",
+    "category": "ENTERTAINMENT",
+    "tags": ["content", "creators", "fans"],
+    "createdAt": "2026-03-17T01:10:07.000000Z"
+  },
+  {
     "id": "fc38feef-4c91-4d7a-9518-9e0df8919ee9",
     "title": "Playphrase.me",
     "url": "https://www.playphrase.me/",
@@ -3463,6 +3472,15 @@
     "category": "HEALTHY",
     "tags": ["healthy"],
     "createdAt": "2026-03-17T01:06:13.000000Z"
+  },
+  {
+    "id": "80b7d2ed-d67a-4aae-a315-04e386db9c5f",
+    "title": "Darebee",
+    "url": "https://darebee.com/",
+    "description": "2300+ home workouts, FREE workouts, exercise programs, monthly challenges and fitness guides. ",
+    "category": "HEALTHY",
+    "tags": ["fitness", "workouts", "health"],
+    "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
     "id": "020910e8-277b-42eb-bcfa-0fdcc485ffcc",
