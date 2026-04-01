@@ -1395,6 +1395,15 @@
     "createdAt": "2026-03-17T00:56:18.000000Z"
   },
   {
+    "id": "9cc6bb3b-bcdb-4bbf-85d5-007f167aabb1",
+    "title": "CastaTutor",
+    "url": "https://castatutor.com/",
+    "description": "Aprende, crea y publica tus propios videojuegos",
+    "category": "EDUCATION",
+    "tags": ["education"],
+    "createdAt": "2026-03-31T01:10:07.000000Z"
+  },
+  {
     "id": "63c93773-6ae2-4fa1-a7fa-8fc602d7e25f",
     "title": "CCB Campus",
     "url": "https://campusvirtual.ccb.org.co/",
@@ -2124,6 +2133,15 @@
     "createdAt": "2026-03-29T00:00:00.000000Z"
   },
   {
+    "id": "1410865c-e982-4c1c-babc-bae68dd85d39",
+    "title": "MST School",
+    "url": "https://www.mstschool.mx/",
+    "description": "MST School es una plataforma de educación en línea que ofrece cursos y programas de formación en diversas áreas, como concept art, concept design, diseño de entretenimiento y más.",
+    "category": "EDUCATION",
+    "tags": ["education"],
+    "createdAt": "2026-03-31T01:10:07.000000Z"
+  },
+  {
     "id": "5c04cbe4-279c-440a-b883-ef56e4219b29",
     "title": "Muscle wiki",
     "url": "https://musclewiki.com/",
@@ -2473,6 +2491,15 @@
     "category": "EDUCATION",
     "tags": ["courses"],
     "createdAt": "2026-03-17T00:56:18.000000Z"
+  },
+  {
+    "id": "edfaf1d4-7d7a-40ae-8cbf-1b0e4aa5e0ae",
+    "title": "Alpha Coders",
+    "url": "https://alphacoders.com/",
+    "description": "Content Creators, Curators, and Fans - United!",
+    "category": "ENTERTAINMENT",
+    "tags": ["content", "creators", "fans"],
+    "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
     "id": "fc38feef-4c91-4d7a-9518-9e0df8919ee9",
@@ -3445,6 +3472,15 @@
     "category": "HEALTHY",
     "tags": ["healthy"],
     "createdAt": "2026-03-17T01:06:13.000000Z"
+  },
+  {
+    "id": "80b7d2ed-d67a-4aae-a315-04e386db9c5f",
+    "title": "Darebee",
+    "url": "https://darebee.com/",
+    "description": "2300+ home workouts, FREE workouts, exercise programs, monthly challenges and fitness guides. ",
+    "category": "HEALTHY",
+    "tags": ["fitness", "workouts", "health"],
+    "createdAt": "2026-03-17T01:10:07.000000Z"
   },
   {
     "id": "020910e8-277b-42eb-bcfa-0fdcc485ffcc",
@@ -5911,6 +5947,24 @@
     "category": "SECURITY",
     "tags": ["security"],
     "createdAt": "2026-03-17T01:10:07.000000Z"
+  },
+  {
+    "id": "f8cb550c-f6d7-4325-adfe-3ea5dba1f636",
+    "title": "Ofertu",
+    "url": "https://www.ofertu.co",
+    "description": "¡Descubre la comunidad líder en descuentos de Colombia! ¡No somos una web de comercio electrónico, sino tu hub exclusiva llena de ofertas y cupones donde miles comparten, votan y comentan las ofertas y promociones más top del mercado! ¡Únete y encuentra las oportunidades más irresistibles de compras online ahora!",
+    "category": "SERVICES",
+    "tags": ["services"],
+    "createdAt": "2026-03-31T01:10:07.000000Z"
+  },
+  {
+    "id": "1d0056ac-07aa-4c35-a44c-7f60dbf0bcfa",
+    "title": "Rent a human",
+    "url": "https://www.rentahuman.ai",
+    "description": "Rent a Human es una plataforma que conecta a personas con habilidades específicas con aquellos que necesitan sus servicios.",
+    "category": "SERVICES",
+    "tags": ["services"],
+    "createdAt": "2026-03-31T01:10:07.000000Z"
   },
   {
     "id": "19f196d0-ac97-4e60-8e42-636a571eecb5",
