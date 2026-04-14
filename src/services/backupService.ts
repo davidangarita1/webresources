@@ -167,7 +167,6 @@ export function importBackup(
     }
   }
 
-  // Restore favorites from backup (additive — don't remove existing favorites)
   const currentFavorites = new Set(storageService.getFavorites())
   for (const favId of backup.favorites) {
     if (!currentFavorites.has(favId)) {
@@ -175,7 +174,6 @@ export function importBackup(
     }
   }
 
-  // Restore statuses from backup (additive)
   for (const [id, status] of Object.entries(backup.statuses)) {
     storageService.setStatus(id, status)
   }

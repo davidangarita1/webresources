@@ -178,12 +178,10 @@ describe("Dashboard", () => {
       const allResources = useResourceStore.getState().resources
       const hasYouTube = allResources.some((r) => r.url.includes("youtube.com") || r.url.includes("youtu.be"))
       if (!hasYouTube) {
-        // Add a user youtube resource to trigger the section
         useResourceStore.getState().createUserResource({ title: "YT Video", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category: "VIDEO", tags: [] })
         useResourceStore.getState().setActiveFilter("user")
       }
       render(<Dashboard {...defaultProps} />)
-      // If there are YouTube resources, the section heading should appear
       const ytSection = screen.queryByText("Videos de YouTube")
       if (hasYouTube || useResourceStore.getState().userResources.length > 0) {
         expect(ytSection).toBeInTheDocument()

@@ -74,7 +74,6 @@ describe("ResourceCard", () => {
   it("unfilled star button does not have standalone text-yellow-400 class when not favorite", () => {
     render(<ResourceCard {...defaultProps} isFavorite={false} />)
     const btn = screen.getByLabelText("Agregar a favoritos")
-    // hover:text-yellow-400 is present for hover state, but the unconditional class should not be
     expect(btn.className).not.toMatch(/(?<![:\w])text-yellow-400/)
   })
 

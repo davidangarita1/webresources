@@ -5,20 +5,17 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataDir = join(__dirname, '..', 'src', 'data');
 
-// Read existing resources
 const resources = JSON.parse(readFileSync(join(dataDir, 'resources.json'), 'utf-8'));
 const existingUrls = new Set(resources.map(r => r.url));
 let nextId = Math.max(...resources.map(r => parseInt(r.id))) + 1;
 
 const createdAt = new Date().toISOString().replace(/\.\d{3}Z$/, '.000000Z');
 
-// CSV files to process
 const csvFiles = [
   'NETWORKING.csv', 'PORTFOLIOS.csv', 'PYTHON.csv', 'REACT.csv', 'RESEARCHING.csv',
   'RESOURCES.csv', 'SECURITY.csv', 'TESTING.csv', 'TOOLS.csv', 'UI_UX.csv', 'VOLUNTEER.csv',
 ];
 
-// Map CSV category names to canonical category names
 const categoryMap = {
   '3D': '3D',
   'ARTIFICIAL INTELLIGENCE': 'ARTIFICIAL INTELLIGENCE',
@@ -64,7 +61,6 @@ const categoryMap = {
   'VOLUNTEER': 'VOLUNTEER',
 };
 
-// Tag mapping per category
 const tagMap = {
   '3D': ['3d'],
   'ARTIFICIAL INTELLIGENCE': ['ai'],
@@ -114,7 +110,6 @@ function parseCSV(content) {
   const lines = content.trim().split('\n');
   const headers = lines[0].split(',');
   return lines.slice(1).map(line => {
-    // Handle quoted fields
     const values = [];
     let current = '';
     let inQuotes = false;

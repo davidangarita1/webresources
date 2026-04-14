@@ -8,7 +8,6 @@ import {
 } from "../../services/backupService"
 import type { UserResource } from "../../types"
 
-// ── helpers ──────────────────────────────────────────────────────────────────
 function makeResource(overrides: Partial<UserResource> = {}): UserResource {
   return {
     id: "r1",
@@ -32,7 +31,6 @@ function makeBackup(resources: UserResource[] = [], overrides: Partial<BackupDat
   }
 }
 
-// ── validateBackupFile ────────────────────────────────────────────────────────
 describe("validateBackupFile", () => {
   it("rejects null", () => {
     const r = validateBackupFile(null)
@@ -92,12 +90,10 @@ describe("validateBackupFile", () => {
   })
 })
 
-// ── detectURLConflicts ────────────────────────────────────────────────────────
 describe("detectURLConflicts", () => {
   beforeEach(() => { localStorage.clear() })
 
   it("detects URL match (case-insensitive, ignores query params)", () => {
-    // Seed an existing resource in localStorage
     localStorage.setItem("user-resources", JSON.stringify([makeResource({ id: "existing-1", url: "https://react.dev" })]))
     const conflicts = detectURLConflicts([makeResource({ id: "imported-1", url: "https://REACT.DEV?ref=test" })])
     expect(conflicts.size).toBe(1)
@@ -112,7 +108,6 @@ describe("detectURLConflicts", () => {
   })
 })
 
-// ── importBackup ──────────────────────────────────────────────────────────────
 describe("importBackup", () => {
   beforeEach(() => { localStorage.clear() })
 
@@ -127,7 +122,6 @@ describe("importBackup", () => {
   })
 
   it("skips conflicting resource when action is skip", () => {
-    // Pre-seed existing resource
     localStorage.setItem("user-resources", JSON.stringify([makeResource({ id: "e1", url: "https://react.dev" })]))
     const backup = makeBackup([makeResource({ id: "i1", url: "https://react.dev", title: "Updated" })])
     const actions = new Map<string, "update" | "skip">([["i1", "skip"]])
@@ -164,10 +158,8 @@ describe("importBackup", () => {
   })
 })
 
-// ── exportResourcesToJSON ─────────────────────────────────────────────────────
 describe("exportResourcesToJSON", () => {
   it("triggers a download anchor click", () => {
-    // Mock localStorage
     localStorage.setItem("language", "en")
 
     const mockLink = {

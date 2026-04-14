@@ -31,24 +31,38 @@ jobs:
           const TIMEOUT = 20000;
           const CONCURRENCY = 15;
           const BROKEN_CODES = new Set([404, 410]);
-          const UA = 'Mozilla/5.0 (compatible; LinkChecker/1.0)';
+          const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
+          async function fetchOnce(url, method) {
+            const ctrl = new AbortController();
+            const timer = setTimeout(() => ctrl.abort(), TIMEOUT);
+            try {
+              const r = await fetch(url, { method, signal: ctrl.signal, redirect: 'follow', headers: { 'User-Agent': UA } });
+              clearTimeout(timer);
+              return { status: r.status, error: null };
+            } catch (e) {
+              clearTimeout(timer);
+              return { status: 0, error: e.name === 'AbortError' ? 'timeout' : e.message };
+            }
+          }
 
           async function check(url) {
-            for (const method of ['HEAD', 'GET']) {
-              const ctrl = new AbortController();
-              const t = setTimeout(() => ctrl.abort(), TIMEOUT);
-              try {
-                const r = await fetch(url, { method, signal: ctrl.signal, redirect: 'follow', headers: { 'User-Agent': UA } });
-                clearTimeout(t);
-                if (BROKEN_CODES.has(r.status) && method === 'HEAD') continue;
-                return { ok: !BROKEN_CODES.has(r.status), status: r.status };
-              } catch (e) {
-                clearTimeout(t);
-                if (method === 'HEAD') continue;
-                return { ok: false, status: 0, error: e.name === 'AbortError' ? 'timeout' : e.message };
-              }
+            const head = await fetchOnce(url, 'HEAD');
+            if (!head.error && head.status !== 405 && !BROKEN_CODES.has(head.status)) {
+              return { ok: true, status: head.status };
             }
-            return { ok: false, status: 0, error: 'failed' };
+
+            const get1 = await fetchOnce(url, 'GET');
+            if (get1.error || !BROKEN_CODES.has(get1.status)) {
+              return { ok: true, status: get1.status };
+            }
+
+            const get2 = await fetchOnce(url, 'GET');
+            if (get2.error || !BROKEN_CODES.has(get2.status)) {
+              return { ok: true, status: get2.status };
+            }
+
+            return { ok: false, status: get2.status };
           }
 
           async function run() {

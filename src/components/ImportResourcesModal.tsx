@@ -71,7 +71,6 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="bg-white rounded-lg shadow-xl w-full max-w-lg mx-4 max-h-[90vh] flex flex-col">
-        {/* Header */}
         <div className="flex items-center justify-between p-5 border-b">
           <h2 className="text-lg font-semibold text-gray-900">{t("importModal.title")}</h2>
           <button
@@ -83,7 +82,6 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
           </button>
         </div>
 
-        {/* Body */}
         <div className="p-5 overflow-y-auto flex-1">
           {step === "select" && (
             <div className="flex flex-col gap-4">
@@ -128,7 +126,6 @@ export function ImportResourcesModal({ onClose, onImportComplete }: ImportResour
           )}
         </div>
 
-        {/* Footer (select step only — conflicts step has its own buttons) */}
         {step === "select" && (
           <div className="flex justify-end gap-3 p-5 border-t bg-gray-50">
             <button
