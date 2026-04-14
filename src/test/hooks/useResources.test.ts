@@ -43,7 +43,6 @@ describe("useResources", () => {
 
   it("returns only community resources on 'community' filter", () => {
     const { result } = renderHook(() => useResources())
-    // default filter is community — baseResources (no user resources)
     expect(result.current.filteredResources.map((r) => r.id)).toContain("community-1")
     expect(result.current.filteredResources.map((r) => r.id)).not.toContain("user-1")
   })

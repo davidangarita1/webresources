@@ -100,7 +100,6 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
         </div>
 
         <form onSubmit={handleSubmit} noValidate className="space-y-4 px-6 py-5">
-          {/* Title */}
           <div>
             <label htmlFor="rf-title" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
               {t("resourceForm.titleLabel")} <span className="text-red-500">*</span>
@@ -120,7 +119,6 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
             {errors.title && <p className="mt-1 text-xs text-red-500">{errors.title}</p>}
           </div>
 
-          {/* URL */}
           <div>
             <label htmlFor="rf-url" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
               {t("resourceForm.urlLabel")} <span className="text-red-500">*</span>
@@ -140,7 +138,6 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
             {errors.url && <p className="mt-1 text-xs text-red-500">{errors.url}</p>}
           </div>
 
-          {/* Description */}
           <div>
             <label htmlFor="rf-desc" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
               {t("resourceForm.descriptionLabel")} <span className="text-xs font-normal text-gray-400">{t("resourceForm.optional")}</span>
@@ -155,7 +152,6 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
             />
           </div>
 
-          {/* Category */}
           <div>
             <label htmlFor="rf-category" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
               {t("resourceForm.categoryLabel")} <span className="text-red-500">*</span>
@@ -181,7 +177,6 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
             {errors.category && <p className="mt-1 text-xs text-red-500">{errors.category}</p>}
           </div>
 
-          {/* Tags */}
           <div>
             <label htmlFor="rf-tags" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">
               {t("resourceForm.tagsLabel")} <span className="text-xs font-normal text-gray-400">{t("resourceForm.tagsSeparator")}</span>
@@ -196,7 +191,6 @@ export function ResourceFormModal({ initialData, categories, onSubmit, onClose }
             />
           </div>
 
-          {/* Actions */}
           <div className="flex justify-end gap-3 pt-1">
             <button
               type="button"

@@ -36,7 +36,6 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
         </p>
       </div>
 
-      {/* Bulk actions */}
       <div className="flex gap-2">
         <button
           onClick={() => setAll("update")}
@@ -52,7 +51,6 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
         </button>
       </div>
 
-      {/* Conflict list */}
       <div className="flex flex-col gap-2 max-h-72 overflow-y-auto">
         {conflicts.map(({ importedResource, existingResource }) => {
           const action = actions.get(importedResource.id) ?? "skip"
@@ -92,12 +90,10 @@ export function ConflictResolutionDialog({ conflicts, onResolve, onCancel }: Con
         })}
       </div>
 
-      {/* Summary */}
       <p className="text-xs text-gray-500">
         {t("conflictDialog.willUpdate", { update: updateCount, skip: conflicts.length - updateCount })}
       </p>
 
-      {/* Actions */}
       <div className="flex justify-end gap-3">
         <button
           onClick={onCancel}

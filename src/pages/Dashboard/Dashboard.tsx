@@ -75,7 +75,6 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
             </p>
           </div>
 
-          {/* Action buttons — only shown in "Tus Recursos" view */}
           {activeFilter === "user" && (
             <div className="flex flex-wrap items-center gap-2">
               <button
@@ -102,7 +101,6 @@ export function Dashboard({ isCreateOpen, onOpenCreate, onCreateClose, onExportB
           )}
         </div>
 
-        {/* localStorage notice — only in Tus Recursos */}
         {activeFilter === "user" && (
           <div className="mt-3 flex items-start gap-2 rounded-lg bg-indigo-50 border border-indigo-100 px-3 py-2.5 dark:bg-indigo-950/40 dark:border-indigo-900">
             <InfoCircleOutlined className="mt-0.5 shrink-0 text-indigo-500 dark:text-indigo-400" />

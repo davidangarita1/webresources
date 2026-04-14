@@ -47,7 +47,6 @@ export function ResourceCard({
 
   return (
     <div className="group flex flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
-      {/* YouTube thumbnail */}
       {thumbnail && (
         <button
           onClick={() => setPlayerOpen(true)}
