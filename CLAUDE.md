@@ -25,3 +25,7 @@ React 19 SPA with Vite, Zustand, React Router, Tailwind, i18next.
 - Styling: Tailwind CSS v4
 - Testing: Vitest + @testing-library
 - PWA: vite-plugin-pwa + workbox-window
+
+# Skills
+- commit-message: Conventional atomit commits, max 50 chars
+- test-format: AAA pattern, no comments, use mocks, decoupled, English descriptions
