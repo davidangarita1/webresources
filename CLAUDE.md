@@ -29,3 +29,10 @@ React 19 SPA with Vite, Zustand, React Router, Tailwind, i18next.
 # Skills
 - commit-message: Conventional atomit commits, max 50 chars
 - test-format: AAA pattern, no comments, use mocks, decoupled, English descriptions
+- web-quality-audit: Web Vitals, performance, SEO, accessibility audit
+- performance: Performance optimization techniques
+- seo: Search engine optimization
+- core-web-vitals: CWV metrics and optimization
+- accessibility: a11y best practices
+- clean-ddd-hexagonal: Clean Architecture, DDD, Hexagonal
+- best-practices: React/TypeScript best practices
